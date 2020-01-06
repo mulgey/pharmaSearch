@@ -1,32 +1,21 @@
 doctype html
-html(lang='en')
+html
   head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-    meta(http-equiv='x-ua-compatible', content='ie=edge')
-    title Material Design Bootstrap
-    // Font Awesome
-    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.8.2/css/all.css')
-    // Bootstrap core CSS
-    link(href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css', rel='stylesheet')
-    // Material Design Bootstrap
-    link(href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css', rel='stylesheet')
-    // My custom styles (optional)
-    link(href='css/style.css', rel='stylesheet')
+    // Import Google Icon Font
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    // Compiled and minified CSS
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css')
+    // Let browser know website is optimized for mobile
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
   body
-    // Start your project here
-    div(style='height: 100vh')
-      .flex-center.flex-column
-        h1.animated.fadeIn.mb-2 Material Design for Bootstrap
-        h5.animated.fadeIn.mb-1 Thank you for using our product. We're glad you're with us.
-        p.animated.fadeIn.text-muted MDB Team
-    // /Start your project here
-    // SCRIPTS
-    // JQuery
-    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
-    // Bootstrap tooltips
-    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js')
-    // Bootstrap core JavaScript
-    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js')
-    // MDB core JavaScript
-    script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js')
+    .container
+      form(action='#')
+        .switch
+          label
+            | Hekim iletişimine dayanan
+            input#test(type='checkbox')
+            span.lever
+    // Compiled and minified JavaScript
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
+    script.
+      M.AutoInit();
