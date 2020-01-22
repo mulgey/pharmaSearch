@@ -1,0 +1,30 @@
+[
+    {
+      "title": "Real-world evidence of high-cost drugs for metastatic melanoma: effectiveness, compliance to clinical practice guidelines and economic evaluation",
+      "url": "https://ejhp.bmj.com/content/26/Suppl_1/A5.1",
+      "retrospective": true,
+      "ward_focused": false,
+      "indication_focused": true
+    },
+    {
+      "title": "Real-world safety and tolerability of the recently commercialised palbociclib",
+      "url": "https://ejhp.bmj.com/content/26/Suppl_1/A223.2",
+      "retrospective": false,
+      "ward_focused": true,
+      "indication_focused": false
+    },
+    {
+      "title": "Cost-effectiveness of morphine versus fentanyl in managing ventilated neonates with respiratory distress syndrome in the intensive care setting",
+      "url": "https://ejhp.bmj.com/content/26/Suppl_1/A7.3",
+      "retrospective": true,
+      "ward_focused": true,
+      "indication_focused": true
+    },
+    {
+      "title": "Chemical risk assessement in a quality control laboratory by a tool using activity analysis",
+      "url": "https://ejhp.bmj.com/content/26/Suppl_1/A9.2",
+      "retrospective": false,
+      "ward_focused": false,
+      "indication_focused": false
+    }
+  ]

@@ -11,16 +11,16 @@ html
     .container
       form.row(action='#')
         .switch
-          label.col.s12(style='margin-top: 1rem; font-weight: bold; font-size: larger; color: steelblue;')
-            input(type='checkbox')
+          label#rlabel.col.s12(style='margin-top: 1rem; font-weight: bold; font-size: larger; color: steelblue;')
+            input#retrospective(type='checkbox')
             span.lever
             | Retrospective
-          label.col.s12(style='margin-top: 1rem; font-weight: bold; font-size: larger; color: steelblue;')
-            input(type='checkbox')
+          label#wlabel.col.s12(style='margin-top: 1rem; font-weight: bold; font-size: larger; color: steelblue;')
+            input#wardfocused(type='checkbox')
             span.lever
             | Ward Focused
-          label.col.s12(style='margin-top: 1rem; font-weight: bold; font-size: larger; color: steelblue;')
-            input(type='checkbox')
+          label#ilabel.col.s12(style='margin-top: 1rem; font-weight: bold; font-size: larger; color: steelblue;')
+            input#indicationfocused(type='checkbox')
             span.lever
             | Indication Focused
           //  
@@ -41,10 +41,39 @@ html
               span.lever
               | Pharmacogenetics Focused
       .row(style='margin-top: 2rem;')
-        a.col.waves-effect.waves-light.btn
+        a#search.col.waves-effect.waves-light.btn
           | Search
           i.material-icons.right search
     // Compiled and minified JavaScript
     script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
+    script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
     script.
       M.AutoInit();
+    script.
+      var xmlReq = new XMLHttpRequest();
+      var url = "data/data.json";
+      xmlReq.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+      console.log('Data loaded with success!');
+      }
+      };
+      xmlReq.open("GET", url, true);
+      xmlReq.send();
+    script.
+      $("#search").click(function(){
+        let beforeJson = xmlReq.responseText;
+        // console.log(beforeJson);
+        let afterJson = JSON.parse(beforeJson);
+        // console.log(afterJson);
+        let squeezyJson = afterJson[0].retrospective;
+        // console.log(squeezyJson);
+        if ($('retrospective').prop("checked", true)) {
+          console.log('Retrospective is checked');  
+        }
+        if ($('wardfocused').prop("checked", true)) {
+          console.log('Wardfocused is checked');  
+        }
+        if ($('indicationfocused').prop("checked", true)) {
+          console.log('Indicationfocused is checked');  
+        }
+      });
