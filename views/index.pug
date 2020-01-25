@@ -50,30 +50,102 @@ html
     script.
       M.AutoInit();
     script.
-      var xmlReq = new XMLHttpRequest();
+      var dataReq = new XMLHttpRequest();
       var url = "data/data.json";
-      xmlReq.onreadystatechange = function() {
+      dataReq.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
       console.log('Data loaded with success!');
+      } else {
+      console.log('Data was not loaded');  
       }
       };
-      xmlReq.open("GET", url, true);
-      xmlReq.send();
+      dataReq.open("GET", url, true);
+      dataReq.send();
+    //
+      script.
+        var filterReq = new XMLHttpRequest();
+        var url = "data/filter.json";
+        filterReq.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        console.log('Filter loaded with success!');
+        } else {
+        console.log('Filter was not loaded');  
+        }
+        };
+        filterReq.open("GET", url, true);
+        filterReq.send();
     script.
-      $("#search").click(function(){
-        let beforeJson = xmlReq.responseText;
-        // console.log(beforeJson);
-        let afterJson = JSON.parse(beforeJson);
-        // console.log(afterJson);
-        let squeezyJson = afterJson[0].retrospective;
-        // console.log(squeezyJson);
-        if ($('retrospective').prop("checked", true)) {
-          console.log('Retrospective is checked');  
-        }
-        if ($('wardfocused').prop("checked", true)) {
-          console.log('Wardfocused is checked');  
-        }
-        if ($('indicationfocused').prop("checked", true)) {
-          console.log('Indicationfocused is checked');  
-        }
+      let filterArr = [false, false, false];
+      $( "#retrospective" ).click(function() {
+      if (filterArr[0] === false) {
+      filterArr[0] = true;
+      } else {
+      filterArr[0] = false;
+      }
       });
+      $( "#wardfocused" ).click(function() {
+      if (filterArr[1] === false) {
+      filterArr[1] = true;
+      } else {
+      filterArr[1] = false;
+      }
+      });
+      $( "#indicationfocused" ).click(function() {
+      if (filterArr[2] === false) {
+      filterArr[2] = true;
+      } else {
+      filterArr[2] = false;
+      }
+      });
+      let data;
+      var searchObj;
+      $("#search").click(function() {
+      let data = JSON.parse(dataReq.responseText);
+      console.log(data);
+      var searchObj;
+      if (filterArr[0] === true) {
+      searchObj[retrospective] = true;
+      }
+      if (filterArr[1] === true) {
+      searchObj[ward_focused] = true;
+      }
+      if (filterArr[2] === true) {
+      searchObj[indication_focused] = true;
+      }
+      console.log(searchObj);
+      });
+    script.
+      /**
+      * Filters an array of objects by custom predicates.
+      *
+      * @param  {Array}  array: the array to filter
+      * @param  {Object} filters: an object with the filter criteria
+      * @return {Array}
+      */
+      function filterArray(array, filters) {
+        const filterKeys = Object.keys(filters);
+        return array.filter(item => {
+            // validates all filter criteria
+            return filterKeys.every(key => {
+                // ignores non-function predicates
+                if (typeof filters[key] !== 'function') return true;
+                return filters[key](item[key]);
+            });
+        });
+      }
+
+      const products = [
+        { name: 'A', color: 'Blue', size: 50, locations: ['USA', 'Europe'], details: { length: 20, width: 70 } },
+        { name: 'B', color: 'Blue', size: 60, locations: [], details: { length: 20, width: 70 } },
+        { name: 'C', color: 'Black', size: 70, locations: ['Japan'], details: { length: 20, width: 71 } },
+        { name: 'D', color: 'Green', size: 50, locations: ['USA'], details: { length: 20, width: 71 } },
+      ];
+
+      const filters = {
+          size: [50, 70],
+          color: ['blue', 'black'],
+          locations: ['JAPAN', 'USA'],
+          // details: details.length < 30 && details.width >= 70
+      };
+
+      const filtered = filterArray(products, filters);
