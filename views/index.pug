@@ -10,8 +10,15 @@ html
   body
     .container
       form.row(action='#')
+        .input-field.col.s12.l4(style='margin-top: 2rem; margin-left: 1rem;')
+          select#activeSubstance
+            option(value='', disabled='', selected='') Active Substance Focused
+            option(value='1') Amikacin sulfate
+            option(value='2') Ampicillin sodium / Sulbactam sodium
+            option(value='3') Cefoperazone sodium / Sulbactam sodium
+          label Optional
         .switch
-          label#rlabel.col.s12(style='margin-top: 1rem; font-weight: bold; font-size: larger; color: steelblue;')
+          label#rlabel.col.s12(style='font-weight: bold; font-size: larger; color: steelblue;')
             input#retrospective(type='checkbox')
             span.lever
             | Retrospective
@@ -55,8 +62,6 @@ html
       dataReq.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
       console.log('Data loaded with success!');
-      } else {
-      console.log('Data was not loaded');  
       }
       };
       dataReq.open("GET", url, true);
@@ -76,6 +81,9 @@ html
         filterReq.send();
     script.
       let filterArr = [false, false, false];
+      let myData;
+      var searchObj = new Object();
+      let actSubs;
       $( "#retrospective" ).click(function() {
       if (filterArr[0] === false) {
       filterArr[0] = true;
@@ -97,55 +105,127 @@ html
       filterArr[2] = false;
       }
       });
-      let data;
-      var searchObj;
       $("#search").click(function() {
-      let data = JSON.parse(dataReq.responseText);
-      console.log(data);
-      var searchObj;
+      let actSubs = $("#activeSubstance :selected").text();
+      console.log(actSubs);
+      searchObj = {
+      title: "",
+      url: "",
+      retrospective: [2],
+      ward_focused: [2],
+      indication_focused: [2],
+      };
+      let myData = JSON.parse(dataReq.responseText);
+      console.log(myData);
       if (filterArr[0] === true) {
-      searchObj[retrospective] = true;
+      searchObj['retrospective'] = [1];
       }
       if (filterArr[1] === true) {
-      searchObj[ward_focused] = true;
+      searchObj['ward_focused'] = [1];
       }
       if (filterArr[2] === true) {
-      searchObj[indication_focused] = true;
+      searchObj['indication_focused'] = [1];
       }
-      console.log(searchObj);
-      });
-    script.
+      // console.log(searchObj);
+
+      // filterPlainFunction starts
+      // ignores case-sensitive
+      const getValue = value => (typeof value === 'string' ? value.toUpperCase() : value);
+
       /**
-      * Filters an array of objects by custom predicates.
+      * Filters an array of objects (one level-depth) with multiple criteria.
       *
       * @param  {Array}  array: the array to filter
       * @param  {Object} filters: an object with the filter criteria
       * @return {Array}
       */
-      function filterArray(array, filters) {
-        const filterKeys = Object.keys(filters);
-        return array.filter(item => {
-            // validates all filter criteria
-            return filterKeys.every(key => {
-                // ignores non-function predicates
-                if (typeof filters[key] !== 'function') return true;
-                return filters[key](item[key]);
-            });
-        });
+      function filterPlainArray(array, filters) {
+      const filterKeys = Object.keys(filters);
+      return array.filter(item => {
+      // validates all filter criteria
+      return filterKeys.every(key => {
+      // ignores an empty filter
+      if (!filters[key].length) return true;
+      return filters[key].find(filter => getValue(filter) === getValue(item[key]));
+      });
+      });
+      }
+      
+      let result = filterPlainArray(myData, searchObj);
+      console.log(result);
+      });
+    script.
+      // ignores case-sensitive
+      const getValue = value => (typeof value === 'string' ? value.toUpperCase() : value);
+
+      /**
+      * Filters an array of objects (one level-depth) with multiple criteria.
+      *
+      * @param  {Array}  array: the array to filter
+      * @param  {Object} filters: an object with the filter criteria
+      * @return {Array}
+      */
+      function filterPlainArray(array, filters) {
+      const filterKeys = Object.keys(filters);
+      return array.filter(item => {
+      // validates all filter criteria
+      return filterKeys.every(key => {
+      // ignores an empty filter
+      if (!filters[key].length) return true;
+      return filters[key].find(filter => getValue(filter) === getValue(item[key]));
+      });
+      });
       }
 
       const products = [
-        { name: 'A', color: 'Blue', size: 50, locations: ['USA', 'Europe'], details: { length: 20, width: 70 } },
-        { name: 'B', color: 'Blue', size: 60, locations: [], details: { length: 20, width: 70 } },
-        { name: 'C', color: 'Black', size: 70, locations: ['Japan'], details: { length: 20, width: 71 } },
-        { name: 'D', color: 'Green', size: 50, locations: ['USA'], details: { length: 20, width: 71 } },
-      ];
+      {
+      title: "Real-world evidence of high-cost drugs for metastatic melanoma: effectiveness, compliance to clinical practice guidelines and economic evaluation",
+      url: "https://ejhp.bmj.com/content/26/Suppl_1/A5.1",
+      retrospective: 1,
+      ward_focused: 2,
+      indication_focused: 1
+      },
+      {
+      title: "Real-world safety and tolerability of the recently commercialised palbociclib",
+      url: "https://ejhp.bmj.com/content/26/Suppl_1/A223.2",
+      retrospective: 2,
+      ward_focused: 1,
+      indication_focused: 2
+      },
+      {
+      title: "Cost-effectiveness of morphine versus fentanyl in managing ventilated neonates with respiratory distress syndrome in the intensive care setting",
+      url: "https://ejhp.bmj.com/content/26/Suppl_1/A7.3",
+      retrospective: 1,
+      ward_focused: 1,
+      indication_focused: 1
+      },
+      {
+      title: "Chemical risk assessement in a quality control laboratory by a tool using activity analysis",
+      url: "https://ejhp.bmj.com/content/26/Suppl_1/A9.2",
+      retrospective: 2,
+      ward_focused: 2,
+      indication_focused: 2
+      }
+      ]
 
       const filters = {
-          size: [50, 70],
-          color: ['blue', 'black'],
-          locations: ['JAPAN', 'USA'],
-          // details: details.length < 30 && details.width >= 70
+      title: ['Chemical risk assessement in a quality control laboratory by a tool using activity analysis'],
+      // retrospective: [2],
+      // ward_focused: [1],
       };
 
-      const filtered = filterArray(products, filters);
+
+      const filtered = filterPlainArray(products, filters);
+
+      const urun = [
+      { name: 'A', color: 'Blue', size: 50 },
+      { name: 'B', color: 'Blue', size: 60 },
+      { name: 'C', color: 'Black', size: 70 },
+      { name: 'D', color: 'Green', size: 50 },
+      ];
+
+      const filtre = {
+      size: [70],
+      };
+
+      const filtrelenmis = filterPlainArray(urun, filtre);
