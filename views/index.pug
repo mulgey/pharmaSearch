@@ -62,10 +62,16 @@ html
               input(type='checkbox')
               span.lever
               | Pharmacogenetics Focused
+
       .row(style='margin-top: 2rem;')
         a#search.col.waves-effect.waves-light.btn
           | Search
           i.material-icons.right search
+    .container
+      #resultRow.row(style='margin-top: 2rem; display: none;')
+        #resultText.col.s12.p(style= 'font-size: large;')
+        h3.col.s12(style='margin-top: 1rem; font-weight: bold; color: #900C3F;') Results
+        ol#resultList
     // Compiled and minified JavaScript
     script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
     script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
@@ -100,6 +106,7 @@ html
       var searchObj = new Object();
       let actSubs;
       let result;
+      let string;
       $( "#retrospective" ).click(function() {
       if (filterArr[0] === false) {
       filterArr[0] = true;
@@ -121,9 +128,11 @@ html
       filterArr[2] = false;
       }
       });
+
       $("#search").click(function() {
       let actSubs = $("#activeSubstance :selected").text();
       console.log(actSubs);
+      $('#resultList').text('');
       searchObj = {
       title: "",
       url: "",
@@ -169,7 +178,21 @@ html
       
       result = filterPlainArray(myData, searchObj);
       console.log(result);
+      let resultLength = result.length;
+      $("#resultText").html(`We have found ${resultLength} result(s)`);
+      $('#resultRow').attr('style','display: default;');
+      for (let key in result) {
+      let value = result[key];
+      console.log(value.title);
+      }
+      result.forEach(function(item) {
+      var li = document.createElement("li");
+      var text = `<a href='${item.url}' target='_blank'> ${item.title}</a>`;
+      li.innerHTML = text;
+      document.getElementById("resultList").appendChild(li);
       });
+      });
+
     script.
       // ignores case-sensitive
       const getValue = value => (typeof value === 'string' ? value.toUpperCase() : value);
