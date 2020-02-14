@@ -4,34 +4,39 @@
       "url": "https://ejhp.bmj.com/content/26/Suppl_1/A5.1",
       "retrospective": 1,
       "ward_focused": 2,
-      "indication_focused": 1
+      "indication_focused": 1,
+      "active_substance": 2
     },
     {
       "title": "Real-world safety and tolerability of the recently commercialised palbociclib",
       "url": "https://ejhp.bmj.com/content/26/Suppl_1/A223.2",
       "retrospective": 2,
       "ward_focused": 1,
-      "indication_focused": 2
+      "indication_focused": 2,
+      "active_substance": "Palbociclib"
     },
     {
       "title": "Cost-effectiveness of morphine versus fentanyl in managing ventilated neonates with respiratory distress syndrome in the intensive care setting",
       "url": "https://ejhp.bmj.com/content/26/Suppl_1/A7.3",
       "retrospective": 1,
       "ward_focused": 1,
-      "indication_focused": 1
+      "indication_focused": 1,
+      "active_substance": "Morphine"
     },
     {
       "title": "Chemical risk assessement in a quality control laboratory by a tool using activity analysis",
       "url": "https://ejhp.bmj.com/content/26/Suppl_1/A9.2",
       "retrospective": 2,
       "ward_focused": 2,
-      "indication_focused": 2
+      "indication_focused": 2,
+      "active_substance": 2
     },
     {
       "title": "The economic burden of metastatic breast cancer in Spain",
       "url": "https://ejhp.bmj.com/content/27/1/19",
       "retrospective": 1,
       "ward_focused": 1,
-      "indication_focused": 1
+      "indication_focused": 1,
+      "active_substance": 2
     }
   ]
