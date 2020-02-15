@@ -1,27 +1,28 @@
-function filterArray(array, filters) {
-    const filterKeys = Object.keys(filters);
-    return array.filter(item => {
-        // validates all filter criteria
-        return filterKeys.every(key => {
-            // ignores non-function predicates
-            if (typeof filters[key] !== 'function') return true;
-            return filters[key](item[key]);
-        });
-    });
+// CLEAR THE SEARCH OBJECT / ADD LIST PARAMETERS (ACTSUBS) FOR NEW SEARCH
+searchObj = {
+title: "",
+filters: {
+    url: "",
+    retrospective: [2],
+    ward_focused: [2],
+    indication_focused: [2],
+    active_substance: [actSubs],
 }
-
-const products = [
-    { name: 'A', color: 'Blue', size: 50, locations: ['USA', 'Europe'], details: { length: 20, width: 70 } },
-    { name: 'B', color: 'Blue', size: 60, locations: [], details: { length: 20, width: 70 } },
-    { name: 'C', color: 'Black', size: 70, locations: ['Japan'], details: { length: 20, width: 71 } },
-    { name: 'D', color: 'Green', size: 50, locations: ['USA'], details: { length: 20, width: 71 } },
-];
-
-const filters = {
-    size: size => size === 50 || size === 70,
-    color: color => ['blue', 'black'].includes(color.toLowerCase()),
-    locations: locations => locations.find(x => ['JAPAN', 'USA'].includes(x.toUpperCase())),
-    details: details => details.length < 30 && details.width >= 70,
 };
-
-const filtered = filterArray(products, filters);
+// DESTROY ACTSUBS IF NONE IS SELECETED
+if (actSubs === "None") {
+searchObj['filters']['active_substance'] = "";
+}
+// MIRROR THE FULL DATA ON THE CONSOLE
+let myData = JSON.parse(dataReq.responseText);
+console.log(myData);
+// SET THE NEW SEARCH DATA ACCORDING TO THE FILTER DATA
+if (filterArr[0] === true) {
+searchObj['filters']['retrospective'] = [1];
+}
+if (filterArr[1] === true) {
+searchObj['filters']['ward_focused'] = [1];
+}
+if (filterArr[2] === true) {
+searchObj['filters']['indication_focused'] = [1];
+}
