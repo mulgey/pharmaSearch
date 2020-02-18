@@ -1,8 +1,8 @@
 [
     {
       "title": "Real-world evidence of high-cost drugs for metastatic melanoma: effectiveness, compliance to clinical practice guidelines and economic evaluation",
+      "url": "https://ejhp.bmj.com/content/26/Suppl_1/A5.1",
       "filters": {
-        "url": "https://ejhp.bmj.com/content/26/Suppl_1/A5.1",
         "retrospective": 1,
         "ward_focused": 2,
         "indication_focused": 1,
@@ -11,8 +11,8 @@
     },
     {
       "title": "Real-world safety and tolerability of the recently commercialised palbociclib",
+      "url": "https://ejhp.bmj.com/content/26/Suppl_1/A223.2",
       "filters": {
-        "url": "https://ejhp.bmj.com/content/26/Suppl_1/A223.2",
         "retrospective": 2,
         "ward_focused": 1,
         "indication_focused": 2,
@@ -21,8 +21,8 @@
     },
     {
       "title": "Cost-effectiveness of morphine versus fentanyl in managing ventilated neonates with respiratory distress syndrome in the intensive care setting",
+      "url": "https://ejhp.bmj.com/content/26/Suppl_1/A7.3",
       "filters": {
-        "url": "https://ejhp.bmj.com/content/26/Suppl_1/A7.3",
         "retrospective": 1,
         "ward_focused": 1,
         "indication_focused": 1,
@@ -31,8 +31,8 @@
     },
     {
       "title": "Chemical risk assessement in a quality control laboratory by a tool using activity analysis",
+      "url": "https://ejhp.bmj.com/content/26/Suppl_1/A9.2",
       "filters": {
-        "url": "https://ejhp.bmj.com/content/26/Suppl_1/A9.2",
         "retrospective": 2,
         "ward_focused": 2,
         "indication_focused": 2,
@@ -41,8 +41,8 @@
     },
     {
       "title": "The economic burden of metastatic breast cancer in Spain",
+      "url": "https://ejhp.bmj.com/content/27/1/19",
       "filters":{
-        "url": "https://ejhp.bmj.com/content/27/1/19",
         "retrospective": 1,
         "ward_focused": 1,
         "indication_focused": 1,

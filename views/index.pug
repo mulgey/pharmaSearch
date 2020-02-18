@@ -5,17 +5,19 @@ html
     link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
     // Compiled and minified CSS
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css')
+    // My very own great CSS
+    link(rel='stylesheet', href='css/style.css')
     // Let browser know website is optimized for mobile
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
   body
     .container
       form.row(action='#')
         .input-field.col.s12.l4(style='margin-top: 2rem; margin-left: 1rem;')
-          select#activeSubstance
-            option(value='', selected='') None
+          select(multiple='')#activeSubstance
+            option(value='', disabled='') None
             option(value='1') Palbociclib
             option(value='2') Morphine
-            option(value='2') Fentanyl
+            option(value='3') Fentanyl
           label Active Substance Focused
         .switch
           label#rlabel.col.s12(style='font-weight: bold; font-size: larger; color: steelblue;')
@@ -103,19 +105,21 @@ html
       }
       });
 
+      // WHEN YOU FIRE THE SEARCH
       $("#search").click(function() {
       // ERASE THE PREV RESULT TEXT
       $('#resultList').text('');
       let actSubs = $("#activeSubstance :selected").text();
+      actSubs = actSubs.match(/[A-Z][a-z]+/g);
       // CLEAR THE SEARCH OBJECT / ADD LIST PARAMETERS (ACTSUBS) FOR NEW SEARCH
       searchObj = {
         retrospective: [2],
         ward_focused: [2],
         indication_focused: [2],
-        active_substance: [actSubs],
+        active_substance: actSubs,
       };
       // DESTROY ACTSUBS IF NONE IS SELECETED
-      if (actSubs === "None") {
+      if (actSubs === null) {
       searchObj['active_substance'] = "";
       }
       // MIRROR THE FULL DATA ON THE CONSOLE
@@ -157,18 +161,19 @@ html
       });
 
     script.
+      /*
       const secilenFiltreler = {
         retrospective: [1],
         ward_focused: [1],
         indication_focused: [1],
-        active_substance: ["Morphine"]
+        active_substance: [1]
       };
 
       const nesneler = [
         {
           title: "Cost-effectiveness of morphine versus fentanyl in managing ventilated neonates with respiratory distress syndrome in the intensive care setting",
+          url: "https://ejhp.bmj.com/content/26/Suppl_1/A7.3",
           filters: {
-            url: "https://ejhp.bmj.com/content/26/Suppl_1/A7.3",
             retrospective: 1,
             ward_focused: 1,
             indication_focused: 1,
@@ -177,8 +182,8 @@ html
         },
         {
           title: "Chemical risk assessement in a quality control laboratory by a tool using activity analysis",
+          url: "https://ejhp.bmj.com/content/26/Suppl_1/A9.2",
           filters: {
-            url: "https://ejhp.bmj.com/content/26/Suppl_1/A9.2",
             retrospective: 2,
             ward_focused: 2,
             indication_focused: 2,
@@ -187,8 +192,8 @@ html
         },
         {
           title: "The economic burden of metastatic breast cancer in Spain",
+          url: "https://ejhp.bmj.com/content/27/1/19",
           filters: {
-            url: "https://ejhp.bmj.com/content/27/1/19",
             retrospective: 1,
             ward_focused: 1,
             indication_focused: 1,
@@ -197,8 +202,8 @@ html
         },
         {
           title: "Real-world evidence of high-cost drugs for metastatic melanoma: effectiveness, compliance to clinical practice guidelines and economic evaluation",
+          url: "https://ejhp.bmj.com/content/26/Suppl_1/A5.1",
           filters: {
-            url: "https://ejhp.bmj.com/content/26/Suppl_1/A5.1",
             retrospective: 1,
             ward_focused: 2,
             indication_focused: 1,
@@ -207,8 +212,8 @@ html
         },
         {
           title: "Real-world safety and tolerability of the recently commercialised palbociclib",
+          url: "https://ejhp.bmj.com/content/26/Suppl_1/A223.2",
           filters: {
-            url: "https://ejhp.bmj.com/content/26/Suppl_1/A223.2",
             retrospective: 2,
             ward_focused: 1,
             indication_focused: 2,
@@ -223,3 +228,45 @@ html
           return filtreOku.every(val => objFilters.includes(val));
       })
       console.log(cikti);
+      */
+    script.
+      const selectedFilters = {
+          color: [],
+          type: [],
+          size: ["L"]
+      };
+
+      const items = [
+      {
+        name: "Item 1",
+        filters: {
+            color: ["Red", "Blue", "Black"],
+            type: ["Shirt"],
+            size: ["M"]
+        }
+      },
+      {
+        name: "Item 2",
+        filters: {
+            color: ["Red"],
+            type: ["Pants"],
+            size: ["M"]
+        }
+      },
+      {
+        name: "Item 3",
+        filters: {
+            color: ["Red"],
+            type: ["Pants"],
+            size: ["L"]
+        }
+      }
+      ];
+
+      const filterArr01 = Object.values(selectedFilters).flat();
+
+      const output = items.filter(({filters}) => {
+          const objFilters = Object.values(filters).flat();
+          return filterArr01.every(val => objFilters.includes(val));
+      })
+      console.log(output);
