@@ -19,19 +19,21 @@ html
             option(value='2') Morphine
             option(value='3') Fentanyl
           label Active Substance Focused
+        .input-field.col.s12.l4(style='margin-top: 2rem; margin-left: 1rem;')
+          select(multiple='')#ward
+            option(value='', disabled='') None
+            option(value='1') Intensive Care
+            option(value='2') Oncology
+          label Active Substance Focused
         .switch
-          label#rlabel.col.s12(style='font-weight: bold; font-size: larger; color: steelblue;')
+          label#rlabel.col.s12.l4(style='margin-top: 1rem; font-weight: bold; font-size: larger; color: steelblue;')
             input#retrospective(type='checkbox')
             span.lever
             | Retrospective
-          label#wlabel.col.s12(style='margin-top: 1rem; font-weight: bold; font-size: larger; color: steelblue;')
+          label#wlabel.col.s12.l4(style='margin-top: 1rem; font-weight: bold; font-size: larger; color: steelblue;')
             input#wardfocused(type='checkbox')
             span.lever
-            | Ward Focused
-          label#ilabel.col.s12(style='margin-top: 1rem; font-weight: bold; font-size: larger; color: steelblue;')
-            input#indicationfocused(type='checkbox')
-            span.lever
-            | Indication Focused
+            | Cost Saving
           //  
             label.col.s12(style='margin-top: 1rem; font-weight: bold; font-size: larger; color: steelblue;')
               input(type='checkbox')
@@ -77,7 +79,7 @@ html
       dataReq.send();
     script.
       // SET EMPTY FILTER ARRAY
-      let filterArr = [false, false, false, ""];
+      let filterArr = [false, false];
       let myData;
       var searchObj = new Object();
       let result;
@@ -97,13 +99,6 @@ html
       filterArr[1] = false;
       }
       });
-      $( "#indicationfocused" ).click(function() {
-      if (filterArr[2] === false) {
-      filterArr[2] = true;
-      } else {
-      filterArr[2] = false;
-      }
-      });
 
       // WHEN YOU FIRE THE SEARCH
       $("#search").click(function() {
@@ -111,29 +106,36 @@ html
       $('#resultList').text('');
       let actSubs = $("#activeSubstance :selected").text();
       actSubs = actSubs.match(/[A-Z][a-z]+/g);
+      let ward = $("#ward :selected").text();
+      ward = ward.match(/[A-Z][a-z]+/g);
       // CLEAR THE SEARCH OBJECT / ADD LIST PARAMETERS (ACTSUBS) FOR NEW SEARCH
       searchObj = {
-        retrospective: [2],
-        ward_focused: [2],
-        indication_focused: [2],
         active_substance: actSubs,
+        ward_focused: ward,
+        others: []
       };
       // DESTROY ACTSUBS IF NONE IS SELECETED
       if (actSubs === null) {
-      searchObj['active_substance'] = "";
+      searchObj.active_substance = [];
+      }
+      // DESTROY WARD IF NONE IS SELECETED
+      if (ward === null) {
+      searchObj.ward_focused = [];
       }
       // MIRROR THE FULL DATA ON THE CONSOLE
       let myData = JSON.parse(dataReq.responseText);
       console.log(myData);
       // SET THE NEW SEARCH DATA ACCORDING TO THE FILTER DATA
       if (filterArr[0] === true) {
-      searchObj['retrospective'] = [1];
+      searchObj[others] = "retrospective";
+      } else {
+      searchObj[others] = "not-retrospective";
       }
+
       if (filterArr[1] === true) {
-      searchObj['ward_focused'] = [1];
-      }
-      if (filterArr[2] === true) {
-      searchObj['indication_focused'] = [1];
+      searchObj.others.push = "costSaving";
+      } else {
+      searchObj.others.push = "not-costSaving";  
       }
       
       const filterEngine = Object.values(searchObj).flat();
@@ -231,10 +233,9 @@ html
       */
     script.
       const selectedFilters = {
-          color: [],
-          type: [],
-          size: ["2"],
-          activesubstance: ["false"]
+          active_substance: ["Fentanyl"],
+          ward_focused: [],
+          others: []
       };
 
       const items = [
@@ -242,30 +243,27 @@ html
         name: "Cost-effectiveness of morphine versus fentanyl in managing ventilated neonates with respiratory distress syndrome in the intensive care setting",
         url: "https://ejhp.bmj.com/content/26/Suppl_1/A7.3",
         filters: {
-            color: ["Red", "Blue", "Black"],
-            type: ["Shirt"],
-            size: ["2"],
-            activesubstance: ["Morphine", "Fentanyl"]
+          active_substance: ["Fentanyl", "Morphine"],
+          ward_focused: ["Intensive Care"],
+          others: ["retrospective", "costSaving"]
         }
       },
       {
         name: "Chemical risk assessement in a quality control laboratory by a tool using activity analysis",
         url: "https://ejhp.bmj.com/content/26/Suppl_1/A9.2",
         filters: {
-            color: ["Red"],
-            type: ["Pants"],
-            size: ["2"],
-            activesubstance: ["false"]
+          active_substance: [],
+          ward_focused: [],
+          others: ["retrospective"]
         }
       },
       {
         name: "The economic burden of metastatic breast cancer in Spain",
         url: "https://ejhp.bmj.com/content/27/1/19",
         filters: {
-            color: ["Red"],
-            type: ["Pants"],
-            size: ["3"],
-            activesubstance: ["false"]
+        active_substance: [],
+        ward_focused: ["surgery"],
+        others: ["costSaving"]
         }
       }
       ];
