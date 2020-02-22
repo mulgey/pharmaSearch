@@ -24,7 +24,7 @@ html
             option(value='', disabled='') None
             option(value='1') Intensive Care
             option(value='2') Oncology
-          label Active Substance Focused
+          label Ward Focused
         .switch
           label#rlabel.col.s12.l4(style='margin-top: 1rem; font-weight: bold; font-size: larger; color: steelblue;')
             input#retrospective(type='checkbox')
@@ -107,35 +107,40 @@ html
       let actSubs = $("#activeSubstance :selected").text();
       actSubs = actSubs.match(/[A-Z][a-z]+/g);
       let ward = $("#ward :selected").text();
-      ward = ward.match(/[A-Z][a-z]+/g);
+      ward = ward.split(/(.*[a-z])(?=[A-Z])/);
+      if (ward.length > 1) {
+      ward.shift();
+      }
+       
       // CLEAR THE SEARCH OBJECT / ADD LIST PARAMETERS (ACTSUBS) FOR NEW SEARCH
       searchObj = {
         active_substance: actSubs,
         ward_focused: ward,
-        others: []
+        retrospective: [],
+        costSaving: []
       };
       // DESTROY ACTSUBS IF NONE IS SELECETED
       if (actSubs === null) {
-      searchObj.active_substance = [];
+      searchObj['active_substance'] = [];
       }
       // DESTROY WARD IF NONE IS SELECETED
       if (ward === null) {
-      searchObj.ward_focused = [];
+      searchObj['ward_focused'] = [];
       }
       // MIRROR THE FULL DATA ON THE CONSOLE
       let myData = JSON.parse(dataReq.responseText);
       console.log(myData);
       // SET THE NEW SEARCH DATA ACCORDING TO THE FILTER DATA
       if (filterArr[0] === true) {
-      searchObj[others] = "retrospective";
+      searchObj.retrospective = "retrospective";
       } else {
-      searchObj[others] = "not-retrospective";
+      searchObj.retrospective = "notRetrospective";
       }
 
       if (filterArr[1] === true) {
-      searchObj.others.push = "costSaving";
+      searchObj.costSaving = "costSaving";
       } else {
-      searchObj.others.push = "not-costSaving";  
+      searchObj.costSaving = "notCostSaving";  
       }
       
       const filterEngine = Object.values(searchObj).flat();
@@ -143,12 +148,13 @@ html
       const result = myData.filter(({filters}) => {
         const objFilters = Object.values(filters).flat();
         return filterEngine.every(val => objFilters.includes(val));
-      })
+      });
       console.log(result);
-      /*
+      
       let resultLength = result.length;
       $("#resultText").html(`We have found ${resultLength} result(s)`);
       $('#resultRow').attr('style','display: default;');
+      
       for (let key in result) {
       let value = result[key];
       console.log(value.title);
@@ -159,7 +165,6 @@ html
       li.innerHTML = text;
       document.getElementById("resultList").appendChild(li);
       });
-      */
       });
 
     script.

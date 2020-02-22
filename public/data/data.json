@@ -5,7 +5,8 @@
       "filters": {
         "active_substance": [],
         "ward_focused": [],
-        "others": ["costSaving"]
+        "retrospective": ["notRetrospective"],
+        "costSaving": ["costSaving"]
       }
     },
     {
@@ -13,8 +14,9 @@
       "url": "https://ejhp.bmj.com/content/26/Suppl_1/A223.2",
       "filters": {
         "active_substance": ["Palbociclib"],
-        "ward_focused": [],
-        "others": ["retrospective"]
+        "ward_focused": ["Intensive Care", "Oncology"],
+        "retrospective": ["retrospective"],
+        "costSaving": ["notCostSaving"]
       }
     },
     {
@@ -23,7 +25,8 @@
       "filters": {
         "active_substance": ["Fentanyl", "Morphine"],
         "ward_focused": ["Intensive Care"],
-        "others": ["retrospective", "costSaving"]
+        "retrospective": ["retrospective"],
+        "costSaving": ["costSaving"]
       }
     },
     {
@@ -32,7 +35,8 @@
       "filters": {
         "active_substance": [],
         "ward_focused": [],
-        "others": []
+        "retrospective": ["notRetrospective"],
+        "costSaving": ["notCostSaving"]
       }
     },
     {
@@ -41,7 +45,8 @@
       "filters":{
         "active_substance": [],
         "ward_focused": ["Oncology"],
-        "others": ["retrospective"]
+        "retrospective": ["retrospective"],
+        "costSaving": ["notCostSaving"]
       }
     }
   ]
