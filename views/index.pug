@@ -102,10 +102,14 @@ html
 
       // WHEN YOU FIRE THE SEARCH
       $("#search").click(function() {
+      console.log($("#activeSubstance :selected").text());
+      console.log($("#ward :selected").text());
       // ERASE THE PREV RESULT TEXT
       $('#resultList').text('');
+      // PREPARE THE TEXTs FOR THE SEARCHOBJECT
       let actSubs = $("#activeSubstance :selected").text();
       actSubs = actSubs.match(/[A-Z][a-z]+/g);
+      // SOLUTION FOR THE MULTIPLE WORD RESULTS
       let ward = $("#ward :selected").text();
       ward = ward.split(/(.*[a-z])(?=[A-Z])/);
       if (ward.length > 1) {
@@ -122,10 +126,16 @@ html
       // DESTROY ACTSUBS IF NONE IS SELECETED
       if (actSubs === null) {
       searchObj['active_substance'] = [];
+      console.log('actSubs is null');
+      } else {
+      console.log('actSubs is not null');
       }
       // DESTROY WARD IF NONE IS SELECETED
       if (ward === null) {
       searchObj['ward_focused'] = [];
+      console.log('ward is null');
+      } else {
+      console.log('ward is not null');
       }
       // MIRROR THE FULL DATA ON THE CONSOLE
       let myData = JSON.parse(dataReq.responseText);
