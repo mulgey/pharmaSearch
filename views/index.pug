@@ -102,40 +102,49 @@ html
 
       // WHEN YOU FIRE THE SEARCH
       $("#search").click(function() {
-      console.log($("#activeSubstance :selected").text());
-      console.log($("#ward :selected").text());
       // ERASE THE PREV RESULT TEXT
       $('#resultList').text('');
-      // PREPARE THE TEXTs FOR THE SEARCHOBJECT
-      let actSubs = $("#activeSubstance :selected").text();
-      actSubs = actSubs.match(/[A-Z][a-z]+/g);
-      // SOLUTION FOR THE MULTIPLE WORD RESULTS
+      // GET THE LIST TEXTs
       let ward = $("#ward :selected").text();
+      let actSubs = $("#ward :selected").text();
+      // IF IT'S EMPTY, SET IT AS "EMPTY" (1)
+      if (ward === "") {
+      ward = "empty"
+      } else {
+      // IF THERE'S SOMETHING APPLY THE SPECAIL METHOD FOR THE POTENTIAL MULTI-WORDS (2)
       ward = ward.split(/(.*[a-z])(?=[A-Z])/);
+      // CUT THE FIRST EMPTY VALUE ONLY IF THERE'S MORE THAN ONE WORD (3)
       if (ward.length > 1) {
       ward.shift();
       }
-       
-      // CLEAR THE SEARCH OBJECT / ADD LIST PARAMETERS (ACTSUBS) FOR NEW SEARCH
+      }
+
+      // (1)
+      if (actSubs === "") {
+      actSubs = "empty"
+      } else {
+      // (2)
+      actSubs = actSubs.split(/(.*[a-z])(?=[A-Z])/);
+      // (3)
+      if (actSubs.length > 1) {
+      actSubs.shift();
+      }
+      }
+      
+
+      // CLEAR THE SEARCH OBJECT / ADD LIST PARAMETERS (ACTSUBS-WARD) FOR THE NEW SEARCH
       searchObj = {
         active_substance: actSubs,
         ward_focused: ward,
         retrospective: [],
         costSaving: []
       };
-      // DESTROY ACTSUBS IF NONE IS SELECETED
-      if (actSubs === null) {
+      // IF VALUES ARE EMPTY, DESTROY THEM
+      if (actSubs === "empty") {
       searchObj['active_substance'] = [];
-      console.log('actSubs is null');
-      } else {
-      console.log('actSubs is not null');
       }
-      // DESTROY WARD IF NONE IS SELECETED
-      if (ward === null) {
+      if (ward === "empty") {
       searchObj['ward_focused'] = [];
-      console.log('ward is null');
-      } else {
-      console.log('ward is not null');
       }
       // MIRROR THE FULL DATA ON THE CONSOLE
       let myData = JSON.parse(dataReq.responseText);
@@ -153,21 +162,22 @@ html
       searchObj.costSaving = "notCostSaving";  
       }
       
+      // LET THE CODE DO THE MAGIC
       const filterEngine = Object.values(searchObj).flat();
 
       const result = myData.filter(({filters}) => {
         const objFilters = Object.values(filters).flat();
         return filterEngine.every(val => objFilters.includes(val));
       });
-      console.log(result);
       
+      // TIME TO PRESENT THE INTRO
       let resultLength = result.length;
       $("#resultText").html(`We have found ${resultLength} result(s)`);
       $('#resultRow').attr('style','display: default;');
       
+      // TIME TO PRESENT THE LIST
       for (let key in result) {
       let value = result[key];
-      console.log(value.title);
       }
       result.forEach(function(item) {
       var li = document.createElement("li");
@@ -248,9 +258,10 @@ html
       */
     script.
       const selectedFilters = {
-          active_substance: ["Fentanyl"],
+          active_substance: [],
           ward_focused: [],
-          others: []
+          retrospective: [],
+          costSaving: ["costSaving"]
       };
 
       const items = [
@@ -260,7 +271,8 @@ html
         filters: {
           active_substance: ["Fentanyl", "Morphine"],
           ward_focused: ["Intensive Care"],
-          others: ["retrospective", "costSaving"]
+          retrospective: ["retrospective"],
+          costSaving: ["costSaving"]
         }
       },
       {
@@ -269,7 +281,8 @@ html
         filters: {
           active_substance: [],
           ward_focused: [],
-          others: ["retrospective"]
+          retrospective: ["retrospective"],
+          costSaving: []
         }
       },
       {
@@ -278,7 +291,8 @@ html
         filters: {
         active_substance: [],
         ward_focused: ["surgery"],
-        others: ["costSaving"]
+        retrospective: [],
+        costSaving: ["costSaving"]
         }
       }
       ];
