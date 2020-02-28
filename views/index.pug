@@ -15,15 +15,17 @@ html
         .input-field.col.s12.l4(style='margin-top: 2rem; margin-left: 1rem;')
           select(multiple='')#activeSubstance
             option(value='', disabled='') None
-            option(value='1') Palbociclib
-            option(value='2') Morphine
-            option(value='3') Fentanyl
+            option(value='Palbociclib') Palbociclib
+            option(value='Morphine') Morphine
+            option(value='Fentanyl') Fentanyl
+            option(value='Piperacillin - Tazobactam') Piperacillin - Tazobactam
           label Active Substance Focused
         .input-field.col.s12.l4(style='margin-top: 2rem; margin-left: 1rem;')
           select(multiple='')#ward
             option(value='', disabled='') None
-            option(value='1') Intensive Care
-            option(value='2') Oncology
+            option(value='Intensive Care') Intensive Care
+            option(value='Oncology') Oncology
+            option(value='Surgery') Surgery
           label Ward Focused
         .switch
           label#rlabel.col.s12.l4(style='margin-top: 1rem; font-weight: bold; font-size: larger; color: steelblue;')
@@ -34,24 +36,6 @@ html
             input#wardfocused(type='checkbox')
             span.lever
             | Cost Saving
-          //  
-            label.col.s12(style='margin-top: 1rem; font-weight: bold; font-size: larger; color: steelblue;')
-              input(type='checkbox')
-              span.lever
-              | Active Substance Focused
-            label.col.s12(style='margin-top: 1rem; font-weight: bold; font-size: larger; color: steelblue;')
-              input(type='checkbox')
-              span.lever
-              | Includes Economic Outcomes
-            label.col.s12(style='margin-top: 1rem; font-weight: bold; font-size: larger; color: steelblue;')
-              input(type='checkbox')
-              span.lever
-              | Requires Physician Collaboration
-            label.col.s12(style='margin-top: 1rem; font-weight: bold; font-size: larger; color: steelblue;')
-              input(type='checkbox')
-              span.lever
-              | Pharmacogenetics Focused
-
       .row(style='margin-top: 2rem;')
         a#search.col.waves-effect.waves-light.btn
           | Search
@@ -62,10 +46,12 @@ html
         h3.col.s12(style='margin-top: 1rem; font-weight: bold; color: #900C3F;') Results
         ol#resultList
     // Compiled and minified JavaScript
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
     script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
+    // FUNDEMENTALS
     script.
       M.AutoInit();
+      $('select').formSelect();
     script.
       // GET JSON DATA
       var dataReq = new XMLHttpRequest();
@@ -105,33 +91,18 @@ html
       // ERASE THE PREV RESULT TEXT
       $('#resultList').text('');
       // GET THE LIST TEXTs
-      let ward = $("#ward :selected").text();
-      let actSubs = $("#ward :selected").text();
-      // IF IT'S EMPTY, SET IT AS "EMPTY" (1)
+      let instance_01 = M.FormSelect.getInstance($('#activeSubstance'));
+      let actSubs = instance_01.getSelectedValues();
+      let instance_02 = M.FormSelect.getInstance($('#ward'));
+      let ward = instance_02.getSelectedValues();
+      // IF IT'S EMPTY, SET AS "EMPTY" (1)
       if (ward === "") {
       ward = "empty"
-      } else {
-      // IF THERE'S SOMETHING APPLY THE SPECAIL METHOD FOR THE POTENTIAL MULTI-WORDS (2)
-      ward = ward.split(/(.*[a-z])(?=[A-Z])/);
-      // CUT THE FIRST EMPTY VALUE ONLY IF THERE'S MORE THAN ONE WORD (3)
-      if (ward.length > 1) {
-      ward.shift();
-      }
       }
 
-      // (1)
       if (actSubs === "") {
       actSubs = "empty"
-      } else {
-      // (2)
-      actSubs = actSubs.split(/(.*[a-z])(?=[A-Z])/);
-      // (3)
-      if (actSubs.length > 1) {
-      actSubs.shift();
-      }
-      }
-      
-
+      }      
       // CLEAR THE SEARCH OBJECT / ADD LIST PARAMETERS (ACTSUBS-WARD) FOR THE NEW SEARCH
       searchObj = {
         active_substance: actSubs,
@@ -139,7 +110,7 @@ html
         retrospective: [],
         costSaving: []
       };
-      // IF VALUES ARE EMPTY, DESTROY THEM
+      // IF VALUES ARE "EMPTY", DESTROY THEM
       if (actSubs === "empty") {
       searchObj['active_substance'] = [];
       }
@@ -148,18 +119,13 @@ html
       }
       // MIRROR THE FULL DATA ON THE CONSOLE
       let myData = JSON.parse(dataReq.responseText);
-      console.log(myData);
-      // SET THE NEW SEARCH DATA ACCORDING TO THE FILTER DATA
+      // ADD THE DATE IN THE FILTER TO THE SEARCH
       if (filterArr[0] === true) {
       searchObj.retrospective = "retrospective";
-      } else {
-      searchObj.retrospective = "notRetrospective";
       }
 
       if (filterArr[1] === true) {
       searchObj.costSaving = "costSaving";
-      } else {
-      searchObj.costSaving = "notCostSaving";  
       }
       
       // LET THE CODE DO THE MAGIC
@@ -186,121 +152,3 @@ html
       document.getElementById("resultList").appendChild(li);
       });
       });
-
-    script.
-      /*
-      const secilenFiltreler = {
-        retrospective: [2],
-        ward_focused: [],
-        indication_focused: [],
-        active_substance: []
-      };
-
-      const nesneler = [
-        {
-          title: "Cost-effectiveness of morphine versus fentanyl in managing ventilated neonates with respiratory distress syndrome in the intensive care setting",
-          url: "https://ejhp.bmj.com/content/26/Suppl_1/A7.3",
-          filters: {
-            retrospective: [1],
-            ward_focused: [1],
-            indication_focused: [1],
-            active_substance: ["Morphine", "Fentanyl"]
-          }
-        },
-        {
-          title: "Chemical risk assessement in a quality control laboratory by a tool using activity analysis",
-          url: "https://ejhp.bmj.com/content/26/Suppl_1/A9.2",
-          filters: {
-            retrospective: [2],
-            ward_focused: [2],
-            indication_focused: [2],
-            active_substance: [2]
-          }
-        },
-        {
-          title: "The economic burden of metastatic breast cancer in Spain",
-          url: "https://ejhp.bmj.com/content/27/1/19",
-          filters: {
-            retrospective: [1],
-            ward_focused: [1],
-            indication_focused: [1],
-            active_substance: [2]
-          }
-        },
-        {
-          title: "Real-world evidence of high-cost drugs for metastatic melanoma: effectiveness, compliance to clinical practice guidelines and economic evaluation",
-          url: "https://ejhp.bmj.com/content/26/Suppl_1/A5.1",
-          filters: {
-            retrospective: [1],
-            ward_focused: [2],
-            indication_focused: [1],
-            active_substance: [2]
-          }
-        },
-        {
-          title: "Real-world safety and tolerability of the recently commercialised palbociclib",
-          url: "https://ejhp.bmj.com/content/26/Suppl_1/A223.2",
-          filters: {
-            retrospective: [2],
-            ward_focused: [1],
-            indication_focused: [2],
-            active_substance: ["Palbociclib"]
-          }
-        }
-      ];
-
-      const filtreOku = Object.values(secilenFiltreler).flat();
-      const cikti = nesneler.filter(({filters}) => {
-          const objFilters = Object.values(filters).flat();
-          return filtreOku.every(val => objFilters.includes(val));
-      })
-      console.log(cikti);
-      */
-    script.
-      const selectedFilters = {
-          active_substance: [],
-          ward_focused: [],
-          retrospective: [],
-          costSaving: ["costSaving"]
-      };
-
-      const items = [
-      {
-        name: "Cost-effectiveness of morphine versus fentanyl in managing ventilated neonates with respiratory distress syndrome in the intensive care setting",
-        url: "https://ejhp.bmj.com/content/26/Suppl_1/A7.3",
-        filters: {
-          active_substance: ["Fentanyl", "Morphine"],
-          ward_focused: ["Intensive Care"],
-          retrospective: ["retrospective"],
-          costSaving: ["costSaving"]
-        }
-      },
-      {
-        name: "Chemical risk assessement in a quality control laboratory by a tool using activity analysis",
-        url: "https://ejhp.bmj.com/content/26/Suppl_1/A9.2",
-        filters: {
-          active_substance: [],
-          ward_focused: [],
-          retrospective: ["retrospective"],
-          costSaving: []
-        }
-      },
-      {
-        name: "The economic burden of metastatic breast cancer in Spain",
-        url: "https://ejhp.bmj.com/content/27/1/19",
-        filters: {
-        active_substance: [],
-        ward_focused: ["surgery"],
-        retrospective: [],
-        costSaving: ["costSaving"]
-        }
-      }
-      ];
-
-      const filterArr01 = Object.values(selectedFilters).flat();
-
-      const output = items.filter(({filters}) => {
-          const objFilters = Object.values(filters).flat();
-          return filterArr01.every(val => objFilters.includes(val));
-      })
-      console.log(output);

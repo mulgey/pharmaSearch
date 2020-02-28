@@ -5,7 +5,7 @@
       "filters": {
         "active_substance": [],
         "ward_focused": [],
-        "retrospective": ["notRetrospective"],
+        "retrospective": [],
         "costSaving": ["costSaving"]
       }
     },
@@ -16,7 +16,7 @@
         "active_substance": ["Palbociclib"],
         "ward_focused": ["Intensive Care", "Oncology"],
         "retrospective": ["retrospective"],
-        "costSaving": ["notCostSaving"]
+        "costSaving": []
       }
     },
     {
@@ -35,8 +35,8 @@
       "filters": {
         "active_substance": [],
         "ward_focused": [],
-        "retrospective": ["notRetrospective"],
-        "costSaving": ["notCostSaving"]
+        "retrospective": [],
+        "costSaving": []
       }
     },
     {
@@ -46,7 +46,7 @@
         "active_substance": [],
         "ward_focused": ["Oncology"],
         "retrospective": ["retrospective"],
-        "costSaving": ["notCostSaving"]
+        "costSaving": []
       }
     }
   ]
