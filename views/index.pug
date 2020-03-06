@@ -10,9 +10,16 @@ html
     // Let browser know website is optimized for mobile
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
   body
+    .navbar-fixed(style='margin-bottom: 2rem;')  
+      nav
+        .nav-wrapper(style='background-color: indianred;')
+          a.brand-logo(href='#' style='margin-left: 2rem;') PharmaSearch
+          ul#nav-mobile.right.hide-on-med-and-down
+            li
+              a(href='#' style='margin-right: 2rem;') About
     .container
       form.row(action='#')
-        .input-field.col.s12.l4(style='margin-top: 2rem; margin-left: 1rem;')
+        .input-field.col.s12.l4.offset-l1
           select(multiple='')#activeSubstance
             option(value='', disabled='') None
             option(value='Palbociclib') Palbociclib
@@ -20,30 +27,32 @@ html
             option(value='Fentanyl') Fentanyl
             option(value='Piperacillin - Tazobactam') Piperacillin - Tazobactam
           label Active Substance Focused
-        .input-field.col.s12.l4(style='margin-top: 2rem; margin-left: 1rem;')
+        .input-field.col.s12.l4.offset-l1
           select(multiple='')#ward
             option(value='', disabled='') None
             option(value='Intensive Care') Intensive Care
             option(value='Oncology') Oncology
             option(value='Surgery') Surgery
           label Ward Focused
-        .switch
-          label#rlabel.col.s12.l4(style='margin-top: 1rem; font-weight: bold; font-size: larger; color: steelblue;')
+    .container.center-align(style='margin-top: 1rem;')
+      .row.switch
+          label#rlabel.col.s12.l3(style='font-weight: bold; font-size: larger; color: steelblue;')
             input#retrospective(type='checkbox')
             span.lever
             | Retrospective
-          label#wlabel.col.s12.l4(style='margin-top: 1rem; font-weight: bold; font-size: larger; color: steelblue;')
+          label#wlabel.col.s12.l3(style='font-weight: bold; font-size: larger; color: steelblue;')
             input#wardfocused(type='checkbox')
             span.lever
             | Cost Saving
-      .row(style='margin-top: 2rem;')
-        a#search.col.waves-effect.waves-light.btn
+    .container(style='margin-top: 4rem;')
+      .row
+        a#search.col.s2.waves-effect.waves-light.btn.offset-s5(style='border-radius: 12px;')
           | Search
           i.material-icons.right search
     .container
       #resultRow.row(style='margin-top: 2rem; display: none;')
         #resultText.col.s12.p(style= 'font-size: large;')
-        h3.col.s12(style='margin-top: 1rem; font-weight: bold; color: #900C3F;') Results
+        h3.col.s12(style='margin-top: 1rem; font-weight: bold; color: darkred;') Results
         ol#resultList
     // Compiled and minified JavaScript
     script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
