@@ -2,51 +2,71 @@
     {
       "title": "Real-world evidence of high-cost drugs for metastatic melanoma: effectiveness, compliance to clinical practice guidelines and economic evaluation",
       "url": "https://ejhp.bmj.com/content/26/Suppl_1/A5.1",
+      "authors": "A Isoardo, MM Ferrero, E Grande, C Fruttero",
+      "institution": "Azienda Ospedaliera S. Croce e Carle Cuneo",
       "filters": {
         "active_substance": [],
         "ward_focused": [],
         "retrospective": [],
-        "costSaving": ["costSaving"]
+        "costSaving": ["costSaving"],
+        "country": ["Italy"],
+        "year": ["2019"]
       }
     },
     {
       "title": "Real-world safety and tolerability of the recently commercialised palbociclib",
       "url": "https://ejhp.bmj.com/content/26/Suppl_1/A223.2",
+      "authors": "A Colón López de Dicastillo, I Gutiérrez Pérez, V Villacañas Palomares, F Uriarte Estefanía, S Lorenzo Martín, R Santos del Prado, E Parra Alonso",
+      "institution": "Hospitales Sierrallana Y Tres Mares",
       "filters": {
         "active_substance": ["Palbociclib"],
         "ward_focused": ["Intensive Care", "Oncology"],
         "retrospective": ["retrospective"],
-        "costSaving": []
+        "costSaving": [],
+        "country": ["Spain"],
+        "year": ["2019"]
       }
     },
     {
       "title": "Cost-effectiveness of morphine versus fentanyl in managing ventilated neonates with respiratory distress syndrome in the intensive care setting",
       "url": "https://ejhp.bmj.com/content/26/Suppl_1/A7.3",
+      "authors": "D Abushanab, O Alsoukhni, F Abonahia, D Al-Badriyeh",
+      "institution": "Hamad Medical Corporation, Qatar University",
       "filters": {
         "active_substance": ["Fentanyl", "Morphine"],
         "ward_focused": ["Intensive Care"],
         "retrospective": ["retrospective"],
-        "costSaving": ["costSaving"]
+        "costSaving": ["costSaving"],
+        "country": ["Qatar"],
+        "year": ["2019"]
       }
     },
     {
       "title": "Chemical risk assessement in a quality control laboratory by a tool using activity analysis",
       "url": "https://ejhp.bmj.com/content/26/Suppl_1/A9.2",
+      "authors": "M Alami Chentoufi, L Yachi, S Bennis, M Benabbes, H Benhaddou, M Bouatia",
+      "institution": "Mohamed V University, University Mohamed V Faculty of Pharmacy",
       "filters": {
         "active_substance": [],
         "ward_focused": [],
         "retrospective": [],
-        "costSaving": []
+        "costSaving": [],
+        "country": ["Morocco"],
+        "year": ["2019"]
       }
     },
     {
       "title": "The economic burden of metastatic breast cancer in Spain",
       "url": "https://ejhp.bmj.com/content/27/1/19",
+      "authors": "Begoña Bermejo de las Heras, Javier Cortes Ramon y Cajal, Elena Galve Calvo, Juan de la Haba Rodriguez, Jesus Garcia Mata, Fernando Moreno Anton, Ignacio Pelaez Fernandez, Alvaro Rodriguez-Lescure, Cesar A Rodriguez Sanchez, Manuel Ruiz-Borrego, Edit Remak, Magdolna Barra, Maria Rivero, Javier Soto Alvarez",
+      "institution": "Hospital Clinico Universitario de Valencia, Madrid & Vall d’Hebron Institute of Oncology (VHIO), Basurto Hospital, Reina Sofia University Hospital, Instituto de Salud Carlos III, Complexo Hospitalario Universitario de Ourense, Hospital Clíinico San Carlos, Hospital Universitario de Cabueñes at Gijón, Hospital General Universitario de Elche, Spain and Spanish Breast Cancer Research Group (GEICAM), Hospital Universitario de Salamanca, Hospital Universitario Virgen del Rocío",
       "filters":{
         "active_substance": [],
         "ward_focused": ["Oncology"],
         "retrospective": ["retrospective"],
-        "costSaving": []
+        "costSaving": [],
+        "country": ["Spain"],
+        "year": ["2019"]
       }
     }
   ]

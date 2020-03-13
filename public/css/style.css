@@ -1,0 +1,8 @@
+#resultList li {
+    line-height: 250%;
+}
+
+#resultList a {
+    color: midnightblue;
+    font-size: larger;
+}

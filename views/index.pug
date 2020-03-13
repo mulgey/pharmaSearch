@@ -19,21 +19,34 @@ html
               a(href='#' style='margin-right: 2rem;') About
     .container
       form.row(action='#')
-        .input-field.col.s12.l4.offset-l1
+        .input-field.col.s12.l4
           select(multiple='')#activeSubstance
-            option(value='', disabled='') None
+            option(value='', disabled='') Any
             option(value='Palbociclib') Palbociclib
             option(value='Morphine') Morphine
             option(value='Fentanyl') Fentanyl
             option(value='Piperacillin - Tazobactam') Piperacillin - Tazobactam
           label Active Substance Focused
-        .input-field.col.s12.l4.offset-l1
+        .input-field.col.s12.l4
           select(multiple='')#ward
-            option(value='', disabled='') None
+            option(value='', disabled='') Any
             option(value='Intensive Care') Intensive Care
             option(value='Oncology') Oncology
             option(value='Surgery') Surgery
           label Ward Focused
+        .input-field.col.s12.l4
+          select(multiple='')#country
+            option(value='', disabled='') Any
+            option(value='Italy') Italy
+            option(value='Morocco') Morocco
+            option(value='Spain') Spain
+            option(value='Qatar') Qatar
+          label Country
+        .input-field.col.s12.l4
+          select(multiple='')#year
+            option(value='', disabled='') Any
+            option(value='2019') 2019
+          label Year
     .container.center-align(style='margin-top: 1rem;')
       .row.switch
           label#rlabel.col.s12.l3(style='font-weight: bold; font-size: larger; color: steelblue;')
@@ -104,20 +117,34 @@ html
       let actSubs = instance_01.getSelectedValues();
       let instance_02 = M.FormSelect.getInstance($('#ward'));
       let ward = instance_02.getSelectedValues();
+      let instance_03 = M.FormSelect.getInstance($('#country'));
+      let country = instance_03.getSelectedValues();
+      let instance_04 = M.FormSelect.getInstance($('#year'));
+      let year = instance_04.getSelectedValues();
       // IF IT'S EMPTY, SET AS "EMPTY" (1)
+      if (actSubs === "") {
+      actSubs = "empty"
+      }
+
       if (ward === "") {
       ward = "empty"
       }
 
-      if (actSubs === "") {
-      actSubs = "empty"
-      }      
+      if (country === "") {
+      country = "empty"
+      }
+
+      if (year === "") {
+      year = "empty"
+      }
       // CLEAR THE SEARCH OBJECT / ADD LIST PARAMETERS (ACTSUBS-WARD) FOR THE NEW SEARCH
       searchObj = {
         active_substance: actSubs,
         ward_focused: ward,
         retrospective: [],
-        costSaving: []
+        costSaving: [],
+        country: country,
+        year: year
       };
       // IF VALUES ARE "EMPTY", DESTROY THEM
       if (actSubs === "empty") {
@@ -125,6 +152,12 @@ html
       }
       if (ward === "empty") {
       searchObj['ward_focused'] = [];
+      }
+      if (country === "empty") {
+      searchObj['country'] = [];
+      }
+      if (year === "empty") {
+      searchObj['year'] = [];
       }
       // MIRROR THE FULL DATA ON THE CONSOLE
       let myData = JSON.parse(dataReq.responseText);
@@ -156,8 +189,12 @@ html
       }
       result.forEach(function(item) {
       var li = document.createElement("li");
-      var text = `<a href='${item.url}' target='_blank'> ${item.title}</a>`;
+      var text = `<a href='${item.url}' target='_blank'> ${item.title}</a><br><ul class="collapsible expandable"><li><div class="collapsible-header"><i class="material-icons">assignment_ind</i>Authors</div><div class="collapsible-body"><span>${item.authors}</span></div></li><li><div class="collapsible-header"><i class="material-icons">business</i>Affiliations</div><div class="collapsible-body"><span>${item.institution}</span></div></li></ul>`;
       li.innerHTML = text;
       document.getElementById("resultList").appendChild(li);
+      let elem = document.querySelectorAll('.collapsible.expandable');
+      let instance = M.Collapsible.init(elem, {
+      accordion: false
+      });
       });
       });
