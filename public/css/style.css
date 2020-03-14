@@ -1,8 +1,16 @@
 #resultList li {
-    line-height: 250%;
+    line-height: 150%;
 }
 
 #resultList a {
     color: midnightblue;
     font-size: larger;
+}
+
+.collapsible.expandable {
+    border-color: darkgrey;
+}
+
+.collapsible-body {
+    padding: 1rem;
 }

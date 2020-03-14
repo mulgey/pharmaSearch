@@ -65,7 +65,7 @@ html
     .container
       #resultRow.row(style='margin-top: 2rem; display: none;')
         #resultText.col.s12.p(style= 'font-size: large;')
-        h3.col.s12(style='margin-top: 1rem; font-weight: bold; color: darkred;') Results
+        h3.col.s12(style='margin-top: 1rem; margin-bottom: 2rem; font-weight: bold; color: darkred;') Results
         ol#resultList
     // Compiled and minified JavaScript
     script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
@@ -77,7 +77,7 @@ html
     script.
       // GET JSON DATA
       var dataReq = new XMLHttpRequest();
-      var url = "data/data.json";
+      var url = "protected/data/data.json";
       dataReq.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
       console.log('Data loaded with success!');
@@ -189,12 +189,20 @@ html
       }
       result.forEach(function(item) {
       var li = document.createElement("li");
-      var text = `<a href='${item.url}' target='_blank'> ${item.title}</a><br><ul class="collapsible expandable"><li><div class="collapsible-header"><i class="material-icons">assignment_ind</i>Authors</div><div class="collapsible-body"><span>${item.authors}</span></div></li><li><div class="collapsible-header"><i class="material-icons">business</i>Affiliations</div><div class="collapsible-body"><span>${item.institution}</span></div></li></ul>`;
+      var text = `<p style="font-style: italic;"> <a style="font-style: normal;" href='${item.url}' target='_blank'> ${item.title}, </a> ${item.filters.journal}, ${item.filters.year}</p><br><ul class="collapsible expandable" style="margin-top: -2rem; display: none;"><li><div class="collapsible-header"><i class="material-icons">assignment_ind</i><i style="margin-left: -1rem;"class="material-icons">account_balance</i>Authors and Affiliations</div><div class="collapsible-body"><span>${item.authors}</span><br><span style="font-style: italic; font-size: small;">${item.institution}</span></div></li></ul>`;
       li.innerHTML = text;
       document.getElementById("resultList").appendChild(li);
       let elem = document.querySelectorAll('.collapsible.expandable');
       let instance = M.Collapsible.init(elem, {
       accordion: false
       });
+      });
+      $( "#resultList a" ).mouseover(function() {
+      $( "#resultList li" ).css("line-height", "200%");
+      let overed = $(this).parent().nextAll().eq(1);
+      overed.fadeIn(1000);
+      setTimeout( function() {
+      overed.fadeOut(1000);
+      }, 10000);
       });
       });
