@@ -12,7 +12,7 @@ html
   body
     .navbar-fixed(style='margin-bottom: 2rem;')  
       nav
-        .nav-wrapper(style='background-color: indianred;')
+        .nav-wrapper(style='background-color: royalblue;')
           a.brand-logo(href='#' style='margin-left: 2rem;') PharmaSearch
           ul#nav-mobile.right.hide-on-med-and-down
             li
@@ -26,14 +26,14 @@ html
             option(value='Morphine') Morphine
             option(value='Fentanyl') Fentanyl
             option(value='Piperacillin - Tazobactam') Piperacillin - Tazobactam
-          label Active Substance Focused
+          label(style='color: lightseagreen;') Active Substance Focused
         .input-field.col.s12.l4
           select(multiple='')#ward
             option(value='', disabled='') Any
             option(value='Intensive Care') Intensive Care
             option(value='Oncology') Oncology
             option(value='Surgery') Surgery
-          label Ward Focused
+          label(style='color: lightseagreen;') Ward Focused
         .input-field.col.s12.l4
           select(multiple='')#country
             option(value='', disabled='') Any
@@ -41,19 +41,19 @@ html
             option(value='Morocco') Morocco
             option(value='Spain') Spain
             option(value='Qatar') Qatar
-          label Country
+          label(style='color: lightseagreen;') Country
         .input-field.col.s12.l4
           select(multiple='')#year
             option(value='', disabled='') Any
             option(value='2019') 2019
-          label Year
+          label(style='color: lightseagreen;') Year
     .container.center-align(style='margin-top: 1rem;')
       .row.switch
-          label#rlabel.col.s12.l3(style='font-weight: bold; font-size: larger; color: steelblue;')
+          label#rlabel.col.s12.l3(style='font-weight: bold; font-size: larger; color: lightseagreen;')
             input#retrospective(type='checkbox')
             span.lever
             | Retrospective
-          label#wlabel.col.s12.l3(style='font-weight: bold; font-size: larger; color: steelblue;')
+          label#wlabel.col.s12.l3(style='font-weight: bold; font-size: larger; color: lightseagreen;')
             input#wardfocused(type='checkbox')
             span.lever
             | Cost Saving
@@ -63,10 +63,11 @@ html
           | Search
           i.material-icons.right search
     .container
-      #resultRow.row(style='margin-top: 2rem; display: none;')
+      #resultHeader.row(style='margin-top: 2rem; display: none;')
         #resultText.col.s12.p(style= 'font-size: large;')
-        h3.col.s12(style='margin-top: 1rem; margin-bottom: 2rem; font-weight: bold; color: darkred;') Results
-        ol#resultList
+        h3.col.s12(style='margin-top: 1rem; margin-bottom: 2rem; font-weight: bold; color: firebrick;') Results
+      #resultBody.row(style='margin-top: 2rem; display: none;')
+        ol#resultList(class="collapsible expandable")
     // Compiled and minified JavaScript
     script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
@@ -181,28 +182,20 @@ html
       // TIME TO PRESENT THE INTRO
       let resultLength = result.length;
       $("#resultText").html(`We have found ${resultLength} result(s)`);
-      $('#resultRow').attr('style','display: default;');
-      
+      $('#resultHeader').attr('style','display: default;');
+      $('#resultBody').attr('style','display: default;');
       // TIME TO PRESENT THE LIST
       for (let key in result) {
       let value = result[key];
       }
       result.forEach(function(item) {
       var li = document.createElement("li");
-      var text = `<p style="font-style: italic;"> <a style="font-style: normal;" href='${item.url}' target='_blank'> ${item.title}, </a> ${item.filters.journal}, ${item.filters.year}</p><br><ul class="collapsible expandable" style="margin-top: -2rem; display: none;"><li><div class="collapsible-header"><i class="material-icons">assignment_ind</i><i style="margin-left: -1rem;"class="material-icons">account_balance</i>Authors and Affiliations</div><div class="collapsible-body"><span>${item.authors}</span><br><span style="font-style: italic; font-size: small;">${item.institution}</span></div></li></ul>`;
+      var text = `<div class="collapsible-header"><p><a> ${item.title}, </a> ${item.filters.journal}, ${item.filters.year}</p></div><div class="collapsible-body"><span>${item.authors}</span><br><span style="font-style: italic; font-size: small;">${item.institution}</span><br><br><a href='${item.url}' target='_blank'><i class="material-icons" style="color: firebrick;">filter_none</i><span style="color: darkred;"> Open the Study</span></a></div>`;
       li.innerHTML = text;
       document.getElementById("resultList").appendChild(li);
       let elem = document.querySelectorAll('.collapsible.expandable');
       let instance = M.Collapsible.init(elem, {
       accordion: false
       });
-      });
-      $( "#resultList a" ).mouseover(function() {
-      $( "#resultList li" ).css("line-height", "200%");
-      let overed = $(this).parent().nextAll().eq(1);
-      overed.fadeIn(1000);
-      setTimeout( function() {
-      overed.fadeOut(1000);
-      }, 10000);
       });
       });

@@ -10,45 +10,192 @@ html
     // Let browser know website is optimized for mobile
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
   body
+    .navbar-fixed(style='margin-bottom: 2rem;')  
+      nav
+        .nav-wrapper(style='background-color: royalblue;')
+          a.brand-logo(href='#' style='margin-left: 2rem;') PharmaSearch
+          ul#nav-mobile.right.hide-on-med-and-down
+            li
+              a(href='#' style='margin-right: 2rem;') About
     .container
       form.row(action='#')
-        .input-field.col.s12.l4(style='margin-top: 2rem; margin-left: 1rem;')
+        .input-field.col.s12.l4
           select(multiple='')#activeSubstance
-            option(value='', disabled='') None
-            option(value='1') Palbociclib
-            option(value='2') Morphine
-            option(value='3') Fentanyl
+            option(value='', disabled='') Any
+            option(value='Palbociclib') Palbociclib
+            option(value='Morphine') Morphine
+            option(value='Fentanyl') Fentanyl
+            option(value='Piperacillin - Tazobactam') Piperacillin - Tazobactam
           label Active Substance Focused
-        .input-field.col.s12.l4(style='margin-top: 2rem; margin-left: 1rem;')
+        .input-field.col.s12.l4
           select(multiple='')#ward
-            option(value='', disabled='') None
-            option(value='1') Intensive Care
-            option(value='2') Oncology
-            option(value='3') Surgery
+            option(value='', disabled='') Any
+            option(value='Intensive Care') Intensive Care
+            option(value='Oncology') Oncology
+            option(value='Surgery') Surgery
           label Ward Focused
-        .switch
-          label#rlabel.col.s12.l4(style='margin-top: 1rem; font-weight: bold; font-size: larger; color: steelblue;')
+        .input-field.col.s12.l4
+          select(multiple='')#country
+            option(value='', disabled='') Any
+            option(value='Italy') Italy
+            option(value='Morocco') Morocco
+            option(value='Spain') Spain
+            option(value='Qatar') Qatar
+          label Country
+        .input-field.col.s12.l4
+          select(multiple='')#year
+            option(value='', disabled='') Any
+            option(value='2019') 2019
+          label Year
+    .container.center-align(style='margin-top: 1rem;')
+      .row.switch
+          label#rlabel.col.s12.l3(style='font-weight: bold; font-size: larger; color: steelblue;')
             input#retrospective(type='checkbox')
             span.lever
             | Retrospective
-          label#wlabel.col.s12.l4(style='margin-top: 1rem; font-weight: bold; font-size: larger; color: steelblue;')
+          label#wlabel.col.s12.l3(style='font-weight: bold; font-size: larger; color: steelblue;')
             input#wardfocused(type='checkbox')
             span.lever
             | Cost Saving
-      .row(style='margin-top: 2rem;')
-        a#search.col.waves-effect.waves-light.btn
+    .container(style='margin-top: 4rem;')
+      .row
+        a#search.col.s2.waves-effect.waves-light.btn.offset-s5(style='border-radius: 12px;')
           | Search
           i.material-icons.right search
     .container
-      #resultRow.row(style='margin-top: 2rem; display: none;')
+      #resultHeader.row(style='margin-top: 2rem; display: none;')
         #resultText.col.s12.p(style= 'font-size: large;')
-        h3.col.s12(style='margin-top: 1rem; font-weight: bold; color: #900C3F;') Results
-        ol#resultList
+        h3.col.s12(style='margin-top: 1rem; margin-bottom: 2rem; font-weight: bold; color: firebrick;') Results
+      #resultBody.row(style='margin-top: 2rem; display: none;')
+        ol#resultList(class="collapsible expandable")
     // Compiled and minified JavaScript
     script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
+    // FUNDEMENTALS
     script.
       M.AutoInit();
-      $(document).ready(function(){
       $('select').formSelect();
+    script.
+      // GET JSON DATA
+      var dataReq = new XMLHttpRequest();
+      var url = "protected/data/data.json";
+      dataReq.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+      console.log('Data loaded with success!');
+      }
+      };
+      dataReq.open("GET", url, true);
+      dataReq.send();
+    script.
+      // SET EMPTY FILTER ARRAY
+      let filterArr = [false, false];
+      let myData;
+      var searchObj = new Object();
+      let result;
+      let string;
+      // MODIFY FILTER ARRAY WITH SPAN.LEVERs
+      $( "#retrospective" ).click(function() {
+      if (filterArr[0] === false) {
+      filterArr[0] = true;
+      } else {
+      filterArr[0] = false;
+      }
+      });
+      $( "#wardfocused" ).click(function() {
+      if (filterArr[1] === false) {
+      filterArr[1] = true;
+      } else {
+      filterArr[1] = false;
+      }
+      });
+
+      // WHEN YOU FIRE THE SEARCH
+      $("#search").click(function() {
+      // ERASE THE PREV RESULT TEXT
+      $('#resultList').text('');
+      // GET THE LIST TEXTs
+      let instance_01 = M.FormSelect.getInstance($('#activeSubstance'));
+      let actSubs = instance_01.getSelectedValues();
+      let instance_02 = M.FormSelect.getInstance($('#ward'));
+      let ward = instance_02.getSelectedValues();
+      let instance_03 = M.FormSelect.getInstance($('#country'));
+      let country = instance_03.getSelectedValues();
+      let instance_04 = M.FormSelect.getInstance($('#year'));
+      let year = instance_04.getSelectedValues();
+      // IF IT'S EMPTY, SET AS "EMPTY" (1)
+      if (actSubs === "") {
+      actSubs = "empty"
+      }
+
+      if (ward === "") {
+      ward = "empty"
+      }
+
+      if (country === "") {
+      country = "empty"
+      }
+
+      if (year === "") {
+      year = "empty"
+      }
+      // CLEAR THE SEARCH OBJECT / ADD LIST PARAMETERS (ACTSUBS-WARD) FOR THE NEW SEARCH
+      searchObj = {
+        active_substance: actSubs,
+        ward_focused: ward,
+        retrospective: [],
+        costSaving: [],
+        country: country,
+        year: year
+      };
+      // IF VALUES ARE "EMPTY", DESTROY THEM
+      if (actSubs === "empty") {
+      searchObj['active_substance'] = [];
+      }
+      if (ward === "empty") {
+      searchObj['ward_focused'] = [];
+      }
+      if (country === "empty") {
+      searchObj['country'] = [];
+      }
+      if (year === "empty") {
+      searchObj['year'] = [];
+      }
+      // MIRROR THE FULL DATA ON THE CONSOLE
+      let myData = JSON.parse(dataReq.responseText);
+      // ADD THE DATE IN THE FILTER TO THE SEARCH
+      if (filterArr[0] === true) {
+      searchObj.retrospective = "retrospective";
+      }
+
+      if (filterArr[1] === true) {
+      searchObj.costSaving = "costSaving";
+      }
+      
+      // LET THE CODE DO THE MAGIC
+      const filterEngine = Object.values(searchObj).flat();
+
+      const result = myData.filter(({filters}) => {
+        const objFilters = Object.values(filters).flat();
+        return filterEngine.every(val => objFilters.includes(val));
+      });
+      
+      // TIME TO PRESENT THE INTRO
+      let resultLength = result.length;
+      $("#resultText").html(`We have found ${resultLength} result(s)`);
+      $('#resultHeader').attr('style','display: default;');
+      $('#resultBody').attr('style','display: default;');
+      // TIME TO PRESENT THE LIST
+      for (let key in result) {
+      let value = result[key];
+      }
+      result.forEach(function(item) {
+      var li = document.createElement("li");
+      var text = `<div class="collapsible-header"><p><a> ${item.title}, </a> ${item.filters.journal}, ${item.filters.year}</p></div><div class="collapsible-body"><span>${item.authors}</span><br><span style="font-style: italic; font-size: small;">${item.institution}</span><br><br><a href='${item.url}' target='_blank'><i class="material-icons" style="color: firebrick;">filter_none</i><span style="color: darkred;"> Open the Study</span></a></div>`;
+      li.innerHTML = text;
+      document.getElementById("resultList").appendChild(li);
+      let elem = document.querySelectorAll('.collapsible.expandable');
+      let instance = M.Collapsible.init(elem, {
+      accordion: false
+      });
+      });
       });

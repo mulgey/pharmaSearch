@@ -4,7 +4,7 @@
 
 #resultList a {
     color: midnightblue;
-    font-size: larger;
+    font-size: 18px;
 }
 
 .collapsible.expandable {
@@ -13,4 +13,13 @@
 
 .collapsible-body {
     padding: 1rem;
+}
+
+
+#search {
+    background-color: royalblue;
+}
+
+.input-field.col label {
+    color: darkslategray;
 }
