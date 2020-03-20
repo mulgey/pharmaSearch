@@ -5,6 +5,7 @@
 #resultList a {
     color: midnightblue;
     font-size: 18px;
+    font-weight: 500;
 }
 
 .collapsible.expandable {
@@ -23,3 +24,33 @@
 .input-field.col label {
     color: darkslategray;
 }
+
+@media only screen and (min-width: 993px) {
+    a.brand-logo {
+        margin-left: 2rem;
+    }
+}
+
+#resultText {
+    font-size: large;
+    color: darkslategray;
+    font-weight: bold;
+}
+
+.page-footer {
+    background-color: royalblue;
+    margin-top: 3rem;
+    padding-top: 10px;
+}
+
+/* sticky footer */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+/* sticky footer ends*/
