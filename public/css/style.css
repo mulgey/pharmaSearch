@@ -21,14 +21,8 @@
     background-color: royalblue;
 }
 
-.input-field.col label {
+.input-field.col label, .dropdown-content li > span {
     color: darkslategray;
-}
-
-@media only screen and (min-width: 993px) {
-    a.brand-logo {
-        margin-left: 2rem;
-    }
 }
 
 #resultText {
@@ -54,3 +48,53 @@ main {
     flex: 1 0 auto;
 }
 /* sticky footer ends*/
+
+.switch label {
+    margin-top: 2rem;
+    line-height: 2;
+}
+
+form.row {
+    margin: 0rem;
+}
+
+div.input-field {
+    margin-bottom: 1.5rem;
+}
+
+.row.switch {
+    text-align: left;
+    margin: 0rem;
+}
+
+#advSearch {
+    margin-left: 25%;
+}
+
+@media only screen and (min-width: 500px) {
+    #advSearch {
+        margin-left: 35%;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    a.brand-logo {
+        margin-left: 2rem;
+    }
+
+    #lefty {
+        text-align: left;
+    }
+
+    #leverOne {
+        margin-left: 0rem;
+    }
+
+    #leverThree {
+        margin-left: 1rem;
+    }
+
+    form.row {
+        margin: 1.5rem;
+    }
+}

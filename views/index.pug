@@ -21,47 +21,169 @@ html
     main  
       .container
         form.row(action='#')
-          .input-field.col.s12.l4
+          .input-field.col.s10.l6.offset-s1
             select(multiple='')#activeSubstance
               option(value='', disabled='') Any
               option(value='Palbociclib') Palbociclib
               option(value='Morphine') Morphine
               option(value='Fentanyl') Fentanyl
               option(value='Piperacillin - Tazobactam') Piperacillin - Tazobactam
-            label(style='color: lightseagreen;') Active Substance Focused
-          .input-field.col.s12.l4
+            label(style="font-weight: bolder; color: steelblue;") Active Substance
+          .input-field.col.s10.l6.offset-s1
+            select(multiple='')#pharmClass
+              option(value='', disabled='') Any
+              option(value='Cardiac Glycoside') Cardiac Glycoside
+              option(value='Fibrate') Fibrate
+              option(value='Thiazide diuretic') Thiazide diuretic
+              option(value='Benzodiazepine') Benzodiazepine
+            label(style="font-weight: bolder; color: steelblue;") Pharmacologic Class
+        form.row(action='#')  
+          .input-field.col.s10.l6.offset-s1
+            select(multiple='')#indication
+              option(value='', disabled='') Any
+              option(value='Myocardial Ischemia') Myocardial Ischemia
+              option(value='Heart Failure') Heart Failure
+              option(value='Type 2 Diabetes Mellitus') Type 2 Diabetes Mellitus
+              option(value='Muscle Spasm') Muscle Spasm
+            label(style="font-weight: bolder; color: steelblue;") Therapeutic Indication
+          .input-field.col.s10.l6.offset-s1
+            select(multiple='')#setting
+              option(value='', disabled='') Any
+              option(value='Hospital') Hospital
+              option(value='Laboratory') Laboratory
+              option(value='Pharmacy') Community Pharmacy
+            label(style="font-weight: bolder; color: steelblue;") Setting
+        form.row 
+          .input-field.col.s10.l6.offset-s1
             select(multiple='')#ward
               option(value='', disabled='') Any
               option(value='Intensive Care') Intensive Care
               option(value='Oncology') Oncology
               option(value='Surgery') Surgery
-            label(style='color: lightseagreen;') Ward Focused
-          .input-field.col.s12.l4
+            label(style="font-weight: bolder; color: steelblue;") Ward
+          .input-field.col.s10.l6.offset-s1
+            select(multiple='')#numPatients
+              option(value='', disabled='') Any
+              option(value='Less than 10') Less than 10
+              option(value='10 - 50') 10 - 50
+              option(value='51 - 100') 51 - 100
+              option(value='101 - 500') 101 - 500
+              option(value='501 - 1000') 501 - 1000
+              option(value='More than 1000') More than 1000
+            label(style="font-weight: bolder; color: steelblue;") Number of Patients
+        form.row
+          .input-field.col.s10.l6.offset-s1
+            select(multiple='')#numPrescriptions
+              option(value='', disabled='') Any
+              option(value='Less than 10') Less than 10
+              option(value='10 - 50') 10 - 50
+              option(value='51 - 100') 51 - 100
+              option(value='101 - 500') 101 - 500
+              option(value='501 - 1000') 501 - 1000
+              option(value='More than 1000') More than 1000
+            label(style="font-weight: bolder; color: steelblue;") Number of Prescriptions
+          .input-field.col.s10.l6.offset-s1
+            select(multiple='')#studyLength
+              option(value='', disabled='') Any
+              option(value='Less than 3 months') Less than 3 months
+              option(value='3 months - 5 months') 3 months - 5 months
+              option(value='5 months - 1 year') 5 months - 1 year
+              option(value='1 year - 2 years') 1 year - 2 years
+              option(value='2 years - 5 years') 2 years - 5 years
+              option(value='5 years - 10 years') 5 years - 10 years
+              option(value='More than 10 years') More than 10 years
+            label(style="font-weight: bolder; color: steelblue;") Study Length
+        form.row 
+          .input-field.col.s10.l6.offset-s1
             select(multiple='')#country
               option(value='', disabled='') Any
               option(value='Italy') Italy
               option(value='Morocco') Morocco
               option(value='Spain') Spain
               option(value='Qatar') Qatar
-            label(style='color: lightseagreen;') Country
-          .input-field.col.s12.l4
+            label(style="font-weight: bolder; color: steelblue;") Country
+          .input-field.col.s10.l6.offset-s1
             select(multiple='')#year
               option(value='', disabled='') Any
+              option(value='2018') 2018
               option(value='2019') 2019
-            label(style='color: lightseagreen;') Year
-      .container.center-align(style='margin-top: 1rem;')
-        .row.switch
-            label#rlabel.col.s12.l3(style='font-weight: bold; font-size: larger; color: steelblue;')
-              input#retrospective(type='checkbox')
-              span.lever
-              | Retrospective
-            label#wlabel.col.s12.l3(style='font-weight: bold; font-size: larger; color: steelblue;')
-              input#wardfocused(type='checkbox')
-              span.lever
-              | Cost Saving
+            label(style="font-weight: bolder; color: steelblue;") Year
+        form.row  
+          .input-field.col.s12
+            select#test
+              option(value='', disabled='', selected='') Choose your option
+              option(value='option1') Option 1
+              option(value='option2') Option 2
+              option(value='option3') Option 3
+            label Materialize Select
+      .container(style='margin-top: 1rem;')
+        ul(class="collapsible expandable")
+          li
+            .collapsible-header
+              i.material-icons(id='advSearch') format_line_spacing
+              span(style="color: royalblue; font-weight: bolder;") Advanced Search
+            .collapsible-body
+              .container.center-align(style="width: 100%;")
+                .row.switch
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#retrospective(type='checkbox')
+                    span.lever#leverOne
+                    | Retrospective
+                  label.col.s12.l4(style='font-weight: bold; color: steelblue;')
+                    input#intervention(type='checkbox')
+                    span.lever
+                    | Pharmacist Intervention
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#patientInteraction(type='checkbox')
+                    span.lever#leverThree
+                    | Patient Interaction
+                .row.switch
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#recNurse(type='checkbox')
+                    span.lever#leverOne
+                    | Recommendation to Nurses
+                  label.col.s12.l4(style='font-weight: bold; color: steelblue;')
+                    input#multiInst(type='checkbox')
+                    span.lever
+                    | Multi Institutional
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#costProfit(type='checkbox')
+                    span.lever#leverThree
+                    | Cost Analysis / Profit
+                .row.switch
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#pGenetics(type='checkbox')
+                    span.lever#leverOne
+                    | Pharmacogenetic Polymorphism
+                  label.col.s12.l4(style='font-weight: bold; color: steelblue;')
+                    input#Nutrition(type='checkbox')
+                    span.lever
+                    | Enteral / Patenteral Nutrition
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#pediatrics(type='checkbox')
+                    span.lever#leverThree
+                    | Pediatrics
+                .row.switch
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#geriatrics(type='checkbox')
+                    span.lever#leverOne
+                    | Geriatrics
+                  label.col.s12.l4(style='font-weight: bold; color: steelblue;')
+                    input#nextStep(type='checkbox')
+                    span.lever
+                    | Advicing a Next Step
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#compAided(type='checkbox')
+                    span.lever#leverThree
+                    | Computer Aided Decision Making
+                .row.switch
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#neonatal(type='checkbox')
+                    span.lever#leverOne
+                    | Neonatalogy
       .container(style='margin-top: 4rem;')
         .row
-          a#search.col.s2.waves-effect.waves-light.btn.offset-s5(style='border-radius: 12px;')
+          a#search.col.s2.waves-effect.waves-light.btn.offset-s4(style='border-radius: 12px; width: 25%')
             | Search
             i.material-icons.right search
       .container
@@ -91,7 +213,8 @@ html
     // FUNDEMENTALS
     script.
       M.AutoInit();
-      $('select').formSelect();
+      var elems = document.querySelectorAll('select');
+      var instances = M.FormSelect.init(elems, {isMultiple: false});
     script.
       // GET JSON DATA
       var dataReq = new XMLHttpRequest();
@@ -152,9 +275,6 @@ html
       country = "empty"
       }
 
-      if (year === "") {
-      year = "empty"
-      }
       // CLEAR THE SEARCH OBJECT / ADD LIST PARAMETERS (ACTSUBS-WARD) FOR THE NEW SEARCH
       searchObj = {
         active_substance: actSubs,
@@ -164,7 +284,7 @@ html
         country: country,
         year: year
       };
-      // IF VALUES ARE "EMPTY", DESTROY THEM
+      // IF VALUE WAS NOT SELECTED, DESTROY THEM
       if (actSubs === "empty") {
       searchObj['active_substance'] = [];
       }
@@ -174,7 +294,7 @@ html
       if (country === "empty") {
       searchObj['country'] = [];
       }
-      if (year === "empty") {
+      if (year == "any") {
       searchObj['year'] = [];
       }
       // LOAD THE DATA TO THE VARIABLE
@@ -235,6 +355,7 @@ html
       });
     script.
       $( "body" ).one('mouseover', function() {
+        setTimeout(function() { 
         let slideData = JSON.parse(dataReq.responseText);
         console.log(slideData);
         console.log(slideData.length);
@@ -242,6 +363,7 @@ html
         let wardLength = (($('#ward > option').length) - 1);
         let countryLength = (($('#country > option').length) - 1);
         document.getElementById("slider").innerHTML = `${slideData.length} studies in our database are ready! With ${actLength} different active substances, ${wardLength} different ward options and among ${countryLength} countries; you may perform your search`;
+        }, 500);
       });
       
       
