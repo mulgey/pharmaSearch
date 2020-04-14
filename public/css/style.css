@@ -71,6 +71,10 @@ div.input-field {
     margin-left: 25%;
 }
 
+.chip {
+    height: auto;
+}
+
 @media only screen and (min-width: 500px) {
     #advSearch {
         margin-left: 35%;

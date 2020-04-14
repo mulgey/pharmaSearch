@@ -171,7 +171,7 @@ html
                   label.col.s12.l4(style='font-weight: bold; color: steelblue;')
                     input#nextStep(type='checkbox')
                     span.lever
-                    | Advicing a Next Step
+                    | Advising a Next Step
                   label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
                     input#compAided(type='checkbox')
                     span.lever#leverThree
@@ -181,11 +181,20 @@ html
                     input#neonatal(type='checkbox')
                     span.lever#leverOne
                     | Neonatalogy
+                  label.col.s12.l4(style='font-weight: bold; color: steelblue;')
+                    input#preperation(type='checkbox')
+                    span.lever
+                    | Preparation of Intravenous Drugs
       .container(style='margin-top: 4rem;')
         .row
           a#search.col.s2.waves-effect.waves-light.btn.offset-s4(style='border-radius: 12px; width: 25%')
             | Search
             i.material-icons.right search
+      .container(style='margin-top: 2rem;')
+        .row
+          .chip.col.s12
+            | Multiple selection means "both" (not "or"). E.g selection of "Morphine" and "Fentanyl" makes it search the studies including both active substances
+            i.close.material-icons close
       .container
         #resultHeader.row(style='margin-top: 2rem; display: none;')
           #resultText.col.s12.p
@@ -251,6 +260,8 @@ html
 
       // WHEN YOU FIRE THE SEARCH
       $("#search").click(function() {
+      // HIDE THE SEARCH INFORMATIVE
+      $(".chip").hide();
       // ERASE THE PREV RESULT TEXT
       $('#resultList').text('');
       // GET THE LIST TEXTs
@@ -365,5 +376,13 @@ html
         document.getElementById("slider").innerHTML = `${slideData.length} studies in our database are ready! With ${actLength} different active substances, ${wardLength} different ward options and among ${countryLength} countries; you may perform your search`;
         }, 500);
       });
+       $( ".input-field span" ).click(function() {
+          /*
+          let siblings = $(this).parent().siblings();
+          let selected = siblings.options[siblings.selectedIndex];
+          console.log(selected);
+          this.next().addClass('selected');
+          */
+       });
       
       
