@@ -16,7 +16,6 @@
     padding: 1rem;
 }
 
-
 #search {
     background-color: royalblue;
 }
@@ -69,6 +68,12 @@ div.input-field {
 
 #advSearch {
     margin-left: 25%;
+}
+
+#hrHead {
+    text-align: left;
+    background-color: powderblue;
+    margin-top: 2rem;
 }
 
 .chip {

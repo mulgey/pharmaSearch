@@ -30,15 +30,6 @@ html
               option(value='Piperacillin - Tazobactam') Piperacillin - Tazobactam
             label(style="font-weight: bolder; color: steelblue;") Active Substance
           .input-field.col.s10.l6.offset-s1
-            select(multiple='')#pharmClass
-              option(value='', disabled='') Any
-              option(value='Cardiac Glycoside') Cardiac Glycoside
-              option(value='Fibrate') Fibrate
-              option(value='Thiazide diuretic') Thiazide diuretic
-              option(value='Benzodiazepine') Benzodiazepine
-            label(style="font-weight: bolder; color: steelblue;") Pharmacologic Class
-        form.row(action='#')  
-          .input-field.col.s10.l6.offset-s1
             select(multiple='')#indication
               option(value='', disabled='') Any
               option(value='Myocardial Ischemia') Myocardial Ischemia
@@ -46,6 +37,28 @@ html
               option(value='Type 2 Diabetes Mellitus') Type 2 Diabetes Mellitus
               option(value='Muscle Spasm') Muscle Spasm
             label(style="font-weight: bolder; color: steelblue;") Therapeutic Indication
+        form.row(action='#')  
+          .input-field.col.s10.l6.offset-s1
+            select(multiple='')#statedClass
+              option(value='', disabled='') Any
+              option(value='Cardiac Glycoside') Cardiac Glycoside
+              option(value='Fibrate') Fibrate
+              option(value='Thiazide diuretic') Thiazide diuretic
+              option(value='Benzodiazepine') Benzodiazepine
+            label(style="font-weight: bolder; color: steelblue;") Stated Classification
+          .input-field.col.s10.l6.offset-s1
+            select(multiple='')#studyDesign
+              option(value='', disabled='') Any
+              option(value='Meta-Analysis') Meta-Analysis
+              option(value='Systematic Review') Systematic Review
+              option(value='Randomized Controlled Trial') Randomized Controlled Trial
+              option(value='Cohort (Prospective Observational Study)') Cohort (Prospective Observational Study)
+              option(value='Case-Control') Case-Control (Retrospective) Study
+              option(value='Cross-Sectional') Cross-Sectional Study
+              option(value='Case Reports / Series') Case Reports / Series
+              option(value='Test-Tube Lab Research') Test-Tube Lab Research
+            label(style="font-weight: bolder; color: steelblue;") Design of The Study
+        form.row(action='#')
           .input-field.col.s10.l6.offset-s1
             select(multiple='')#setting
               option(value='', disabled='') Any
@@ -53,7 +66,6 @@ html
               option(value='Laboratory') Laboratory
               option(value='Pharmacy') Community Pharmacy
             label(style="font-weight: bolder; color: steelblue;") Setting
-        form.row 
           .input-field.col.s10.l6.offset-s1
             select(multiple='')#ward
               option(value='', disabled='') Any
@@ -61,6 +73,7 @@ html
               option(value='Oncology') Oncology
               option(value='Surgery') Surgery
             label(style="font-weight: bolder; color: steelblue;") Ward
+        form.row(action='#')
           .input-field.col.s10.l6.offset-s1
             select(multiple='')#numPatients
               option(value='', disabled='') Any
@@ -71,7 +84,6 @@ html
               option(value='501 - 1000') 501 - 1000
               option(value='More than 1000') More than 1000
             label(style="font-weight: bolder; color: steelblue;") Number of Patients
-        form.row
           .input-field.col.s10.l6.offset-s1
             select(multiple='')#numPrescriptions
               option(value='', disabled='') Any
@@ -82,6 +94,13 @@ html
               option(value='501 - 1000') 501 - 1000
               option(value='More than 1000') More than 1000
             label(style="font-weight: bolder; color: steelblue;") Number of Prescriptions
+        form.row(action='#')
+          .input-field.col.s10.l6.offset-s1
+            select(multiple='')#criteriaMethod
+              option(value='', disabled='') Any
+              option(value='STOPP/START') STOPP/START
+              option(value='Kaplan-Meier') Kaplan-Meier
+            label(style="font-weight: bolder; color: steelblue;") Tools / Criterias / Methods
           .input-field.col.s10.l6.offset-s1
             select(multiple='')#studyLength
               option(value='', disabled='') Any
@@ -124,45 +143,250 @@ html
               span(style="color: royalblue; font-weight: bolder;") Advanced Search
             .collapsible-body
               .container.center-align(style="width: 100%;")
+                p#hrHead(style='margin-top: 0rem;') Areas
+                hr
                 .row.switch
-                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
-                    input#retrospective(type='checkbox')
-                    span.lever#leverOne
-                    | Retrospective
-                  label.col.s12.l4(style='font-weight: bold; color: steelblue;')
-                    input#intervention(type='checkbox')
-                    span.lever
-                    | Pharmacist Intervention
-                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
-                    input#patientInteraction(type='checkbox')
-                    span.lever#leverThree
-                    | Patient Interaction
-                .row.switch
-                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
-                    input#recNurse(type='checkbox')
-                    span.lever#leverOne
-                    | Recommendation to Nurses
-                  label.col.s12.l4(style='font-weight: bold; color: steelblue;')
-                    input#multiInst(type='checkbox')
-                    span.lever
-                    | Multi Institutional
-                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
-                    input#costProfit(type='checkbox')
-                    span.lever#leverThree
-                    | Cost Analysis / Profit
-                .row.switch
-                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
-                    input#pGenetics(type='checkbox')
-                    span.lever#leverOne
-                    | Pharmacogenetic Polymorphism
-                  label.col.s12.l4(style='font-weight: bold; color: steelblue;')
-                    input#Nutrition(type='checkbox')
-                    span.lever
-                    | Enteral / Patenteral Nutrition
                   label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
                     input#pediatrics(type='checkbox')
-                    span.lever#leverThree
+                    span.lever#leverOne
                     | Pediatrics
+                  label.col.s12.l4(style='font-weight: bold; color: steelblue;')
+                    input#geriatrics(type='checkbox')
+                    span.lever
+                    | Geriatrics
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#neonatology(type='checkbox')
+                    span.lever#leverThree
+                    | Neonatology
+                .row.switch
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#oncology(type='checkbox')
+                    span.lever#leverOne
+                    | Oncology
+                  label.col.s12.l4(style='font-weight: bold; color: steelblue;')
+                    input#pharmacogenetics(type='checkbox')
+                    span.lever
+                    | Pharmacogenetics
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#pharmacoeconomy(type='checkbox')
+                    span.lever#leverThree
+                    | Pharmacoeconomy
+                .row.switch
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#radiopharmaceuticals(type='checkbox')
+                    span.lever#leverOne
+                    | Radiopharmaceuticals
+                  label.col.s12.l4(style='font-weight: bold; color: steelblue;')
+                    input#compounding(type='checkbox')
+                    span.lever
+                    | Compounding
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#medicalDevices(type='checkbox')
+                    span.lever#leverThree
+                    | Medical Devices / Equipments
+                p#hrHead Type of Treatment / Medicine
+                hr
+                .row.switch
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#personalized(type='checkbox')
+                    span.lever#leverOne
+                    | Personalized Medicine
+                  label.col.s12.l4(style='font-weight: bold; color: steelblue;')
+                    input#nutrition(type='checkbox')
+                    span.lever
+                    | Enteral / Parenteral Nutrition
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#highRisk(type='checkbox')
+                    span.lever#leverThree
+                    | High Risk Medicines
+                .row.switch
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#endOfLife(type='checkbox')
+                    span.lever#leverOne
+                    | End of Life / Hospice Treatment
+                  label.col.s12.l4(style='font-weight: bold; color: steelblue;')
+                    input#selfMedication(type='checkbox')
+                    span.lever
+                    | Self-Medication
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#preopMedication(type='checkbox')
+                    span.lever#leverThree
+                    | Perioperative Medication
+                .row.switch
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#outpatient(type='checkbox')
+                    span.lever#leverOne
+                    | Outpatient Treatment
+                p#hrHead Practices (Drug Application)
+                hr
+                .row.switch
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#offLabel(type='checkbox')
+                    span.lever#leverOne
+                    | Off-Label Use
+                  label.col.s12.l4(style='font-weight: bold; color: steelblue;')
+                    input#flatDoses(type='checkbox')
+                    span.lever
+                    | Flat Doses / Dose Banding
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#switching(type='checkbox')
+                    span.lever#leverThree
+                    | Switching Medication
+                .row.switch
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#deprescribing(type='checkbox')
+                    span.lever#leverOne
+                    | Prescription Regulations (e.g., Deprescribing)
+                  label.col.s12.l4(style='font-weight: bold; color: steelblue;')
+                    input#prepareIV(type='checkbox')
+                    span.lever
+                    | Preparing IV Medications
+                p#hrHead Practices (Treatment)
+                hr
+                .row.switch
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#enzymeSubstrate(type='checkbox')
+                    span.lever#leverOne
+                    | Enzyme Replacement / Substrate Reduction Therapy
+                  label.col.s12.l4(style='font-weight: bold; color: steelblue;')
+                    input#geneTherapy(type='checkbox')
+                    span.lever
+                    | Gene Therapy
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#homeCare(type='checkbox')
+                    span.lever#leverThree
+                    | Home Care
+                .row.switch
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#antibioticProphylaxis(type='checkbox')
+                    span.lever#leverOne
+                    | Antibiotic Prophylaxis
+                  label.col.s12.l4(style='font-weight: bold; color: steelblue;')
+                    input#painManagement(type='checkbox')
+                    span.lever
+                    | Pain Management
+                p#hrHead Practices (Assessments)
+                hr
+                .row.switch
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#costAnalysis(type='checkbox')
+                    span.lever#leverOne
+                    | Cost Analysis
+                  label.col.s12.l4(style='font-weight: bold; color: steelblue;')
+                    input#riskSafety(type='checkbox')
+                    span.lever
+                    | Occupational Risk / Safety
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#vigilance(type='checkbox')
+                    span.lever#leverThree
+                    | Pharmacovigilance / Materiovigilance
+                .row.switch
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#stability(type='checkbox')
+                    span.lever#leverOne
+                    | Determination of Stability
+                  label.col.s12.l4(style='font-weight: bold; color: steelblue;')
+                    input#drugMonitoring(type='checkbox')
+                    span.lever
+                    | Therapeutic Drug Monitoring
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#safetyProfile(type='checkbox')
+                    span.lever#leverThree
+                    | Safety / Tolerability Profile Assessment
+                p#hrHead Communication
+                hr
+                .row.switch
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#intervention(type='checkbox')
+                    span.lever#leverOne
+                    | Intervention of Pharmacists
+                  label.col.s12.l4(style='font-weight: bold; color: steelblue;')
+                    input#patientIntervention(type='checkbox')
+                    span.lever
+                    | Interaction with Patients
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#nursesReccomend(type='checkbox')
+                    span.lever#leverThree
+                    | Recommendations to Nurses
+                .row.switch
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#questPatient(type='checkbox')
+                    span.lever#leverOne
+                    | Questionnaires / Interviews (Patients)
+                  label.col.s12.l4(style='font-weight: bold; color: steelblue;')
+                    input#questProfessional(type='checkbox')
+                    span.lever
+                    | Questionnaires / Interviews (Health Professionals)
+                p#hrHead Logistics
+                hr
+                .row.switch
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#selection(type='checkbox')
+                    span.lever#leverOne
+                    | Selection / Procurement
+                  label.col.s12.l4(style='font-weight: bold; color: steelblue;')
+                    input#stock(type='checkbox')
+                    span.lever
+                    | Stock / Supply / Distribution
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#autoDispensing(type='checkbox')
+                    span.lever#leverThree
+                    | Automated Dispensing
+                .row.switch
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#coldChain(type='checkbox')
+                    span.lever#leverOne
+                    | Cold Chain Management
+                p#hrHead Tech Tools
+                hr
+                .row.switch
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#softwareAided(type='checkbox')
+                    span.lever#leverOne
+                    | Software Aided Decision Making
+                  label.col.s12.l4(style='font-weight: bold; color: steelblue;')
+                    input#mobileVR(type='checkbox')
+                    span.lever
+                    | Mobile / VR Technologies
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#3DPrinting(type='checkbox')
+                    span.lever#leverThree
+                    | 3D Printing
+                .row.switch
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#socialMedia(type='checkbox')
+                    span.lever#leverOne
+                    | Social Media
+                p#hrHead Challenges
+                hr
+                .row.switch
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#shortages(type='checkbox')
+                    span.lever#leverOne
+                    | Drug Shortages
+                  label.col.s12.l4(style='font-weight: bold; color: steelblue;')
+                    input#adverseEvents(type='checkbox')
+                    span.lever
+                    | Adverse Drug Events
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#adherence(type='checkbox')
+                    span.lever#leverThree
+                    | Medication Adherence
+                .row.switch
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#resistance(type='checkbox')
+                    span.lever#leverOne
+                    | Antimicrobial Resistance
+                  label.col.s12.l4(style='font-weight: bold; color: steelblue;')
+                    input#renal(type='checkbox')
+                    span.lever
+                    | Renal Insufficiency
+                  label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
+                    input#errors(type='checkbox')
+                    span.lever#leverThree
+                    | Prescription / Preparation / Application Errors
+                p(style='text-align: left;') Test Section
+                hr
                 .row.switch
                   label.col.s12.l4#lefty(style='font-weight: bold; color: steelblue;')
                     input#geriatrics(type='checkbox')
