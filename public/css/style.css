@@ -72,7 +72,10 @@ div.input-field {
 
 #hrHead {
     text-align: left;
-    background-color: powderblue;
+    color: white;
+    padding-left: 0.5rem;
+    background: rgb(70,130,180);
+    background: linear-gradient(90deg, rgba(70,130,180,1) 0%, rgba(0,169,204,1) 60%, rgba(252,252,252,1) 100%);
     margin-top: 2rem;
 }
 
