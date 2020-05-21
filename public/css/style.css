@@ -1,11 +1,16 @@
 #resultList li {
     line-height: 150%;
+    margin-left: 1rem;
 }
 
 #resultList a {
     color: midnightblue;
     font-size: 18px;
     font-weight: 500;
+}
+
+nav {
+    background-color: dodgerblue;
 }
 
 .collapsible.expandable {
@@ -16,8 +21,12 @@
     padding: 1rem;
 }
 
-#search {
+#search, #newSearch {
     background-color: royalblue;
+}
+
+#selectForm {
+    margin-left: 1.4rem;
 }
 
 .input-field.col label, .dropdown-content li > span {
@@ -87,6 +96,7 @@ div.input-field {
     #advSearch {
         margin-left: 35%;
     }
+
 }
 
 @media only screen and (min-width: 993px) {

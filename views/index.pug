@@ -441,8 +441,24 @@ html
         #resultHeader.row(style='margin-top: 2rem; display: none;')
           #resultText.col.s12.p
           h3.col.s12#Resulty(style='margin-top: 1rem; font-weight: bold; color: firebrick;') Results
+        .row#sortAndAll(style='display: none;') 
+          form#selectForm.col.s12.m4.left(action='#', style='')
+            p
+              label
+                input#selectAll.filled-in(type='checkbox')
+                span(style="font-weight: bold; color: darkslateblue;") Select All
+          select#sortSelect.browser-default.col.s12.m4.right
+            option(value='Name') Name (A-Z)
+            option(value='Newest', selected='') Newest First
+            option(value='Oldest') Oldest First
         #resultBody.row(style='display: none;')
-          ol#resultList(class="collapsible expandable")
+          ul#resultList(class="collapsible expandable")
+        .row  
+          #report.col.s2.waves-effect.waves-light.btn.offset-s4(style='border-radius: 12px; width: 25%; display: none;')
+              | Prepare Report
+              i.material-icons.right event_note
+        #reportBody.row
+          ol#reportList
     footer
       footer.page-footer
         .container
@@ -460,6 +476,7 @@ html
             marquee(id='slider' behavior='scroll', direction='left' scrollamount='12')
     // Compiled and minified JavaScript
     script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
+    script(src='js/jquery.paginate.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
     // FUNDEMENTALS
     script.
@@ -1109,7 +1126,7 @@ html
       // LOAD THE DATA TO THE VARIABLE
       let myData = JSON.parse(dataReq.responseText);
       console.log(myData);
-      // ADD THE DATE IN THE FILTER TO THE SEARCH
+      // ADD THE DATA IN THE FILTER TO THE SEARCH
       if (filterArr[0] === true) {
       searchObj.pediatrics = "pediatrics";
       }
@@ -1357,53 +1374,203 @@ html
       // LET THE CODE DO THE MAGIC
       const filterEngine = Object.values(searchObj).flat();
 
-      const result = myData.filter(({filters}) => {
+      let result = myData.filter(({filters}) => {
         const objFilters = Object.values(filters).flat();
         return filterEngine.every(val => objFilters.includes(val));
       });
       
+      // GET THE SORT CRITERIA NAME FIRST
+      if (result.length > 0) {
+        let sortName = $('#sortSelect').find(":selected").text();
+        
+        if (sortName == "Oldest First") {
+          function sort(valuePath, array) {
+            let path = valuePath.split('.')
+            let value = getType(array[0],path);
+          
+            return array.sort((a, b) => getValue(a,path) -  getValue(b,path));
+
+          
+            function getValue(obj, path) {
+              path.forEach(path => obj = obj[path])
+              return obj;
+            }
+          
+            function getType(obj, path) {
+              path.forEach(path => obj = obj[path])
+              return typeof obj;
+            }
+          }
+
+          result = sort('filters.year', result);
+
+        } else {
+          function sort(valuePath, array) {
+            let path = valuePath.split('.')
+            let value = getType(array[0],path);
+            
+            if (value == 'string') {
+              return array.sort((a, b) => (getValue(a,path).toUpperCase() > getValue(b,path).toUpperCase()) - (getValue(a,path).toUpperCase() < getValue(b,path).toUpperCase()))
+            } else {
+              return array.sort((a, b) => getValue(b,path) -  getValue(a,path));
+            }
+          
+            function getValue(obj, path) {
+              path.forEach(path => obj = obj[path])
+              return obj;
+            }
+          
+            function getType(obj, path) {
+              path.forEach(path => obj = obj[path])
+              return typeof obj;
+            }
+          }
+
+          if (sortName == "Newest First") {
+            result = sort('filters.year', result);
+          } else {
+            result = sort('title', result);
+          }
+          
+        }
+      }
+
+ 
       // TIME TO PRESENT THE INTRO
       let resultLength = result.length;
+
       $("#resultText").html(`We have found ${resultLength} result(s)`);
       if (resultLength > 0) {
         $('#Resulty').empty();
         $('#Resulty').append("Results");
         $('#resultHeader').hide();
+        $('#sortAndAll').hide();
         $('#resultBody').hide();
+        $('#report').hide();
         $('#resultHeader').fadeIn(300);
+        $('#sortAndAll').fadeIn(300);
         $('#resultBody').fadeIn(500);
+        $('#report').fadeIn(500);
         /*
         $('#resultHeader').attr('style','display: default;');
         $('#resultBody').attr('style','display: default;');
         */
       } else {
         $('#Resulty').empty();
+        $('#Resulty').append("Results");
+        $('#sortAndAll').hide();
+        $('#resultBody').hide();
+        $('#report').hide();
+        $('#resultHeader').fadeIn(300);
         /*
         $('#resultHeader').attr('style','display: default;');
         $('#resultBody').attr('style','display: none;');
         */
       }
       // TIME TO PRESENT THE LIST
+      /*
       for (let key in result) {
       let value = result[key];
       }
+      */
       result.forEach(function(item) {
       var li = document.createElement("li");
-      var text = `<div class="collapsible-header"><p><a> ${item.title}, </a> ${item.filters.journal}, ${item.filters.year}</p></div><div class="collapsible-body"><span>${item.authors}</span><br><span style="font-style: italic; font-size: small;">${item.institution}</span><br><br><a href='${item.url}' target='_blank'><i class="material-icons" style="color: darkred;">filter_none</i><span style="color: darkred;"> Open the Study</span></a></div>`;
+      var text = `<div class="collapsible-header"><form action="#" style="margin-top: 0.5rem;"><p><label><input type="checkbox" data-check="isChecked" class="filled-in" /><span></span></label></p></form><p><a> ${item.title}, </a> ${item.filters.journal}, ${item.filters.year}</p></div><div class="collapsible-body"><span>${item.authors}</span><br><br><span style="font-style: italic; font-size: small;">${item.institution}</span><br><br><a href='${item.url}' target='_blank'><i class="material-icons" style="vertical-align: sub; color: darkred;">filter_none</i><span style="color: darkred;"> Open the Study</span></a></div>`;
       li.innerHTML = text;
       document.getElementById("resultList").appendChild(li);
       let elem = document.querySelectorAll('.collapsible.expandable');
       let instance = M.Collapsible.init(elem, {
-      accordion: false
+      accordion: false,
+      onOpenEnd() {
+      
+      }
       });
       });
+      
+      // 
+      $('#resultList').paginate({
+        perPage: 10,
+        useHashLocation: false,
       });
+
+      $('#resultList').data('paginate').kill();
+
+      $('#resultList').paginate({
+        perPage: 10,
+        useHashLocation: false,
+      });      
+
+      });
+
+      $('#sortSelect').change(function(){ 
+          $("#search").trigger( "click" );
+      });
+
+      let counter = [false];
+
+      $("#selectAll").click(function () {
+          if (counter[0] === false) {
+            $('.filled-in').prop('checked', true);
+            counter[0] = true;
+          } else {
+            $('.filled-in').prop('checked', false);
+            counter[0] = false;
+          }
+          
+      });
+
+      $("input[data-check='isChecked']")
+      $("input:checkbox[data-check='isChecked']:checked")
+
+      $("#report").click(function () {
+        let textArray = $("input:checkbox[data-check='isChecked']:checked").map(function() {
+          return $(this).parent().parent().parent().parent().siblings()[0].previousSibling.innerText;
+        }).get();
+
+        // textArray = textArray[0];
+
+        let linkArray = $("input:checkbox[data-check='isChecked']:checked").map(function() {
+          return $(this).parent().parent().parent().parent().siblings()[0].lastChild.href;
+        }).get();
+
+        // linkArray = linkArray[0];
+        /*
+        if (textArray) {
+          console.log(`${textArray} and its link : ${linkArray} <a href="${linkArray}">${textArray}</a>`);
+        }
+        */
+        textArray.forEach((text, value) => {
+          const url = linkArray[value];
+          let li = document.createElement("li");
+          let report = `<a href="${url}">${text}</a>`;
+          li.innerHTML = report;
+          document.getElementById("reportList").appendChild(li);
+          // console.log(text, url);
+        });
+        /*
+        result.forEach(function(item) {
+        var li = document.createElement("li");
+        var text = `<div class="collapsible-header"><form action="#" style="margin-top: 0.5rem;"><p><label><input type="checkbox" data-check="isChecked" class="filled-in" /><span></span></label></p></form><p><a> ${item.title}, </a> ${item.filters.journal}, ${item.filters.year}</p></div><div class="collapsible-body"><span>${item.authors}</span><br><br><span style="font-style: italic; font-size: small;">${item.institution}</span><br><br><a href='${item.url}' target='_blank'><i class="material-icons" style="vertical-align: sub; color: darkred;">filter_none</i><span style="color: darkred;"> Open the Study</span></a></div>`;
+        li.innerHTML = text;
+        document.getElementById("resultList").appendChild(li);
+        });
+        */
+      });
+      
+
+      /*
+      $('#selectAll').change(function() {
+        console.log('Changed!');
+        // let boxes = $("input[data-select='selecty']");
+        // console.log(boxes);
+        // var checkboxes = $(this).closest('form').find(':checkbox');
+        // checkboxes.prop('checked', $(this).is(':checked'));
+      });
+      */
     script.
       $( "body" ).one('mouseover', function() {
         setTimeout(function() { 
         let slideData = JSON.parse(dataReq.responseText);
-        console.log(slideData);
-        console.log(slideData.length);
         let actLength = (($('#actSubs > option').length) - 1);
         let wardLength = (($('#ward > option').length) - 1);
         let countryLength = (($('#country > option').length) - 1);
@@ -1417,12 +1584,5 @@ html
         let selecty = $(this).parent().siblings(".selected");
         selecty.trigger( "click" ); 
         }
-        // console.log(foundID);
-        // let siblings = $(this).parent().siblings();
-        // console.log(siblings);
-        // siblings.trigger( "click" );
-        // let selected = siblings.options[siblings.selectedIndex];
-        // console.log(selected);
-        // this.next().addClass('selected');
       });
       
