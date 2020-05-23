@@ -454,11 +454,9 @@ html
         #resultBody.row(style='display: none;')
           ul#resultList(class="collapsible expandable")
         .row  
-          #report.col.s2.waves-effect.waves-light.btn.offset-s4(style='border-radius: 12px; width: 25%; display: none;')
-              | Prepare Report
-              i.material-icons.right event_note
-        #reportBody.row
-          ol#reportList
+          #email.col.s2.waves-effect.waves-light.btn.offset-s4(style='border-radius: 12px; width: 25%; display: none; background-color: royalblue;', onclick="window.open('email','_blank');")
+              | E-Mail Results
+              i.material-icons.right email
     footer
       footer.page-footer
         .container
@@ -1446,11 +1444,11 @@ html
         $('#resultHeader').hide();
         $('#sortAndAll').hide();
         $('#resultBody').hide();
-        $('#report').hide();
+        $('#email').hide();
         $('#resultHeader').fadeIn(300);
         $('#sortAndAll').fadeIn(300);
         $('#resultBody').fadeIn(500);
-        $('#report').fadeIn(500);
+        $('#email').fadeIn(500);
         /*
         $('#resultHeader').attr('style','display: default;');
         $('#resultBody').attr('style','display: default;');
@@ -1460,7 +1458,7 @@ html
         $('#Resulty').append("Results");
         $('#sortAndAll').hide();
         $('#resultBody').hide();
-        $('#report').hide();
+        $('#email').hide();
         $('#resultHeader').fadeIn(300);
         /*
         $('#resultHeader').attr('style','display: default;');
@@ -1481,13 +1479,10 @@ html
       let elem = document.querySelectorAll('.collapsible.expandable');
       let instance = M.Collapsible.init(elem, {
       accordion: false,
-      onOpenEnd() {
-      
-      }
       });
       });
       
-      // 
+      // PAGINATE START
       $('#resultList').paginate({
         perPage: 10,
         useHashLocation: false,
@@ -1499,6 +1494,7 @@ html
         perPage: 10,
         useHashLocation: false,
       });      
+      // PAGINATE END
 
       });
 
@@ -1519,54 +1515,62 @@ html
           
       });
 
-      $("input[data-check='isChecked']")
-      $("input:checkbox[data-check='isChecked']:checked")
+      // $("input[data-check='isChecked']")
+      // $("input:checkbox[data-check='isChecked']:checked")
 
-      $("#report").click(function () {
-        let textArray = $("input:checkbox[data-check='isChecked']:checked").map(function() {
+
+
+      $("#email").click(function () {
+        let textArray = [];
+        textArray = $("input:checkbox[data-check='isChecked']:checked").map(function() {
           return $(this).parent().parent().parent().parent().siblings()[0].previousSibling.innerText;
         }).get();
 
-        // textArray = textArray[0];
-
-        let linkArray = $("input:checkbox[data-check='isChecked']:checked").map(function() {
+        let linkArray = [];
+        linkArray = $("input:checkbox[data-check='isChecked']:checked").map(function() {
           return $(this).parent().parent().parent().parent().siblings()[0].lastChild.href;
         }).get();
-
-        // linkArray = linkArray[0];
         /*
-        if (textArray) {
-          console.log(`${textArray} and its link : ${linkArray} <a href="${linkArray}">${textArray}</a>`);
-        }
-        */
         textArray.forEach((text, value) => {
           const url = linkArray[value];
           let li = document.createElement("li");
           let report = `<a href="${url}">${text}</a>`;
           li.innerHTML = report;
           document.getElementById("reportList").appendChild(li);
-          // console.log(text, url);
-        });
-        /*
-        result.forEach(function(item) {
-        var li = document.createElement("li");
-        var text = `<div class="collapsible-header"><form action="#" style="margin-top: 0.5rem;"><p><label><input type="checkbox" data-check="isChecked" class="filled-in" /><span></span></label></p></form><p><a> ${item.title}, </a> ${item.filters.journal}, ${item.filters.year}</p></div><div class="collapsible-body"><span>${item.authors}</span><br><br><span style="font-style: italic; font-size: small;">${item.institution}</span><br><br><a href='${item.url}' target='_blank'><i class="material-icons" style="vertical-align: sub; color: darkred;">filter_none</i><span style="color: darkred;"> Open the Study</span></a></div>`;
-        li.innerHTML = text;
-        document.getElementById("resultList").appendChild(li);
+          console.log(text, url);
         });
         */
-      });
-      
+        // COOKIE START
+        function createCookie(name,value,days) {
+        if (days) {
+        var date = new Date();
+        date.setTime(date.getTime()+(days*24*60*60*1000));
+        var expires = "; expires="+date.toGMTString();
+        }
+        else var expires = "";
+        document.cookie = name+"="+value+expires+"; path=/";
+        }
+        function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+        }
+        function eraseCookie(name) {
+        createCookie(name,"",-1);
+        }
 
-      /*
-      $('#selectAll').change(function() {
-        console.log('Changed!');
-        // let boxes = $("input[data-select='selecty']");
-        // console.log(boxes);
-        // var checkboxes = $(this).closest('form').find(':checkbox');
-        // checkboxes.prop('checked', $(this).is(':checked'));
-      });
-      */
+        let json_text = JSON.stringify(textArray);
+        let json_link = JSON.stringify(linkArray);
+        eraseCookie('text');
+        eraseCookie('link');
+        createCookie('text', json_text, 1);
+        createCookie('link', json_link, 1);
+      });      
     script.
       $( "body" ).one('mouseover', function() {
         setTimeout(function() { 
