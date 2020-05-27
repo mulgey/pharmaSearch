@@ -479,8 +479,6 @@ html
     // FUNDEMENTALS
     script.
       M.AutoInit();
-      var elems = document.querySelectorAll('select');
-      var instances = M.FormSelect.init(elems, {isMultiple: false});
     script.
       // GET JSON DATA
       var dataReq = new XMLHttpRequest();
@@ -495,11 +493,8 @@ html
     script.
       // SET EMPTY FILTER ARRAY
       let filterArr = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
-      // let myData;
       var searchObj = new Object();
-      // let result;
-      // let string;
-      // MODIFY FILTER ARRAY WITH SPAN.LEVERs' ACTION
+      // MODIFY FILTER ARRAY ACCORDING TO SPAN.LEVERS' ACTION
       $( "#pediatrics" ).click(function() {
       if (filterArr[0] === false) {
       filterArr[0] = true;
@@ -934,7 +929,7 @@ html
       $(".chip").hide();
       // ERASE THE PREV RESULT TEXT
       $('#resultList').text('');
-      // GET THE LIST TEXTs
+      // GET THE TEXTs FROM LIST SELECTS
       let instance_01 = M.FormSelect.getInstance($('#actSubs'));
       let actSubs = instance_01.getSelectedValues();
       let instance_02 = M.FormSelect.getInstance($('#indication'));
@@ -959,7 +954,7 @@ html
       let country = instance_11.getSelectedValues();
       let instance_12 = M.FormSelect.getInstance($('#year'));
       let year = instance_12.getSelectedValues();
-      // IF IT'S EMPTY, SET AS "EMPTY" (1)
+      // IF NOTHING WAS SELECTED, SET THE VALUE AS "EMPTY"
       if (actSubs === "") {
       actSubs = "empty"
       }
@@ -1008,7 +1003,7 @@ html
       year = "empty"
       }
 
-      // CLEAR THE SEARCH OBJECT / ADD LIST PARAMETERS (ACTSUBS-WARD) FOR THE NEW SEARCH
+      // RESET THE SEARCH OBJECT / ADD VALUES FROM THE LIST SELECTS FOR THE NEW SEARCH
       searchObj = {
         actSubs: actSubs,
         indication: indication,
@@ -1084,7 +1079,7 @@ html
         youngPharma: [],
         nextStep: []
       };
-      // IF VALUE WAS NOT SELECTED, DESTROY THEM
+      // IF VALUE WAS NOT SELECTED (EMPTY), DESTROY THEM
       if (actSubs === "empty") {
       searchObj['actSubs'] = [];
       }
@@ -1121,10 +1116,9 @@ html
       if (year == "any") {
       searchObj['year'] = [];
       }
-      // LOAD THE DATA TO THE VARIABLE
+      // LOAD THE DATA TO THE myData VARIABLE
       let myData = JSON.parse(dataReq.responseText);
-      console.log(myData);
-      // ADD THE DATA IN THE FILTER TO THE SEARCH
+      // ADD THE DATA IN THE FILTER TO THE SEARCH OBJECT
       if (filterArr[0] === true) {
       searchObj.pediatrics = "pediatrics";
       }
