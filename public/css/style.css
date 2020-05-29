@@ -1,4 +1,4 @@
-main, header, footer, .collapsible-header {
+main, header, footer, .collapsible-header, #sortSelect {
     background-color: aliceblue;
 }
 

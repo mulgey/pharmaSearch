@@ -448,9 +448,9 @@ html
                 input#selectAll.filled-in(type='checkbox')
                 span(style="font-weight: bold; color: darkslateblue;") Select All
           select#sortSelect.browser-default.col.s12.m4.right
-            option(value='Name') Name (A-Z)
-            option(value='Newest', selected='') Newest First
-            option(value='Oldest') Oldest First
+            option.sortClass(value='Name') Name (A-Z)
+            option.sortClass(value='Newest', selected='') Newest First
+            option.sortClass(value='Oldest') Oldest First
         #resultBody.row(style='display: none;')
           ul#resultList(class="collapsible expandable")
         .row  
