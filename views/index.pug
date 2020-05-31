@@ -1371,10 +1371,11 @@ html
         return filterEngine.every(val => objFilters.includes(val));
       });
       
-      // GET THE SORT CRITERIA NAME FIRST
+      // IF THERE'S A RESULT
       if (result.length > 0) {
         let sortName = $('#sortSelect').find(":selected").text();
         
+        // OLDEST FIRST
         if (sortName == "Oldest First") {
           function sort(valuePath, array) {
             let path = valuePath.split('.')
@@ -1417,10 +1418,12 @@ html
               return typeof obj;
             }
           }
-
+          
+          // NEWEST FIRST
           if (sortName == "Newest First") {
             result = sort('filters.year', result);
           } else {
+          // A to Z SORTING
             result = sort('title', result);
           }
           
@@ -1432,6 +1435,7 @@ html
       let resultLength = result.length;
 
       $("#resultText").html(`We have found ${resultLength} result(s)`);
+      // IF THERE'S A RESULT MAKE THE CHANGES
       if (resultLength > 0) {
         $('#Resulty').empty();
         $('#Resulty').append("Results");
@@ -1443,10 +1447,7 @@ html
         $('#sortAndAll').fadeIn(300);
         $('#resultBody').fadeIn(500);
         $('#email').fadeIn(500);
-        /*
-        $('#resultHeader').attr('style','display: default;');
-        $('#resultBody').attr('style','display: default;');
-        */
+      // IF THERE'S NO RESULT, HIDE THE NECESSARY PARTS
       } else {
         $('#Resulty').empty();
         $('#Resulty').append("Results");
@@ -1454,22 +1455,14 @@ html
         $('#resultBody').hide();
         $('#email').hide();
         $('#resultHeader').fadeIn(300);
-        /*
-        $('#resultHeader').attr('style','display: default;');
-        $('#resultBody').attr('style','display: none;');
-        */
       }
-      // TIME TO PRESENT THE LIST
-      /*
-      for (let key in result) {
-      let value = result[key];
-      }
-      */
+      // PREPARE THE LIST, APPEND TO RESULTLIST SECTION
       result.forEach(function(item) {
       var li = document.createElement("li");
       var text = `<div class="collapsible-header"><form action="#" style="margin-top: 0.5rem;"><p><label><input type="checkbox" data-check="isChecked" class="filled-in" /><span></span></label></p></form><p><a> ${item.title}, </a> ${item.filters.journal}, ${item.filters.year}</p></div><div class="collapsible-body"><span>${item.authors}</span><br><br><span style="font-style: italic; font-size: small;">${item.institution}</span><br><br><a href='${item.url}' target='_blank'><i class="material-icons" style="vertical-align: sub; color: darkred;">filter_none</i><span style="color: darkred;"> Open the Study</span></a></div>`;
       li.innerHTML = text;
       document.getElementById("resultList").appendChild(li);
+      // CREATE THE COLLAPSIBLE STYLE
       let elem = document.querySelectorAll('.collapsible.expandable');
       let instance = M.Collapsible.init(elem, {
       accordion: false,
@@ -1482,6 +1475,7 @@ html
         useHashLocation: false,
       });
 
+      // FIX FOR THE RE-PAGINATION WITHOUT REFRESHING THE PAGE, KILL / RE-PAGINATE
       $('#resultList').data('paginate').kill();
 
       $('#resultList').paginate({
@@ -1492,12 +1486,15 @@ html
 
       });
 
+      // IF SORT SELECTION CHANGES, SEARCH AGAIN
       $('#sortSelect').change(function(){ 
           $("#search").trigger( "click" );
       });
 
+      // SELECT ALL ENGINE STARTS WITH A COUNTER
       let counter = [false];
 
+      // CHECKED - TRUE / NOT-CHECKED - FALSE MECHANISM
       $("#selectAll").click(function () {
           if (counter[0] === false) {
             $('.filled-in').prop('checked', true);
@@ -1508,33 +1505,23 @@ html
           }
           
       });
+      // SELECT ALL ENGINE ENDS
 
-      // $("input[data-check='isChecked']")
-      // $("input:checkbox[data-check='isChecked']:checked")
-
-
-
+      // WHEN E-MAIL ME CLICKED
       $("#email").click(function () {
+        // CREATE A TEXT ARRAY AND ADD INSIDE THE TEXTs of THE SELECTED STUDIES
         let textArray = [];
         textArray = $("input:checkbox[data-check='isChecked']:checked").map(function() {
           return $(this).parent().parent().parent().parent().siblings()[0].previousSibling.innerText;
         }).get();
 
+        // CREATE A LINK ARRAY AND ADD INSIDE THE LINKs of THE SELECTED STUDIES
         let linkArray = [];
         linkArray = $("input:checkbox[data-check='isChecked']:checked").map(function() {
           return $(this).parent().parent().parent().parent().siblings()[0].lastChild.href;
         }).get();
-        /*
-        textArray.forEach((text, value) => {
-          const url = linkArray[value];
-          let li = document.createElement("li");
-          let report = `<a href="${url}">${text}</a>`;
-          li.innerHTML = report;
-          document.getElementById("reportList").appendChild(li);
-          console.log(text, url);
-        });
-        */
-        // COOKIE START
+
+        // COOKIE ENGINE START
         function createCookie(name,value,days) {
         if (days) {
         var date = new Date();
@@ -1557,15 +1544,20 @@ html
         function eraseCookie(name) {
         createCookie(name,"",-1);
         }
+        // COOKIE ENGINE ENDS
 
+        // CONVERT ARRAYS TO JSONs
         let json_text = JSON.stringify(textArray);
         let json_link = JSON.stringify(linkArray);
+        // ERASE PRE-COOKIES
         eraseCookie('text');
         eraseCookie('link');
+        // CREATE NEW COOKIES AS JSONs
         createCookie('text', json_text, 1);
         createCookie('link', json_link, 1);
       });      
     script.
+      // FOOTER SLIDING DATA
       $( "body" ).one('mouseover', function() {
         setTimeout(function() { 
         let slideData = JSON.parse(dataReq.responseText);
@@ -1575,6 +1567,7 @@ html
         document.getElementById("slider").innerHTML = `${slideData.length} studies in our database are ready! With ${actLength} different active substances, ${wardLength} different ward options and among ${countryLength} countries; you may perform your search`;
         }, 500);
       });
+      // CREATE MONO-SELECT DROPDOWNS FOR THE SELECTED LIST OF IDs
       $( ".input-field span" ).click(function() {
         let foundID = $(this).parent().parent().parent();
         foundID = foundID[0].lastChild.id;
@@ -1583,4 +1576,10 @@ html
         selecty.trigger( "click" ); 
         }
       });
+      
+      // IF ANOTHER SELECT WAS CLICKED UNSELECT THE SELECT-ALL CHECKBOX
+      $("body").on("change", "input[data-check='isChecked']", function () {
+          $("#selectAll").prop('checked', false);
+      });
+      // ENDS
       
