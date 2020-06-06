@@ -20,24 +20,21 @@ async function main() {
         if (error) {
         console.log(error);
         } else {
-        console.log("Server is ready to take our messages");
-        }
+        // send mail with defined transport object
+        transporter.sendMail({
+          from: '"PharmaSearch E-Mail Service ☕" <mustafa@renaldose.com>', // sender address
+          to: "mustafa@renaldose.com, mustafaulgey@hotmail.com", // list of receivers
+          subject: "Your List of Selected Studies 📌", // Subject line
+          html: "<b>Test e-mail</b> starts here. And ends <i>here</i>", // html body
+        }, (err, info) => {
+          // console.log(info.accepted); // [ 'mustafa@renaldose.com' ]
+          console.log((Object.values(info.accepted)).join(', ')); // mustafa@renaldose.com, mustafaulgey@hotmail.com
+          // console.log(info.rejected); // []
+          // console.log(info.pending); // undefined
+          // console.log(err); // null
+        });
+      }
     });
-
-  // send mail with defined transport object
-  let info = await transporter.sendMail({
-    from: '"PharmaSearch E-Mail Service ☕" <mustafa@renaldose.com>', // sender address
-    to: "mustafa@renaldose.com", // list of receivers
-    subject: "Your List of Selected Studies 📌", // Subject line
-    html: "<b>Test e-mail</b> starts here. And ends <i>here</i>", // html body
-  });
-
-  console.log("Message sent: %s", info.messageId);
-  // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-
-  // Preview only available when sending through an Ethereal account
-  console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-  // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
 }
 
 main().catch(console.error);
