@@ -23,15 +23,16 @@ async function main() {
         // send mail with defined transport object
         transporter.sendMail({
           from: '"PharmaSearch E-Mail Service ☕" <mustafa@renaldose.com>', // sender address
-          to: "mustafa@renaldose.com, mustafaulgey@hotmail.com", // list of receivers
+          to: "mustafa@renaldose.com", // list of receivers
           subject: "Your List of Selected Studies 📌", // Subject line
           html: "<b>Test e-mail</b> starts here. And ends <i>here</i>", // html body
         }, (err, info) => {
-          // console.log(info.accepted); // [ 'mustafa@renaldose.com' ]
-          console.log((Object.values(info.accepted)).join(', ')); // mustafa@renaldose.com, mustafaulgey@hotmail.com
-          // console.log(info.rejected); // []
-          // console.log(info.pending); // undefined
-          // console.log(err); // null
+          if (info) {
+            // console.log(info.accepted); // [ 'mustafa@renaldose.com' ]
+            console.log((info.accepted)[0]); // mustafa@renaldose.com
+          } else {
+            console.log(err.response); // 550 <mustafaaaaa@renaldose.com> No such user here
+          }          
         });
       }
     });

@@ -20,11 +20,10 @@ router.get('/email', function(req, res, next) {
 
 // POST /email
 router.post('/email', function(req, res, next) {
-  console.log('Hey yo!');
   let receiver = req.body.email;
   let studies = req.body.studies;
-  console.log(receiver);
-  console.log(studies);
+  let mailSpot;
+  let errMessage;
 
   async function main() {
     // create reusable transporter object using the default SMTP transport
@@ -43,25 +42,31 @@ router.post('/email', function(req, res, next) {
         if (error) {
         console.log(error);
         } else {
-        console.log("Server is ready to take our messages");
+        // send mail with defined transport object
+        transporter.sendMail({
+          from: '"PharmaSearch E-Mail Service ☕" <mustafa@renaldose.com>', // sender address
+          to: receiver, // list of receivers
+          subject: "Your List of Selected Studies 📌", // Subject line
+          text: studies, // html body
+        }, (err, info) => {
+          if (info) {
+            mailSpot = ((info.accepted)[0]); // mustafa@renaldose.com
+          } else {
+            errMessage = err.response;
+          }
+        });
+        setTimeout(function() {
+        if (typeof mailSpot !== undefined) {
+        res.locals.Sent = `Your message is sent to ${mailSpot}`;
+        } else {
+          res.locals.Sent = `Your message is sent`;
         }
-    });
-
-    // send mail with defined transport object
-    let info = await transporter.sendMail({
-      from: '"PharmaSearch E-Mail Service ☕" <mustafa@renaldose.com>', // sender address
-      to: receiver, // list of receivers
-      subject: "Your List of Selected Studies 📌", // Subject line
-      text: studies, // html body
-    });
-
-    console.log("Message sent: %s", info.messageId);
-    // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-
-    res.locals.Sent = "Thank you, your mail is sent";
-    res.render("email");
+        console.log(errMessage);
+        res.render("email");  
+        }, 8000);
+        }
+    });    
   }
-
   return main().catch(console.error);
 });
 
