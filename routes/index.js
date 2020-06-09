@@ -40,7 +40,8 @@ router.post('/email', function(req, res, next) {
     // verify connection configuration
     transporter.verify(function(error, success) {
         if (error) {
-        console.log(error);
+          res.locals.Sent = `Your message could not be sent. If your connection was established, check your firewall and antivirus software settings`;
+          return res.render("email");
         } else {
         // send mail with defined transport object
         transporter.sendMail({
@@ -51,19 +52,26 @@ router.post('/email', function(req, res, next) {
         }, (err, info) => {
           if (info) {
             mailSpot = ((info.accepted)[0]); // mustafa@renaldose.com
+            return setTimeout(function() {
+              if (typeof mailSpot !== undefined) {
+              res.locals.Sent = `Your message was sent to ${mailSpot}. Please check your junk/spam folder. You may also add mustafa@renaldose.com to your address list for your future inquiries.`;
+              } else {
+                res.locals.Sent = `Your message was sent. Please check your junk/spam folder. You may also add mustafa@renaldose.com to your address list for your future inquiries.`;
+              }
+              res.render("email");  
+              }, 2000);            
           } else {
             errMessage = err.response;
+            return setTimeout(function() {
+              if (typeof errMessage !== undefined) {
+                res.locals.Sent = `There has been an error. Please check your e-mail address. Error message: ${errMessage}`;
+              } else {
+                res.locals.Sent = `There has been an error. Please provide a valid e-mail address`;
+              }
+              res.render("email");
+            }, 2000);
           }
         });
-        setTimeout(function() {
-        if (typeof mailSpot !== undefined) {
-        res.locals.Sent = `Your message is sent to ${mailSpot}`;
-        } else {
-          res.locals.Sent = `Your message is sent`;
-        }
-        console.log(errMessage);
-        res.render("email");  
-        }, 8000);
         }
     });    
   }

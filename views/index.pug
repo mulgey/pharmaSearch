@@ -10,14 +10,7 @@ html
     // Let browser know website is optimized for mobile
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
   body
-    header
-      .navbar-fixed(style='margin-bottom: 2rem;')  
-        nav
-          .nav-wrapper(style='background-color: royalblue;')
-            a.brand-logo(href='#') PharmaSearch
-            ul#nav-mobile.right.hide-on-med-and-down
-              li
-                a(href='#' style='margin-right: 2rem;') About
+    include includes/header.pug
     main  
       .container
         form.row(action='#')
@@ -434,7 +427,7 @@ html
             i.material-icons.right search
       .container(style='margin-top: 2rem;')
         .row
-          .chip.col.s12
+          .chip.col.s12.center-align
             | Multiple selection means "both" (not "or"). E.g., selection of "Morphine" and "Fentanyl" makes it search the studies including both active substances
             i.close.material-icons close
       .container
@@ -453,1133 +446,1118 @@ html
             option.sortClass(value='Oldest') Oldest First
         #resultBody.row(style='display: none;')
           ul#resultList(class="collapsible expandable")
-        .row  
+        .row(style="margin-top: 4rem;")
           #email.col.s2.waves-effect.waves-light.btn.offset-s4(style='border-radius: 12px; width: 25%; display: none; background-color: royalblue;', onclick="window.open('email','_blank');")
               | E-Mail Results
               i.material-icons.right email
-    footer
-      footer.page-footer
-        .container
-          .row
-            .col.l6.s12
-              h5.white-text Footer Content
-              p.grey-text.text-lighten-4 You can use rows and columns here to organize your footer content.
-            .col.l4.offset-l2.s12
-              h5.white-text Links
-              ul
-                li
-                  a.grey-text.text-lighten-3(href='#!') Link 1
-        .footer-copyright
-          .container
-            marquee(id='slider' behavior='scroll', direction='left' scrollamount='12')
-    // Compiled and minified JavaScript
-    script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
-    script(src='js/jquery.paginate.js')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
-    // FUNDEMENTALS
-    script.
-      M.AutoInit();
-    script.
-      // GET JSON DATA
-      var dataReq = new XMLHttpRequest();
-      var url = "protected/data/data.json";
-      dataReq.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-      console.log('Data loaded with success!');
-      }
-      };
-      dataReq.open("GET", url, true);
-      dataReq.send();
-    script.
-      // SET EMPTY FILTER ARRAY
-      let filterArr = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
-      var searchObj = new Object();
-      // MODIFY FILTER ARRAY ACCORDING TO SPAN.LEVERS' ACTION
-      $( "#pediatrics" ).click(function() {
-      if (filterArr[0] === false) {
-      filterArr[0] = true;
-      } else {
-      filterArr[0] = false;
-      }
-      });
-      $( "#geriatrics" ).click(function() {
-      if (filterArr[1] === false) {
-      filterArr[1] = true;
-      } else {
-      filterArr[1] = false;
-      }
-      });
-      $( "#neonatology" ).click(function() {
-      if (filterArr[2] === false) {
-      filterArr[2] = true;
-      } else {
-      filterArr[2] = false;
-      }
-      });
-      $( "#oncology" ).click(function() {
-      if (filterArr[3] === false) {
-      filterArr[3] = true;
-      } else {
-      filterArr[3] = false;
-      }
-      });
-      $( "#pharmacogenetics" ).click(function() {
-      if (filterArr[4] === false) {
-      filterArr[4] = true;
-      } else {
-      filterArr[4] = false;
-      }
-      });
-      $( "#pharmacoeconomy" ).click(function() {
-      if (filterArr[5] === false) {
-      filterArr[5] = true;
-      } else {
-      filterArr[5] = false;
-      }
-      });
-      $( "#radiopharmaceuticals" ).click(function() {
-      if (filterArr[6] === false) {
-      filterArr[6] = true;
-      } else {
-      filterArr[6] = false;
-      }
-      });
-      $( "#compounding" ).click(function() {
-      if (filterArr[7] === false) {
-      filterArr[7] = true;
-      } else {
-      filterArr[7] = false;
-      }
-      });
-      $( "#medicalDevices" ).click(function() {
-      if (filterArr[8] === false) {
-      filterArr[8] = true;
-      } else {
-      filterArr[8] = false;
-      }
-      });
-      $( "#personalized" ).click(function() {
-      if (filterArr[9] === false) {
-      filterArr[9] = true;
-      } else {
-      filterArr[9] = false;
-      }
-      });
-      $( "#nutrition" ).click(function() {
-      if (filterArr[10] === false) {
-      filterArr[10] = true;
-      } else {
-      filterArr[10] = false;
-      }
-      });
-      $( "#highRisk" ).click(function() {
-      if (filterArr[11] === false) {
-      filterArr[11] = true;
-      } else {
-      filterArr[11] = false;
-      }
-      });
-      $( "#endOfLife" ).click(function() {
-      if (filterArr[12] === false) {
-      filterArr[12] = true;
-      } else {
-      filterArr[12] = false;
-      }
-      });
-      $( "#selfMedication" ).click(function() {
-      if (filterArr[13] === false) {
-      filterArr[13] = true;
-      } else {
-      filterArr[13] = false;
-      }
-      });
-      $( "#preopMedication" ).click(function() {
-      if (filterArr[14] === false) {
-      filterArr[14] = true;
-      } else {
-      filterArr[14] = false;
-      }
-      });
-      $( "#outpatient" ).click(function() {
-      if (filterArr[15] === false) {
-      filterArr[15] = true;
-      } else {
-      filterArr[15] = false;
-      }
-      });
-      $( "#enzymeSubstrate" ).click(function() {
-      if (filterArr[16] === false) {
-      filterArr[16] = true;
-      } else {
-      filterArr[16] = false;
-      }
-      });
-      $( "#geneTherapy" ).click(function() {
-      if (filterArr[17] === false) {
-      filterArr[17] = true;
-      } else {
-      filterArr[17] = false;
-      }
-      });
-      $( "#homeCare" ).click(function() {
-      if (filterArr[18] === false) {
-      filterArr[18] = true;
-      } else {
-      filterArr[18] = false;
-      }
-      });
-      $( "#antibioticProphylaxis" ).click(function() {
-      if (filterArr[19] === false) {
-      filterArr[19] = true;
-      } else {
-      filterArr[19] = false;
-      }
-      });
-      $( "#painManagement" ).click(function() {
-      if (filterArr[20] === false) {
-      filterArr[20] = true;
-      } else {
-      filterArr[20] = false;
-      }
-      });
-      $( "#offLabel" ).click(function() {
-      if (filterArr[21] === false) {
-      filterArr[21] = true;
-      } else {
-      filterArr[21] = false;
-      }
-      });
-      $( "#flatDoses" ).click(function() {
-      if (filterArr[22] === false) {
-      filterArr[22] = true;
-      } else {
-      filterArr[22] = false;
-      }
-      });
-      $( "#switching" ).click(function() {
-      if (filterArr[23] === false) {
-      filterArr[23] = true;
-      } else {
-      filterArr[23] = false;
-      }
-      });
-      $( "#deprescribing" ).click(function() {
-      if (filterArr[24] === false) {
-      filterArr[24] = true;
-      } else {
-      filterArr[24] = false;
-      }
-      });
-      $( "#prepareIV" ).click(function() {
-      if (filterArr[25] === false) {
-      filterArr[25] = true;
-      } else {
-      filterArr[25] = false;
-      }
-      });
-      $( "#costAnalysis" ).click(function() {
-      if (filterArr[26] === false) {
-      filterArr[26] = true;
-      } else {
-      filterArr[26] = false;
-      }
-      });
-      $( "#riskSafety" ).click(function() {
-      if (filterArr[27] === false) {
-      filterArr[27] = true;
-      } else {
-      filterArr[27] = false;
-      }
-      });
-      $( "#vigilance" ).click(function() {
-      if (filterArr[28] === false) {
-      filterArr[28] = true;
-      } else {
-      filterArr[28] = false;
-      }
-      });
-      $( "#stability" ).click(function() {
-      if (filterArr[29] === false) {
-      filterArr[29] = true;
-      } else {
-      filterArr[29] = false;
-      }
-      });
-      $( "#drugMonitoring" ).click(function() {
-      if (filterArr[30] === false) {
-      filterArr[30] = true;
-      } else {
-      filterArr[30] = false;
-      }
-      });
-      $( "#safetyProfile" ).click(function() {
-      if (filterArr[31] === false) {
-      filterArr[31] = true;
-      } else {
-      filterArr[31] = false;
-      }
-      });
-      $( "#intervention" ).click(function() {
-      if (filterArr[32] === false) {
-      filterArr[32] = true;
-      } else {
-      filterArr[32] = false;
-      }
-      });
-      $( "#patientIntervention" ).click(function() {
-      if (filterArr[33] === false) {
-      filterArr[33] = true;
-      } else {
-      filterArr[33] = false;
-      }
-      });
-      $( "#nursesReccomend" ).click(function() {
-      if (filterArr[34] === false) {
-      filterArr[34] = true;
-      } else {
-      filterArr[34] = false;
-      }
-      });
-      $( "#questPatient" ).click(function() {
-      if (filterArr[35] === false) {
-      filterArr[35] = true;
-      } else {
-      filterArr[35] = false;
-      }
-      });
-      $( "#questProfessional" ).click(function() {
-      if (filterArr[36] === false) {
-      filterArr[36] = true;
-      } else {
-      filterArr[36] = false;
-      }
-      });
-      $( "#selection" ).click(function() {
-      if (filterArr[37] === false) {
-      filterArr[37] = true;
-      } else {
-      filterArr[37] = false;
-      }
-      });
-      $( "#stock" ).click(function() {
-      if (filterArr[38] === false) {
-      filterArr[38] = true;
-      } else {
-      filterArr[38] = false;
-      }
-      });
-      $( "#autoDispensing" ).click(function() {
-      if (filterArr[39] === false) {
-      filterArr[39] = true;
-      } else {
-      filterArr[39] = false;
-      }
-      });
-      $( "#coldChain" ).click(function() {
-      if (filterArr[40] === false) {
-      filterArr[40] = true;
-      } else {
-      filterArr[40] = false;
-      }
-      });
-      $( "#softwareAided" ).click(function() {
-      if (filterArr[41] === false) {
-      filterArr[41] = true;
-      } else {
-      filterArr[41] = false;
-      }
-      });
-      $( "#mobileVR" ).click(function() {
-      if (filterArr[42] === false) {
-      filterArr[42] = true;
-      } else {
-      filterArr[42] = false;
-      }
-      });
-      $( "#Printing3D" ).click(function() {
-      if (filterArr[43] === false) {
-      filterArr[43] = true;
-      } else {
-      filterArr[43] = false;
-      }
-      });
-      $( "#socialMedia" ).click(function() {
-      if (filterArr[44] === false) {
-      filterArr[44] = true;
-      } else {
-      filterArr[44] = false;
-      }
-      });
-      $( "#shortages" ).click(function() {
-      if (filterArr[45] === false) {
-      filterArr[45] = true;
-      } else {
-      filterArr[45] = false;
-      }
-      });
-      $( "#adverseEvents" ).click(function() {
-      if (filterArr[46] === false) {
-      filterArr[46] = true;
-      } else {
-      filterArr[46] = false;
-      }
-      });
-      $( "#adherence" ).click(function() {
-      if (filterArr[47] === false) {
-      filterArr[47] = true;
-      } else {
-      filterArr[47] = false;
-      }
-      });
-      $( "#resistance" ).click(function() {
-      if (filterArr[48] === false) {
-      filterArr[48] = true;
-      } else {
-      filterArr[48] = false;
-      }
-      });
-      $( "#renal" ).click(function() {
-      if (filterArr[49] === false) {
-      filterArr[49] = true;
-      } else {
-      filterArr[49] = false;
-      }
-      });
-      $( "#errors" ).click(function() {
-      if (filterArr[50] === false) {
-      filterArr[50] = true;
-      } else {
-      filterArr[50] = false;
-      }
-      });
-      $( "#administrative" ).click(function() {
-      if (filterArr[51] === false) {
-      filterArr[51] = true;
-      } else {
-      filterArr[51] = false;
-      }
-      });
-      $( "#stewardship" ).click(function() {
-      if (filterArr[52] === false) {
-      filterArr[52] = true;
-      } else {
-      filterArr[52] = false;
-      }
-      });
-      $( "#policiesAudits" ).click(function() {
-      if (filterArr[53] === false) {
-      filterArr[53] = true;
-      } else {
-      filterArr[53] = false;
-      }
-      });
-      $( "#multidisciplinary" ).click(function() {
-      if (filterArr[54] === false) {
-      filterArr[54] = true;
-      } else {
-      filterArr[54] = false;
-      }
-      });
-      $( "#institutional" ).click(function() {
-      if (filterArr[55] === false) {
-      filterArr[55] = true;
-      } else {
-      filterArr[55] = false;
-      }
-      });
-      $( "#recalls" ).click(function() {
-      if (filterArr[56] === false) {
-      filterArr[56] = true;
-      } else {
-      filterArr[56] = false;
-      }
-      });
-      $( "#education" ).click(function() {
-      if (filterArr[57] === false) {
-      filterArr[57] = true;
-      } else {
-      filterArr[57] = false;
-      }
-      });
-      $( "#clinicalTrials" ).click(function() {
-      if (filterArr[58] === false) {
-      filterArr[58] = true;
-      } else {
-      filterArr[58] = false;
-      }
-      });
-      $( "#youngPharma" ).click(function() {
-      if (filterArr[59] === false) {
-      filterArr[59] = true;
-      } else {
-      filterArr[59] = false;
-      }
-      });
-      $( "#nextStep" ).click(function() {
-      if (filterArr[60] === false) {
-      filterArr[60] = true;
-      } else {
-      filterArr[60] = false;
-      }
-      });
-
-      // WHEN YOU FIRE THE SEARCH
-      $("#search").click(function() {
-      // HIDE THE SEARCH INFORMATIVE
-      $(".chip").hide();
-      // ERASE THE PREV RESULT TEXT
-      $('#resultList').text('');
-      // GET THE TEXTs FROM LIST SELECTS
-      let instance_01 = M.FormSelect.getInstance($('#actSubs'));
-      let actSubs = instance_01.getSelectedValues();
-      let instance_02 = M.FormSelect.getInstance($('#indication'));
-      let indication = instance_02.getSelectedValues();
-      let instance_03 = M.FormSelect.getInstance($('#statedClass'));
-      let statedClass = instance_03.getSelectedValues();
-      let instance_04 = M.FormSelect.getInstance($('#studyDesign'));
-      let studyDesign = instance_04.getSelectedValues();
-      let instance_05 = M.FormSelect.getInstance($('#setting'));
-      let setting = instance_05.getSelectedValues();
-      let instance_06 = M.FormSelect.getInstance($('#ward'));
-      let ward = instance_06.getSelectedValues();
-      let instance_07 = M.FormSelect.getInstance($('#numPatients'));
-      let numPatients = instance_07.getSelectedValues();
-      let instance_08 = M.FormSelect.getInstance($('#numPrescriptions'));
-      let numPrescriptions = instance_08.getSelectedValues();
-      let instance_09 = M.FormSelect.getInstance($('#criteriaMethod'));
-      let studyLength = instance_09.getSelectedValues();
-      let instance_10 = M.FormSelect.getInstance($('#studyLength'));
-      let criteriaMethod = instance_10.getSelectedValues();
-      let instance_11 = M.FormSelect.getInstance($('#country'));
-      let country = instance_11.getSelectedValues();
-      let instance_12 = M.FormSelect.getInstance($('#year'));
-      let year = instance_12.getSelectedValues();
-      // IF NOTHING WAS SELECTED, SET THE VALUE AS "EMPTY"
-      if (actSubs === "") {
-      actSubs = "empty"
-      }
-
-      if (indication === "") {
-      indication = "empty"
-      }
-
-      if (statedClass === "") {
-      statedClass = "empty"
-      }
-
-      if (studyDesign === "") {
-      studyDesign = "empty"
-      }
-
-      if (setting === "") {
-      setting = "empty"
-      }
-
-      if (ward === "") {
-      ward = "empty"
-      }
-
-      if (numPatients === "") {
-      numPatients = "empty"
-      }
-
-      if (numPrescriptions === "") {
-      numPrescriptions = "empty"
-      }
-
-      if (studyLength === "") {
-      studyLength = "empty"
-      }
-
-      if (criteriaMethod === "") {
-      criteriaMethod = "empty"
-      }
-
-      if (country === "") {
-      country = "empty"
-      }
-
-      if (year === "") {
-      year = "empty"
-      }
-
-      // RESET THE SEARCH OBJECT / ADD VALUES FROM THE LIST SELECTS FOR THE NEW SEARCH
-      searchObj = {
-        actSubs: actSubs,
-        indication: indication,
-        statedClass: statedClass,
-        studyDesign: studyDesign,
-        setting: setting,
-        ward: ward,
-        numPatients: numPatients,
-        numPrescriptions: numPrescriptions,
-        studyLength: studyLength,
-        criteriaMethod: criteriaMethod,
-        country: country,
-        year: year,
-        pediatrics: [],
-        geriatrics: [],
-        neonatology: [],
-        oncology: [],
-        pharmacogenetics: [],
-        pharmacoeconomy: [],
-        radiopharmaceuticals: [],
-        compounding: [],
-        medicalDevices: [],
-        personalized: [],
-        nutrition: [],
-        highRisk: [],
-        endOfLife: [],
-        selfMedication: [],
-        preopMedication: [],
-        outpatient: [],
-        enzymeSubstrate: [],
-        geneTherapy: [],
-        homeCare: [],
-        antibioticProphylaxis: [],
-        painManagement: [],
-        offLabel: [],
-        flatDoses: [],
-        switching: [],
-        deprescribing: [],
-        prepareIV: [],
-        costAnalysis: [],
-        riskSafety: [],
-        vigilance: [],
-        stability: [],
-        drugMonitoring: [],
-        safetyProfile: [],
-        intervention: [],
-        patientIntervention: [],
-        nursesReccomend: [],
-        questPatient: [],
-        questProfessional: [],
-        selection: [],
-        stock: [],
-        autoDispensing: [],
-        coldChain: [],
-        softwareAided: [],
-        mobileVR: [],
-        Printing3D: [],
-        socialMedia: [],
-        shortages: [],
-        adverseEvents: [],
-        adherence: [],
-        resistance: [],
-        renal: [],
-        errors: [],
-        administrative: [],
-        stewardship: [],
-        policiesAudits: [],
-        multidisciplinary: [],
-        institutional: [],
-        recalls: [],
-        education: [],
-        clinicalTrials: [],
-        youngPharma: [],
-        nextStep: []
-      };
-      // IF VALUE WAS NOT SELECTED (EMPTY), DESTROY THEM
-      if (actSubs === "empty") {
-      searchObj['actSubs'] = [];
-      }
-      if (indication === "empty") {
-      searchObj['indication'] = [];
-      }
-      if (statedClass === "empty") {
-      searchObj['statedClass'] = [];
-      }
-      if (studyDesign == "any") {
-      searchObj['studyDesign'] = [];
-      }
-      if (setting === "empty") {
-      searchObj['setting'] = [];
-      }
-      if (ward === "empty") {
-      searchObj['ward_focused'] = [];
-      }
-      if (numPatients === "empty") {
-      searchObj['numPatients'] = [];
-      }
-      if (numPrescriptions == "any") {
-      searchObj['numPrescriptions'] = [];
-      }
-      if (studyLength === "empty") {
-      searchObj['studyLength'] = [];
-      }
-      if (criteriaMethod === "empty") {
-      searchObj['criteriaMethod'] = [];
-      }
-      if (country === "empty") {
-      searchObj['country'] = [];
-      }
-      if (year == "any") {
-      searchObj['year'] = [];
-      }
-      // LOAD THE DATA TO THE myData VARIABLE
-      let myData = JSON.parse(dataReq.responseText);
-      // ADD THE DATA IN THE FILTER TO THE SEARCH OBJECT
-      if (filterArr[0] === true) {
-      searchObj.pediatrics = "pediatrics";
-      }
-
-      if (filterArr[1] === true) {
-      searchObj.geriatrics = "geriatrics";
-      }
-
-      if (filterArr[2] === true) {
-      searchObj.neonatology = "neonatology";
-      }
-
-      if (filterArr[3] === true) {
-      searchObj.oncology = "oncology";
-      }
-
-      if (filterArr[4] === true) {
-      searchObj.pharmacogenetics = "pharmacogenetics";
-      }
-
-      if (filterArr[5] === true) {
-      searchObj.pharmacoeconomy = "pharmacoeconomy";
-      }
-
-      if (filterArr[6] === true) {
-      searchObj.radiopharmaceuticals = "radiopharmaceuticals";
-      }
-
-      if (filterArr[7] === true) {
-      searchObj.compounding = "compounding";
-      }
-
-      if (filterArr[8] === true) {
-      searchObj.medicalDevices = "medicalDevices";
-      }
-
-      if (filterArr[9] === true) {
-      searchObj.personalized = "personalized";
-      }
-
-      if (filterArr[10] === true) {
-      searchObj.nutrition = "nutrition";
-      }
-
-      if (filterArr[11] === true) {
-      searchObj.highRisk = "highRisk";
-      }
-
-      if (filterArr[12] === true) {
-      searchObj.endOfLife = "endOfLife";
-      }
-
-      if (filterArr[13] === true) {
-      searchObj.selfMedication = "selfMedication";
-      }
-
-      if (filterArr[14] === true) {
-      searchObj.preopMedication = "preopMedication";
-      }
-
-      if (filterArr[15] === true) {
-      searchObj.outpatient = "outpatient";
-      }
-
-      if (filterArr[16] === true) {
-      searchObj.enzymeSubstrate = "enzymeSubstrate";
-      }
-
-      if (filterArr[17] === true) {
-      searchObj.geneTherapy = "geneTherapy";
-      }
-
-      if (filterArr[18] === true) {
-      searchObj.homeCare = "homeCare";
-      }
-
-      if (filterArr[19] === true) {
-      searchObj.antibioticProphylaxis = "antibioticProphylaxis";
-      }
-
-      if (filterArr[20] === true) {
-      searchObj.painManagement = "painManagement";
-      }
-
-      if (filterArr[21] === true) {
-      searchObj.offLabel = "offLabel";
-      }
-
-      if (filterArr[22] === true) {
-      searchObj.flatDoses = "flatDoses";
-      }
-
-      if (filterArr[23] === true) {
-      searchObj.switching = "switching";
-      }
-
-      if (filterArr[24] === true) {
-      searchObj.deprescribing = "deprescribing";
-      }
-
-      if (filterArr[25] === true) {
-      searchObj.prepareIV = "prepareIV";
-      }
-
-      if (filterArr[26] === true) {
-      searchObj.costAnalysis = "costAnalysis";
-      }
-
-      if (filterArr[27] === true) {
-      searchObj.riskSafety = "riskSafety";
-      }
-
-      if (filterArr[28] === true) {
-      searchObj.vigilance = "vigilance";
-      }
-
-      if (filterArr[29] === true) {
-      searchObj.stability = "stability";
-      }
-
-      if (filterArr[30] === true) {
-      searchObj.drugMonitoring = "drugMonitoring";
-      }
-
-      if (filterArr[31] === true) {
-      searchObj.safetyProfile = "safetyProfile";
-      }
-
-      if (filterArr[32] === true) {
-      searchObj.intervention = "intervention";
-      }
-
-      if (filterArr[33] === true) {
-      searchObj.patientIntervention = "patientIntervention";
-      }
-
-      if (filterArr[34] === true) {
-      searchObj.nursesReccomend = "nursesReccomend";
-      }
-
-      if (filterArr[35] === true) {
-      searchObj.questPatient = "questPatient";
-      }
-
-      if (filterArr[36] === true) {
-      searchObj.questProfessional = "questProfessional";
-      }
-
-      if (filterArr[37] === true) {
-      searchObj.selection = "selection";
-      }
-
-      if (filterArr[38] === true) {
-      searchObj.stock = "stock";
-      }
-
-      if (filterArr[39] === true) {
-      searchObj.autoDispensing = "autoDispensing";
-      }
-
-      if (filterArr[40] === true) {
-      searchObj.coldChain = "coldChain";
-      }
-
-      if (filterArr[41] === true) {
-      searchObj.softwareAided = "softwareAided";
-      }
-
-      if (filterArr[42] === true) {
-      searchObj.mobileVR = "mobileVR";
-      }
-
-      if (filterArr[43] === true) {
-      searchObj.Printing3D = "Printing3D";
-      }
-
-      if (filterArr[44] === true) {
-      searchObj.socialMedia = "socialMedia";
-      }
-
-      if (filterArr[45] === true) {
-      searchObj.shortages = "shortages";
-      }
-
-      if (filterArr[46] === true) {
-      searchObj.adverseEvents = "adverseEvents";
-      }
-
-      if (filterArr[47] === true) {
-      searchObj.adherence = "adherence";
-      }
-
-      if (filterArr[48] === true) {
-      searchObj.resistance = "resistance";
-      }
-
-      if (filterArr[49] === true) {
-      searchObj.renal = "renal";
-      }
-
-      if (filterArr[50] === true) {
-      searchObj.errors = "errors";
-      }
-
-      if (filterArr[51] === true) {
-      searchObj.administrative = "administrative";
-      }
-
-      if (filterArr[52] === true) {
-      searchObj.stewardship = "stewardship";
-      }
-
-      if (filterArr[53] === true) {
-      searchObj.policiesAudits = "policiesAudits";
-      }
-
-      if (filterArr[54] === true) {
-      searchObj.multidisciplinary = "multidisciplinary";
-      }
-
-      if (filterArr[55] === true) {
-      searchObj.institutional = "institutional";
-      }
-
-      if (filterArr[56] === true) {
-      searchObj.recalls = "recalls";
-      }
-
-      if (filterArr[57] === true) {
-      searchObj.education = "education";
-      }
-
-      if (filterArr[58] === true) {
-      searchObj.clinicalTrials = "clinicalTrials";
-      }
-
-      if (filterArr[59] === true) {
-      searchObj.youngPharma = "youngPharma";
-      }
-
-      if (filterArr[60] === true) {
-      searchObj.nextStep = "nextStep";
-      }
+    include includes/footer.pug
+  // Compiled and minified JavaScript
+  script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
+  script(src='js/jquery.paginate.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
+  // FUNDEMENTALS
+  script.
+    M.AutoInit();
+  script.
+    // GET JSON DATA
+    var dataReq = new XMLHttpRequest();
+    var url = "protected/data/data.json";
+    dataReq.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    console.log('Data loaded with success!');
+    }
+    };
+    dataReq.open("GET", url, true);
+    dataReq.send();
+  script.
+    // SET EMPTY FILTER ARRAY
+    let filterArr = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
+    var searchObj = new Object();
+    // MODIFY FILTER ARRAY ACCORDING TO SPAN.LEVERS' ACTION
+    $( "#pediatrics" ).click(function() {
+    if (filterArr[0] === false) {
+    filterArr[0] = true;
+    } else {
+    filterArr[0] = false;
+    }
+    });
+    $( "#geriatrics" ).click(function() {
+    if (filterArr[1] === false) {
+    filterArr[1] = true;
+    } else {
+    filterArr[1] = false;
+    }
+    });
+    $( "#neonatology" ).click(function() {
+    if (filterArr[2] === false) {
+    filterArr[2] = true;
+    } else {
+    filterArr[2] = false;
+    }
+    });
+    $( "#oncology" ).click(function() {
+    if (filterArr[3] === false) {
+    filterArr[3] = true;
+    } else {
+    filterArr[3] = false;
+    }
+    });
+    $( "#pharmacogenetics" ).click(function() {
+    if (filterArr[4] === false) {
+    filterArr[4] = true;
+    } else {
+    filterArr[4] = false;
+    }
+    });
+    $( "#pharmacoeconomy" ).click(function() {
+    if (filterArr[5] === false) {
+    filterArr[5] = true;
+    } else {
+    filterArr[5] = false;
+    }
+    });
+    $( "#radiopharmaceuticals" ).click(function() {
+    if (filterArr[6] === false) {
+    filterArr[6] = true;
+    } else {
+    filterArr[6] = false;
+    }
+    });
+    $( "#compounding" ).click(function() {
+    if (filterArr[7] === false) {
+    filterArr[7] = true;
+    } else {
+    filterArr[7] = false;
+    }
+    });
+    $( "#medicalDevices" ).click(function() {
+    if (filterArr[8] === false) {
+    filterArr[8] = true;
+    } else {
+    filterArr[8] = false;
+    }
+    });
+    $( "#personalized" ).click(function() {
+    if (filterArr[9] === false) {
+    filterArr[9] = true;
+    } else {
+    filterArr[9] = false;
+    }
+    });
+    $( "#nutrition" ).click(function() {
+    if (filterArr[10] === false) {
+    filterArr[10] = true;
+    } else {
+    filterArr[10] = false;
+    }
+    });
+    $( "#highRisk" ).click(function() {
+    if (filterArr[11] === false) {
+    filterArr[11] = true;
+    } else {
+    filterArr[11] = false;
+    }
+    });
+    $( "#endOfLife" ).click(function() {
+    if (filterArr[12] === false) {
+    filterArr[12] = true;
+    } else {
+    filterArr[12] = false;
+    }
+    });
+    $( "#selfMedication" ).click(function() {
+    if (filterArr[13] === false) {
+    filterArr[13] = true;
+    } else {
+    filterArr[13] = false;
+    }
+    });
+    $( "#preopMedication" ).click(function() {
+    if (filterArr[14] === false) {
+    filterArr[14] = true;
+    } else {
+    filterArr[14] = false;
+    }
+    });
+    $( "#outpatient" ).click(function() {
+    if (filterArr[15] === false) {
+    filterArr[15] = true;
+    } else {
+    filterArr[15] = false;
+    }
+    });
+    $( "#enzymeSubstrate" ).click(function() {
+    if (filterArr[16] === false) {
+    filterArr[16] = true;
+    } else {
+    filterArr[16] = false;
+    }
+    });
+    $( "#geneTherapy" ).click(function() {
+    if (filterArr[17] === false) {
+    filterArr[17] = true;
+    } else {
+    filterArr[17] = false;
+    }
+    });
+    $( "#homeCare" ).click(function() {
+    if (filterArr[18] === false) {
+    filterArr[18] = true;
+    } else {
+    filterArr[18] = false;
+    }
+    });
+    $( "#antibioticProphylaxis" ).click(function() {
+    if (filterArr[19] === false) {
+    filterArr[19] = true;
+    } else {
+    filterArr[19] = false;
+    }
+    });
+    $( "#painManagement" ).click(function() {
+    if (filterArr[20] === false) {
+    filterArr[20] = true;
+    } else {
+    filterArr[20] = false;
+    }
+    });
+    $( "#offLabel" ).click(function() {
+    if (filterArr[21] === false) {
+    filterArr[21] = true;
+    } else {
+    filterArr[21] = false;
+    }
+    });
+    $( "#flatDoses" ).click(function() {
+    if (filterArr[22] === false) {
+    filterArr[22] = true;
+    } else {
+    filterArr[22] = false;
+    }
+    });
+    $( "#switching" ).click(function() {
+    if (filterArr[23] === false) {
+    filterArr[23] = true;
+    } else {
+    filterArr[23] = false;
+    }
+    });
+    $( "#deprescribing" ).click(function() {
+    if (filterArr[24] === false) {
+    filterArr[24] = true;
+    } else {
+    filterArr[24] = false;
+    }
+    });
+    $( "#prepareIV" ).click(function() {
+    if (filterArr[25] === false) {
+    filterArr[25] = true;
+    } else {
+    filterArr[25] = false;
+    }
+    });
+    $( "#costAnalysis" ).click(function() {
+    if (filterArr[26] === false) {
+    filterArr[26] = true;
+    } else {
+    filterArr[26] = false;
+    }
+    });
+    $( "#riskSafety" ).click(function() {
+    if (filterArr[27] === false) {
+    filterArr[27] = true;
+    } else {
+    filterArr[27] = false;
+    }
+    });
+    $( "#vigilance" ).click(function() {
+    if (filterArr[28] === false) {
+    filterArr[28] = true;
+    } else {
+    filterArr[28] = false;
+    }
+    });
+    $( "#stability" ).click(function() {
+    if (filterArr[29] === false) {
+    filterArr[29] = true;
+    } else {
+    filterArr[29] = false;
+    }
+    });
+    $( "#drugMonitoring" ).click(function() {
+    if (filterArr[30] === false) {
+    filterArr[30] = true;
+    } else {
+    filterArr[30] = false;
+    }
+    });
+    $( "#safetyProfile" ).click(function() {
+    if (filterArr[31] === false) {
+    filterArr[31] = true;
+    } else {
+    filterArr[31] = false;
+    }
+    });
+    $( "#intervention" ).click(function() {
+    if (filterArr[32] === false) {
+    filterArr[32] = true;
+    } else {
+    filterArr[32] = false;
+    }
+    });
+    $( "#patientIntervention" ).click(function() {
+    if (filterArr[33] === false) {
+    filterArr[33] = true;
+    } else {
+    filterArr[33] = false;
+    }
+    });
+    $( "#nursesReccomend" ).click(function() {
+    if (filterArr[34] === false) {
+    filterArr[34] = true;
+    } else {
+    filterArr[34] = false;
+    }
+    });
+    $( "#questPatient" ).click(function() {
+    if (filterArr[35] === false) {
+    filterArr[35] = true;
+    } else {
+    filterArr[35] = false;
+    }
+    });
+    $( "#questProfessional" ).click(function() {
+    if (filterArr[36] === false) {
+    filterArr[36] = true;
+    } else {
+    filterArr[36] = false;
+    }
+    });
+    $( "#selection" ).click(function() {
+    if (filterArr[37] === false) {
+    filterArr[37] = true;
+    } else {
+    filterArr[37] = false;
+    }
+    });
+    $( "#stock" ).click(function() {
+    if (filterArr[38] === false) {
+    filterArr[38] = true;
+    } else {
+    filterArr[38] = false;
+    }
+    });
+    $( "#autoDispensing" ).click(function() {
+    if (filterArr[39] === false) {
+    filterArr[39] = true;
+    } else {
+    filterArr[39] = false;
+    }
+    });
+    $( "#coldChain" ).click(function() {
+    if (filterArr[40] === false) {
+    filterArr[40] = true;
+    } else {
+    filterArr[40] = false;
+    }
+    });
+    $( "#softwareAided" ).click(function() {
+    if (filterArr[41] === false) {
+    filterArr[41] = true;
+    } else {
+    filterArr[41] = false;
+    }
+    });
+    $( "#mobileVR" ).click(function() {
+    if (filterArr[42] === false) {
+    filterArr[42] = true;
+    } else {
+    filterArr[42] = false;
+    }
+    });
+    $( "#Printing3D" ).click(function() {
+    if (filterArr[43] === false) {
+    filterArr[43] = true;
+    } else {
+    filterArr[43] = false;
+    }
+    });
+    $( "#socialMedia" ).click(function() {
+    if (filterArr[44] === false) {
+    filterArr[44] = true;
+    } else {
+    filterArr[44] = false;
+    }
+    });
+    $( "#shortages" ).click(function() {
+    if (filterArr[45] === false) {
+    filterArr[45] = true;
+    } else {
+    filterArr[45] = false;
+    }
+    });
+    $( "#adverseEvents" ).click(function() {
+    if (filterArr[46] === false) {
+    filterArr[46] = true;
+    } else {
+    filterArr[46] = false;
+    }
+    });
+    $( "#adherence" ).click(function() {
+    if (filterArr[47] === false) {
+    filterArr[47] = true;
+    } else {
+    filterArr[47] = false;
+    }
+    });
+    $( "#resistance" ).click(function() {
+    if (filterArr[48] === false) {
+    filterArr[48] = true;
+    } else {
+    filterArr[48] = false;
+    }
+    });
+    $( "#renal" ).click(function() {
+    if (filterArr[49] === false) {
+    filterArr[49] = true;
+    } else {
+    filterArr[49] = false;
+    }
+    });
+    $( "#errors" ).click(function() {
+    if (filterArr[50] === false) {
+    filterArr[50] = true;
+    } else {
+    filterArr[50] = false;
+    }
+    });
+    $( "#administrative" ).click(function() {
+    if (filterArr[51] === false) {
+    filterArr[51] = true;
+    } else {
+    filterArr[51] = false;
+    }
+    });
+    $( "#stewardship" ).click(function() {
+    if (filterArr[52] === false) {
+    filterArr[52] = true;
+    } else {
+    filterArr[52] = false;
+    }
+    });
+    $( "#policiesAudits" ).click(function() {
+    if (filterArr[53] === false) {
+    filterArr[53] = true;
+    } else {
+    filterArr[53] = false;
+    }
+    });
+    $( "#multidisciplinary" ).click(function() {
+    if (filterArr[54] === false) {
+    filterArr[54] = true;
+    } else {
+    filterArr[54] = false;
+    }
+    });
+    $( "#institutional" ).click(function() {
+    if (filterArr[55] === false) {
+    filterArr[55] = true;
+    } else {
+    filterArr[55] = false;
+    }
+    });
+    $( "#recalls" ).click(function() {
+    if (filterArr[56] === false) {
+    filterArr[56] = true;
+    } else {
+    filterArr[56] = false;
+    }
+    });
+    $( "#education" ).click(function() {
+    if (filterArr[57] === false) {
+    filterArr[57] = true;
+    } else {
+    filterArr[57] = false;
+    }
+    });
+    $( "#clinicalTrials" ).click(function() {
+    if (filterArr[58] === false) {
+    filterArr[58] = true;
+    } else {
+    filterArr[58] = false;
+    }
+    });
+    $( "#youngPharma" ).click(function() {
+    if (filterArr[59] === false) {
+    filterArr[59] = true;
+    } else {
+    filterArr[59] = false;
+    }
+    });
+    $( "#nextStep" ).click(function() {
+    if (filterArr[60] === false) {
+    filterArr[60] = true;
+    } else {
+    filterArr[60] = false;
+    }
+    });
+
+    // WHEN YOU FIRE THE SEARCH
+    $("#search").click(function() {
+    // HIDE THE SEARCH INFORMATIVE
+    $(".chip").hide();
+    // ERASE THE PREV RESULT TEXT
+    $('#resultList').text('');
+    // GET THE TEXTs FROM LIST SELECTS
+    let instance_01 = M.FormSelect.getInstance($('#actSubs'));
+    let actSubs = instance_01.getSelectedValues();
+    let instance_02 = M.FormSelect.getInstance($('#indication'));
+    let indication = instance_02.getSelectedValues();
+    let instance_03 = M.FormSelect.getInstance($('#statedClass'));
+    let statedClass = instance_03.getSelectedValues();
+    let instance_04 = M.FormSelect.getInstance($('#studyDesign'));
+    let studyDesign = instance_04.getSelectedValues();
+    let instance_05 = M.FormSelect.getInstance($('#setting'));
+    let setting = instance_05.getSelectedValues();
+    let instance_06 = M.FormSelect.getInstance($('#ward'));
+    let ward = instance_06.getSelectedValues();
+    let instance_07 = M.FormSelect.getInstance($('#numPatients'));
+    let numPatients = instance_07.getSelectedValues();
+    let instance_08 = M.FormSelect.getInstance($('#numPrescriptions'));
+    let numPrescriptions = instance_08.getSelectedValues();
+    let instance_09 = M.FormSelect.getInstance($('#criteriaMethod'));
+    let studyLength = instance_09.getSelectedValues();
+    let instance_10 = M.FormSelect.getInstance($('#studyLength'));
+    let criteriaMethod = instance_10.getSelectedValues();
+    let instance_11 = M.FormSelect.getInstance($('#country'));
+    let country = instance_11.getSelectedValues();
+    let instance_12 = M.FormSelect.getInstance($('#year'));
+    let year = instance_12.getSelectedValues();
+    // IF NOTHING WAS SELECTED, SET THE VALUE AS "EMPTY"
+    if (actSubs === "") {
+    actSubs = "empty"
+    }
+
+    if (indication === "") {
+    indication = "empty"
+    }
+
+    if (statedClass === "") {
+    statedClass = "empty"
+    }
+
+    if (studyDesign === "") {
+    studyDesign = "empty"
+    }
+
+    if (setting === "") {
+    setting = "empty"
+    }
+
+    if (ward === "") {
+    ward = "empty"
+    }
+
+    if (numPatients === "") {
+    numPatients = "empty"
+    }
+
+    if (numPrescriptions === "") {
+    numPrescriptions = "empty"
+    }
+
+    if (studyLength === "") {
+    studyLength = "empty"
+    }
+
+    if (criteriaMethod === "") {
+    criteriaMethod = "empty"
+    }
+
+    if (country === "") {
+    country = "empty"
+    }
+
+    if (year === "") {
+    year = "empty"
+    }
+
+    // RESET THE SEARCH OBJECT / ADD VALUES FROM THE LIST SELECTS FOR THE NEW SEARCH
+    searchObj = {
+      actSubs: actSubs,
+      indication: indication,
+      statedClass: statedClass,
+      studyDesign: studyDesign,
+      setting: setting,
+      ward: ward,
+      numPatients: numPatients,
+      numPrescriptions: numPrescriptions,
+      studyLength: studyLength,
+      criteriaMethod: criteriaMethod,
+      country: country,
+      year: year,
+      pediatrics: [],
+      geriatrics: [],
+      neonatology: [],
+      oncology: [],
+      pharmacogenetics: [],
+      pharmacoeconomy: [],
+      radiopharmaceuticals: [],
+      compounding: [],
+      medicalDevices: [],
+      personalized: [],
+      nutrition: [],
+      highRisk: [],
+      endOfLife: [],
+      selfMedication: [],
+      preopMedication: [],
+      outpatient: [],
+      enzymeSubstrate: [],
+      geneTherapy: [],
+      homeCare: [],
+      antibioticProphylaxis: [],
+      painManagement: [],
+      offLabel: [],
+      flatDoses: [],
+      switching: [],
+      deprescribing: [],
+      prepareIV: [],
+      costAnalysis: [],
+      riskSafety: [],
+      vigilance: [],
+      stability: [],
+      drugMonitoring: [],
+      safetyProfile: [],
+      intervention: [],
+      patientIntervention: [],
+      nursesReccomend: [],
+      questPatient: [],
+      questProfessional: [],
+      selection: [],
+      stock: [],
+      autoDispensing: [],
+      coldChain: [],
+      softwareAided: [],
+      mobileVR: [],
+      Printing3D: [],
+      socialMedia: [],
+      shortages: [],
+      adverseEvents: [],
+      adherence: [],
+      resistance: [],
+      renal: [],
+      errors: [],
+      administrative: [],
+      stewardship: [],
+      policiesAudits: [],
+      multidisciplinary: [],
+      institutional: [],
+      recalls: [],
+      education: [],
+      clinicalTrials: [],
+      youngPharma: [],
+      nextStep: []
+    };
+    // IF VALUE WAS NOT SELECTED (EMPTY), DESTROY THEM
+    if (actSubs === "empty") {
+    searchObj['actSubs'] = [];
+    }
+    if (indication === "empty") {
+    searchObj['indication'] = [];
+    }
+    if (statedClass === "empty") {
+    searchObj['statedClass'] = [];
+    }
+    if (studyDesign == "any") {
+    searchObj['studyDesign'] = [];
+    }
+    if (setting === "empty") {
+    searchObj['setting'] = [];
+    }
+    if (ward === "empty") {
+    searchObj['ward_focused'] = [];
+    }
+    if (numPatients === "empty") {
+    searchObj['numPatients'] = [];
+    }
+    if (numPrescriptions == "any") {
+    searchObj['numPrescriptions'] = [];
+    }
+    if (studyLength === "empty") {
+    searchObj['studyLength'] = [];
+    }
+    if (criteriaMethod === "empty") {
+    searchObj['criteriaMethod'] = [];
+    }
+    if (country === "empty") {
+    searchObj['country'] = [];
+    }
+    if (year == "any") {
+    searchObj['year'] = [];
+    }
+    // LOAD THE DATA TO THE myData VARIABLE
+    let myData = JSON.parse(dataReq.responseText);
+    // ADD THE DATA IN THE FILTER TO THE SEARCH OBJECT
+    if (filterArr[0] === true) {
+    searchObj.pediatrics = "pediatrics";
+    }
+
+    if (filterArr[1] === true) {
+    searchObj.geriatrics = "geriatrics";
+    }
+
+    if (filterArr[2] === true) {
+    searchObj.neonatology = "neonatology";
+    }
+
+    if (filterArr[3] === true) {
+    searchObj.oncology = "oncology";
+    }
+
+    if (filterArr[4] === true) {
+    searchObj.pharmacogenetics = "pharmacogenetics";
+    }
+
+    if (filterArr[5] === true) {
+    searchObj.pharmacoeconomy = "pharmacoeconomy";
+    }
+
+    if (filterArr[6] === true) {
+    searchObj.radiopharmaceuticals = "radiopharmaceuticals";
+    }
+
+    if (filterArr[7] === true) {
+    searchObj.compounding = "compounding";
+    }
+
+    if (filterArr[8] === true) {
+    searchObj.medicalDevices = "medicalDevices";
+    }
+
+    if (filterArr[9] === true) {
+    searchObj.personalized = "personalized";
+    }
+
+    if (filterArr[10] === true) {
+    searchObj.nutrition = "nutrition";
+    }
+
+    if (filterArr[11] === true) {
+    searchObj.highRisk = "highRisk";
+    }
+
+    if (filterArr[12] === true) {
+    searchObj.endOfLife = "endOfLife";
+    }
+
+    if (filterArr[13] === true) {
+    searchObj.selfMedication = "selfMedication";
+    }
+
+    if (filterArr[14] === true) {
+    searchObj.preopMedication = "preopMedication";
+    }
+
+    if (filterArr[15] === true) {
+    searchObj.outpatient = "outpatient";
+    }
+
+    if (filterArr[16] === true) {
+    searchObj.enzymeSubstrate = "enzymeSubstrate";
+    }
+
+    if (filterArr[17] === true) {
+    searchObj.geneTherapy = "geneTherapy";
+    }
+
+    if (filterArr[18] === true) {
+    searchObj.homeCare = "homeCare";
+    }
+
+    if (filterArr[19] === true) {
+    searchObj.antibioticProphylaxis = "antibioticProphylaxis";
+    }
+
+    if (filterArr[20] === true) {
+    searchObj.painManagement = "painManagement";
+    }
+
+    if (filterArr[21] === true) {
+    searchObj.offLabel = "offLabel";
+    }
+
+    if (filterArr[22] === true) {
+    searchObj.flatDoses = "flatDoses";
+    }
+
+    if (filterArr[23] === true) {
+    searchObj.switching = "switching";
+    }
+
+    if (filterArr[24] === true) {
+    searchObj.deprescribing = "deprescribing";
+    }
+
+    if (filterArr[25] === true) {
+    searchObj.prepareIV = "prepareIV";
+    }
+
+    if (filterArr[26] === true) {
+    searchObj.costAnalysis = "costAnalysis";
+    }
+
+    if (filterArr[27] === true) {
+    searchObj.riskSafety = "riskSafety";
+    }
+
+    if (filterArr[28] === true) {
+    searchObj.vigilance = "vigilance";
+    }
+
+    if (filterArr[29] === true) {
+    searchObj.stability = "stability";
+    }
+
+    if (filterArr[30] === true) {
+    searchObj.drugMonitoring = "drugMonitoring";
+    }
+
+    if (filterArr[31] === true) {
+    searchObj.safetyProfile = "safetyProfile";
+    }
+
+    if (filterArr[32] === true) {
+    searchObj.intervention = "intervention";
+    }
+
+    if (filterArr[33] === true) {
+    searchObj.patientIntervention = "patientIntervention";
+    }
+
+    if (filterArr[34] === true) {
+    searchObj.nursesReccomend = "nursesReccomend";
+    }
+
+    if (filterArr[35] === true) {
+    searchObj.questPatient = "questPatient";
+    }
+
+    if (filterArr[36] === true) {
+    searchObj.questProfessional = "questProfessional";
+    }
+
+    if (filterArr[37] === true) {
+    searchObj.selection = "selection";
+    }
+
+    if (filterArr[38] === true) {
+    searchObj.stock = "stock";
+    }
+
+    if (filterArr[39] === true) {
+    searchObj.autoDispensing = "autoDispensing";
+    }
+
+    if (filterArr[40] === true) {
+    searchObj.coldChain = "coldChain";
+    }
+
+    if (filterArr[41] === true) {
+    searchObj.softwareAided = "softwareAided";
+    }
+
+    if (filterArr[42] === true) {
+    searchObj.mobileVR = "mobileVR";
+    }
+
+    if (filterArr[43] === true) {
+    searchObj.Printing3D = "Printing3D";
+    }
+
+    if (filterArr[44] === true) {
+    searchObj.socialMedia = "socialMedia";
+    }
+
+    if (filterArr[45] === true) {
+    searchObj.shortages = "shortages";
+    }
+
+    if (filterArr[46] === true) {
+    searchObj.adverseEvents = "adverseEvents";
+    }
+
+    if (filterArr[47] === true) {
+    searchObj.adherence = "adherence";
+    }
+
+    if (filterArr[48] === true) {
+    searchObj.resistance = "resistance";
+    }
+
+    if (filterArr[49] === true) {
+    searchObj.renal = "renal";
+    }
+
+    if (filterArr[50] === true) {
+    searchObj.errors = "errors";
+    }
+
+    if (filterArr[51] === true) {
+    searchObj.administrative = "administrative";
+    }
+
+    if (filterArr[52] === true) {
+    searchObj.stewardship = "stewardship";
+    }
+
+    if (filterArr[53] === true) {
+    searchObj.policiesAudits = "policiesAudits";
+    }
+
+    if (filterArr[54] === true) {
+    searchObj.multidisciplinary = "multidisciplinary";
+    }
+
+    if (filterArr[55] === true) {
+    searchObj.institutional = "institutional";
+    }
+
+    if (filterArr[56] === true) {
+    searchObj.recalls = "recalls";
+    }
+
+    if (filterArr[57] === true) {
+    searchObj.education = "education";
+    }
+
+    if (filterArr[58] === true) {
+    searchObj.clinicalTrials = "clinicalTrials";
+    }
+
+    if (filterArr[59] === true) {
+    searchObj.youngPharma = "youngPharma";
+    }
+
+    if (filterArr[60] === true) {
+    searchObj.nextStep = "nextStep";
+    }
+    
+    // LET THE CODE DO THE MAGIC
+    const filterEngine = Object.values(searchObj).flat();
+
+    let result = myData.filter(({filters}) => {
+      const objFilters = Object.values(filters).flat();
+      return filterEngine.every(val => objFilters.includes(val));
+    });
+    
+    // IF THERE'S A RESULT
+    if (result.length > 0) {
+      let sortName = $('#sortSelect').find(":selected").text();
       
-      // LET THE CODE DO THE MAGIC
-      const filterEngine = Object.values(searchObj).flat();
-
-      let result = myData.filter(({filters}) => {
-        const objFilters = Object.values(filters).flat();
-        return filterEngine.every(val => objFilters.includes(val));
-      });
-      
-      // IF THERE'S A RESULT
-      if (result.length > 0) {
-        let sortName = $('#sortSelect').find(":selected").text();
+      // OLDEST FIRST
+      if (sortName == "Oldest First") {
+        function sort(valuePath, array) {
+          let path = valuePath.split('.')
+          let value = getType(array[0],path);
         
-        // OLDEST FIRST
-        if (sortName == "Oldest First") {
-          function sort(valuePath, array) {
-            let path = valuePath.split('.')
-            let value = getType(array[0],path);
-          
-            return array.sort((a, b) => getValue(a,path) -  getValue(b,path));
+          return array.sort((a, b) => getValue(a,path) -  getValue(b,path));
 
-          
-            function getValue(obj, path) {
-              path.forEach(path => obj = obj[path])
-              return obj;
-            }
-          
-            function getType(obj, path) {
-              path.forEach(path => obj = obj[path])
-              return typeof obj;
-            }
+        
+          function getValue(obj, path) {
+            path.forEach(path => obj = obj[path])
+            return obj;
           }
-
-          result = sort('filters.year', result);
-
-        } else {
-          function sort(valuePath, array) {
-            let path = valuePath.split('.')
-            let value = getType(array[0],path);
-            
-            if (value == 'string') {
-              return array.sort((a, b) => (getValue(a,path).toUpperCase() > getValue(b,path).toUpperCase()) - (getValue(a,path).toUpperCase() < getValue(b,path).toUpperCase()))
-            } else {
-              return array.sort((a, b) => getValue(b,path) -  getValue(a,path));
-            }
-          
-            function getValue(obj, path) {
-              path.forEach(path => obj = obj[path])
-              return obj;
-            }
-          
-            function getType(obj, path) {
-              path.forEach(path => obj = obj[path])
-              return typeof obj;
-            }
+        
+          function getType(obj, path) {
+            path.forEach(path => obj = obj[path])
+            return typeof obj;
           }
-          
-          // NEWEST FIRST
-          if (sortName == "Newest First") {
-            result = sort('filters.year', result);
-          } else {
-          // A to Z SORTING
-            result = sort('title', result);
-          }
-          
         }
-      }
 
- 
-      // TIME TO PRESENT THE INTRO
-      let resultLength = result.length;
+        result = sort('filters.year', result);
 
-      $("#resultText").html(`We have found ${resultLength} result(s)`);
-      // IF THERE'S A RESULT MAKE THE CHANGES
-      if (resultLength > 0) {
-        $('#Resulty').empty();
-        $('#Resulty').append("Results");
-        $('#resultHeader').hide();
-        $('#sortAndAll').hide();
-        $('#resultBody').hide();
-        $('#email').hide();
-        $('#resultHeader').fadeIn(300);
-        $('#sortAndAll').fadeIn(300);
-        $('#resultBody').fadeIn(500);
-        $('#email').fadeIn(500);
-      // IF THERE'S NO RESULT, HIDE THE NECESSARY PARTS
       } else {
-        $('#Resulty').empty();
-        $('#Resulty').append("Results");
-        $('#sortAndAll').hide();
-        $('#resultBody').hide();
-        $('#email').hide();
-        $('#resultHeader').fadeIn(300);
-      }
-      // PREPARE THE LIST, APPEND TO RESULTLIST SECTION
-      result.forEach(function(item) {
-      var li = document.createElement("li");
-      var text = `<div class="collapsible-header"><form action="#" style="margin-top: 0.5rem;"><p><label><input type="checkbox" data-check="isChecked" class="filled-in" /><span></span></label></p></form><p><a> ${item.title}, </a> ${item.filters.journal}, ${item.filters.year}</p></div><div class="collapsible-body"><span>${item.authors}</span><br><br><span style="font-style: italic; font-size: small;">${item.institution}</span><br><br><a href='${item.url}' target='_blank'><i class="material-icons" style="vertical-align: sub; color: darkred;">filter_none</i><span style="color: darkred;"> Open the Study</span></a></div>`;
-      li.innerHTML = text;
-      document.getElementById("resultList").appendChild(li);
-      // CREATE THE COLLAPSIBLE STYLE
-      let elem = document.querySelectorAll('.collapsible.expandable');
-      let instance = M.Collapsible.init(elem, {
-      accordion: false,
-      });
-      });
-      
-      // PAGINATE START
-      $('#resultList').paginate({
-        perPage: 10,
-        useHashLocation: false,
-      });
-
-      // FIX FOR THE RE-PAGINATION WITHOUT REFRESHING THE PAGE, KILL / RE-PAGINATE
-      $('#resultList').data('paginate').kill();
-
-      $('#resultList').paginate({
-        perPage: 10,
-        useHashLocation: false,
-      });      
-      // PAGINATE END
-
-      });
-
-      // IF SORT SELECTION CHANGES, SEARCH AGAIN
-      $('#sortSelect').change(function(){ 
-          $("#search").trigger( "click" );
-      });
-
-      // SELECT ALL ENGINE STARTS WITH A COUNTER
-      let counter = [false];
-
-      // CHECKED - TRUE / NOT-CHECKED - FALSE MECHANISM
-      $("#selectAll").click(function () {
-          if (counter[0] === false) {
-            $('.filled-in').prop('checked', true);
-            counter[0] = true;
-          } else {
-            $('.filled-in').prop('checked', false);
-            counter[0] = false;
-          }
+        function sort(valuePath, array) {
+          let path = valuePath.split('.')
+          let value = getType(array[0],path);
           
-      });
-      // SELECT ALL ENGINE ENDS
+          if (value == 'string') {
+            return array.sort((a, b) => (getValue(a,path).toUpperCase() > getValue(b,path).toUpperCase()) - (getValue(a,path).toUpperCase() < getValue(b,path).toUpperCase()))
+          } else {
+            return array.sort((a, b) => getValue(b,path) -  getValue(a,path));
+          }
+        
+          function getValue(obj, path) {
+            path.forEach(path => obj = obj[path])
+            return obj;
+          }
+        
+          function getType(obj, path) {
+            path.forEach(path => obj = obj[path])
+            return typeof obj;
+          }
+        }
+        
+        // NEWEST FIRST
+        if (sortName == "Newest First") {
+          result = sort('filters.year', result);
+        } else {
+        // A to Z SORTING
+          result = sort('title', result);
+        }
+        
+      }
+    }
 
-      // WHEN E-MAIL ME CLICKED
-      $("#email").click(function () {
-        // CREATE A TEXT ARRAY AND ADD INSIDE THE TEXTs of THE SELECTED STUDIES
-        let textArray = [];
-        textArray = $("input:checkbox[data-check='isChecked']:checked").map(function() {
-          return $(this).parent().parent().parent().parent().siblings()[0].previousSibling.innerText;
-        }).get();
 
-        // CREATE A LINK ARRAY AND ADD INSIDE THE LINKs of THE SELECTED STUDIES
-        let linkArray = [];
-        linkArray = $("input:checkbox[data-check='isChecked']:checked").map(function() {
-          return $(this).parent().parent().parent().parent().siblings()[0].lastChild.href;
-        }).get();
+    // TIME TO PRESENT THE INTRO
+    let resultLength = result.length;
 
-        // COOKIE ENGINE START
-        function createCookie(name,value,days) {
-        if (days) {
-        var date = new Date();
-        date.setTime(date.getTime()+(days*24*60*60*1000));
-        var expires = "; expires="+date.toGMTString();
-        }
-        else var expires = "";
-        document.cookie = name+"="+value+expires+"; path=/";
-        }
-        function readCookie(name) {
-        var nameEQ = name + "=";
-        var ca = document.cookie.split(';');
-        for(var i=0;i < ca.length;i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1,c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-        }
-        return null;
-        }
-        function eraseCookie(name) {
-        createCookie(name,"",-1);
-        }
-        // COOKIE ENGINE ENDS
+    $("#resultText").html(`We have found ${resultLength} result(s)`);
+    // IF THERE'S A RESULT MAKE THE CHANGES
+    if (resultLength > 0) {
+      $('#Resulty').empty();
+      $('#Resulty').append("Results");
+      $('#resultHeader').hide();
+      $('#sortAndAll').hide();
+      $('#resultBody').hide();
+      $('#email').hide();
+      $('#resultHeader').fadeIn(300);
+      $('#sortAndAll').fadeIn(300);
+      $('#resultBody').fadeIn(500);
+      $('#email').fadeIn(500);
+    // IF THERE'S NO RESULT, HIDE THE NECESSARY PARTS
+    } else {
+      $('#Resulty').empty();
+      $('#Resulty').append("Results");
+      $('#sortAndAll').hide();
+      $('#resultBody').hide();
+      $('#email').hide();
+      $('#resultHeader').fadeIn(300);
+    }
+    // PREPARE THE LIST, APPEND TO RESULTLIST SECTION
+    result.forEach(function(item) {
+    var li = document.createElement("li");
+    var text = `<div class="collapsible-header"><form action="#" style="margin-top: 0.5rem;"><p><label><input type="checkbox" data-check="isChecked" class="filled-in" /><span></span></label></p></form><p><a> ${item.title}, </a> ${item.filters.journal}, ${item.filters.year}</p></div><div class="collapsible-body"><span>${item.authors}</span><br><br><span style="font-style: italic; font-size: small;">${item.institution}</span><br><br><a href='${item.url}' target='_blank'><i class="material-icons" style="vertical-align: sub; color: darkred;">filter_none</i><span style="color: darkred;"> Open the Study</span></a></div>`;
+    li.innerHTML = text;
+    document.getElementById("resultList").appendChild(li);
+    // CREATE THE COLLAPSIBLE STYLE
+    let elem = document.querySelectorAll('.collapsible.expandable');
+    let instance = M.Collapsible.init(elem, {
+    accordion: false,
+    });
+    });
+    
+    // PAGINATE START
+    $('#resultList').paginate({
+      perPage: 10,
+      useHashLocation: false,
+    });
 
-        // CONVERT ARRAYS TO JSONs
-        let json_text = JSON.stringify(textArray);
-        let json_link = JSON.stringify(linkArray);
-        // ERASE PRE-COOKIES
-        eraseCookie('text');
-        eraseCookie('link');
-        // CREATE NEW COOKIES AS JSONs
-        createCookie('text', json_text, 1);
-        createCookie('link', json_link, 1);
-      });      
-    script.
-      // FOOTER SLIDING DATA
-      $( "body" ).one('mouseover', function() {
-        setTimeout(function() { 
-        let slideData = JSON.parse(dataReq.responseText);
-        let actLength = (($('#actSubs > option').length) - 1);
-        let wardLength = (($('#ward > option').length) - 1);
-        let countryLength = (($('#country > option').length) - 1);
-        document.getElementById("slider").innerHTML = `${slideData.length} studies in our database are ready! With ${actLength} different active substances, ${wardLength} different ward options and among ${countryLength} countries; you may perform your search`;
-        }, 500);
-      });
-      // CREATE MONO-SELECT DROPDOWNS FOR THE SELECTED LIST OF IDs
-      $( ".input-field span" ).click(function() {
-        let foundID = $(this).parent().parent().parent();
-        foundID = foundID[0].lastChild.id;
-        if (foundID === "studyDesign" || foundID === "numPatients" || foundID === "numPrescriptions" || foundID === "studyLength" || foundID === "year") {
-        let selecty = $(this).parent().siblings(".selected");
-        selecty.trigger( "click" ); 
+    // FIX FOR THE RE-PAGINATION WITHOUT REFRESHING THE PAGE, KILL / RE-PAGINATE
+    $('#resultList').data('paginate').kill();
+
+    $('#resultList').paginate({
+      perPage: 10,
+      useHashLocation: false,
+    });      
+    // PAGINATE END
+
+    });
+
+    // IF SORT SELECTION CHANGES, SEARCH AGAIN
+    $('#sortSelect').change(function(){ 
+        $("#search").trigger( "click" );
+    });
+
+    // SELECT ALL ENGINE STARTS WITH A COUNTER
+    let counter = [false];
+
+    // CHECKED - TRUE / NOT-CHECKED - FALSE MECHANISM
+    $("#selectAll").click(function () {
+        if (counter[0] === false) {
+          $('.filled-in').prop('checked', true);
+          counter[0] = true;
+        } else {
+          $('.filled-in').prop('checked', false);
+          counter[0] = false;
         }
-      });
-      
-      // IF ANOTHER SELECT WAS CLICKED UNSELECT THE SELECT-ALL CHECKBOX
-      $("body").on("change", "input[data-check='isChecked']", function () {
-          $("#selectAll").prop('checked', false);
-      });
-      // ENDS
-      
+        
+    });
+    // SELECT ALL ENGINE ENDS
+
+    // WHEN E-MAIL ME CLICKED
+    $("#email").click(function () {
+      // CREATE A TEXT ARRAY AND ADD INSIDE THE TEXTs of THE SELECTED STUDIES
+      let textArray = [];
+      textArray = $("input:checkbox[data-check='isChecked']:checked").map(function() {
+        return $(this).parent().parent().parent().parent().siblings()[0].previousSibling.innerText;
+      }).get();
+
+      // CREATE A LINK ARRAY AND ADD INSIDE THE LINKs of THE SELECTED STUDIES
+      let linkArray = [];
+      linkArray = $("input:checkbox[data-check='isChecked']:checked").map(function() {
+        return $(this).parent().parent().parent().parent().siblings()[0].lastChild.href;
+      }).get();
+
+      // COOKIE ENGINE START
+      function createCookie(name,value,days) {
+      if (days) {
+      var date = new Date();
+      date.setTime(date.getTime()+(days*24*60*60*1000));
+      var expires = "; expires="+date.toGMTString();
+      }
+      else var expires = "";
+      document.cookie = name+"="+value+expires+"; path=/";
+      }
+      function readCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for(var i=0;i < ca.length;i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') c = c.substring(1,c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+      }
+      return null;
+      }
+      function eraseCookie(name) {
+      createCookie(name,"",-1);
+      }
+      // COOKIE ENGINE ENDS
+
+      // CONVERT ARRAYS TO JSONs
+      let json_text = JSON.stringify(textArray);
+      let json_link = JSON.stringify(linkArray);
+      // ERASE PRE-COOKIES
+      eraseCookie('text');
+      eraseCookie('link');
+      // CREATE NEW COOKIES AS JSONs
+      createCookie('text', json_text, 1);
+      createCookie('link', json_link, 1);
+    });      
+  script.
+    // FOOTER SLIDING DATA
+    $( "body" ).one('mouseover', function() {
+      setTimeout(function() { 
+      let slideData = JSON.parse(dataReq.responseText);
+      let actLength = (($('#actSubs > option').length) - 1);
+      let wardLength = (($('#ward > option').length) - 1);
+      let countryLength = (($('#country > option').length) - 1);
+      document.getElementById("slider").innerHTML = `${slideData.length} studies in our database are ready! With ${actLength} different active substances, ${wardLength} different ward options and among ${countryLength} countries; you may perform your search`;
+      }, 500);
+    });
+    // CREATE MONO-SELECT DROPDOWNS FOR THE SELECTED LIST OF IDs
+    $( ".input-field span" ).click(function() {
+      let foundID = $(this).parent().parent().parent();
+      foundID = foundID[0].lastChild.id;
+      if (foundID === "studyDesign" || foundID === "numPatients" || foundID === "numPrescriptions" || foundID === "studyLength" || foundID === "year") {
+      let selecty = $(this).parent().siblings(".selected");
+      selecty.trigger( "click" ); 
+      }
+    });
+    
+    // IF ANOTHER SELECT WAS CLICKED UNSELECT THE SELECT-ALL CHECKBOX
+    $("body").on("change", "input[data-check='isChecked']", function () {
+        $("#selectAll").prop('checked', false);
+    });
+    // ENDS
