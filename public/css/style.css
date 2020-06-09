@@ -70,6 +70,10 @@ form.row {
     margin: 0rem;
 }
 
+.pagination li.active {
+    background-color: steelblue;
+}
+
 div.input-field {
     margin-bottom: 1.5rem;
 }

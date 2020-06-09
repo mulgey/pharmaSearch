@@ -13,75 +13,22 @@ html
       include includes/header.pug
       main
         .container
-          .row#users
+          .row#users(style="margin-top: 3rem;")
             // class="search" automagically makes an input a search field.
-            input.search.col.s12(placeholder='Search')
+            input.search.col.s12(style="margin-bottom: 2rem;" placeholder='Search')
             // class="sort" automagically makes an element a sort buttons. The date-sort value decides what to sort by.
-            a.waves-effect.waves-light.btn-small.sort.col.s3(data-sort='name')
-              | Sort by Name
-            // class="sort" automagically makes an element a sort buttons. The date-sort value decides what to sort by.
-            a.waves-effect.waves-light.btn-small.sort.col.s3.offset-s1(data-sort='year')
-              | Sort by Year
+            div
+              a.waves-effect.waves-light.btn-small.sort.col.s12.m3.offset-m1(style="margin-top: 2rem; background-color: steelblue;", data-sort='name')
+                | Sort by Name
+              // class="sort" automagically makes an element a sort buttons. The date-sort value decides what to sort by.
+              a.waves-effect.waves-light.btn-small.sort.col.s12.m3.offset-m1(style="margin-top: 2rem; background-color: steelblue;", data-sort='country')
+                | Sort by Country
+              // class="sort" automagically makes an element a sort buttons. The date-sort value decides what to sort by.
+              a.waves-effect.waves-light.btn-small.sort.col.s12.m3.offset-m1(style="margin-top: 2rem; background-color: steelblue;", data-sort='year')
+                | Sort by Year
             // Child elements of container with class="list" becomes list items
-            ul.list.col.s12
-              ul
-                // The innerHTML of children with class="name" becomes this items "name" value
-                h3.name 
-                  a(href='') Jonny Stromberg
-                p.year 1986
-              ul
-                h3.name 
-                  a(href='') Jonas Arnkulnt
-                p.year 1985
-              ul
-                h3.name 
-                  a(href='') Martina Elm
-                p.year 1986
-              ul
-                h3.name
-                  a(href='') Gustaf ulndqvis
-                p.year 1983
-              ul
-                h3.name
-                  a(href='') Gustaf ulndqvi
-                p.year 1983
-              ul
-                h3.name
-                  a(href='') Gustaf ulndqv
-                p.year 1983
-              ul
-                h3.name
-                  a(href='') Gustaf ulndq
-                p.year 1983
-              ul
-                h3.name
-                  a(href='') Gustaf ulnd
-                p.year 1983
-              ul
-                h3.name
-                  a(href='') Gustaf uln
-                p.year 1983
-              ul
-                h3.name
-                  a(href='') Gustaf ulnzz
-                p.year 1983
-              ul
-                h3.name
-                  a(href='') Gustaf ulnss
-                p.year 1983
-              ul
-                h3.name
-                  a(href='') Gustaf ulnddd
-                p.year 1983
-              ul
-                h3.name
-                  a(href='') Gustaf ulnfff
-                p.year 1983
-              ul
-                h3.name
-                  a(href='') Gustaf Linggg
-                p.year 1983
-              ul.pagination
+            ul#root.list.col.s12(style="margin-bottom: 4rem;")
+            ul.pagination.col.s12
       include includes/footer.pug
     // Compiled and minified JavaScript
     script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
@@ -101,22 +48,139 @@ html
       };
       dataReq.open("GET", url, true);
       dataReq.send();
-      // FOOTER SLIDING DATA
+      // ONCE THE CURSOR MOVED
       $( "body" ).one('mouseover', function() {
+        // FOOT SLIDER DATA
         setTimeout(function() { 
         let slideData = JSON.parse(dataReq.responseText);
         let actLength = (($('#actSubs > option').length) - 1);
         let wardLength = (($('#ward > option').length) - 1);
         let countryLength = (($('#country > option').length) - 1);
         document.getElementById("slider").innerHTML = `${slideData.length} studies in our database are ready! With ${actLength} different active substances, ${wardLength} different ward options and among ${countryLength} countries; you may perform your search`;
+        // FOOT SLIDER DATA ENDS
+
+        // LOAD THE DATA TO THE myData VARIABLE
+        let myData = JSON.parse(dataReq.responseText);
+        // SET EMPTY SEARCH OBJECT FOR THE FULL LIST
+        searchObj = {
+          actSubs: [],
+          indication: [],
+          statedClass: [],
+          studyDesign: [],
+          setting: [],
+          ward: [],
+          numPatients: [],
+          numPrescriptions: [],
+          studyLength: [],
+          criteriaMethod: [],
+          country: [],
+          year: [],
+          pediatrics: [],
+          geriatrics: [],
+          neonatology: [],
+          oncology: [],
+          pharmacogenetics: [],
+          pharmacoeconomy: [],
+          radiopharmaceuticals: [],
+          compounding: [],
+          medicalDevices: [],
+          personalized: [],
+          nutrition: [],
+          highRisk: [],
+          endOfLife: [],
+          selfMedication: [],
+          preopMedication: [],
+          outpatient: [],
+          enzymeSubstrate: [],
+          geneTherapy: [],
+          homeCare: [],
+          antibioticProphylaxis: [],
+          painManagement: [],
+          offLabel: [],
+          flatDoses: [],
+          switching: [],
+          deprescribing: [],
+          prepareIV: [],
+          costAnalysis: [],
+          riskSafety: [],
+          vigilance: [],
+          stability: [],
+          drugMonitoring: [],
+          safetyProfile: [],
+          intervention: [],
+          patientIntervention: [],
+          nursesReccomend: [],
+          questPatient: [],
+          questProfessional: [],
+          selection: [],
+          stock: [],
+          autoDispensing: [],
+          coldChain: [],
+          softwareAided: [],
+          mobileVR: [],
+          Printing3D: [],
+          socialMedia: [],
+          shortages: [],
+          adverseEvents: [],
+          adherence: [],
+          resistance: [],
+          renal: [],
+          errors: [],
+          administrative: [],
+          stewardship: [],
+          policiesAudits: [],
+          multidisciplinary: [],
+          institutional: [],
+          recalls: [],
+          education: [],
+          clinicalTrials: [],
+          youngPharma: [],
+          nextStep: []
+        };
+        // LET THE CODE DO THE MAGIC
+        const filterEngine = Object.values(searchObj).flat();
+
+        let result = myData.filter(({filters}) => {
+          const objFilters = Object.values(filters).flat();
+          return filterEngine.every(val => objFilters.includes(val));
+        });
+
+        // WE WANT RESULTS COME AS "A TO Z"
+        function sort(valuePath, array) {
+          let path = valuePath.split('.');
+          let value = getType(array[0],path);
+          
+          if (value == 'string') {
+            return array.sort((a, b) => (getValue(a,path).toUpperCase() > getValue(b,path).toUpperCase()) - (getValue(a,path).toUpperCase() < getValue(b,path).toUpperCase()))
+          } else {
+            return array.sort((a, b) => getValue(b,path) -  getValue(a,path));
+          }
+        
+          function getValue(obj, path) {
+            path.forEach(path => obj = obj[path])
+            return obj;
+          }
+        
+          function getType(obj, path) {
+            path.forEach(path => obj = obj[path])
+            return typeof obj;
+          }
+        }
+        result = sort('title', result);
+
+        // PREPARE THE LIST, APPEND TO RESULTLIST SECTION
+        result.forEach(function(item) {
+        var li = document.createElement("li");
+        var text = `<h5 style="margin-top: 3rem;" class="name"><a href="${item.url}" target="_blank">${item.title}</a></h4><p class="institution">${item.institution}</p><p class="country">${item.filters.country}</p><p class="year">${item.filters.year}</p>`;
+        li.innerHTML = text;
+        document.getElementById("root").appendChild(li);
+        });
+        // LISTJS
+        let options = {
+          valueNames: [ 'name', 'year', 'country' ],
+          page: 10,
+          pagination: true
+        };
+        let listObj = new List('users', options);
         }, 500);
       });
-      // LISTJS
-      var options = {
-        valueNames: [ 'name', 'year' ],
-        page: 10,
-        pagination: true
-      };
-
-      var listObj = new List('users', options);
-

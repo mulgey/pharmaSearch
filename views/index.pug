@@ -1068,7 +1068,7 @@ html
     if (statedClass === "empty") {
     searchObj['statedClass'] = [];
     }
-    if (studyDesign == "any") {
+    if (studyDesign == "empty") {
     searchObj['studyDesign'] = [];
     }
     if (setting === "empty") {
@@ -1080,7 +1080,7 @@ html
     if (numPatients === "empty") {
     searchObj['numPatients'] = [];
     }
-    if (numPrescriptions == "any") {
+    if (numPrescriptions == "empty") {
     searchObj['numPrescriptions'] = [];
     }
     if (studyLength === "empty") {
@@ -1092,7 +1092,7 @@ html
     if (country === "empty") {
     searchObj['country'] = [];
     }
-    if (year == "any") {
+    if (year == "empty") {
     searchObj['year'] = [];
     }
     // LOAD THE DATA TO THE myData VARIABLE
@@ -1438,7 +1438,7 @@ html
     // PREPARE THE LIST, APPEND TO RESULTLIST SECTION
     result.forEach(function(item) {
     var li = document.createElement("li");
-    var text = `<div class="collapsible-header"><form action="#" style="margin-top: 0.5rem;"><p><label><input type="checkbox" data-check="isChecked" class="filled-in" /><span></span></label></p></form><p><a> ${item.title}, </a> ${item.filters.journal}, ${item.filters.year}</p></div><div class="collapsible-body"><span>${item.authors}</span><br><br><span style="font-style: italic; font-size: small;">${item.institution}</span><br><br><a href='${item.url}' target='_blank'><i class="material-icons" style="vertical-align: sub; color: darkred;">filter_none</i><span style="color: darkred;"> Open the Study</span></a></div>`;
+    var text = `<div class="collapsible-header"><form action="#" style="margin-top: 0.5rem;"><p><label><input type="checkbox" data-check="isChecked" class="filled-in" /><span></span></label></p></form><p><a> ${item.title}, </a> ${item.filters.journal}, ${item.filters.year}</p></div><div class="collapsible-body"><span>${item.authors}</span><br><br><span style="font-style: italic; font-size: small;">${item.institution}</span><br><br><a href='${item.url}' target='_blank'><i class="material-icons" style="margin-left: 0.5rem; vertical-align: sub; color: darkred;">filter_none</i><span style="color: darkred;"> Open the Study</span></a></div>`;
     li.innerHTML = text;
     document.getElementById("resultList").appendChild(li);
     // CREATE THE COLLAPSIBLE STYLE
