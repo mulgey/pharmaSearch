@@ -1,6 +1,7 @@
 doctype html
 html
   head
+    title PharmaSearch || Your Search Hub
     // Import Google Icon Font
     link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
     // Compiled and minified CSS
@@ -21,7 +22,7 @@ html
               option(value='Morphine') Morphine
               option(value='Fentanyl') Fentanyl
               option(value='Piperacillin - Tazobactam') Piperacillin - Tazobactam
-            label(style="font-weight: bolder; color: royalblue;") Active Substance
+            label(style="font-weight: bolder; color: royalblue; font-size: small;") Active Substance
           .input-field.col.s10.l6.offset-s1
             select(multiple='')#indication
               option(value='', disabled='') Any
@@ -29,7 +30,7 @@ html
               option(value='Heart Failure') Heart Failure
               option(value='Type 2 Diabetes Mellitus') Type 2 Diabetes Mellitus
               option(value='Muscle Spasm') Muscle Spasm
-            label(style="font-weight: bolder; color: royalblue;") Therapeutic Indication
+            label(style="font-weight: bolder; color: royalblue; font-size: small;") Therapeutic Indication
         form.row(action='#')  
           .input-field.col.s10.l6.offset-s1
             select(multiple='')#statedClass
@@ -38,7 +39,7 @@ html
               option(value='Fibrate') Fibrate
               option(value='Thiazide diuretic') Thiazide diuretic
               option(value='Benzodiazepine') Benzodiazepine
-            label(style="font-weight: bolder; color: royalblue;") Stated Drug Classification
+            label(style="font-weight: bolder; color: royalblue; font-size: small;") Stated Drug Classification
           .input-field.col.s10.l6.offset-s1
             select(multiple='')#studyDesign
               option(value='', disabled='') Any
@@ -50,7 +51,7 @@ html
               option(value='Cross-Sectional') Cross-Sectional Study
               option(value='Case Reports / Series') Case Reports / Series
               option(value='Test-Tube Lab Research') Test-Tube Lab Research
-            label(style="font-weight: bolder; color: royalblue;") Design of The Study
+            label(style="font-weight: bolder; color: royalblue; font-size: small;") Design of The Study
         form.row(action='#')
           .input-field.col.s10.l6.offset-s1
             select(multiple='')#setting
@@ -58,14 +59,14 @@ html
               option(value='Hospital') Hospital
               option(value='Laboratory') Laboratory
               option(value='Pharmacy') Community Pharmacy
-            label(style="font-weight: bolder; color: royalblue;") Setting
+            label(style="font-weight: bolder; color: royalblue; font-size: small;") Setting
           .input-field.col.s10.l6.offset-s1
             select(multiple='')#ward
               option(value='', disabled='') Any
               option(value='Intensive Care') Intensive Care
               option(value='Oncology') Oncology
               option(value='Surgery') Surgery
-            label(style="font-weight: bolder; color: royalblue;") Ward
+            label(style="font-weight: bolder; color: royalblue; font-size: small;") Ward
         form.row(action='#')
           .input-field.col.s10.l6.offset-s1
             select(multiple='')#numPatients
@@ -76,7 +77,7 @@ html
               option(value='101 - 500') 101 - 500
               option(value='501 - 1000') 501 - 1000
               option(value='More than 1000') More than 1000
-            label(style="font-weight: bolder; color: royalblue;") Number of Patients
+            label(style="font-weight: bolder; color: royalblue; font-size: small;") Number of Patients
           .input-field.col.s10.l6.offset-s1
             select(multiple='')#numPrescriptions
               option(value='', disabled='') Any
@@ -86,14 +87,14 @@ html
               option(value='101 - 500') 101 - 500
               option(value='501 - 1000') 501 - 1000
               option(value='More than 1000') More than 1000
-            label(style="font-weight: bolder; color: royalblue;") Number of Prescriptions
+            label(style="font-weight: bolder; color: royalblue; font-size: small;") Number of Prescriptions
         form.row(action='#')
           .input-field.col.s10.l6.offset-s1
             select(multiple='')#criteriaMethod
               option(value='', disabled='') Any
               option(value='STOPP/START') STOPP/START
               option(value='Kaplan-Meier') Kaplan-Meier
-            label(style="font-weight: bolder; color: royalblue;") Tools / Criterias / Methods
+            label(style="font-weight: bolder; color: royalblue; font-size: small;") Tools / Criterias / Methods
           .input-field.col.s10.l6.offset-s1
             select(multiple='')#studyLength
               option(value='', disabled='') Any
@@ -104,7 +105,7 @@ html
               option(value='2 years - 5 years') 2 years - 5 years
               option(value='5 years - 10 years') 5 years - 10 years
               option(value='More than 10 years') More than 10 years
-            label(style="font-weight: bolder; color: royalblue;") Study Length
+            label(style="font-weight: bolder; color: royalblue; font-size: small;") Study Length
         form.row 
           .input-field.col.s10.l6.offset-s1
             select(multiple='')#country
@@ -113,13 +114,13 @@ html
               option(value='Morocco') Morocco
               option(value='Spain') Spain
               option(value='Qatar') Qatar
-            label(style="font-weight: bolder; color: royalblue;") Country
+            label(style="font-weight: bolder; color: royalblue; font-size: small;") Country
           .input-field.col.s10.l6.offset-s1
             select(multiple='')#year
               option(value='', disabled='') Any
               option(value='2018') 2018
               option(value='2019') 2019
-            label(style="font-weight: bolder; color: royalblue;") Year of Publication
+            label(style="font-weight: bolder; color: royalblue; font-size: small;") Year of Publication
       .container(style='margin-top: 1rem;')
         ul(class="collapsible expandable")
           li
@@ -458,6 +459,30 @@ html
   // FUNDEMENTALS
   script.
     M.AutoInit();
+    // COOKIE ENGINE START
+    function createCookie(name,value,days) {
+    if (days) {
+    var date = new Date();
+    date.setTime(date.getTime()+(days*24*60*60*1000));
+    var expires = "; expires="+date.toGMTString();
+    }
+    else var expires = "";
+    document.cookie = name+"="+value+expires+"; path=/";
+    }
+    function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+    var c = ca[i];
+    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+    }
+    function eraseCookie(name) {
+    createCookie(name,"",-1);
+    }
+    // COOKIE ENGINE ENDS
   script.
     // GET JSON DATA
     var dataReq = new XMLHttpRequest();
@@ -1438,7 +1463,7 @@ html
     // PREPARE THE LIST, APPEND TO RESULTLIST SECTION
     result.forEach(function(item) {
     var li = document.createElement("li");
-    var text = `<div class="collapsible-header"><form action="#" style="margin-top: 0.5rem;"><p><label><input type="checkbox" data-check="isChecked" class="filled-in" /><span></span></label></p></form><p><a> ${item.title}, </a> ${item.filters.journal}, ${item.filters.year}</p></div><div class="collapsible-body"><span>${item.authors}</span><br><br><span style="font-style: italic; font-size: small;">${item.institution}</span><br><br><a href='${item.url}' target='_blank'><i class="material-icons" style="margin-left: 0.5rem; vertical-align: sub; color: darkred;">filter_none</i><span style="color: darkred;"> Open the Study</span></a></div>`;
+    var text = `<div class="collapsible-header"><form action="#" style="margin-top: 0.5rem;"><p><label><input type="checkbox" data-check="isChecked" class="filled-in" /><span></span></label></p></form><p><a> ${item.title}, </a> ${item.filters.journal}, ${item.filters.year}</p></div><div class="collapsible-body"><span>${item.authors}</span><br><br><span style="font-style: italic; font-size: small;">${item.institution}</span><br><br><a href='${item.url}' target='_blank'><i class="material-icons" style="margin-left: 0.5rem; vertical-align: sub; color: darkred;">filter_none</i><span style="color: darkred;"> Open the Study</span></a><div class="error" style="float: right; margin-right: 2rem;"><a href='/report' target='_blank'><i class="material-icons" style="margin-left: 0.5rem; vertical-align: sub; color: indianred;">error</i><span style="color: indianred; font-size: small;"> Report an Error</span></a></div></div>`;
     li.innerHTML = text;
     document.getElementById("resultList").appendChild(li);
     // CREATE THE COLLAPSIBLE STYLE
@@ -1463,6 +1488,15 @@ html
     });      
     // PAGINATE END
 
+    // ERROR REPORTING
+    let reportName;
+    $( ".error" ).click(function() {
+      let string = $(this).parent().parent()[0].innerText;
+      // method works only when you type a comma after the study name
+      let reportName = string.split(',')[0];
+      createCookie('reportName', reportName, 1);
+    });
+
     });
 
     // IF SORT SELECTION CHANGES, SEARCH AGAIN
@@ -1473,7 +1507,7 @@ html
     // SELECT ALL ENGINE STARTS WITH A COUNTER
     let counter = [false];
 
-    // CHECKED - TRUE / NOT-CHECKED - FALSE MECHANISM
+    // CHECKED - TRUE / NOT-CHECKED - FALSE MECHANISM (caps down please)
     $("#selectAll").click(function () {
         if (counter[0] === false) {
           $('.filled-in').prop('checked', true);
@@ -1497,43 +1531,21 @@ html
       // CREATE A LINK ARRAY AND ADD INSIDE THE LINKs of THE SELECTED STUDIES
       let linkArray = [];
       linkArray = $("input:checkbox[data-check='isChecked']:checked").map(function() {
-        return $(this).parent().parent().parent().parent().siblings()[0].lastChild.href;
+        return $(this).parent().parent().parent().parent().siblings()[0].children[6].href;
       }).get();
-
-      // COOKIE ENGINE START
-      function createCookie(name,value,days) {
-      if (days) {
-      var date = new Date();
-      date.setTime(date.getTime()+(days*24*60*60*1000));
-      var expires = "; expires="+date.toGMTString();
-      }
-      else var expires = "";
-      document.cookie = name+"="+value+expires+"; path=/";
-      }
-      function readCookie(name) {
-      var nameEQ = name + "=";
-      var ca = document.cookie.split(';');
-      for(var i=0;i < ca.length;i++) {
-      var c = ca[i];
-      while (c.charAt(0)==' ') c = c.substring(1,c.length);
-      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-      }
-      return null;
-      }
-      function eraseCookie(name) {
-      createCookie(name,"",-1);
-      }
-      // COOKIE ENGINE ENDS
 
       // CONVERT ARRAYS TO JSONs
       let json_text = JSON.stringify(textArray);
       let json_link = JSON.stringify(linkArray);
+      console.log(textArray, linkArray)
       // ERASE PRE-COOKIES
       eraseCookie('text');
       eraseCookie('link');
+      eraseCookie('reportName');
       // CREATE NEW COOKIES AS JSONs
       createCookie('text', json_text, 1);
       createCookie('link', json_link, 1);
+
     });      
   script.
     // FOOTER SLIDING DATA
@@ -1560,4 +1572,3 @@ html
     $("body").on("change", "input[data-check='isChecked']", function () {
         $("#selectAll").prop('checked', false);
     });
-    // ENDS

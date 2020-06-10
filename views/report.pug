@@ -1,7 +1,7 @@
 doctype html
 html
     head
-      title PharmaSearch || E-Mail Service
+      title PharmaSearch || Report an Error
       // Import Google Icon Font
       link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
       // Compiled and minified CSS
@@ -15,21 +15,37 @@ html
       main
         .container
           .row
-            form.col.s12(action='/email', method='post')
+            form.col.s12(action='/report', method='post')
               .row
                 .input-field.col.s12
+                  textarea#studyName.materialize-textarea(name='studyName', readonly='')
+                  label(for='studyName') Selected Item
+                .input-field.col.s12
+                  textarea#name.materialize-textarea(name='name')
+                  label(for='name') Your Name (optional)
+                .input-field.col.s12
                   input#email.validate(type='email', name='email')
-                  label(for='email') E-mail to be Sent
+                  label(for='email') Your E-Mail (optional)
                   span.helper-text(data-error='Please check your mail again', data-success='')
                 .input-field.col.s12
-                  textarea#reportText.materialize-textarea(name='studies')
-                  label(for='reportText') Selected Studies
+                    select(name='problem')
+                        option(value='', disabled='', selected='') Please Select
+                        option(value='Incorrect Link / Study Does Not Exist') Incorrect Link / Study Does Not Exist
+                        option(value='Misspelling') Misspelling
+                        option(value='Misinformation') Misinformation
+                        option(value='Incorrect Classification') Incorrect Classification
+                        option(value='Technical Issues') Technical Issues
+                        option(value='Others') Others
+                    label Classification of the Problem
+                .input-field.col.s12
+                  textarea#details.materialize-textarea(name='details', autocomplete='off')
+                  label(for='details') Details (optional)
               .row  
-                button#sendReady.col.s2.waves-effect.waves-light.btn.offset-s4(style='border-radius: 12px; width: 25%; background-color: royalblue;', type='submit' name="sendReady")
-                    | Ready to Send
-                    i.material-icons.right done
+                button#sendReport.col.s2.waves-effect.waves-light.btn.offset-s4(style='border-radius: 12px; width: 25%; background-color: royalblue;', type='submit' name="sendReport")
+                    | Report Now
+                    i.material-icons.right email
           .row.center-align
-            p.col.s12(style="font-weight: bold; color: darkslateblue;")= Sent
+            p.col.s12(style="font-weight: bold; color: darkslateblue;")= Report
       include includes/footer.pug
     // Compiled and minified JavaScript
     script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
@@ -63,25 +79,9 @@ html
       }
       // COOKIE ENGINE END
 
-      //CONVERT COOKIES BACK TO ARRAYS
-      let json_text = readCookie('text');
-      let textArray = JSON.parse(json_text);
-
-      let json_link = readCookie('link');
-      let linkArray = JSON.parse(json_link);
-
-      // COMBINE THE ARRAYS AND PRESENT THE RESULT ON THE TEXTAREA
-      textArray.forEach((text, value) => {
-        const url = linkArray[value];
-        // DON'T ADD LINE BREAKS IF THERE'S ONE RESULT
-        if (linkArray.length == 1) {
-        let report = `${text} (${url})`;
-        return $('#reportText').append(report); 
-        } else {
-        let report = `${text} (${url})\r\n\r\n`;
-        return $('#reportText').append(report); 
-        }
-      });
+      // GET COOKIE DATA AND WRITE TO THE PAGE
+      let reportName = readCookie('reportName');
+      document.getElementById('studyName').value = reportName;
       // GET JSON DATA
       var dataReq = new XMLHttpRequest();
       var url = "protected/data/data.json";
