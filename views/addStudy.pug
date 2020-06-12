@@ -15,37 +15,29 @@ html
       main
         .container
           .row
-            form.col.s12(action='/report', method='post')
+            form.col.s12(action='/addStudy', method='post')
               .row
                 .input-field.col.s12
-                  textarea#studyName.materialize-textarea(name='studyName', readonly='')
-                  label(for='studyName') Selected Item
+                  textarea#title.materialize-textarea(name='title')
+                  label(for='title') Study Title
                 .input-field.col.s12
-                  textarea#name.materialize-textarea(name='name')
-                  label(for='name') Your Name (optional)
+                  textarea#studyUrl.materialize-textarea(name='studyUrl')
+                  label(for='studyUrl') Study URL (strongly advised)
+                .input-field.col.s12(style="margin-top: -0.5rem;")
+                  textarea#studyDetails.materialize-textarea(name='studyDetails')
+                  label(for='studyDetails') Details (optional)
                 .input-field.col.s12
                   input#email.validate(type='email', name='email')
                   label(for='email') Your E-Mail (optional)
                   span.helper-text(data-error='Please check your mail again', data-success='')
-                .input-field.col.s12
-                    select(name='problem')
-                        option(value='', disabled='', selected='') Please Select
-                        option(value='Incorrect Link / Study Does Not Exist') Incorrect Link / Study Does Not Exist
-                        option(value='Misspelling') Misspelling
-                        option(value='Misinformation') Misinformation
-                        option(value='Incorrect Classification') Incorrect Classification
-                        option(value='Technical Issues') Technical Issues
-                        option(value='Others') Others
-                    label Classification of the Problem
-                .input-field.col.s12
-                  textarea#details.materialize-textarea(name='details', autocomplete='off')
-                  label(for='details') Details (optional)
+              .row(style="margin-top: -1.5rem;")
+                #chips.chips.chips-autocomplete(style="margin-left: 0.5rem; margin-right: 0.5rem;")
               .row  
-                button#sendReport.col.s2.waves-effect.waves-light.btn.offset-s4(style='border-radius: 12px; width: 25%; background-color: royalblue;', type='submit' name="sendReport")
-                    | Report Now
-                    i.material-icons.right email
+                button#addStudy.col.s2.waves-effect.waves-light.btn.offset-s4(style='border-radius: 12px; width: 25%; background-color: royalblue;', type='submit' name="addStudy")
+                    | Send for Review
+                    i.material-icons.right library_add
           .row.center-align
-            p.col.s12(style="font-weight: bold; color: darkslateblue;")= Report
+            p.col.s12(style="font-weight: bold; color: darkslateblue;")= StudyAdd
       include includes/footer.pug
     // Compiled and minified JavaScript
     script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
@@ -55,7 +47,6 @@ html
     script.
       // MATERIALIZE STUFF
       M.AutoInit();
-      $('#switch').hide();
       // COOKIE ENGINE START
       function createCookie(name,value,days) {
       if (days) {
@@ -88,14 +79,68 @@ html
         $("main").css("background-color", "darkgray");
         $("header").css("background-color", "darkgray");
         $("footer").css("background-color", "gray");
-        $("#sendReport").css("background-color", "darkslateblue");
+        $("#addStudy").css("background-color", "darkslateblue");
         $(".nav-wrapper").css("background", "");
         $(".nav-wrapper").css("background-color", "darkslateblue");
       }
-
-      // GET COOKIE DATA AND WRITE TO THE PAGE
-      let reportName = readCookie('reportName');
-      document.getElementById('studyName').value = reportName;
+      $('#switch').hide();
+      // (FAILED TEST) $('#chips::placeholder').css('color', 'red');
+      $('.chips-autocomplete').chips({
+        placeholder: 'Enter a category',
+        secondaryPlaceholder: '+ Category',
+        autocompleteOptions: {
+          data: {
+            'Suggesting a Next Step': null,
+            'Students / Young Pharmacists': null,
+            'Clinical Trials': null,
+            'Education of Health Professionals': null,
+            'Drug Recalls': null,
+            'Multi-Institutional Study': null,
+            'Multidisciplinary Study': null,
+            'Regulatory Policies / Audits': null,
+            'Antimicrobial Stewardship': null,
+            'Administrative Approaches': null,
+            'Prescription / Preparation / Application Errors': null,
+            'Renal Insufficiency': null,
+            'Antimicrobial Resistance': null,
+            'Medication Adherence': null,
+            'Adverse Drug Events': null,
+            'Drug Shortages': null,
+            'Social Media': null,
+            '3D Printing': null,
+            'Mobile / VR Technologies': null,
+            'Software Aided Decision Making': null,
+            'Cold Chain Management': null,
+            'Automated Dispensing': null,
+            'Stock / Supply / Distribution': null,
+            'Selection / Procurement': null,
+            'Questionnaires / Interviews (Health Professionals)': null,
+            'Questionnaires / Interviews (Health Professionals)': null,
+            'Recommendations to Nurses': null,
+            'Interaction with Patients': null,
+            'Intervention of Pharmacists': null,
+            'Safety / Tolerability Profile Assessment': null,
+            'Therapeutic Drug Monitoring': null,
+            'Determination of Stability': null,
+            'Pharmacovigilance / Materiovigilance': null,
+            'Occupational Risk / Safety': null,
+            'Cost Analysis': null,
+            'Preparing IV Medications': null,
+            'Prescription Regulations (e.g., Deprescribing)': null,
+            'Switching Medication': null,
+            'Flat Doses / Dose Banding': null,
+            'Off-Label Use': null,
+            'Pain Management': null,
+            'Antibiotic Prophylaxis': null,
+            'Home Care': null,
+            'Gene Therapy': null
+          },
+        limit: Infinity,
+        minLength: 1
+        }
+      });
+      $( ".dropdown-content" ).css('min-width', '40%');
+    
       // GET JSON DATA
       var dataReq = new XMLHttpRequest();
       var url = "protected/data/data.json";

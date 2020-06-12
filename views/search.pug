@@ -36,9 +36,46 @@ html
     script(src='js/jquery.paginate.js')
     script(src='//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
-    // FUNDEMENTALS
+    // MY SCRIPTS START
     script.
+      // MATERIALIZE STUFF
       M.AutoInit();
+      $('#switch').hide();
+      // COOKIE ENGINE START
+      function createCookie(name,value,days) {
+      if (days) {
+      var date = new Date();
+      date.setTime(date.getTime()+(days*24*60*60*1000));
+      var expires = "; expires="+date.toGMTString();
+      }
+      else var expires = "";
+      document.cookie = name+"="+value+expires+"; path=/";
+      }
+      function readCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for(var i=0;i < ca.length;i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') c = c.substring(1,c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+      }
+      return null;
+      }
+      function eraseCookie(name) {
+      createCookie(name,"",-1);
+      }
+      // COOKIE ENGINE END
+
+      // READ COOKIE FOR NIGHT MODE
+      let checkNight = readCookie('nightMode');
+      if (checkNight == null) {
+      } else {
+        $("main").css("background-color", "darkgray");
+        $("header").css("background-color", "darkgray");
+        $("footer").css("background-color", "gray");
+        $(".nav-wrapper").css("background", "");
+        $(".nav-wrapper").css("background-color", "darkslateblue");
+      }
       // GET JSON DATA
       var dataReq = new XMLHttpRequest();
       var url = "protected/data/data.json";

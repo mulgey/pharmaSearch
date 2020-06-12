@@ -29,15 +29,20 @@ html
                     | Ready to Send
                     i.material-icons.right done
           .row.center-align
-            p.col.s12(style="font-weight: bold; color: darkslateblue;")= Sent
+            p#sent.col.s12(style="font-weight: bold; color: darkslateblue;")= Sent
+            #spinner.col.s12.offset-s5(style="display: none;")
+              .spinner-dual
+                .spinner-dual
       include includes/footer.pug
     // Compiled and minified JavaScript
     script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
     script(src='js/jquery.paginate.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
-    // FUNDEMENTALS
+    // MY SCRIPTS START
     script.
+      // MATERIALIZE STUFF
       M.AutoInit();
+      $('#switch').hide();
       // COOKIE ENGINE START
       function createCookie(name,value,days) {
       if (days) {
@@ -62,6 +67,20 @@ html
       createCookie(name,"",-1);
       }
       // COOKIE ENGINE END
+      
+      // READ COOKIE FOR NIGHT MODE
+      let checkNight = readCookie('nightMode');
+      if (checkNight == null) {
+      } else {
+        $("main").css("background-color", "darkgray");
+        $("header").css("background-color", "darkgray");
+        $("footer").css("background-color", "gray");
+        $("#sendReady").css("background-color", "darkslateblue");
+        $(".nav-wrapper").css("background", "");
+        $(".nav-wrapper").css("background-color", "darkslateblue");
+        $(".spinner-dual").css("border-top-color", "darkslateblue");
+        $(".spinner-dual").css("border-bottom-color", "darkslateblue");
+      }
 
       //CONVERT COOKIES BACK TO ARRAYS
       let json_text = readCookie('text');
@@ -92,6 +111,7 @@ html
       };
       dataReq.open("GET", url, true);
       dataReq.send();
+
       // FOOTER SLIDING DATA
       $( "body" ).one('mouseover', function() {
         setTimeout(function() { 
@@ -102,4 +122,9 @@ html
         document.getElementById("slider").innerHTML = `${slideData.length} studies in our database are ready! With ${actLength} different active substances, ${wardLength} different ward options and among ${countryLength} countries; you may perform your search`;
         }, 500);
       });
+      // TEST
+      $("#sendReady").click(function () {
+        $('#spinner').css("display", "block");
+      });
+
 

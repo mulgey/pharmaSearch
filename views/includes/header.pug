@@ -1,10 +1,17 @@
 header
   .navbar-fixed(style='margin-bottom: 2rem;')  
     nav
-      .nav-wrapper(style='background-color: royalblue;')
+      .nav-wrapper(style='background: rgb(7,63,235); background: linear-gradient(90deg, rgba(7,63,235,1) 0%, rgba(45,94,242,1) 45%, rgba(80,120,241,1) 100%);')
         a.brand-logo(href='/') PharmaSearch
         ul#nav-mobile.right.hide-on-med-and-down
+          li
+            a(href='/addStudy' style='margin-right: 1rem;') + Add Study
           li
             a(href='/search' style='margin-right: 1rem;') Type-Search
           li
             a(href='#' style='margin-right: 1rem;') About
+          #switch.switch(style="margin-left: 11rem;")
+            label(style="color: black; font-weight: 500;")
+              input#nightMode(type='checkbox')
+              span.lever
+              | Dark Mode 🌙

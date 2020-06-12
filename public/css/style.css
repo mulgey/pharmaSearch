@@ -7,6 +7,10 @@ main, header, footer, .collapsible-header, #sortSelect {
     margin-left: 1rem;
 }
 
+#chips > ul {
+    width: 500px;
+}
+
 #resultList a {
     color: midnightblue;
     font-size: 18px;
@@ -60,6 +64,32 @@ main {
     flex: 1 0 auto;
 }
 /* sticky footer ends*/
+
+
+/* spinner starts */
+.spinner-dual {
+    width: 70px;
+    height: 70px;
+    border: 8px solid transparent;
+    border-top-color: royalblue;
+    border-bottom-color: royalblue;
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;  
+}
+
+.spinner-dual>div{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    animation: spin .8s reverse linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* spinner ends */
 
 .switch label {
     margin-top: 2rem;

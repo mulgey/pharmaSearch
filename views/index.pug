@@ -456,8 +456,9 @@ html
   script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
   script(src='js/jquery.paginate.js')
   script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
-  // FUNDEMENTALS
+  // MY SCRIPTS START
   script.
+    // MATERIALIZE STUFF
     M.AutoInit();
     // COOKIE ENGINE START
     function createCookie(name,value,days) {
@@ -483,6 +484,24 @@ html
     createCookie(name,"",-1);
     }
     // COOKIE ENGINE ENDS
+
+    // READ COOKIE FOR NIGHT MODE
+    let checkNight = readCookie('nightMode');
+    if (checkNight == null) {
+    } else {
+      $("#nightMode").trigger("click");
+      $("main").css("background-color", "darkgray");
+      $("header").css("background-color", "darkgray");
+      $("footer").css("background-color", "gray");
+      $(".collapsible-header").css("background-color", "darkgray");
+      $("#sortSelect").css("background-color", "darkgray");
+      $("#email").css("background-color", "darkslateblue");
+      $("#search").css("background-color", "darkslateblue");
+      $("#resultBody > nav").css("background-color", "darkslategray");
+      $(".nav-wrapper").css("background", "");
+      $(".nav-wrapper").css("background-color", "darkslateblue");
+    }
+
   script.
     // GET JSON DATA
     var dataReq = new XMLHttpRequest();
@@ -1463,7 +1482,7 @@ html
     // PREPARE THE LIST, APPEND TO RESULTLIST SECTION
     result.forEach(function(item) {
     var li = document.createElement("li");
-    var text = `<div class="collapsible-header"><form action="#" style="margin-top: 0.5rem;"><p><label><input type="checkbox" data-check="isChecked" class="filled-in" /><span></span></label></p></form><p><a> ${item.title}, </a> ${item.filters.journal}, ${item.filters.year}</p></div><div class="collapsible-body"><span>${item.authors}</span><br><br><span style="font-style: italic; font-size: small;">${item.institution}</span><br><br><a href='${item.url}' target='_blank'><i class="material-icons" style="margin-left: 0.5rem; vertical-align: sub; color: darkred;">filter_none</i><span style="color: darkred;"> Open the Study</span></a><div class="error" style="float: right; margin-right: 2rem;"><a href='/report' target='_blank'><i class="material-icons" style="margin-left: 0.5rem; vertical-align: sub; color: indianred;">error</i><span style="color: indianred; font-size: small;"> Report an Error</span></a></div></div>`;
+    var text = `<div class="collapsible-header"><form action="#" style="margin-top: 0.5rem;"><p><label><input type="checkbox" data-check="isChecked" class="filled-in" /><span></span></label></p></form><p><a> ${item.title}. </a> ${item.filters.journal}, ${item.filters.year}</p></div><div class="collapsible-body"><span>${item.authors}</span><br><br><span style="font-style: italic; font-size: small;">${item.institution}</span><br><br><div style="margin-top: 2rem;"><a href='${item.url}' target='_blank'><i class="material-icons" style="margin-left: 0.5rem; vertical-align: sub; color: darkred;">filter_none</i><span style="color: darkred;"> Open the Study</span></a><div class="error" style="float: right; margin-right: 2rem;"><a href='/report' target='_blank'><i class="material-icons" style="margin-left: 0.5rem; vertical-align: sub; color: indianred;">error</i><span style="color: indianred; font-size: small;"> Report an Error</span></a></div></div></div>`;
     li.innerHTML = text;
     document.getElementById("resultList").appendChild(li);
     // CREATE THE COLLAPSIBLE STYLE
@@ -1488,12 +1507,20 @@ html
     });      
     // PAGINATE END
 
+    // IF IT'S NIGHT MODE COLOR THE COLLAPSIBLE HEADERS
+    let nightHeader = readCookie('nightMode');
+    if (nightHeader == null) {
+    } else {
+    $(".collapsible-header").css("background-color", "darkgray");
+    $("#resultBody > nav").css("background-color", "darkslategray");
+    }
+
     // ERROR REPORTING
     let reportName;
     $( ".error" ).click(function() {
-      let string = $(this).parent().parent()[0].innerText;
-      // method works only when you type a comma after the study name
-      let reportName = string.split(',')[0];
+      let string = $(this).parent().parent().parent()[0].innerText;
+      // method works only when you type a ";" after the study name. Study name should not include ";"
+      let reportName = string.split('.')[0];
       createCookie('reportName', reportName, 1);
     });
 
@@ -1527,17 +1554,19 @@ html
       textArray = $("input:checkbox[data-check='isChecked']:checked").map(function() {
         return $(this).parent().parent().parent().parent().siblings()[0].previousSibling.innerText;
       }).get();
+      console.log(textArray);
 
       // CREATE A LINK ARRAY AND ADD INSIDE THE LINKs of THE SELECTED STUDIES
       let linkArray = [];
       linkArray = $("input:checkbox[data-check='isChecked']:checked").map(function() {
-        return $(this).parent().parent().parent().parent().siblings()[0].children[6].href;
+        return $(this).parent().parent().parent().parent().siblings()[0].children[6].firstElementChild.href;
       }).get();
 
       // CONVERT ARRAYS TO JSONs
       let json_text = JSON.stringify(textArray);
+      console.log(json_text);
       let json_link = JSON.stringify(linkArray);
-      console.log(textArray, linkArray)
+
       // ERASE PRE-COOKIES
       eraseCookie('text');
       eraseCookie('link');
@@ -1571,4 +1600,37 @@ html
     // IF ANOTHER SELECT WAS CLICKED UNSELECT THE SELECT-ALL CHECKBOX
     $("body").on("change", "input[data-check='isChecked']", function () {
         $("#selectAll").prop('checked', false);
+    });
+
+    // NIGHT MODE SWITCH
+    $( "#nightMode" ).click(function() {
+    let nightMode = readCookie('nightMode');
+    if (nightMode == null) {
+      let nightMode = "yes";
+      createCookie('nightMode', nightMode, 2);
+      $("main").css("background-color", "darkgray");
+      $("header").css("background-color", "darkgray");
+      $("footer").css("background-color", "darkgray");
+      $(".page-footer").css("background-color", "gray");
+      $(".collapsible-header").css("background-color", "darkgray");
+      $("#sortSelect").css("background-color", "darkgray");
+      $("#email").css("background-color", "darkslateblue");
+      $("#search").css("background-color", "darkslateblue");
+      $("#resultBody > nav").css("background-color", "darkslategray");
+      $(".nav-wrapper").css("background", "");
+      $(".nav-wrapper").css("background-color", "darkslateblue");
+    } else {
+      eraseCookie('nightMode');
+      $("main").css("background-color", "aliceblue");
+      $("header").css("background-color", "aliceblue");
+      $("footer").css("background-color", "aliceblue");
+      $(".collapsible-header").css("background-color", "aliceblue");
+      $("#sortSelect").css("background-color", "aliceblue");
+      $("#email").css("background-color", "royalblue");
+      $("#search").css("background-color", "royalblue");
+      $("#resultBody > nav").css("background-color", "dodgerblue");
+      $(".page-footer").css("background-color", "royalblue");
+      $(".nav-wrapper").css("background", "rgb(7,63,235); background: linear-gradient(90deg, rgba(7,63,235,1) 0%, rgba(45,94,242,1) 45%, rgba(80,120,241,1) 100%);");
+      $(".nav-wrapper").css("background-color", "");
+    }
     });
