@@ -1,3 +1,17 @@
+/* LOGO STUFF */
+#logoType {
+    font-family: 'Russo One', sans-serif;
+}
+
+.typed-cursor{
+    font-size: x-large;
+}
+
+#logoType {
+    margin-left: 2rem;     
+}
+/* LOGO STUFF ENDS */
+
 main, header, footer, .collapsible-header, #sortSelect {
     background-color: aliceblue;
 }
@@ -133,6 +147,10 @@ div.input-field {
 @media only screen and (min-width: 500px) {
     #advSearch {
         margin-left: 35%;
+    }
+
+    #logoType {
+        margin-left: 5.5rem;     
     }
 
 }

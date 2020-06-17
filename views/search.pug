@@ -1,15 +1,9 @@
 doctype html
-html
+html(lang='en')
     head
       title PharmaSearch || Live Search
-      // Import Google Icon Font
-      link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
-      // Compiled and minified CSS
-      link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css')
-      // My very own great CSS
-      link(rel='stylesheet', href='css/style.css')
-      // Let browser know website is optimized for mobile
-      meta(name='viewport', content='width=device-width, initial-scale=1.0')
+      meta(name='Description', content='Users may perform a live search for the studies across the pharma world by typing anything related to the name of the study.')
+      include includes/head.pug
     body
       include includes/header.pug
       main
@@ -30,17 +24,28 @@ html
             // Child elements of container with class="list" becomes list items
             ul#root.list.col.s12(style="margin-bottom: 4rem;")
             ul.pagination.col.s12
+              #spinner.col.s5.offset-s5(style="display: none;")
+                .spinner-dual
+                  .spinner-dual 
       include includes/footer.pug
     // Compiled and minified JavaScript
     script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
     script(src='js/jquery.paginate.js')
     script(src='//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/typed.js@2.0.11')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
     // MY SCRIPTS START
     script.
       // MATERIALIZE STUFF
       M.AutoInit();
       $('#switch').hide();
+      document.addEventListener('DOMContentLoaded', function(){
+        var options = {
+          strings: ['PharmaSear^500.ch'],
+          typeSpeed: 100
+        };
+        var typed = new Typed('#logoType', options); 
+      });
       // COOKIE ENGINE START
       function createCookie(name,value,days) {
       if (days) {
@@ -88,15 +93,11 @@ html
       dataReq.send();
       // ONCE THE CURSOR MOVED
       $( "body" ).one('mouseover', function() {
+        $('#spinner').css("display", "block");
         // FOOT SLIDER DATA
         setTimeout(function() { 
         let slideData = JSON.parse(dataReq.responseText);
-        let actLength = (($('#actSubs > option').length) - 1);
-        let wardLength = (($('#ward > option').length) - 1);
-        let countryLength = (($('#country > option').length) - 1);
-        document.getElementById("slider").innerHTML = `${slideData.length} studies in our database are ready! With ${actLength} different active substances, ${wardLength} different ward options and among ${countryLength} countries; you may perform your search`;
-        // FOOT SLIDER DATA ENDS
-
+        document.getElementById("slider").innerHTML = `${slideData.length} studies in our database are ready for you to perform your search now!`;
         // LOAD THE DATA TO THE myData VARIABLE
         let myData = JSON.parse(dataReq.responseText);
         // SET EMPTY SEARCH OBJECT FOR THE FULL LIST
@@ -212,6 +213,7 @@ html
         var text = `<h5 style="margin-top: 3rem;" class="name"><a style="color: midnightblue;" href="${item.url}" target="_blank">${item.title}</a></h4><p class="institution">${item.institution}</p><p class="country">${item.filters.country}</p><p class="year">${item.filters.year}</p><p style="margin-top: 2rem; border-bottom: 3px groove rgba(28,110,164,0.68);"></p>`;
         li.innerHTML = text;
         document.getElementById("root").appendChild(li);
+        $('#spinner').css("display", "none");
         });
         // LISTJS
         let options = {
@@ -220,5 +222,5 @@ html
           pagination: true
         };
         let listObj = new List('users', options);
-        }, 500);
+        }, 1500);
       });

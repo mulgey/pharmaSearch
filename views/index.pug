@@ -1,15 +1,9 @@
 doctype html
-html
+html(lang='en')
   head
     title PharmaSearch || Your Search Hub
-    // Import Google Icon Font
-    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
-    // Compiled and minified CSS
-    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css')
-    // My very own great CSS
-    link(rel='stylesheet', href='css/style.css')
-    // Let browser know website is optimized for mobile
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='Description', content='Plan your next pharma study with us. Search the studies across the pharma world among more than 50 criteries and with high precision, reach the studies suits best to your interest.')
+    include includes/head.pug
   body
     include includes/header.pug
     main  
@@ -429,7 +423,10 @@ html
       .container(style='margin-top: 2rem;')
         .row
           .chip.col.s12.center-align
-            | Multiple selection means "both" (not "or"). E.g., selection of "Morphine" and "Fentanyl" makes it search the studies including both active substances
+            b(style="font-weight: 900;") Multiple 
+            | selection means "
+            b(style="font-weight: 900;") both
+            | " (not "or"). E.g., selection of "Morphine" and "Fentanyl" makes it search the studies including both active substances
             i.close.material-icons close
       .container
         #resultHeader.row(style='margin-top: 2rem; display: none;')
@@ -455,11 +452,19 @@ html
   // Compiled and minified JavaScript
   script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
   script(src='js/jquery.paginate.js')
+  script(src='https://cdn.jsdelivr.net/npm/typed.js@2.0.11')
   script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
   // MY SCRIPTS START
   script.
     // MATERIALIZE STUFF
     M.AutoInit();
+    document.addEventListener('DOMContentLoaded', function(){
+      var options = {
+        strings: ['PharmaSear^500.ch'],
+        typeSpeed: 100
+      };
+      var typed = new Typed('#logoType', options); 
+    });
     // COOKIE ENGINE START
     function createCookie(name,value,days) {
     if (days) {
@@ -1578,13 +1583,11 @@ html
     });      
   script.
     // FOOTER SLIDING DATA
+    // FOOTER SLIDING DATA
     $( "body" ).one('mouseover', function() {
       setTimeout(function() { 
       let slideData = JSON.parse(dataReq.responseText);
-      let actLength = (($('#actSubs > option').length) - 1);
-      let wardLength = (($('#ward > option').length) - 1);
-      let countryLength = (($('#country > option').length) - 1);
-      document.getElementById("slider").innerHTML = `${slideData.length} studies in our database are ready! With ${actLength} different active substances, ${wardLength} different ward options and among ${countryLength} countries; you may perform your search`;
+      document.getElementById("slider").innerHTML = `${slideData.length} studies in our database are ready for you to perform your search now!`;
       }, 500);
     });
     // CREATE MONO-SELECT DROPDOWNS FOR THE SELECTED LIST OF IDs
@@ -1630,7 +1633,6 @@ html
       $("#search").css("background-color", "royalblue");
       $("#resultBody > nav").css("background-color", "dodgerblue");
       $(".page-footer").css("background-color", "royalblue");
-      $(".nav-wrapper").css("background", "rgb(7,63,235); background: linear-gradient(90deg, rgba(7,63,235,1) 0%, rgba(45,94,242,1) 45%, rgba(80,120,241,1) 100%);");
-      $(".nav-wrapper").css("background-color", "");
+      $(".nav-wrapper").css("background-color", "royalblue");
     }
     });
