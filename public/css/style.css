@@ -1,3 +1,6 @@
+.parallax img{
+    display: inherit !important;
+}
 /* LOGO STUFF */
 #logoType {
     font-family: 'Russo One', sans-serif;

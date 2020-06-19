@@ -36,8 +36,7 @@ router.get('/addStudy', function(req, res, next) {
 
 // GET /about
 router.get('/about', function(req, res, next) {
-  // return res.render("about");
-  return res.redirect("/");
+  return res.render("about");
 });
 
 // GET /test
