@@ -7,8 +7,12 @@ html(lang='en')
     body
       include includes/header.pug
       main
-        .container
-          .row
+        .row
+          .col.s12.m4.l2(style="padding: 3rem; margin-top: -1rem;")
+            script(type='text/javascript').
+              var bannersnack_embed = {"hash":"b7hnejnub","width":300,"height":1050,"t":1592480941,"userId":41627626,"responsive":true,"type":"html5"};
+            script(type='text/javascript', src='//cdn.bannersnack.com/iframe/embed.js')
+          .col.s12.m4.l8(style="margin-top: 1rem;")
             form.col.s12(action='/addStudy', method='post')
               .row
                 .input-field.col.s12
@@ -30,11 +34,15 @@ html(lang='en')
                 button#addStudy.col.s2.waves-effect.waves-light.btn.offset-s4(style='border-radius: 12px; width: 25%; background-color: royalblue;', type='submit' name="addStudy")
                     | Submit for Review
                     i.material-icons.right library_add
-          .row.center-align
-            p#add.col.s12(style="font-weight: bold; color: darkslateblue;")= StudyAdd
-            #spinner.col.s5.offset-s5(style="display: none;")
-              .spinner-dual
+            .row.center-align
+              p#add.col.s12(style="font-weight: bold; color: darkslateblue;")= StudyAdd
+              #spinner.col.s5.offset-s5(style="display: none;")
                 .spinner-dual
+                  .spinner-dual
+          .col.s12.m4.l2(style="padding: 3rem; margin-top: -1rem;")
+            script(type='text/javascript').
+              var bannersnack_embed = {"hash":"bxhm4i3nd","width":300,"height":1050,"t":1592485287,"userId":41627626,"responsive":true,"type":"html5"};
+            script(type='text/javascript', src='//cdn.bannersnack.com/iframe/embed.js')
       include includes/footer.pug
     // Compiled and minified JavaScript
     script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
@@ -167,7 +175,7 @@ html(lang='en')
       $("#addStudy").click(function () {
         $('#spinner').css("display", "block");
         setTimeout(function() {
-          $('#add').text('Process of your request is taking longer than usual and it will be completed shortly. Thank you for your patience');
+          $('#add').text('Process of your request is taking longer than usual and it will be completed shortly. Thank you for your patience...');
           $('#spinner').css("margin-top", "2rem");
         }, 5000);
       });
