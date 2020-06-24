@@ -16,28 +16,60 @@ html(lang='en')
           form.row(action='#')
             .input-field.col.s10.l6.offset-s1
               select(multiple='')#actSubs
-                option(value='', disabled='') Any
-                option(value='Palbociclib') Palbociclib
-                option(value='Morphine') Morphine
-                option(value='Fentanyl') Fentanyl
-                option(value='Piperacillin - Tazobactam') Piperacillin - Tazobactam
+                option(value='', disabled='') Any                            
+                option(value='Abiraterone') Abiraterone                         
+                option(value='Adalimumab') Adalimumab
+                option(value='Blinatumomab') Blinatumomab
+                option(value='Bortezomib') Bortezomib
+                option(value='Cenegermin') Cenegermin
+                option(value='Daratumumab') Daratumumab
+                option(value='Dexamethasone') Dexamethasone
+                option(value='Eltrombopag') Eltrombopag
+                option(value='Glecaprevir / Pibrentasvir') Glecaprevir / Pibrentasvir
+                option(value='Guselkumab') Guselkumab
+                option(value='Infliximab') Infliximab
+                option(value='Lenalidomide') Lenalidomide
+                option(value='Melphalan') Melphalan
+                option(value='Norepinephrine') Norepinephrine
+                option(value='Pembrolizumab') Pembrolizumab
+                option(value='Prednisone') Prednisone
+                option(value='Ribavirin') Ribavirin
+                option(value='Ruxolitinib') Ruxolitinib
+                option(value='Sofosbuvir / Velpatasvir') Sofosbuvir / Velpatasvir
+                option(value='Thalidomide') Thalidomide
+                option(value='Trabectedina') Trabectedina
+                option(value='Vancomycin hydrochloride') Vancomycin hydrochloride
+                option(value='Venetoclax') Venetoclax
               label(style="font-weight: bolder; color: royalblue; font-size: small;") Active Substance
             .input-field.col.s10.l6.offset-s1
               select(multiple='')#indication
                 option(value='', disabled='') Any
-                option(value='Myocardial Ischemia') Myocardial Ischemia
-                option(value='Heart Failure') Heart Failure
-                option(value='Type 2 Diabetes Mellitus') Type 2 Diabetes Mellitus
-                option(value='Muscle Spasm') Muscle Spasm
+                option(value='Cervical Cancer') Cervical Cancer
+                option(value='Genitourinary Cancers') Genitourinary Cancers
+                option(value='Graft Versus Host Disease') Graft Versus Host Disease
+                option(value='Hepatitis C Genotype 3') Hepatitis C Genotype 3
+                option(value='Leukaemia (Acute Lymphoblastic)') Leukaemia (Acute Lymphoblastic)
+                option(value='Leukaemia (Acute Myeloid)') Leukaemia (Acute Myeloid)
+                option(value='Liver Fibrosis') Liver Fibrosis
+                option(value='Lymphoma (Hodgkin)') Lymphoma (Hodgkin)
+                option(value='Lymphoma (Mantle Cell)') Lymphoma (Mantle Cell)
+                option(value='Lymphoma (non-Hodgkin)') Lymphoma (non-Hodgkin)
+                option(value='Multiple Myeloma (Newly Diagnosed)') Multiple Myeloma (Newly Diagnosed)
+                option(value='Myeloproliferative Neoplasm (BCR/JAK2-Rearranged)') Myeloproliferative Neoplasm (BCR/JAK2-Rearranged)
+                option(value='Neurotrophic Keratitis') Neurotrophic Keratitis
+                option(value='Ovarian Carcinoma') Ovarian Carcinoma
+                option(value='Ovarian Serous Adenocarcinoma') Ovarian Serous Adenocarcinoma
+                option(value='Prostate Cancer') Prostate Cancer
+                option(value='Prostate Cancer (Metastatic Castration Sensitive)') Prostate Cancer (Metastatic Castration Sensitive)
+                option(value='Psoriasis (Moderate to Severe Plaque)') Psoriasis (Moderate to Severe Plaque)
+                option(value='Pure Red Cell Aplasia') Pure Red Cell Aplasia
+                option(value='Testicular Cancer') Testicular Cancer
               label(style="font-weight: bolder; color: royalblue; font-size: small;") Therapeutic Indication
           form.row(action='#')  
             .input-field.col.s10.l6.offset-s1
               select(multiple='')#statedClass
                 option(value='', disabled='') Any
-                option(value='Cardiac Glycoside') Cardiac Glycoside
-                option(value='Fibrate') Fibrate
-                option(value='Thiazide diuretic') Thiazide diuretic
-                option(value='Benzodiazepine') Benzodiazepine
+                option(value='Biosimilars') Biosimilars
               label(style="font-weight: bolder; color: royalblue; font-size: small;") Stated Drug Classification
             .input-field.col.s10.l6.offset-s1
               select(multiple='')#studyDesign
@@ -46,8 +78,8 @@ html(lang='en')
                 option(value='Systematic Review') Systematic Review
                 option(value='Randomized Controlled Trial') Randomized Controlled Trial
                 option(value='Cohort (Prospective Observational Study)') Cohort (Prospective Observational Study)
-                option(value='Case-Control') Case-Control (Retrospective) Study
-                option(value='Cross-Sectional') Cross-Sectional Study
+                option(value='Case-Control (Retrospective) Study') Case-Control (Retrospective) Study
+                option(value='Cross-Sectional Study') Cross-Sectional Study
                 option(value='Case Reports / Series') Case Reports / Series
                 option(value='Test-Tube Lab Research') Test-Tube Lab Research
               label(style="font-weight: bolder; color: royalblue; font-size: small;") Design of The Study
@@ -62,9 +94,6 @@ html(lang='en')
             .input-field.col.s10.l6.offset-s1
               select(multiple='')#ward
                 option(value='', disabled='') Any
-                option(value='Intensive Care') Intensive Care
-                option(value='Oncology') Oncology
-                option(value='Surgery') Surgery
               label(style="font-weight: bolder; color: royalblue; font-size: small;") Ward
           form.row(action='#')
             .input-field.col.s10.l6.offset-s1
@@ -91,8 +120,15 @@ html(lang='en')
             .input-field.col.s10.l6.offset-s1
               select(multiple='')#criteriaMethod
                 option(value='', disabled='') Any
-                option(value='STOPP/START') STOPP/START
-                option(value='Kaplan-Meier') Kaplan-Meier
+                option(value='Cochran Test') Cochran Test
+                option(value='Correlation Analysis') Correlation Analysis
+                option(value='Fast Reversed-Phase HPLC') Fast Reversed-Phase HPLC
+                option(value='Fisher’s Exact Test') Fisher’s Exact Test
+                option(value='HPLC-DAD') HPLC-DAD
+                option(value='Mann-Whitney U Test') Mann-Whitney U Test
+                option(value='MARS (Multivariate Adaptive Regression Splines)') MARS (Multivariate Adaptive Regression Splines)
+                option(value='Psoriasis Area and Severity Index (PASI)') Psoriasis Area and Severity Index (PASI)
+                option(value='Real-Time Polymerase Chain Reaction') Real-Time Polymerase Chain Reaction
               label(style="font-weight: bolder; color: royalblue; font-size: small;") Tools / Criterias / Methods
             .input-field.col.s10.l6.offset-s1
               select(multiple='')#studyLength
@@ -110,15 +146,14 @@ html(lang='en')
               select(multiple='')#country
                 option(value='', disabled='') Any
                 option(value='Italy') Italy
-                option(value='Morocco') Morocco
+                option(value='France') France
+                option(value='Portugal') Portugal
                 option(value='Spain') Spain
-                option(value='Qatar') Qatar
               label(style="font-weight: bolder; color: royalblue; font-size: small;") Country
             .input-field.col.s10.l6.offset-s1
               select(multiple='')#year
                 option(value='', disabled='') Any
-                option(value='2018') 2018
-                option(value='2019') 2019
+                option(value='2020') 2020
               label(style="font-weight: bolder; color: royalblue; font-size: small;") Year of Publication
           .row(style='margin-top: 1rem;')
             ul(class="collapsible expandable")
