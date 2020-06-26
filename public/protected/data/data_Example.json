@@ -22,7 +22,7 @@
       "pediatrics": [],
       "geriatrics": [],
       "neonatology": [],
-      "oncology": [],
+      "oncology": ["xxx"],
       "pharmacogenetics": [],
       "pharmacoeconomy": [],
       "radiopharmaceuticals": [],
@@ -79,7 +79,8 @@
       "education": [],
       "clinicalTrials": [],
       "youngPharma": [],
-      "nextStep": []
+      "nextStep": [],
+      "compliance": []
     }
   }
 ]
