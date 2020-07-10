@@ -2,3 +2,8 @@
 2) About page
 3) data.json protection
 4) search bars for act.subs / indications
+5) add study type-criteria improvement
+6) interactive stats about the database
+7) microbiology was considered in compounding's 1st page
+8) "Can't see my study" button under the search
+9) "Multiple select" is a problem 

@@ -1,5 +1,5 @@
-.parallax img{
-    display: inherit !important;
+.multiple-select-dropdown {
+    max-height: 65vh;
 }
 /* LOGO STUFF */
 #logoType {
