@@ -7,3 +7,6 @@
 7) microbiology was considered in compounding's 1st page
 8) "Can't see my study" button under the search
 9) "Multiple select" is a problem 
+10) Info-boxes to urge for type-search
+11) Paginate .. better hash location or CSS with current page?
+12) Check for .. IV preperation / multidisiplinary / multi-instu / microbio analysis
