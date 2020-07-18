@@ -10,3 +10,4 @@
 10) Info-boxes to urge for type-search
 11) Paginate .. better hash location or CSS with current page?
 12) Check for .. IV preperation / multidisiplinary / multi-instu / microbio analysis
+13) 3PC-008 Patient isolated microorganisms
