@@ -12,6 +12,15 @@
 12) Check for .. IV preperation / multidisiplinary / multi-instu / microbio analysis
 13) 3PC-008 Patient isolated microorganisms
 14) Featured result at the top
+15) Remove side effects from adverse effects before/including "Effectiveness and safety of platin/permetrexed combination in non-small cell lung cancer"
+16) Remove clinicalTrials if it was stated only in the background before "Effectiveness and safety of platin/permetrexed combination in non-small cell lung cancer"
+17) When the main-search loads, provide same effect as in the type-search page
+18) Make Advanced Search section more attractive
+19) Unite the indications / methods for less options under dropdown
 
 For demonstration
 1) "Cost effectiveness analysis of meropenem dose optimisation in critical patients -- "administrative"
+2) "Use of oseltamivir in the treatment of influenza A" -- "instutional" 2 hospitals - 251 patients
+3) "Switching to equivalent alternatives: antiretroviral optimisation strategy" - "costAnalysis" - says: optimisation but not "cost"
+4) "Changing from cobicistat to a ritonavir boosted regimen in HIV positive patients" -- "outpatient" switch is being made for outpatients, not in the wards
+5) Test: Retrospective studies for the end-of-life patients

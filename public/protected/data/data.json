@@ -6,7 +6,7 @@
     "institution": "Pharmacy Service, Universitary Hospital of A Coruña, A Coruña, Spain. Division of Clinical Virology, Biomedical Research Institute of A Coruña (INIBIC), Universitary Hospital of A Coruña (CHUAC), Sergas, University of A Coruña (UDC), A Coruña, Spain. Infectious Diseases Unit. Internal Medicine Service, Universitary Hospital of A Coruña (CHUAC), A Coruña, Spain. Hepatology Unit, Digestive System Service, University Hospital of A Coruña (CHUAC), A Coruña, Spain. Information Systems Department, University Hospital of A Coruña, A Coruña, Spain",
     "DOI": "http://dx.doi.org/10.1136/ejhpharm-2019-002060",
     "filters": {
-      "actSubs": ["Sofosbuvir / Velpatasvir", "Ribavirin", "Glecaprevir / Pibrentasvir"],
+      "actSubs": ["Sofosbuvir / Velpatasvir", "Sofosbuvir", "Velpatasvir", "Ribavirin", "Glecaprevir / Pibrentasvir", "Glecaprevir", "Pibrentasvir"],
       "indication": ["Hepatitis C Genotype 3", "Liver Fibrosis"],
       "statedClass": [],
       "typeOfMedical": [],
@@ -86,7 +86,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -176,7 +177,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -266,7 +268,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -356,7 +359,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -446,7 +450,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -536,7 +541,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -626,7 +632,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -716,7 +723,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -806,7 +814,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -896,7 +905,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -986,7 +996,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -1076,7 +1087,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -1166,7 +1178,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -1256,7 +1269,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -1346,7 +1360,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -1357,7 +1372,7 @@
     "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.6",
     "filters": {
       "actSubs": ["Pemetrexed", "Erlotinib", "Gefitinib", "Afatinib", "Osimertinib", "Crizotinib", "Pembrolizumab", "Nivolumab"],
-      "indication": ["Advanced Non-Small Cell Lung Cancer"],
+      "indication": ["Non-Small Cell Lung Cancer"],
       "statedClass": [],
       "typeOfMedical": [],
       "studyDesign": [],
@@ -1436,7 +1451,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -1526,7 +1542,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -1616,7 +1633,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -1706,7 +1724,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -1796,7 +1815,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -1886,7 +1906,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -1976,7 +1997,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -2066,7 +2088,8 @@
       "delivery": ["delivery"],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -2156,7 +2179,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -2246,7 +2270,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -2336,7 +2361,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -2347,7 +2373,7 @@
     "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.24",
     "filters": {
       "actSubs": ["Osimertinib", "Afatinib", "Gefitinib", "Erlotinib"],
-      "indication": ["Advanced Non-Small Cell Lung Cancer (EGFR-Mutated)"],
+      "indication": ["Non-Small Cell Lung Cancer (EGFR-Mutated)"],
       "statedClass": ["Tyrosine Kinase Inhibitors"],
       "typeOfMedical": [],
       "studyDesign": [],
@@ -2426,7 +2452,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -2516,7 +2543,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -2606,7 +2634,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -2696,7 +2725,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -2786,7 +2816,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -2876,7 +2907,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -2966,7 +2998,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -3056,7 +3089,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -3146,7 +3180,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -3236,7 +3271,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -3326,7 +3362,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -3416,7 +3453,8 @@
       "delivery": ["delivery"],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -3506,7 +3544,8 @@
       "delivery": [],
       "falsified": ["falsified"],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -3596,7 +3635,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -3686,7 +3726,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -3776,7 +3817,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -3866,7 +3908,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -3956,7 +3999,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -4046,7 +4090,8 @@
       "delivery": [],
       "falsified": ["falsified"],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -4136,7 +4181,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -4226,7 +4272,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -4316,7 +4363,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -4406,7 +4454,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -4496,7 +4545,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -4586,7 +4636,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": ["incompatibilities"],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -4676,7 +4727,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -4766,7 +4818,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -4856,7 +4909,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -4946,7 +5000,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -5036,7 +5091,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -5126,7 +5182,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -5216,7 +5273,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -5306,7 +5364,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -5396,7 +5455,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -5486,7 +5546,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -5576,7 +5637,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": ["incompatibilities"],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -5666,7 +5728,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -5756,7 +5819,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -5846,7 +5910,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -5936,7 +6001,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -6026,7 +6092,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -6116,7 +6183,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -6206,7 +6274,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -6296,7 +6365,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -6386,7 +6456,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -6476,7 +6547,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -6566,7 +6638,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -6656,7 +6729,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -6746,7 +6820,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -6836,7 +6911,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -6926,7 +7002,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -7016,7 +7093,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -7106,7 +7184,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -7196,7 +7275,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -7286,7 +7366,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -7376,7 +7457,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -7466,7 +7548,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -7556,7 +7639,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -7646,7 +7730,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -7736,7 +7821,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -7826,7 +7912,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -7916,7 +8003,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -8006,7 +8094,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -8096,7 +8185,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -8186,7 +8276,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -8276,7 +8367,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -8366,7 +8458,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -8393,7 +8486,7 @@
       "pediatrics": [],
       "geriatrics": [],
       "neonatology": [],
-      "oncology": ["oncology"],
+      "oncology": [],
       "pharmacogenetics": [],
       "pharmacoeconomy": [],
       "radiopharmaceuticals": [],
@@ -8456,7 +8549,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -8546,7 +8640,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -8636,7 +8731,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -8726,7 +8822,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -8816,7 +8913,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -8906,7 +9004,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -8996,7 +9095,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -9086,7 +9186,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -9176,7 +9277,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -9266,7 +9368,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -9356,7 +9459,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -9446,7 +9550,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -9536,7 +9641,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -9626,7 +9732,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -9716,7 +9823,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -9806,7 +9914,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -9896,7 +10005,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -9986,7 +10096,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -10076,7 +10187,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -10166,7 +10278,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -10256,7 +10369,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -10346,7 +10460,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -10436,7 +10551,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -10526,7 +10642,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -10616,7 +10733,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -10706,7 +10824,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -10796,7 +10915,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -10886,7 +11006,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": ["incompatibilities"],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -10976,7 +11097,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -11066,7 +11188,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -11156,7 +11279,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -11246,7 +11370,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -11336,7 +11461,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -11426,7 +11552,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -11516,7 +11643,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -11606,7 +11734,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -11696,7 +11825,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -11786,7 +11916,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -11876,7 +12007,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -11966,7 +12098,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -12056,7 +12189,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -12146,7 +12280,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -12236,7 +12371,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -12326,7 +12462,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -12416,7 +12553,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -12506,7 +12644,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -12596,7 +12735,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -12662,8 +12802,8 @@
       "automated": [],
       "coldChain": [],
       "softwareAided": [],
-      "mobileVR": [],
-      "Printing3D": ["Printing3D"],
+      "mobileVR": ["mobileVR"],
+      "Printing3D": [],
       "socialMedia": [],
       "shortages": [],
       "adverseEvents": [],
@@ -12686,7 +12826,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -12776,7 +12917,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -12866,7 +13008,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -12956,7 +13099,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -13046,7 +13190,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -13136,7 +13281,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": ["incompatibilities"],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -13226,7 +13372,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -13316,7 +13463,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -13406,7 +13554,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -13496,7 +13645,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -13586,7 +13736,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -13676,7 +13827,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -13766,7 +13918,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -13856,7 +14009,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -13946,7 +14100,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -14036,7 +14191,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -14126,7 +14282,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -14216,7 +14373,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -14306,7 +14464,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -14396,7 +14555,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -14486,7 +14646,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -14576,7 +14737,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -14666,7 +14828,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -14756,7 +14919,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -14846,7 +15010,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -14936,7 +15101,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -15026,7 +15192,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -15116,7 +15283,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -15126,7 +15294,7 @@
     "institution": "Hospital General Universitario Santa Lucía, Farmacia Hospitalaria, Cartagena, Spain",
     "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.102",
     "filters": {
-      "actSubs": ["Glecaprevir / Pibrentasvir", "Elbasvir / Grazoprevir", "Sofosbuvir / Velpatasvir", "Ribavirin", "Ledipasvir / Sofosbuvir", "Sofosbuvir / Velpatasvir / Voxilaprevir"],
+      "actSubs": ["Glecaprevir / Pibrentasvir", "Glecaprevir", "Pibrentasvir", "Elbasvir / Grazoprevir", "Elbasvir", "Grazoprevir", "Sofosbuvir / Velpatasvir", "Sofosbuvir", "Velpatasvir", "Ribavirin", "Ledipasvir / Sofosbuvir", "Ledipasvir", "Sofosbuvir / Velpatasvir / Voxilaprevir", "Voxilaprevir"],
       "indication": ["Hepatitis C (Chronic)"],
       "statedClass": ["Direct Acting Antivirals"],
       "typeOfMedical": [],
@@ -15206,7 +15374,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -15296,7 +15465,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -15386,7 +15556,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -15476,7 +15647,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -15566,7 +15738,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -15656,7 +15829,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -15746,7 +15920,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -15836,7 +16011,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -15926,7 +16102,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -16016,7 +16193,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -16106,7 +16284,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -16196,7 +16375,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": ["habits"]
+      "habits": ["habits"],
+      "drugInteractions": []
     }
   },
   {
@@ -16286,7 +16466,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -16376,7 +16557,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -16466,7 +16648,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": ["habits"]
+      "habits": ["habits"],
+      "drugInteractions": []
     }
   },
   {
@@ -16556,7 +16739,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -16646,7 +16830,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -16736,7 +16921,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -16826,7 +17012,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -16916,7 +17103,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -17006,7 +17194,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -17096,7 +17285,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -17186,7 +17376,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -17276,7 +17467,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -17366,7 +17558,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -17456,7 +17649,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -17546,7 +17740,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -17636,7 +17831,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -17726,7 +17922,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": ["habits"]
+      "habits": ["habits"],
+      "drugInteractions": []
     }
   },
   {
@@ -17816,7 +18013,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -17906,7 +18104,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -17996,7 +18195,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": ["habits"]
+      "habits": ["habits"],
+      "drugInteractions": []
     }
   },
   {
@@ -18086,7 +18286,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -18176,7 +18377,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": ["habits"]
+      "habits": ["habits"],
+      "drugInteractions": []
     }
   },
   {
@@ -18266,7 +18468,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -18356,7 +18559,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -18446,7 +18650,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -18536,7 +18741,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -18626,7 +18832,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -18716,7 +18923,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": ["habits"]
+      "habits": ["habits"],
+      "drugInteractions": []
     }
   },
   {
@@ -18728,7 +18936,7 @@
     "filters": {
       "actSubs": ["Cloxacillin", "Cefazolin"],
       "indication": [],
-      "statedClass": ["Carbapenems", "Quinolones", "Systemic Antifungals", "Anti-MRSA (Methicillin-Resistant Staphylococcus aureus) Agents"],
+      "statedClass": ["Carbapenems", "Quinolones", "Antifungals (Systemic)", "Anti-MRSA (Methicillin-Resistant Staphylococcus aureus) Agents"],
       "typeOfMedical": [],
       "studyDesign": [],
       "setting": ["Hospital"],
@@ -18806,7 +19014,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -18896,7 +19105,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -18986,7 +19196,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -19076,7 +19287,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -19166,7 +19378,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -19256,7 +19469,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": ["habits"]
+      "habits": ["habits"],
+      "drugInteractions": []
     }
   },
   {
@@ -19346,7 +19560,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -19436,7 +19651,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -19463,7 +19679,7 @@
       "pediatrics": [],
       "geriatrics": [],
       "neonatology": [],
-      "oncology": ["xxx"],
+      "oncology": [],
       "pharmacogenetics": [],
       "pharmacoeconomy": [],
       "radiopharmaceuticals": [],
@@ -19526,7 +19742,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -19616,7 +19833,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -19706,7 +19924,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   },
   {
@@ -19796,7 +20015,4103 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Antimicrobial stewardship programme in an intensive care unit",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A72.1",
+    "authors": "E Sánchez Yañez, M Valera-Rubio, I Moya-Carmona, MR Mora-Santiago, C Pérez-López",
+    "institution": "Hospital Clinico Virgen De La Victoria, Pharmacy Department, Malaga, Spain. Hospital Clinico Virgen De La Victoria, Infectious Disease, Malaga, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.154",
+    "filters": {
+      "actSubs": [],
+      "indication": [],
+      "statedClass": ["Carbapenems", "Antifungals"],
+      "typeOfMedical": [],
+      "studyDesign": ["Cohort (Prospective Observational Study)"],
+      "setting": ["Hospital"],
+      "ward": ["Intensive Care"],
+      "numPatients": [],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": ["1 year - 2 years"],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": [],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": ["intervention"],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": ["stewardship"],
+      "policiesAudits": [],
+      "multidisciplinary": ["multidisciplinary"],
+      "institutional": [],
+      "recalls": [],
+      "education": ["education"],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": ["compliance"],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "A multidisciplinary and educational approach to antimicrobial stewardship programmes in the emergency department",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A72.2",
+    "authors": "I Plo Seco, L Moreno Nuñez, S Sanz Márquez, E Zhan Zhou, J Valverde Canovas, Francisco, E Pérez Fernández, M Pérez Encinas",
+    "institution": "Hospital Universitario Fundacion Alcorcón, Hospital Pharmacy, Alcorcon, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.155",
+    "filters": {
+      "actSubs": ["Meropenem", "Levofloxacin", "Amoxicillin / Clavulanic acid"],
+      "indication": ["Pneumonia (Community Acquired)", "Respiratory Tract Infection", "Urinary Tract Infection"],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Interventional Study"],
+      "setting": ["Hospital"],
+      "ward": ["Emergency Department"],
+      "numPatients": ["51 - 100"],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": ["Less than 3 months"],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": [],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": ["intervention"],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": ["errors"],
+      "administrative": [],
+      "stewardship": ["stewardship"],
+      "policiesAudits": [],
+      "multidisciplinary": ["multidisciplinary"],
+      "institutional": [],
+      "recalls": [],
+      "education": ["education"],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Evaluation of use, effectiveness and safety of isavuconazol",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A73.1",
+    "authors": "CA Alonso Peralta, CM Valencia Soto, A Illaro Uranga, RM Gonzalez Franco, B Rogado Vegas, J Casanova Vázquez, P Del Rio Ortega, M Rioja Carrera, I Aragon Gracia, L Perez-Periañez Orillo, M Valero Domínguez",
+    "institution": "Hospital Universitario Marqués De Valdecilla, Farmacia Hospitalaria, Santander, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.156",
+    "filters": {
+      "actSubs": ["Isavuconazole", "Voriconazole"],
+      "indication": [],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Case-Control (Retrospective) Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["10 - 50"],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": [],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": ["safetyProfile"],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": ["adverseEvents"],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": ["nextStep"],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Proper use of antifungals: implementation of operational multidisciplinary teams dedicated to antifungals",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A73.2",
+    "authors": "P Audureau, F Meyer, A Charmillon, S Henard, B Demore",
+    "institution": "University Hospital Nancy-Brabois Adults Hospital, Pharmacy Department, Vandoeuvre-Lès-Nancy, France. University Hospital Nancy-Brabois Adults Hospital, Infectious and Tropical Diseases Department, Vandoeuvre-Lès-Nancy, France. Lorraine University, Ea 4360 Apemac, Nancy, France",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.157",
+    "filters": {
+      "actSubs": ["Caspofungin", "Posaconazole"],
+      "indication": ["Candidiasis (Invasive)", "Aspergillosis (Pulmonary)"],
+      "statedClass": ["Antifungals"],
+      "typeOfMedical": [],
+      "studyDesign": ["Cohort (Prospective Observational Study)"],
+      "setting": ["Hospital"],
+      "ward": ["Haematology"],
+      "numPatients": ["101 - 500"],
+      "numPrescriptions": ["501 - 1000"],
+      "criteriaMethod": [],
+      "studyLength": ["5 months - 1 year"],
+      "country": ["France"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": [],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": ["switching"],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": ["intervention"],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": ["errors"],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": ["multidisciplinary"],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": ["habits"],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Therapeutic drug monitoring of voriconazole",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A74.1",
+    "authors": "S Ruiz Boy, N Socoro-Yuste, C Bastida, D Soy-Muner",
+    "institution": "Hospital Clínic, Pharmacy, Barcelona, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.158",
+    "filters": {
+      "actSubs": ["Voriconazole"],
+      "indication": ["Invasive Fungal Infection", "Candidaemia"],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Case-Control (Retrospective) Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["51 - 100"],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": [],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": ["drugMonitoring"],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": ["adverseEvents"],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Management of the hospitalised patient with flu",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A74.2",
+    "authors": "M Mañes Sevilla, B Santiago-Gallego, I Soto-Baselga, C Moriel-Sánchez",
+    "institution": "Hospital Universitario Mostoles, Pharmacy Department, Móstoles Madrid, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.159",
+    "filters": {
+      "actSubs": ["Oseltamivir", "Levofloxacin", "Ceftriaxone", "Amoxicillin / Clavulanic acid"],
+      "indication": ["Influenza (Flu)"],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Case-Control (Retrospective) Study"],
+      "setting": ["Hospital"],
+      "ward": ["Internal Medicine", "Pneumology"],
+      "numPatients": ["101 - 500"],
+      "numPrescriptions": [],
+      "criteriaMethod": ["Statistical Package for the Social Sciences (SPSS)"],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": [],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": ["renal"],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": ["habits"],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Strategy for change in antiretroviral therapy: looking for better results",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A75.1",
+    "authors": "P Barriga, P Pérez, S Arnaiz, C Caba, P Tena, JJ Duque, JA Sánchez, AM Dobrito, MR Garrido, LC Fernández",
+    "institution": "Complejo Hospitalario Universitario De Cáceres, Hospital Pharmacy, Cáceres, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.160",
+    "filters": {
+      "actSubs": ["Emtricitabine", "Tenofovir disoproxil", "Rilpivirine", "Tenofovir alafenamide"],
+      "indication": [],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Case-Control (Retrospective) Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["51 - 100"],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": [],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": ["switching"],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": ["costAnalysis"],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": ["safetyProfile"],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": ["renal"],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": ["nextStep"],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Prescription analysis of tenofovir disoproxil fumarate and tenofovir alafenamide fumarate in a third level hospital",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A75.2",
+    "authors": "A Caraffa, A Colicchio, L Gasperoni, G Selvetti, I Tommasini, E Zuccarini, M Mancini",
+    "institution": "Azienda Ospedaliera Ospedali Riuniti Marche Nord, Uoc Farmacia, Pesaro, Italy",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.161",
+    "filters": {
+      "actSubs": ["Tenofovir disoproxil", "Tenofovir alafenamide", "Emtricitabine", "Elvitegravir", "Cobicistat", "Rilpivirine"],
+      "indication": [],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": [],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": [],
+      "numPrescriptions": ["More than 1000"],
+      "criteriaMethod": [],
+      "studyLength": [],
+      "country": ["Italy"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": [],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": ["switching"],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": ["nextStep"],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": ["habits"],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Adherence to antiretroviral treatment as a function of the complexity of the treatment",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A76.1",
+    "authors": "J Romero, A Soria Martin, J Garcia Marin, M Fages, JR Avila Alvarez",
+    "institution": "Hospital Punta De Europa, Pharmacy, Cadiz, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.162",
+    "filters": {
+      "actSubs": ["Emtricitabine", "Tenofovir disoproxil", "Efavirenz"],
+      "indication": ["HIV"],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Descriptive Study", "Case-Control (Retrospective) Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["101 - 500"],
+      "numPrescriptions": [],
+      "criteriaMethod": ["Chi-Square (χ2) Test"],
+      "studyLength": ["5 months - 1 year"],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": [],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": ["adherence"],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": ["nextStep"],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Patients with darunavir/cobicistat/emtricitabine/tenofovir alafenamide treatment in a third level hospital",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A76.2",
+    "authors": "R Gracia, JM Vinuesa, I Sanjoaquin, T Salvador, MDP Pardo, MA Alcácera, A Apesteguia, MJ Crusells, S Letona, M Gimeno-Gracia",
+    "institution": "Hospital Clinico Universitario Lozano Blesa, Farmacia Hospitalaria, Zaragoza, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.163",
+    "filters": {
+      "actSubs": ["Darunavir / Cobicistat / Emtricitabine / Tenofovir alafenamide", "Darunavir", "Cobicistat", "Emtricitabine", "Tenofovir alafenamide"],
+      "indication": [],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Descriptive Study", "Case-Control (Retrospective) Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["10 - 50"],
+      "numPrescriptions": [],
+      "criteriaMethod": ["HIVTSQ - HIV Treatment Satisfaction Questionnaire"],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": [],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": ["switching"],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": ["safetyProfile"],
+      "intervention": [],
+      "patientIntervention": ["patientIntervention"],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": ["adherence"],
+      "resistance": [],
+      "renal": ["renal"],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Use of oseltamivir in the treatment of influenza A",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A76.3",
+    "authors": "A Murgadella Sancho, B Gracia Garcia, L Losa Lopez, A Puebla Villaescusa, O Carrascosa Piquer, MT Barrera Puigdollers, N San Juan Martínez",
+    "institution": "Hospital Moisès Broggi, Pharmacy, Sant Joan Despí, Spain. Hospital Dos De Maig, Pharmacy, Barcelona, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.164",
+    "filters": {
+      "actSubs": ["Oseltamivir"],
+      "indication": ["Influenza A"],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Case-Control (Retrospective) Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["101 - 500"],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": [],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": ["errors"],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": ["institutional"],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": ["nextStep"],
+      "compliance": ["compliance"],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Adherence to antiretroviral treatment in patients with HIV",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A77.1",
+    "authors": "C Notario Dongil, A Perez Fácila, B Proy Vega, MM Alañón Pardo, P Araque Arroyo, JC Valenzuela Gámez",
+    "institution": "Hospital General La Mancha Centro, Servicio De Farmacia, Alcazar De San Juan, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.165",
+    "filters": {
+      "actSubs": [],
+      "indication": ["HIV"],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Case-Control (Retrospective) Study", "Descriptive Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["101 - 500"],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": [],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": ["adherence"],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Switching to equivalent alternatives: antiretroviral optimisation strategy",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A77.2",
+    "authors": "B Proy Vega",
+    "institution": "Hospital La Mancha Centro, Hospitalary Pharmacy, Alcazar De San Juan Ciudad Real, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.166",
+    "filters": {
+      "actSubs": ["Dolutegravir", "Abacavir", "Lamivudine", "Lamivudine / Abacavir", "Abacavir / Dolutegravir / Lamivudine", "Emtricitabine", "Tenofovir disoproxil", "Rilpivirine", "Emtricitabine / Tenofovir disoproxil / Rilpivirine", "Emtricitabine / Tenofovir disoproxil"],
+      "indication": [],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": [],
+      "setting": ["Hospital"],
+      "ward": ["Internal Medicine"],
+      "numPatients": ["101 - 500"],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": [],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": ["switching"],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": ["costAnalysis"],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": ["multidisciplinary"],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Changing from cobicistat to a ritonavir boosted regimen in HIV positive patients",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A78.1",
+    "authors": "L Quesada-Muñoz, M Rodríguez Marín, M Vélez-Díaz-Pallarés, B Montero Llorente, T Gramage Caro, MÁ Rodríguez Sagrado, N Vicente Oliveros, S Sanz Merino, MT Bermejo Vicedo",
+    "institution": "Ramón Y Cajal Hospital, Pharmacy, Madrid, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.167",
+    "filters": {
+      "actSubs": ["Cobicistat", "Ritonavir", "Calcifediol", "Atorvastatin", "Omeprazole"],
+      "indication": ["HIV"],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Cohort (Prospective Observational Study)"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["101 - 500"],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": ["3 months - 5 months"],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": [],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": ["outpatient"],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": ["switching"],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Analysis of usage of direct acting antivirals for the treatment of hepatitis C",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A78.2",
+    "authors": "MÁ Roch Ventura, J Del Estal Jiménez, A Sanjuan Belda, M Mendoza Aguilera, PA López Broseta, E Esteve Pitarch, M Martín Marqués, S Jornet Montaña, M Vuelta Arce, L Canadell Vilarrasa",
+    "institution": "Hospital Universitari Joan Xxiii, Pharmacy, Tarragona, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.168",
+    "filters": {
+      "actSubs": ["Glecaprevir / Pibrentasvir", "Glecaprevir", "Pibrentasvir", "Sofosbuvir / Velpatasvir", "Sofosbuvir", "Velpatasvir", "Elbasvir / Grazoprevir", "Grazoprevir", "Elbasvir", "Ombitasvir / Paritaprevir / Ritonavir", "Ombitasvir", "Paritaprevir", "Ritonavir", "Dasabuvir", "Ledipasvir / Sofosbuvir", "Ledipasvir", "Sofosbuvir / Velpatasvir / Voxilaprevir", "Voxilaprevir"],
+      "indication": ["Hepatitis C"],
+      "statedClass": ["Direct Acting Antivirals"],
+      "typeOfMedical": [],
+      "studyDesign": ["Case-Control (Retrospective) Study", "Descriptive Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["101 - 500"],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": [],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Effectiveness of dolutegravir and lamivudine therapy in a two drug regimen in a third level hospital",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A79.1",
+    "authors": "C Fernández Zamora, T Rodríguez Martínez, MA Meroño Saura, S Clavijos Bautista, J Plaza Aniorte, P Pacheco López, MÁ Carvajal Sánchez, J Ibáñez Caturla, MD Nájera Pérez",
+    "institution": "Hospital Morales Meseguer, Farmacia Hospitalaria, Murcia, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.169",
+    "filters": {
+      "actSubs": ["Dolutegravir", "Lamivudine"],
+      "indication": [],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Cohort (Prospective Observational Study)"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["10 - 50"],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": [],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Evaluation of palivizumab as prophylaxis against respiratory syncytial virus infection",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A79.2",
+    "authors": "F Fernandez Fraga, P Lopez Mendez, A Lopez Garcia, N Ibañez Heras, T Molina Garcia",
+    "institution": "Hospital Universitario De Getafe, Farmacia, Madrid, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.170",
+    "filters": {
+      "actSubs": ["Palivizumab"],
+      "indication": ["Respiratory Syncytial Virus Infection", "Respiratory Tract Infection"],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Case-Control (Retrospective) Study", "Descriptive Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["101 - 500"],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": ["pediatrics"],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": [],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Analysis of the use of non-specific intravenous immunoglobulins in a tertiary hospital",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A80.1",
+    "authors": "Z Rodríguez Fernández, E Martínez Álvarez, X Casas Fernández, A Vélez Blanco, N Álvarez Nuñez, JJ Ortiz De Urbina González",
+    "institution": "León University Hospital, Hospital Pharmacy, León, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.171",
+    "filters": {
+      "actSubs": [],
+      "indication": ["Immunodeficiency - Common Variable", "Immunodeficiency - Secondary", "Idiopathic Thrombocytopenic Purpura", "Polyneuropathy", "Myasthenia Gravis"],
+      "statedClass": ["Intravenous Immunoglobulins (IVIg) - Non-Specific"],
+      "typeOfMedical": [],
+      "studyDesign": ["Case-Control (Retrospective) Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["101 - 500"],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": [],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": ["offLabel"],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": ["nextStep"],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": ["habits"],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Analysis of effectiveness: use of pertuzumab and trastuzumab in neoadjuvant treatment in patients with HER2 positive breast cancer and its correlation with plasma levels of trastuzumab",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A80.2",
+    "authors": "R Álvarez Ambite, F Gutierrez Nicolas, I Ceballos Lezna, IJ Expósito Afonso, J González García, R Ramos Díaz, J Cruz Jurado, GJ Nazco Casariego",
+    "institution": "Hospital Universitario De Canarias, Oncología Médica, Santa Cruz De Tenerife, Spain. Hospital Universitario De Canarias, Farmacia Hospitarlaria, Santa Cruz De Tenerife, Spain. Hospital Universitario De Canarias, Oncología Medica, Santa Cruz De Tenerife, Spain. Hospital Universitario De Canarias, Anatomia Patológica, Santa Cruz De Tenerife, Spain. Hospital Universitario De Canarias, Farmacia Hospitalaria, Santa Cruz De Tenerife, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.172",
+    "filters": {
+      "actSubs": ["Pertuzumab", "Trastuzumab", "Adriamycin", "Cyclophosphamide"],
+      "indication": ["Breast Cancer (HER2 Positive)"],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Cohort (Prospective Observational Study)"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["10 - 50"],
+      "numPrescriptions": [],
+      "criteriaMethod": ["ELISA Immunoassay"],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": ["oncology"],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": ["multidisciplinary"],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Comparison of immune checkpoint inhibitors (nivolumab, pembrolizumab, atézolizumab and durvalumab) in the treatment of non-small cell lung cancer: tolerance and financial impact",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A81.1",
+    "authors": "F Badibouidi, L Dupont, M Benchaabane, S Loutski",
+    "institution": "Ghpso, Pharmacy, Creil, France. Ghpso, Oncology, Creil, France",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.173",
+    "filters": {
+      "actSubs": ["Nivolumab", "Pembrolizumab", "Atezolizumab", "Durvalumab"],
+      "indication": ["Non-Small Cell Lung Cancer", "Pneumonitis"],
+      "statedClass": ["Immune Checkpoint Inhibitors"],
+      "typeOfMedical": [],
+      "studyDesign": ["Cohort (Prospective Observational Study)"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["51 - 100"],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": ["1 year - 2 years"],
+      "country": ["France"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": ["oncology"],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": ["costAnalysis"],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": ["safetyProfile"],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": ["multidisciplinary"],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Effectiveness and safety of platin/permetrexed combination in non-small cell lung cancer",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A81.2",
+    "authors": "EM Barreiro Fernandez, C Martinez-Diaz, FJ Salmeron-Navas, M Dominguez-Cantero, S Fenix-Caballero",
+    "institution": "Hospital Universitario Puerto Real, Servicio De Farmacia, Cadiz, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.174",
+    "filters": {
+      "actSubs": ["Platin", "Pemetrexed", "Cisplatinum", "Carboplatinum"],
+      "indication": ["Non-Small Cell Lung Cancer"],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Descriptive Study", "Case-Control (Retrospective) Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["10 - 50"],
+      "numPrescriptions": [],
+      "criteriaMethod": ["Kaplan-Meier Method", "Statistical Package for the Social Sciences (SPSS)"],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": ["oncology"],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": ["safetyProfile"],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": ["adverseEvents"],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": ["clinicalTrials"],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Cyclin dependent kinase 4/6 inhibitors in breast cancer: potential drug interactions",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A81.3",
+    "authors": "MI Bernias Domínguez, M Mañes Sevilla, PM Bernias Domínguez, MJ Vazquez Castillo, C Moriel Sánchez",
+    "institution": "Hospital Universitario De Móstoles, Hospital Pharmacy, Madrid, Spain. Fremap, Medicine, Madrid, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.175",
+    "filters": {
+      "actSubs": ["Palbociclib", "Ribociclib"],
+      "indication": ["Breast Cancer"],
+      "statedClass": ["Cyclin-Dependent Kinases 4/6 Inhibitors", "Statins", "Proton-Pump Inhibitors", "Antidepressants", "Pyrazolones"],
+      "typeOfMedical": [],
+      "studyDesign": ["Case-Control (Retrospective) Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["10 - 50"],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": ["oncology"],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": ["switching"],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": ["intervention"],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": ["multidisciplinary"],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Ibrutinib associated atrial fibrillation: incidence and management in the real life clinical setting",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A82.1",
+    "authors": "S Blanco-Dorado, A Mosquera-Torre, E López-Montero, M Touris-Lores, B Bernardez Ferran, I Zarra-Ferro",
+    "institution": "Complejo Hospitalario Universitario De Santiago De Compostela, Pharmacy Department, Santiago De Compostela, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.176",
+    "filters": {
+      "actSubs": ["Ibrutinib", "Apixaban", "Rivaroxaban", "Amiodarone"],
+      "indication": ["Atrial Fibrillation", "Arrhythmia"],
+      "statedClass": ["Low Molecular Weight Heparins", "Beta-Blockers"],
+      "typeOfMedical": [],
+      "studyDesign": ["Case-Control (Retrospective) Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["10 - 50"],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": ["oncology"],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Indirect comparison between pembrolizumab monotherapy and pembrolizumab chemotherapy regimens in squamous lung cancer",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A82.2",
+    "authors": "MDP Briceño Casado, MD Gil-Sierra, S Fenix-Caballero, M Dominguez-Cantero, EJ Alegre-Del Rey",
+    "institution": "Hospital Universitario Puerto Real, Hospital Pharmacy, Cadiz, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.177",
+    "filters": {
+      "actSubs": ["Pembrolizumab"],
+      "indication": ["Non-Small Cell Lung Cancer"],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["xxx"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": [],
+      "numPrescriptions": [],
+      "criteriaMethod": ["Bucher's Method"],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": ["oncology"],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": ["clinicalTrials"],
+      "youngPharma": [],
+      "nextStep": ["nextStep"],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Detection and communication of concomitant use of capecitabine and proton pump inhibitors",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A83.1",
+    "authors": "AB Guisado Gil, IM Carrión Madroñal, E Sánchez Gómez, MD Santos Rubio",
+    "institution": "Hospital Juan Ramón Jiménez, Ugc Farmacia, Huelva, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.178",
+    "filters": {
+      "actSubs": ["Capecitabine", "Omeprazole", "Pantoprazole", "Esomeprazole", "Rabeprazole"],
+      "indication": ["Colorectal Cancer", "Gastric Cancer", "Oesophageal Cancer", "Breast Cancer", "Pancreatic Cancer"],
+      "statedClass": ["Proton-Pump Inhibitors"],
+      "typeOfMedical": [],
+      "studyDesign": [],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["51 - 100"],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": ["oncology"],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": ["intervention"],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": ["multidisciplinary"],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Effectiveness and safety of eribulin for advanced breast cancer treatment",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A83.2",
+    "authors": "I Cavada Carranza, M Carrasco Gomariz, M Moreno Garcia, R Diez Fernandez, T Molina Garcia",
+    "institution": "Hospital Universitario De Getafe, Pharmacy Department, Madrid, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.179",
+    "filters": {
+      "actSubs": ["Eribulin"],
+      "indication": ["Breast Cancer (Advanced)"],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Case-Control (Retrospective) Study", "Descriptive Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["10 - 50"],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": ["oncology"],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": ["safetyProfile"],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": ["adverseEvents"],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Sequencing of ibrutinib, idelalisib and venetoclax in chronic lymphocytic leukaemia: experience in a tertiary hospital",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A84.1",
+    "authors": "R García-Fumero, C Alarcón-Payer, A Jiménez-Morales, MDM García-Valdés, JM Puerta-Puerta, R Claramunt García",
+    "institution": "Hospital Universitario Virgen De Las Nieves, Pharmacy, Granada, Spain. Hospital Universitario De Jaén, Pharmacy, Jaén, Spain. Hospital Universitario Virgen De Las Nieves, Haematology, Granada, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.180",
+    "filters": {
+      "actSubs": ["Ibrutinib", "Idelalisib", "Venetoclax"],
+      "indication": ["Leukaemia (Chronic Lymphocytic)"],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Case-Control (Retrospective) Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["10 - 50"],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": ["oncology"],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": ["switching"],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": ["adverseEvents"],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": ["multidisciplinary"],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": ["habits"],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Real life tyrosine kinase inhibitor discontinuation in patients with chronic myeloid leukaemia",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A84.2",
+    "authors": "C Alarcon-Payer1, JM Puerta Puerta2, A Jiménez Morales3, R Claramunt García, F Horno Ureña",
+    "institution": "Hospital Universitario De Jaén, Servicio De Farmacia, Jaén, Spain. Hospital Universitario Virgen De Las Nieves, Servicio De Haematología, Granada, Spain. Hospital Universitario Virgen De Las Nieves, Servicio De Farmacia, Granada, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.181",
+    "filters": {
+      "actSubs": ["Imatinib", "Nilotinib", "Dasatinib"],
+      "indication": ["Leukaemia (Chronic Myeloid)"],
+      "statedClass": ["Tyrosine Kinase Inhibitors"],
+      "typeOfMedical": [],
+      "studyDesign": ["Cohort (Prospective Observational Study)"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["10 - 50"],
+      "numPrescriptions": [],
+      "criteriaMethod": ["Real-Time Polymerase Chain Reaction"],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": ["oncology"],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": ["multidisciplinary"],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Gefitinib in non-small cell lung cancer: effectiveness and safety",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A85.1",
+    "authors": "JC Del Río Valencia, A Henares López, R Tamayo Bermejo, I Muñoz Castillo",
+    "institution": "Hospital Regional Universitario Malaga, Servicio De Farmacia, Malaga, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.182",
+    "filters": {
+      "actSubs": ["Gefitinib"],
+      "indication": ["Non-Small Cell Lung Cancer"],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Case-Control (Retrospective) Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["10 - 50"],
+      "numPrescriptions": [],
+      "criteriaMethod": ["Response Evaluation Criteria In Solid Tumours (RECIST)", "Kaplan-Meier Method"],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": ["oncology"],
+      "pharmacogenetics": ["pharmacogenetics"],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": ["safetyProfile"],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": ["adverseEvents"],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": ["nextStep"],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Risk of myelotoxicity in non-cancer patients treated with chemotherapy",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A85.2",
+    "authors": "R Diez Fernandez, I Cavana Carranza, M Carrasco Gomariz, M Moreno Garcia, T Molina Garcia",
+    "institution": "Hospital Universitario Getafe, Pharmacy, Madrid, Spain. Hospital Universitario De Getafe, Pharmacy, Getafe, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.183",
+    "filters": {
+      "actSubs": ["Cyclophosphamide"],
+      "indication": ["Myelotoxicity", "Systemic Lupus Erythematosus", "Neutropenia", "Thrombocytopenia"],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Case-Control (Retrospective) Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["10 - 50"],
+      "numPrescriptions": [],
+      "criteriaMethod": ["Common Terminology Criteria for Adverse Events"],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": [],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": ["adverseEvents"],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Safety and tolerability of palbociclib in clinical practice in a tertiary hospital",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A86.1",
+    "authors": "J Fernández Fradejas, L Quesada-Muñoz, M Vélez-Díaz-Pallarés, E Vida Navas, A Cortés Salgado, A Cabello Bravo, T Bermejo Vicedo",
+    "institution": "Hospital Universitario Ramón Y Cajal, Pharmacy, Madrid, Spain. Hospital Universitario Ramón Y Cajal, Oncology, Madrid, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.184",
+    "filters": {
+      "actSubs": ["Palbociclib", "Fulvestrant"],
+      "indication": [],
+      "statedClass": ["Aromatase Inhibitors"],
+      "typeOfMedical": [],
+      "studyDesign": ["Case-Control (Retrospective) Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["10 - 50"],
+      "numPrescriptions": [],
+      "criteriaMethod": ["Common Terminology Criteria for Adverse Events", "Eastern Cooperative Oncology Group (ECOG) Performance Status"],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": ["oncology"],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": ["safetyProfile"],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": ["adverseEvents"],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": ["multidisciplinary"],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": ["nextStep"],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Anthracycline dosage in paediatric obese patients",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A86.2",
+    "authors": "B Fernandez Garcia, C Fraile Rodriguez, X Abasolo Tamayo, I Herrero Corell, M Serrano Alonso, MÁ García-Del-Barrio",
+    "institution": "Clinica Universidad De Navarra, Pharmacy, Pamplona, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.185",
+    "filters": {
+      "actSubs": ["Daunorubicin", "Doxorubicin", "Epirubicin", "Idarubicin"],
+      "indication": [],
+      "statedClass": ["Anthracyclines"],
+      "typeOfMedical": [],
+      "studyDesign": ["Systematic Review"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": [],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": ["pediatrics"],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": ["oncology"],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": ["safetyProfile"],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Improved access to chemotherapeutic treatment in patients with multiple myeloma",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A87.1",
+    "authors": "EG Fernández López, MM Viña Romero, J Merino Alonso, JA De Leon Gil, I Gonzalez Perera, JA Martin Conde",
+    "institution": "Hospital Nuestra Señora De Candelaria, Hospital Pharmacy, Santa Cruz De Tenerife, Spain. Santa Cruz De Tenerife, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.186",
+    "filters": {
+      "actSubs": ["Bortezomib", "Thalidomide", "Prednisone", "Melphalan", "Dexamethasone", "Daratumumab", "Lenalidomide"],
+      "indication": ["Multiple Myeloma"],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Case-Control (Retrospective) Study", "Descriptive Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["10 - 50"],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": ["oncology"],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": ["patientIntervention"],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": ["multidisciplinary"],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Imatinib dose optimisation through therapeutic monitoring in chronic myeloid leukaemia as part of pharmaceutical care",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A87.2",
+    "authors": "C Fernandez Oliveira, E Fernández Gabriel, M Outeda Macías, MS Noya Pereira, I Martín Herranz",
+    "institution": "Complexo Hospitalario Universitario A Coruña, Pharmacy Service, A Coruna, Spain. Complexo Hospitalario Universitario A Coruña, Haematology Service, A Coruna, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.187",
+    "filters": {
+      "actSubs": ["Imatinib"],
+      "indication": ["Leukaemia (Chronic Myeloid)"],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Case-Control (Retrospective) Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["51 - 100"],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": ["oncology"],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": ["drugMonitoring"],
+      "safetyProfile": [],
+      "intervention": ["intervention"],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": ["multidisciplinary"],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Optimisation of resources in the use of immunotherapy: nivolumab and pembrolizumab weight based dosing instead of flat dose",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A88.1",
+    "authors": "I Lomares Manzano, MJ Martinez Bautista, A Ganfornina Andrades, MV Manzano Martin",
+    "institution": "Hospital Universitario Puerta Del Mar, Servicio De Farmacia Hospitalaria, Cádiz, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.188",
+    "filters": {
+      "actSubs": ["Nivolumab", "Pembrolizumab"],
+      "indication": [],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Descriptive Study", "Case-Control (Retrospective) Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["51 - 100"],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": ["oncology"],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": ["flatDoses"],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": ["costAnalysis"],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": ["administrative"],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Checkpoint inhibitors in non-microcytic lung cancer: results in common clinical practice",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A88.2",
+    "authors": "A Magallon Martinez, MJ Agustín Ferrández, A Pinilla Rello, A Escolano Pueyo, O Pereira Blanco, L Cazorla Poderoso, M Perez Moreno, A Casajús Navasal, R Abaz Sazatornil",
+    "institution": "Universitary Miguel Servet Hospital, Hospital Pharmacy, Zaragoza, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.189",
+    "filters": {
+      "actSubs": ["Nivolumab", "Pembrolizumab", "Atezolizumab", "Pemetrexed", "Carboplatinum"],
+      "indication": ["Non-Small Cell Lung Cancer", "Adenocarcinoma", "Squamous Cell Carcinoma", "Large Cell Carcinoma"],
+      "statedClass": ["Immune Checkpoint Inhibitors"],
+      "typeOfMedical": [],
+      "studyDesign": ["Descriptive Study", "Case-Control (Retrospective) Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["101 - 500"],
+      "numPrescriptions": [],
+      "criteriaMethod": ["Eastern Cooperative Oncology Group (ECOG) Performance Status", "Kaplan-Meier Method"],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": ["oncology"],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Comparative effectiveness of nintedanib plus docetaxel versus docetaxel monotherapy in adenocarcinoma non-small cell lung cancer",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A89.1",
+    "authors": "M Merino Almanzan, JM Duarte Perez, JF Marin Pozo, R Claramunt Garcia, CL Muñoz Cid, I Caba Porras",
+    "institution": "Complejo Hospitalario Jaen, Hospital Pharmacy, Jaén, Spain. University of Granada, Pharmacology, Granada, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.190",
+    "filters": {
+      "actSubs": ["Nintedanib", "Docetaxel"],
+      "indication": ["Adenocarcinoma", "Non-Small Cell Lung Cancer"],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Case-Control (Retrospective) Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["51 - 100"],
+      "numPrescriptions": [],
+      "criteriaMethod": ["Kaplan-Meier Method", "Cox Proportional Hazards Regression Analysis", "Eastern Cooperative Oncology Group (ECOG) Performance Status"],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": ["oncology"],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Efficacy and safety of erlotinib in non-small cell lung cancer",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A89.2",
+    "authors": "E Monteagudo Santolaya, M Prieto Castello, L Cebrián Lara, R Colom Moreno, A Sánchez Alcaraz",
+    "institution": "Hospital Universitario De La Ribera, Clinical Pharmacy, Alzira, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.191",
+    "filters": {
+      "actSubs": ["Erlotinib"],
+      "indication": ["Non-Small Cell Lung Cancer (EGFR-Mutated)", "Adenocarcinoma"],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Case-Control (Retrospective) Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["10 - 50"],
+      "numPrescriptions": [],
+      "criteriaMethod": ["Karnofsky Performance Status Scale"],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": ["oncology"],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": ["safetyProfile"],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": ["adverseEvents"],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Evaluation of aggressiveness of cancer care near the end of life in patients with pancreatic cancer",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A89.3",
+    "authors": "S Martínez-Pérez, M Llinares-Esquerdo, G Miralles-Andreu, S Gutierrez-Palomo, A Garcia-Monsalve, A Navarro Ruiz",
+    "institution": "Hospital General Universitario De Elche, Pharmacy, Elche, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.192",
+    "filters": {
+      "actSubs": [],
+      "indication": ["Pancreatic Cancer"],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Case-Control (Retrospective) Study"],
+      "setting": ["Hospital"],
+      "ward": ["Oncology", "Intensive Care", "Palliative Care"],
+      "numPatients": ["10 - 50"],
+      "numPrescriptions": [],
+      "criteriaMethod": ["Eastern Cooperative Oncology Group (ECOG) Performance Status"],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": ["oncology"],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": ["endOfLife"],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Evaluation of aggressiveness of cancer care near the end of life in patients with metastatic non-microcytic lung cancer",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A90.1",
+    "authors": "M Llinares-Esquerdo, S Martínez-Pérez, M Pomares-Bernabeu, IP Jiménez-Pulido, L Sorian-Irigaray, A Navarro Ruiz",
+    "institution": "Hospital General Universitario De Elche, Pharmacy, Elche, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.193",
+    "filters": {
+      "actSubs": [],
+      "indication": ["Non-Small Cell Lung Cancer"],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Case-Control (Retrospective) Study"],
+      "setting": ["Hospital"],
+      "ward": ["Palliative Care", "Intensive Care"],
+      "numPatients": ["10 - 50"],
+      "numPrescriptions": [],
+      "criteriaMethod": ["Eastern Cooperative Oncology Group (ECOG) Performance Status"],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": ["oncology"],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": ["endOfLife"],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Effectiveness of dexamethasone mouthwash 0.1 mg/mL for prevention of everolimus related stomatitis",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A90.2",
+    "authors": "S Martínez-Pérez, M Llinares-Esquerdo, S Gutierrez-Palomo, IP Jimenez-Pulido, A Garcia-Monsalve, A Navarro Ruiz",
+    "institution": "Hospital General Universitario De Elche, Pharmacy, Elche, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.194",
+    "filters": {
+      "actSubs": ["Dexamethasone", "Everolimus", "Exemestane"],
+      "indication": ["Stomatitis", "Breast Cancer"],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Case-Control (Retrospective) Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["10 - 50"],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": ["oncology"],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": ["outpatient"],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": ["adverseEvents"],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Characterisation of potential drug–drug interactions in oncological patients treated with oral anticancer drugs",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A91.1",
+    "authors": "M Pomares Bernabeu, G Miralles Andreu, S Martinez Perez, A Garcia Monsalve, C Matoses Chirivella, A Navarro Ruiz",
+    "institution": "Hospital General Universitario De Elche, Pharmacy, Elche, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.195",
+    "filters": {
+      "actSubs": ["Allopurinol"],
+      "indication": [],
+      "statedClass": ["Corticosteroids", "Proton-Pump Inhibitors", "Antiplatelets", "Oral Anticoagulants"],
+      "typeOfMedical": [],
+      "studyDesign": ["Case-Control (Retrospective) Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["101 - 500"],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": [],
+      "country": ["Spain"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": ["oncology"],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": ["drugInteractions"]
+    }
+  },
+  {
+    "title": "Reviewing the latest clinical research for treating advanced non-small cell lung cancer: selection of randomised controlled trials published in 2018",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A91.2",
+    "authors": "R García-Fumero, C Fernández-López, J Expósito-Hernández, S Portillo-Haro, MÁ Calleja-Hernández",
+    "institution": "Hospital Universitario Virgen De Las Nieves, Department of Pharmacy, Granada, Spain. Biosanitary Institute of Granada Ibs Granada, Sas-Universidad De Granada, Granada, Spain. Catalan Institute of Oncology, Department of Pharmacy, Barcelona, Spain. Hospital Universitario Virgen De Las Nieves, Department of Oncology, Granada, Spain. Hospital Universitario San Cecilio, Department of Pharmacy, Granada, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.196",
+    "filters": {
+      "actSubs": ["xxx"],
+      "indication": [],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["xxx"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": [],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": [],
+      "country": ["xxx"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": ["xxx"],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "4CPS-096 Evaluation of clinical pharmacy services in a haematology outpatient setting",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A92.1",
+    "authors": "R Gavira Moreno, V Vázquez Vela, P Gomez Germá, C Puivecino Moreno, A Varas Pérez, JF Sierra Sánchez",
+    "institution": "Area De Gestion Sanitaria Norte De Cadiz-Hospital De Jerez, Pharmacy, Jerez De La Frontera, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.197",
+    "filters": {
+      "actSubs": ["xxx"],
+      "indication": [],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["xxx"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": [],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": [],
+      "country": ["xxx"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": ["xxx"],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
+    }
+  },
+  {
+    "title": "Secondline treatment of metastatic non-small cell lung cancer with immune checkpoint inhibitors",
+    "url": "https://ejhp.bmj.com/content/27/Suppl_1/A92.2",
+    "authors": "FJ Salmeron Navas, C Martinez-Diaz, EM Barreiro-Fernandez, M Dominguez Cantero, S Fenix-Caballero",
+    "institution": "Hospital Universitario Puerto Real, Servicio De Farmacia, Cadiz, Spain",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.198",
+    "filters": {
+      "actSubs": ["xxx"],
+      "indication": [],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["xxx"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": [],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": [],
+      "country": ["xxx"],
+      "year": ["2020"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": ["xxx"],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": []
     }
   }
 ]

@@ -86,7 +86,8 @@
       "delivery": [],
       "falsified": [],
       "incompatibilities": [],
-      "habits": []
+      "habits": [],
+      "drugInteractions": []
     }
   }
 ]
