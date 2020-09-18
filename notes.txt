@@ -17,6 +17,7 @@
 17) When the main-search loads, provide same effect as in the type-search page
 18) Make Advanced Search section more attractive
 19) Unite the indications / methods for less options under dropdown
+20) Retrospective - Prospective .. should be only-name in the list
 
 For demonstration
 1) "Cost effectiveness analysis of meropenem dose optimisation in critical patients -- "administrative"
