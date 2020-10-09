@@ -25,3 +25,4 @@ For demonstration
 3) "Switching to equivalent alternatives: antiretroviral optimisation strategy" - "costAnalysis" - says: optimisation but not "cost"
 4) "Changing from cobicistat to a ritonavir boosted regimen in HIV positive patients" -- "outpatient" switch is being made for outpatients, not in the wards
 5) Test: Retrospective studies for the end-of-life patients
+6) "Evaluation of a pharmaceutical care programme for patients being treated with omalizumab" -- "selfmedication" under the stated Phar.Programme

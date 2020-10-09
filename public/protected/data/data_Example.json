@@ -6,7 +6,7 @@
     "institution": "",
     "DOI": "",
     "filters": {
-      "actSubs": ["xxx"],
+      "actSubs": [],
       "indication": [],
       "statedClass": [],
       "typeOfMedical": [],
