@@ -18,6 +18,7 @@
 18) Make Advanced Search section more attractive
 19) Unite the indications / methods for less options under dropdown
 20) Retrospective - Prospective .. should be only-name in the list
+21) Fix the orphan drugs
 
 For demonstration
 1) "Cost effectiveness analysis of meropenem dose optimisation in critical patients -- "administrative"
@@ -26,3 +27,7 @@ For demonstration
 4) "Changing from cobicistat to a ritonavir boosted regimen in HIV positive patients" -- "outpatient" switch is being made for outpatients, not in the wards
 5) Test: Retrospective studies for the end-of-life patients
 6) "Evaluation of a pharmaceutical care programme for patients being treated with omalizumab" -- "selfmedication" under the stated Phar.Programme
+7) Artificial intelligence fails: "Pharmaceutical interventions in drugs provided to the outpatient hospital pharmacy" -- text contains "oncology" but can't be listed in Oncology
+8) In doubt: "Analysis of antibiotic consumption in a nursing home" .. "antimicrobial stewardship programmes are necessary" it says so should I add the "stewardship" key?
+9) "Preliminary design of hospital telepharmacy" -- there is no "telepharmacy"
+10) "Nutritional risk evaluation in institutionalised elderly patients in a public nursing home" -- there's "intervention" but not stated in the title
