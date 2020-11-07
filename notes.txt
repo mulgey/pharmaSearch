@@ -19,6 +19,7 @@
 19) Unite the indications / methods for less options under dropdown
 20) Retrospective - Prospective .. should be only-name in the list
 21) Fix the orphan drugs
+22) Live search .. two countries.. needs a blank
 
 For demonstration
 1) "Cost effectiveness analysis of meropenem dose optimisation in critical patients -- "administrative"
