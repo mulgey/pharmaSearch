@@ -32,3 +32,4 @@ For demonstration
 8) In doubt: "Analysis of antibiotic consumption in a nursing home" .. "antimicrobial stewardship programmes are necessary" it says so should I add the "stewardship" key?
 9) "Preliminary design of hospital telepharmacy" -- there is no "telepharmacy"
 10) "Nutritional risk evaluation in institutionalised elderly patients in a public nursing home" -- there's "intervention" but not stated in the title
+11) "Prevalence of nutritional complications according to the requested hospitalisation service of total parenteral nutrition" -- oncology ward but it's about "nutrition"
