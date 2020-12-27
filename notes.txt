@@ -21,6 +21,7 @@
 21) Fix the orphan drugs
 22) Live search .. two countries.. needs a blank
 23) Empty requests possible for submitting study?
+24) Drop study settings to one (1) keyword. (e.g. Prospective)
 
 For demonstration
 1) "Cost effectiveness analysis of meropenem dose optimisation in critical patients -- "administrative"
