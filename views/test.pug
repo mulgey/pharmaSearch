@@ -6,7 +6,15 @@ html(lang='en')
     include includes/head.pug
   body
     include includes/header.pug
-    main  
+    main
+      .row
+        #modal1.modal
+          .modal-content(style="background-color: lightsteelblue;")
+            h4(style="color: midnightblue;") Dear Visitors
+            p(style="color: midnightblue;") This website is intended for healthcare professionals. We do not own the property of the materials in our database.
+            p(style="color: midnightblue;") The system presents the links that will direct you to the web addresses of the studies, which were listed according to the parameters you have chosen as a result of your search
+          .modal-footer(style="background-color: whitesmoke;")
+            a#modalAgree.modal-close.waves-effect.waves-green.btn-flat(href='#!') Agree / Don't show me this message for 7 days
       .row
         .col.s12.m4.l2(style="padding: 3rem;")
           script(type='text/javascript').
@@ -17,240 +25,991 @@ html(lang='en')
             .input-field.col.s10.l6.offset-s1
               select(multiple='')#actSubs
                 option(value='', disabled='') Any
+                option(value='5-azacitidine') 5-azacitidine
                 option(value='Abacavir') Abacavir
+                option(value='Abacavir / Dolutegravir / Lamivudine') Abacavir / Dolutegravir / Lamivudine
+                option(value='Abatacept') Abatacept
                 option(value='Abiraterone') Abiraterone
+                option(value='Acenocoumarol') Acenocoumarol
+                option(value='Acetaminophen') Acetaminophen
+                option(value='Acetylsalicylic acid') Acetylsalicylic acid
+                option(value='Acitretin') Acitretin
+                option(value='Acyclovir') Acyclovir
                 option(value='Adalimumab') Adalimumab
+                option(value='Adriamycin') Adriamycin
                 option(value='Afatinib') Afatinib
+                option(value='Aflibercept') Aflibercept
                 option(value='Alectinib') Alectinib
+                option(value='Alirocumab') Alirocumab
+                option(value='Allopurinol') Allopurinol
                 option(value='Alprostadil') Alprostadil
+                option(value='Amikacin') Amikacin
+                option(value='Amiodarone') Amiodarone
+                option(value='Amlodipin') Amlodipin
+                option(value='Ammonium tetrathiomolybdate') Ammonium tetrathiomolybdate
+                option(value='Amoxicillin') Amoxicillin
                 option(value='Amoxicillin / Clavulanic acid') Amoxicillin / Clavulanic acid
+                option(value='Amphotericin') Amphotericin
                 option(value='Ampicillin') Ampicillin
+                option(value='Anakinra') Anakinra
+                option(value='Anlotinib') Anlotinib
+                option(value='Antithymocyte Globulin (Rabbit)') Antithymocyte Globulin (Rabbit)
+                option(value='Apixaban') Apixaban
+                option(value='Apremilast') Apremilast
+                option(value='Aripiprazole') Aripiprazole
+                option(value='Artemisinin') Artemisinin
+                option(value='Artesunate') Artesunate
+                option(value='Atenolol') Atenolol
                 option(value='Atezolizumab') Atezolizumab
+                option(value='Atorvastatin') Atorvastatin
                 option(value='Atracurium') Atracurium
+                option(value='Avibactam') Avibactam
+                option(value='Azathioprine') Azathioprine
+                option(value='Azithromycin') Azithromycin
+                option(value='Aztreonam') Aztreonam
+                option(value='Baricitinib') Baricitinib
+                option(value='Basiliximab') Basiliximab
                 option(value='BCG Vaccine (Tice strain)') BCG Vaccine (Tice strain)
+                option(value='Beclametasone') Beclametasone
+                option(value='Bendamustine') Bendamustine
+                option(value='Benralizumab') Benralizumab
+                option(value='Benzydamine') Benzydamine
+                option(value='Bevacizumab') Bevacizumab
                 option(value='Bleomycin') Bleomycin
                 option(value='Blinatumomab') Blinatumomab
+                option(value='Boric Acid') Boric Acid
                 option(value='Bortezomib') Bortezomib
+                option(value='Botulinum Toxin') Botulinum Toxin
                 option(value='Brentuksimab vedotin') Brentuksimab vedotin
+                option(value='Budesonide') Budesonide
+                option(value='Bupivacaine') Bupivacaine
+                option(value='Cabazitaxel') Cabazitaxel
                 option(value='Cabozantinib') Cabozantinib
+                option(value='Calcifediol') Calcifediol
+                option(value='Canakinumab') Canakinumab
+                option(value='Capecitabine') Capecitabine
+                option(value='Captoril') Captoril
+                option(value='Carbamazepine') Carbamazepine
+                option(value='Carboplatinum') Carboplatinum
+                option(value='Carvedilol') Carvedilol
+                option(value='Caspofungin') Caspofungin
+                option(value='Cefazolin') Cefazolin
                 option(value='Cefepime') Cefepime
+                option(value='Cefepime') Cefotaxime
+                option(value='Ceftaroline') Ceftaroline
                 option(value='Ceftazidime') Ceftazidime
+                option(value='Ceftazidime / Avibactam') Ceftazidime / Avibactam
+                option(value='Ceftobiprole') Ceftobiprole
+                option(value='Ceftolozane / Tazobactam') Ceftolozane / Tazobactam
+                option(value='Ceftriaxone') Ceftriaxone
+                option(value='Cefuroxime') Cefuroxime
                 option(value='Cenegermin') Cenegermin
+                option(value='Certolizumab') Certolizumab
+                option(value='Chlorambucil') Chlorambucil
+                option(value='Chlorhexidine') Chlorhexidine
                 option(value='Chlorphenamine') Chlorphenamine
+                option(value='Ciclosporin') Ciclosporin
+                option(value='Cidofovir') Cidofovir
+                option(value='Ciprofloxacin') Ciprofloxacin
+                option(value='Cisplatinum') Cisplatinum
+                option(value='Clarithromycin') Clarithromycin
+                option(value='Clindamycin') Clindamycin
+                option(value='Clobazam') Clobazam
+                option(value='Clobetasol') Clobetasol
+                option(value='Clonazepam') Clonazepam
+                option(value='Clopidogrel') Clopidogrel
                 option(value='Clorazepate dipotassium') Clorazepate dipotassium
+                option(value='Cloxacillin') Cloxacillin
+                option(value='Clozapine') Clozapine
+                option(value='Cobicistat') Cobicistat
+                option(value='Cobimetinib') Cobimetinib
+                option(value='Codeine') Codeine
+                option(value='Colistin') Colistin
+                option(value='Conjunctivitis') Conjunctivitis
+                option(value='Cotrimoxazole') Cotrimoxazole
                 option(value='Crizotinib') Crizotinib
+                option(value='Cyclophosphamide') Cyclophosphamide
+                option(value='Cyclosporine') Cyclosporine
+                option(value='Cytarabine') Cytarabine
+                option(value='Dabigatran') Dabigatran
+                option(value='Dabrafenib') Dabrafenib
+                option(value='Dacarbazine') Dacarbazine
+                option(value='Daclatasvir') Daclatasvir
+                option(value='Dactynomicin') Dactynomicin
+                option(value='Dalbavancin') Dalbavancin
+                option(value='Dalteparin') Dalteparin
                 option(value='Danazol') Danazol
+                option(value='Daptomycin') Daptomycin
+                option(value='Darunavir') Darunavir
+                option(value='Darunavir / Ritonavir') Darunavir / Ritonavir
+                option(value='Darunavir / Cobicistat / Emtricitabine / Tenofovir alafenamide') Darunavir / Cobicistat / Emtricitabine / Tenofovir alafenamide
                 option(value='Daratumumab') Daratumumab
+                option(value='Dasabuvir') Dasabuvir
+                option(value='Dasatinib') Dasatinib
+                option(value='Daunorubicin') Daunorubicin
+                option(value='Denosumab') Denosumab
+                option(value='Desmopressin') Desmopressin
                 option(value='Dexamethasone') Dexamethasone
                 option(value='Dexchlorpheniramine') Dexchlorpheniramine
+                option(value='Dexmedetomidine') Dexmedetomidine
+                option(value='Dextrose') Dextrose
                 option(value='Diazepam') Diazepam
                 option(value='Digoxin') Digoxin
+                option(value='Dihydroartemisin') Dihydroartemisin
+                option(value='Diltiazem') Diltiazem
+                option(value='Dimethylfumarate') Dimethylfumarate
+                option(value='Disodium tetraborate') Disodium tetraborate
+                option(value='Dobutamine') Dobutamine
                 option(value='Docetaxel') Docetaxel
                 option(value='Dolutegravir') Dolutegravir
+                option(value='Domperidone') Domperidone
+                option(value='Doxepin') Doxepin
+                option(value='Doxorubicin') Doxorubicin
                 option(value='Doxycycline') Doxycycline
+                option(value='Dulanermin') Dulanermin
+                option(value='Dupilumab') Dupilumab
                 option(value='Durvalumab') Durvalumab
+                option(value='Econazole') Econazole
+                option(value='Eculizumab') Eculizumab
+                option(value='Edoxaban') Edoxaban
+                option(value='Efavirenz') Efavirenz
+                option(value='Elbasvir') Elbasvir
+                option(value='Elbasvir / Grazoprevir') Elbasvir / Grazoprevir
                 option(value='Eltrombopag') Eltrombopag
+                option(value='Elvitegravir') Elvitegravir
                 option(value='Emtricitabine') Emtricitabine
+                option(value='Emtricitabine / Tenofovir disoproxil') Emtricitabine / Tenofovir disoproxil
+                option(value='Emtricitabine / Tenofovir disoproxil / Rilpivirine') Emtricitabine / Tenofovir disoproxil / Rilpivirine
+                option(value='Enoxaparin') Enoxaparin
+                option(value='Enzalutamide') Enzalutamide
+                option(value='Epinephrine bitartrate') Epinephrine bitartrate
+                option(value='Epirubicin') Epirubicin
+                option(value='Eptinezumab') Eptinezumab
+                option(value='Erenumab') Erenumab
                 option(value='Erlotinib') Erlotinib
+                option(value='Erythropoietin') Erythropoietin
                 option(value='Etanercept') Etanercept
+                option(value='Ethinylestradiol') Ethinylestradiol
+                option(value='Eribulin') Eribulin
+                option(value='Ertapenem') Ertapenem
+                option(value='Escitalopram') Escitalopram
+                option(value='Esomeprazole') Esomeprazole
                 option(value='Etilefrine') Etilefrine
+                option(value='Etoposide') Etoposide
+                option(value='Everolimus') Everolimus
+                option(value='Evolocumab') Evolocumab
+                option(value='Exemestane') Exemestane
+                option(value='Ezetimibe') Ezetimibe
+                option(value='Fentanyl') Fentanyl
+                option(value='Ferric carboxymaltose') Ferric carboxymaltose
+                option(value='Ferrous fumarate') Ferrous fumarate
                 option(value='Ferrous gluconate') Ferrous gluconate
+                option(value='Ferrous sulphate') Ferrous sulphate
+                option(value='Fingolimod') Fingolimod
+                option(value='Flecainide acetate') Flecainide acetate
+                option(value='Florourasil (5-FU)') Florourasil (5-FU)
+                option(value='Fluconazole') Fluconazole
+                option(value='Flucytosine') Flucytosine
+                option(value='Fluticasone') Fluticasone
+                option(value='Fluvastatin') Fluvastatin
+                option(value='Foscarnet') Foscarnet
+                option(value='Fosfomycin') Fosfomycin
+                option(value='Fremanezumab') Fremanezumab
                 option(value='Fructose') Fructose
+                option(value='Fulvestrant') Fulvestrant
+                option(value='Furosemide') Furosemide
+                option(value='Gabapentin') Gabapentin
+                option(value='Ganciclovir') Ganciclovir
                 option(value='Gefitinib') Gefitinib
+                option(value='Gemcitabine') Gemcitabine
+                option(value='Gentamicin') Gentamicin
+                option(value='Glacanezumab') Glacanezumab
+                option(value='Glecaprevir') Glecaprevir
                 option(value='Glecaprevir / Pibrentasvir') Glecaprevir / Pibrentasvir
+                option(value='Glucagon') Glucagon
+                option(value='Glutamine') Glutamine
                 option(value='Glutathione') Glutathione
+                option(value='Golimumab') Golimumab
+                option(value='Grazoprevir') Grazoprevir
                 option(value='Guselkumab') Guselkumab
                 option(value='Heparin') Heparin
+                option(value='Human albumin') Human albumin
+                option(value='Human fibrinogen / Human thrombin') Human fibrinogen / Human thrombin
+                option(value='Hydrochlorothiazide') Hydrochlorothiazide
                 option(value='Hydrocortisone') Hydrocortisone
+                option(value='Hydromorphone') Hydromorphone
+                option(value='Hydroxychloroquine') Hydroxychloroquine
+                option(value='Hydroxyzine') Hydroxyzine
+                option(value='Ibrutinib') Ibrutinib
+                option(value='Ibuprofen') Ibuprofen
                 option(value='Idarubicin') Idarubicin
+                option(value='Idelalisib') Idelalisib
+                option(value='Ifosfamide') Ifosfamide
+                option(value='Imatinib') Imatinib
+                option(value='Imipenem') Imipenem
+                option(value='Imipenem / Cilastatin') Imipenem / Cilastatin
+                option(value='Imiquimod') Imiquimod
                 option(value='Immunoglobulin') Immunoglobulin
                 option(value='Immunoglobulin (IVIg)') Immunoglobulin (IVIg)
                 option(value='Infliximab') Infliximab
+                option(value='Insulin aspart') Insulin aspart
+                option(value='Insulin glargine') Insulin glargine
+                option(value='Interferon Beta-1a') Interferon Beta-1a
+                option(value='Irinotecan') Irinotecan
+                option(value='Iron') Iron
+                option(value='Isavuconazole') Isavuconazole
                 option(value='Isoniazid / Pyrazinamide / Rifampicin') Isoniazid / Pyrazinamide / Rifampicin
                 option(value='Ixazomib') Ixazomib
+                option(value='Ixekizumab') Ixekizumab
+                option(value='Inotuzumab / Ozogamicin') Inotuzumab / Ozogamicin
                 option(value='Labetalol') Labetalol
+                option(value='Lacosamide') Lacosamide
                 option(value='Lamivudine') Lamivudine
+                option(value='Lamivudine / Abacavir') Lamivudine / Abacavir
+                option(value='Lamotrigine') Lamotrigine
+                option(value='Ledipasvir') Ledipasvir
+                option(value='Ledipasvir / Sofosbuvir') Ledipasvir / Sofosbuvir
+                option(value='Leflunomide') Leflunomide
                 option(value='Lenalidomide') Lenalidomide
-                option(value='Levothyroxine (IV)') Levothyroxine (IV)
+                option(value='Lenvatinib') Lenvatinib
+                option(value='Levetiracetam') Levetiracetam
+                option(value='Levocabastine') Levocabastine
+                option(value='Levofloxacin') Levofloxacin
+                option(value='Levothyroxine') Levothyroxine
+                option(value='Lidocaine hydrochloride') Lidocaine hydrochloride
+                option(value='Linezolid') Linezolid
+                option(value='Liraglutide') Liraglutide
                 option(value='Lorazepam') Lorazepam
+                option(value='Lurasidone') Lurasidone
                 option(value='Lysine acetylsalicylate') Lysine acetylsalicylate
                 option(value='Magnesium sulphate') Magnesium sulphate
                 option(value='Melphalan') Melphalan
+                option(value='Memantine') Memantine
+                option(value='Mepivacaine') Mepivacaine
+                option(value='Mepolizumab') Mepolizumab
+                option(value='Mercaptopurine') Mercaptopurine
+                option(value='Meropenem') Meropenem
+                option(value='Metamizole') Metamizole
+                option(value='Metformin') Metformin
+                option(value='Methotrexate') Methotrexate
                 option(value='Metoclopramide') Metoclopramide
                 option(value='Methylprednisolone') Methylprednisolone
+                option(value='Metronidazole') Metronidazole
+                option(value='Micophenolate') Micophenolate
                 option(value='Midazolam') Midazolam
                 option(value='Midostaurin') Midostaurin
-                option(value='Mitomycin') Mitomycin
+                option(value='Misoprostole') Misoprostole
+                option(value='Mitomycin C') Mitomycin C
+                option(value='Montelukast') Montelukast
+                option(value='Morphine') Morphine
                 option(value='Mupirocin') Mupirocin
+                option(value='Mycophenolate') Mycophenolate
+                option(value='Nab-paclitaxel') Nab-paclitaxel
+                option(value='Nadroparin') Nadroparin
+                option(value='Naloxone') Naloxone
                 option(value='Natalizumab') Natalizumab
+                option(value='Nicorandil') Nicorandil
+                option(value='Nifedipine') Nifedipine
+                option(value='Nilotinib') Nilotinib
+                option(value='Nintedanib') Nintedanib
+                option(value='Nitrazepam') Nitrazepam
                 option(value='Nivolumab') Nivolumab
                 option(value='Norepinephrine') Norepinephrine
+                option(value='Nusinersen') Nusinersen
+                option(value='Nystatin') Nystatin
+                option(value='Obinotuzumab') Obinotuzumab
+                option(value='Ocrelizumab') Ocrelizumab
                 option(value='Olaparib') Olaparib
                 option(value='Omalizumab') Omalizumab
+                option(value='Ombitasvir') Ombitasvir
+                option(value='Ombitasvir / Paritaprevir / Ritonavir') Ombitasvir / Paritaprevir / Ritonavir
+                option(value='Ombitasvir / Paritaprevir / Ritonavir / Dasabuvir') Ombitasvir / Paritaprevir / Ritonavir / Dasabuvir
+                option(value='Omeprazole') Omeprazole
+                option(value='Oseltamivir') Oseltamivir
                 option(value='Osimertinib') Osimertinib
                 option(value='Oxacillin') Oxacillin
+                option(value='Oxaliplatinum') Oxaliplatinum
+                option(value='Oxcarbazepine') Oxcarbazepine
+                option(value='Oxybutinin') Oxybutinin
+                option(value='Oxycodone') Oxycodone
+                option(value='Palbociclib') Palbociclib
                 option(value='Paclitaxel') Paclitaxel
+                option(value='Palbociclib') Palbociclib
+                option(value='Paliperidone') Paliperidone
+                option(value='Palivizumab') Palivizumab
                 option(value='Pantoprazole') Pantoprazole
+                option(value='Paracetamol') Paracetamol
+                option(value='Paritaprevir') Paritaprevir
+                option(value='Parnaparin') Parnaparin
+                option(value='Paroxetine') Paroxetine
+                option(value='Pazopanib') Pazopanib
+                option(value='Pegaspargase') Pegaspargase
                 option(value='Pembrolizumab') Pembrolizumab
                 option(value='Pemetrexed') Pemetrexed
+                option(value='Penicillin G') Penicillin G
+                option(value='Perphenazine') Perphenazine
+                option(value='Pertuzumab') Pertuzumab
+                option(value='Phenobarbital') Phenobarbital
+                option(value='Phenol') Phenol
+                option(value='Phenylephrine hydrochloride') Phenylephrine hydrochloride
                 option(value='Phytomenadione') Phytomenadione
+                option(value='Phytonadione') Phytonadione
+                option(value='Pibrentasvir') Pibrentasvir
+                option(value='Piperacillin') Piperacillin
                 option(value='Piperacillin / Tazobactam') Piperacillin / Tazobactam
+                option(value='Piperaquine') Piperaquine
+                option(value='Piperaquine / Dihydroartemisin') Piperaquine / Dihydroartemisin
+                option(value='Piritramide') Piritramide
+                option(value='Pitavastatin') Pitavastatin
+                option(value='Plasma (Platelet Rich)') Plasma (Platelet Rich)
+                option(value='Plasma (Rich In Growth Factors)') Plasma (Rich In Growth Factors)
+                option(value='Platin') Platin
                 option(value='Pomalidomide') Pomalidomide
+                option(value='Posaconazole') Posaconazole
+                option(value='Prazosine') Prazosine
                 option(value='Prednisone') Prednisone
+                option(value='Propranolol') Propranolol
+                option(value='Pseudoephedrine') Pseudoephedrine
+                option(value='Rabeprazole') Rabeprazole
                 option(value='Raltegravir') Raltegravir
+                option(value='Raltitrexed') Raltitrexed
                 option(value='Ramucirumab') Ramucirumab
+                option(value='Ranibizumab') Ranibizumab
                 option(value='Regorafenib') Regorafenib
+                option(value='Reslizumab') Reslizumab
+                option(value='Resorcinol') Resorcinol
                 option(value='Ribavirin') Ribavirin
+                option(value='Rilpivirine') Rilpivirine
+                option(value='Risperidone') Risperidone
+                option(value='Ritonavir') Ritonavir
                 option(value='Rituximab') Rituximab
                 option(value='Rivaroxaban') Rivaroxaban
+                option(value='Ropivacaine') Ropivacaine
+                option(value='Rosuvastatin') Rosuvastatin
                 option(value='Ruxolitinib') Ruxolitinib
+                option(value='Secukinumab') Secukinumab
+                option(value='Sacubitril') Sacubitril
+                option(value='Sacubitril / Valsartan') Sacubitril / Valsartan
+                option(value='Sertraline') Sertraline
+                option(value='Simeprevir') Simeprevir
+                option(value='Simvastatin') Simvastatin
+                option(value='Simvastatin / Cholesterol (TFSC)') Simvastatin / Cholesterol (TFSC)
+                option(value='Sirolimus') Sirolimus
+                option(value='Sodium benzoate') Sodium benzoate
                 option(value='Sodium chloride') Sodium chloride
+                option(value='Sodium glycerophosphate') Sodium glycerophosphate
                 option(value='Sodium Ferric Gluconate') Sodium Ferric Gluconate
+                option(value='Sodium metabisulfite') Sodium metabisulfite
                 option(value='Sodium nitroprusside') Sodium nitroprusside
+                option(value='Sofosbuvir') Sofosbuvir
+                option(value='Sofosbuvir / Daclatasvir') Sofosbuvir / Daclatasvir
+                option(value='Sofosbuvir / Simeprevir') Sofosbuvir / Simeprevir
                 option(value='Sofosbuvir / Velpatasvir') Sofosbuvir / Velpatasvir
+                option(value='Sofosbuvir / Velpatasvir / Voxilaprevir') Sofosbuvir / Velpatasvir / Voxilaprevir
                 option(value='Sorafenib') Sorafenib
+                option(value='Spironolactone') Spironolactone
+                option(value='Sucralfate') Sucralfate
+                option(value='Sulbactam') Sulbactam
+                option(value='Sulfasalazine') Sulfasalazine
+                option(value='Sunitinib') Sunitinib
                 option(value='Suxamethonium') Suxamethonium
+                option(value='Tacrolimus') Tacrolimus
+                option(value='Taliglucerase alfa') Taliglucerase alfa
+                option(value='Tamoxifen') Tamoxifen
+                option(value='Tapentadol') Tapentadol
+                option(value='Tedizolid') Tedizolid
+                option(value='Teicoplanin') Teicoplanin
                 option(value='Tenofovir') Tenofovir
+                option(value='Tenofovir alafenamide') Tenofovir alafenamide
+                option(value='Tenofovir disoproxil') Tenofovir disoproxil
+                option(value='Teriflunomide') Teriflunomide
+                option(value='Terlipressin') Terlipressin
+                option(value='Tetracaine hydrochloride') Tetracaine hydrochloride
                 option(value='Thalidomide') Thalidomide
                 option(value='Theophylline') Theophylline
+                option(value='Thiamine') Thiamine
+                option(value='Thymoglobulin') Thymoglobulin
+                option(value='Tigecycline') Tigecycline
+                option(value='Tipiracil') Tipiracil
                 option(value='Tocilizumab') Tocilizumab
+                option(value='Tobramycin') Tobramycin
+                option(value='Tofacitinib') Tofacitinib
+                option(value='Tolvaptan') Tolvaptan
+                option(value='Topiramate') Topiramate
                 option(value='Trabectedina') Trabectedina
+                option(value='Trastuzumab') Trastuzumab
                 option(value='Trastuzumab emtansine') Trastuzumab emtansine
+                option(value='Trazodone') Trazodone
+                option(value='Triamcinolone') Triamcinolone
+                option(value='Trientine') Trientine
+                option(value='Trifluridine') Trifluridine
+                option(value='Trifluridine / Tipiracil') Trifluridine / Tipiracil
+                option(value='Quetiapine') Quetiapine
+                option(value='Urea') Urea
                 option(value='Ustekinumab') Ustekinumab
-                option(value='Vancomycin hydrochloride') Vancomycin hydrochloride
+                option(value='Valproic acid') Valproic acid
+                option(value='Valsartan') Valsartan
+                option(value='Vancomycin') Vancomycin
                 option(value='Vedolizumab') Vedolizumab
                 option(value='Vedotin') Vedotin
+                option(value='Velpatasvir') Velpatasvir
+                option(value='Vemurafenib') Vemurafenib
                 option(value='Venetoclax') Venetoclax
+                option(value='Voxilaprevir') Voxilaprevir
+                option(value='Vincristine') Vincristine
+                option(value='Vismodegib') Vismodegib
+                option(value='Vitamin C') Vitamin C
+                option(value='Voriconazole') Voriconazole
+                option(value='Warfarin') Warfarin
+                option(value='Zinc') Zinc
+                option(value='Ziv-Aflibercept') Ziv-Aflibercept
+                option(value='Zoledronic acid') Zoledronic acid
+                option(value='Zuclopenthixol') Zuclopenthixol
               label(style="font-weight: bolder; color: royalblue; font-size: small;") Active Substance
             .input-field.col.s10.l6.offset-s1
               select(multiple='')#indication
                 option(value='', disabled='') Any
-                option(value='Advanced Non-Small Cell Lung Cancer') Advanced Non-Small Cell Lung Cancer
-                option(value='Advanced Non-Small Cell Lung Cancer') Advanced Non-Small Cell Lung Cancer (EGFR-Mutated)
+                option(value='5q-Spinal Muscular Atrophy (SMA)') 5q-Spinal Muscular Atrophy (SMA)
+                option(value='Achalasia') Achalasia
+                option(value='Acute Cerebellitis') Acute Cerebellitis
+                option(value='Acute Coronary Syndrome') Acute Coronary Syndrome
+                option(value='Acute Kidney Injury') Acute Kidney Injury
+                option(value='Adenocarcinoma') Adenocarcinoma
+                option(value='Age Related Macular Degeneration') Age Related Macular Degeneration
+                option(value='Albuminaemia') Albuminaemia
+                option(value="Alzheimer’s Disease") Alzheimer’s Disease
+                option(value='Anemia') Anemia
+                option(value='Ankylosing Spondylitis') Ankylosing Spondylitis
                 option(value='Antisynthetase Syndrome') Antisynthetase Syndrome
+                option(value='Anxiety') Anxiety
+                option(value='Arrhythmia') Arrhythmia
+                option(value='Aspergillosis (Pulmonary)') Aspergillosis (Pulmonary)
+                option(value='Asthma') Asthma
                 option(value='Asthma (Severe Refractory)') Asthma (Severe Refractory)
+                option(value='Ataxia Telangiectasia') Ataxia Telangiectasia
+                option(value='Atrial Fibrillation') Atrial Fibrillation
                 option(value='Autoimmune Hemolytic Anemia') Autoimmune Hemolytic Anemia
+                option(value='Bacteraemia') Bacteraemia
+                option(value='Bacteraemia (Gram Negative)') Bacteraemia (Gram Negative)
+                option(value='Bacterial Keratitis') Bacterial Keratitis
+                option(value='Behcet Disease') Behcet Disease
+                option(value='Biliopancreatic Cancer') Biliopancreatic Cancer
+                option(value='Bipolar Disorders') Bipolar Disorders
                 option(value='Bladder Cancer') Bladder Cancer
+                option(value='Bone and/or Prosthetic Infections') Bone and/or Prosthetic Infections
+                option(value='Breast Cancer') Breast Cancer
+                option(value='Breast Cancer (Advanced)') Breast Cancer (Advanced)
+                option(value='Breast Cancer (HER2 Positive)') Breast Cancer (HER2 Positive)
+                option(value='Breast Cancer (HR Positive / HER2 Negative Metastatic)') Breast Cancer (HR Positive / HER2 Negative Metastatic)
+                option(value='Bronchiectasis') Bronchiectasis
+                option(value='Candidaemia') Candidaemia
+                option(value='Candidiasis (Invasive)') Candidiasis (Invasive)
+                option(value='Cardiovascular Disease') Cardiovascular Disease
+                option(value='Catheter Associated Infections') Catheter Associated Infections
+                option(value='Cavernoma') Cavernoma
                 option(value='Cervical Cancer') Cervical Cancer
+                option(value='Cholestasis') Cholestasis
+                option(value='Chronic Idiopathic Urticaria') Chronic Idiopathic Urticaria
+                option(value='Chronic Inflammatory Demyelinating Polyneuropathy') Chronic Inflammatory Demyelinating Polyneuropathy
+                option(value='Chronic Kidney Disease') Chronic Kidney Disease
+                option(value='Chronic Obstructive Pulmonary Disease') Chronic Obstructive Pulmonary Disease
+                option(value='Chronic Pain Syndrome') Chronic Pain Syndrome
+                option(value='Chronic Renal Failure') Chronic Renal Failure
+                option(value='Colorectal Cancer') Colorectal Cancer
+                option(value='Complement-Mediated Thrombotic Microangiopathy') Complement-Mediated Thrombotic Microangiopathy
+                option(value='Complete Heart Block') Complete Heart Block
+                option(value='Complicated Skin and Skin Structure Infections') Complicated Skin and Skin Structure Infections
+                option(value='Confusion') Confusion
+                option(value='Congestive Gastropathy') Congestive Gastropathy
+                option(value='Constipation') Constipation
+                option(value='Corneal Ulcer') Corneal Ulcer
+                option(value='Coronary Artery Disease') Coronary Artery Disease
+                option(value="Cow's Milk Protein Allergy") Cow's Milk Protein Allergy
+                option(value="Crohn’s Disease") Crohn’s Disease
+                option(value='Cystic Fibrosis') Cystic Fibrosis
+                option(value='Deep Vein Thrombosis') Deep Vein Thrombosis
+                option(value='Deficiency of the Interleukin-36 Receptor Antagonist') Deficiency of the Interleukin-36 Receptor Antagonist
+                option(value='Delusional Disorder') Delusional Disorder
+                option(value='Dementia') Dementia
                 option(value='Demyelinating Neuropathies') Demyelinating Neuropathies
+                option(value='Depression') Depression
+                option(value='Dermatitis') Dermatitis
+                option(value='Dermatitis (Atopic)') Dermatitis (Atopic)
+                option(value='Diabetes Insipidus (Nephrogenic)') Diabetes Insipidus (Nephrogenic)
+                option(value='Diabetes Mellitus') Diabetes Mellitus
+                option(value='Diabetic Macular Oedema') Diabetic Macular Oedema
+                option(value='Diarrhoea') Diarrhoea
+                option(value='Diarrhoea (Chronic)') Diarrhoea (Chronic)
+                option(value='Dry Eye Syndrome') Dry Eye Syndrome
+                option(value='Dyslipidaemia') Dyslipidaemia
+                option(value='Dysphagia') Dysphagia
+                option(value='Dyspnoea') Dyspnoea
+                option(value='Elevated International Normalised Ratio') Elevated International Normalised Ratio
                 option(value='Encephalitis') Encephalitis
                 option(value='Encephalomyelitis') Encephalomyelitis
+                option(value='Endocarditis') Endocarditis
+                option(value='Endometrial Neoplasia') Endometrial Neoplasia
+                option(value='Endophtalmitis') Endophtalmitis
+                option(value='Epidermical Hamartoma') Epidermical Hamartoma
+                option(value='Epilepsy') Epilepsy
+                option(value='Epilepsy (Drug-Resistant)') Epilepsy (Drug-Resistant)
+                option(value='Erdheim–Chester Disease') Erdheim–Chester Disease
+                option(value='Erythroderma (Severe)') Erythroderma (Severe)
+                option(value='Facial Angiofibroma') Facial Angiofibroma
+                option(value='Femoral Neck Fractures') Femoral Neck Fractures
+                option(value='Fibromyalgia') Fibromyalgia
+                option(value='Follicular Lymphoma') Follicular Lymphoma
+                option(value='Fusarium Keratitis') Fusarium Keratitis
+                option(value='Gastric Cancer') Gastric Cancer
+                option(value='Gastritis') Gastritis
+                option(value='Gastrointestinal Haemorrhage') Gastrointestinal Haemorrhage
+                option(value='Gaucher Disease') Gaucher Disease
                 option(value='Genitourinary Cancers') Genitourinary Cancers
                 option(value='Graft Versus Host Disease') Graft Versus Host Disease
+                option(value='Guanidinoacetate Methyltransferase Deficiency') Guanidinoacetate Methyltransferase Deficiency
+                option(value='Guillain-Barré Syndrome') Guillain-Barré Syndrome
+                option(value='Haematological Disorder') Haematological Disorder
+                option(value='Haemorrhoid') Haemorrhoid
+                option(value='Heart Failure') Heart Failure
                 option(value='Hematologic Malignancy') Hematologic Malignancy
+                option(value='Hepatitis C') Hepatitis C
+                option(value='Hepatitis C (Chronic)') Hepatitis C (Chronic)
                 option(value='Hepatitis C Genotype 3') Hepatitis C Genotype 3
                 option(value='Hepatocarcinoma') Hepatocarcinoma
+                option(value='Hepatosplenomegaly') Hepatosplenomegaly
+                option(value='Hidradenitis suppurativa') Hidradenitis suppurativa
+                option(value='Hip Fracture') Hip Fracture
+                option(value='Hip Osteoarthritis') Hip Osteoarthritis
+                option(value='HIV') HIV
                 option(value='HIV (Treatment-Naive)') HIV (Treatment-Naive)
+                option(value='Horton Disease') Horton Disease
+                option(value='Hypercalcaemia') Hypercalcaemia
+                option(value='Hypercholesterolaemia') Hypercholesterolaemia
+                option(value='Hyperlipidaemia') Hyperlipidaemia
+                option(value='Hypertension') Hypertension
+                option(value='Hypogammaglobulinaemia') Hypogammaglobulinaemia
+                option(value='Hypoglycaemia') Hypoglycaemia
+                option(value='Hypokalaemia') Hypokalaemia
+                option(value='Hyponatraemia') Hyponatraemia
+                option(value='Hypophosphataemia') Hypophosphataemia
                 option(value='Idiopathic Thrombocytopenic Purpura') Idiopathic Thrombocytopenic Purpura
+                option(value='Immune-Mediated Inflammatory Disease') Immune-Mediated Inflammatory Disease
                 option(value='Immunodeficiency') Immunodeficiency
+                option(value='Immunodeficiency - Common Variable') Immunodeficiency - Common Variable
+                option(value='Immunodeficiency - Secondary') Immunodeficiency - Secondary
+                option(value='Inappropriate Antidiuretic Hormone Secretion') Inappropriate Antidiuretic Hormone Secretion
+                option(value='Inflammatory Arthritis') Inflammatory Arthritis
                 option(value='Inflammatory Bowel Disease') Inflammatory Bowel Disease
+                option(value='Influenza (Flu)') Influenza (Flu)
+                option(value='Influenza A') Influenza A
+                option(value='Intellectual Disability') Intellectual Disability
+                option(value='Intestinal Obstruction') Intestinal Obstruction
+                option(value='Intra-abdominal Infection') Intra-abdominal Infection
+                option(value='Intrauterine Growth Restriction') Intrauterine Growth Restriction
+                option(value='Invasive Fungal Infection') Invasive Fungal Infection
+                option(value='Irritable Bowel Disease') Irritable Bowel Disease
+                option(value='Keratitis') Keratitis
+                option(value='Large Cell Carcinoma') Large Cell Carcinoma
+                option(value='Lennox–Gastaut Syndrome') Lennox–Gastaut Syndrome
                 option(value='Leukaemia (Acute Lymphoblastic)') Leukaemia (Acute Lymphoblastic)
                 option(value='Leukaemia (Acute Myeloid)') Leukaemia (Acute Myeloid)
+                option(value='Leukaemia (Chronic Lymphocytic)') Leukaemia (Chronic Lymphocytic)
+                option(value='Leukaemia (Chronic Myeloid)') Leukaemia (Chronic Myeloid)
+                option(value='Liver Cirrhosis') Liver Cirrhosis
                 option(value='Liver Fibrosis') Liver Fibrosis
+                option(value='Lung Cancer') Lung Cancer
                 option(value='Lymphoma (Hodgkin)') Lymphoma (Hodgkin)
                 option(value='Lymphoma (Mantle Cell)') Lymphoma (Mantle Cell)
                 option(value='Lymphoma (non-Hodgkin)') Lymphoma (non-Hodgkin)
+                option(value='Malaria') Malaria
+                option(value='Medication Overdose Headache') Medication Overdose Headache
+                option(value='Melanoma') Melanoma
+                option(value='Mesothelioma') Mesothelioma
+                option(value='Metabolic Syndrome') Metabolic Syndrome
                 option(value='Metastatic Cancer') Metastatic Cancer
+                option(value='Migraine') Migraine
+                option(value='Mineral and Bone Disorder') Mineral and Bone Disorder
+                option(value='Molluscum Contagiosum') Molluscum Contagiosum
                 option(value='Morvan Syndrome') Morvan Syndrome
+                option(value='Mucositis') Mucositis
+                option(value='Multiple Food Allergy (MFA)') Multiple Food Allergy (MFA)
+                option(value='Multiple Myeloma') Multiple Myeloma
                 option(value='Multiple Myeloma (Newly Diagnosed)') Multiple Myeloma (Newly Diagnosed)
                 option(value='Multiple Sclerosis') Multiple Sclerosis
+                option(value='Multiple Sclerosis (Primary Progressive)') Multiple Sclerosis (Primary Progressive)
                 option(value='Myasthenia Gravis') Myasthenia Gravis
+                option(value='Mycosis') Mycosis
+                option(value='Myelodysplastic Syndrome') Myelodysplastic Syndrome
+                option(value='Myelotoxicity') Myelotoxicity
                 option(value='Myeloproliferative Neoplasm (BCR/JAK2-Rearranged)') Myeloproliferative Neoplasm (BCR/JAK2-Rearranged)
                 option(value='Myopathy') Myopathy
+                option(value='Nephrotic Syndrome') Nephrotic Syndrome
+                option(value='Neurodevelopmental Disorders') Neurodevelopmental Disorders
                 option(value='Neurotrophic Keratitis') Neurotrophic Keratitis
+                option(value='Neutropenia') Neutropenia
+                option(value='Neutropenia (Febrile)') Neutropenia (Febrile)
+                option(value='Non-Small Cell Lung Cancer') Non-Small Cell Lung Cancer
+                option(value='Advanced Non-Small Cell Lung Cancer') Non-Small Cell Lung Cancer (EGFR-Mutated)
+                option(value='Nonketotic Hyperglycinemia') Nonketotic Hyperglycinemia
                 option(value='Nonvalvular Atrial Fibrillation') Nonvalvular Atrial Fibrillation
+                option(value='Nosocomial Infection') Nosocomial Infection
+                option(value='Oesophageal Cancer') Oesophageal Cancer
+                option(value='Olfactory Dysfunction') Olfactory Dysfunction
+                option(value='Opsoclonus Myoclonus Syndrome') Opsoclonus Myoclonus Syndrome
+                option(value='Osteoarticular Infection') Osteoarticular Infection
+                option(value='Osteomyelitis') Osteomyelitis
+                option(value='Osteoporosis') Osteoporosis
                 option(value='Ovarian Carcinoma') Ovarian Carcinoma
                 option(value='Ovarian Serous Adenocarcinoma') Ovarian Serous Adenocarcinoma
+                option(value='Pancreatic Cancer') Pancreatic Cancer
+                option(value='Pancreatitis') Pancreatitis
+                option(value='Papillomatosis (Oral Florid)') Papillomatosis (Oral Florid)
+                option(value='Papillomatosis (Recurrent Respiratory)') Papillomatosis (Recurrent Respiratory)
                 option(value='Paraneoplastic Dermatomyositis') Paraneoplastic Dermatomyositis
                 option(value='Paraneoplastic Syndrome') Paraneoplastic Syndrome
+                option(value="Parkinson’s Disease") Parkinson’s Disease
+                option(value='Patent Ductus Arteriosus') Patent Ductus Arteriosus
+                option(value='Peripheral Arterial Disease') Peripheral Arterial Disease
+                option(value='Personality Disorder') Personality Disorder
+                option(value='Pneumonia (Community Acquired)') Pneumonia (Community Acquired)
+                option(value='Pneumonia (Hospital Acquired)') Pneumonia (Hospital Acquired)
+                option(value='Pneumonitis') Pneumonitis
+                option(value='Polyarthritis') Polyarthritis
                 option(value='Polyarticular Juvenile Idiopathic Arthritis') Polyarticular Juvenile Idiopathic Arthritis
+                option(value='Polycystic Kidney Disease (Autosomal Dominant)') Polycystic Kidney Disease (Autosomal Dominant)
+                option(value='Polyneuropathy') Polyneuropathy
+                option(value='Portal Hypertension') Portal Hypertension
+                option(value='Portal Vein Thrombosis') Portal Vein Thrombosis
+                option(value='Postoperative Infection') Postoperative Infection
+                option(value='Primary Bladder Neck Obstruction') Primary Bladder Neck Obstruction
+                option(value='Proctitis') Proctitis
                 option(value='Progressive Multifocal Leukoencephalopathy') Progressive Multifocal Leukoencephalopathy
                 option(value='Prostate Cancer') Prostate Cancer
+                option(value='Prostate Cancer (Metastatic Castration Resistant)') Prostate Cancer (Metastatic Castration Resistant)
                 option(value='Prostate Cancer (Metastatic Castration Sensitive)') Prostate Cancer (Metastatic Castration Sensitive)
+                option(value='Psoriasis') Psoriasis
                 option(value='Psoriasis (Moderate to Severe Plaque)') Psoriasis (Moderate to Severe Plaque)
+                option(value='Psoriatic Arthropathy') Psoriatic Arthropathy
+                option(value='Pulmonary Thromboembolism') Pulmonary Thromboembolism
                 option(value='Pure Red Cell Aplasia') Pure Red Cell Aplasia
-                option(value='Refractory Atopic Dermatitis') Refractory Atopic Dermatitis
+                option(value='Rectal Neoplasia') Rectal Neoplasia
                 option(value='Refractory Cancer') Refractory Cancer
+                option(value='Renal Cell Cancer') Renal Cell Cancer
+                option(value='Respiratory Disorders') Respiratory Disorders
+                option(value='Respiratory Syncytial Virus Infection') Respiratory Syncytial Virus Infection
+                option(value='Respiratory Tract Infection') Respiratory Tract Infection
+                option(value='Respiratory Tract Infection (Lower)') Respiratory Tract Infection (Lower)
+                option(value='Rheumatoid Arthritis') Rheumatoid Arthritis
+                option(value='Rheumatological Diseases') Rheumatological Diseases
+                option(value='Sarcoidosis') Sarcoidosis
+                option(value='Schizoaffective Disorder') Schizoaffective Disorder
+                option(value='Schizophrenia') Schizophrenia
                 option(value='Scleroderma') Scleroderma
+                option(value='Sepsis') Sepsis
+                option(value='Septic Arthritis') Septic Arthritis
+                option(value='Septic Shock') Septic Shock
+                option(value='Severe Abdominal Infection') Severe Abdominal Infection
                 option(value='Severe Asthma (IgE-Mediated)') Severe Asthma (IgE-Mediated)
+                option(value='Short Bowel Syndrome with Intestinal Failure (SBS-IF)') Short Bowel Syndrome with Intestinal Failure (SBS-IF)
+                option(value='Sjögren Syndrome') Sjögren Syndrome
+                option(value='Skin and Soft Tissue Infection') Skin and Soft Tissue Infection
+                option(value='Spasmodic Dysphonia') Spasmodic Dysphonia
+                option(value='Spondyloarthropathy') Spondyloarthropathy
+                option(value='Squamous Cell Carcinoma') Squamous Cell Carcinoma
                 option(value='Squamous Cell Carcinoma of the Rectum') Squamous Cell Carcinoma of the Rectum
+                option(value='Stable Coronary Disease After Percutaneous Coronary Intervention') Stable Coronary Disease After Percutaneous Coronary Intervention
+                option(value='Status Epilepticus') Status Epilepticus
+                option(value='Stevens–Johnson Syndrome') Stevens–Johnson Syndrome
+                option(value='Stomatitis') Stomatitis
+                option(value='Stroke (Cardioembolic)') Stroke (Cardioembolic)
+                option(value='Stroke (Ischemic)') Stroke (Ischemic)
+                option(value='Stroke (Thromboembolic)') Stroke (Thromboembolic)
+                option(value='Substance Related Disorders') Substance Related Disorders
+                option(value='Surgical Site Infection') Surgical Site Infection
+                option(value='Systemic Lupus Erythematosus') Systemic Lupus Erythematosus
                 option(value='Testicular Cancer') Testicular Cancer
+                option(value='Thrombocytopenia') Thrombocytopenia
+                option(value='Trauma') Trauma
+                option(value='Tuberous Sclerosis') Tuberous Sclerosis
+                option(value='Tumor Necrosis Factor Receptor Associated Periodic Syndrome (TRAPS)') Tumor Necrosis Factor Receptor Associated Periodic Syndrome (TRAPS)
+                option(value='Ulcerative Colitis') Ulcerative Colitis
+                option(value='Ulcerative Proctitis') Ulcerative Proctitis
+                option(value='Urea Cycle Defects (UCD)') Urea Cycle Defects (UCD)
+                option(value='Urinary Infection (Severe)') Urinary Infection (Severe)
+                option(value='Urinary Tract Infection') Urinary Tract Infection
+                option(value='Urticaria') Urticaria
+                option(value='Uterine Leiomyosarcoma') Uterine Leiomyosarcoma
+                option(value='Wilson Disease') Wilson Disease
+                option(value='Vasculitides') Vasculitides
               label(style="font-weight: bolder; color: royalblue; font-size: small;") Stated Therapeutic Indication
           form.row(action='#')  
             .input-field.col.s10.l6.offset-s1
               select(multiple='')#statedClass
                 option(value='', disabled='') Any
+                option(value='Acetylcholinesterase Inhibitors') Acetylcholinesterase Inhibitors
                 option(value='Adrenergic Drugs') Adrenergic Drugs
+                option(value='Aminoglycosides') Aminoglycosides
                 option(value='Anaesthetics') Anaesthetics
+                option(value='Analgesics') Analgesics
+                option(value='Anaplastic Lymphoma Kinase (ALK) Inhibitors') Anaplastic Lymphoma Kinase (ALK) Inhibitors
+                option(value='Angiotensin Converting Enzyme (ACE) Inhibitors') Angiotensin Converting Enzyme (ACE) Inhibitors
+                option(value='Anthracyclines') Anthracyclines
+                option(value='Anti-Dementia Drugs') Anti-Dementia Drugs
+                option(value='Anti-Epileptics') Anti-Epileptics
+                option(value='Anti-Infective Drugs') Anti-Infective Drugs
+                option(value='Anti-Interleukin-5 Monoclonal Antibodies') Anti-Interleukin-5 Monoclonal Antibodies
+                option(value='Anti-Interleukin-17 Drugs') Anti-Interleukin-17 Drugs
+                option(value='Anti-MRSA (Methicillin-Resistant Staphylococcus aureus) Agents') Anti-MRSA (Methicillin-Resistant Staphylococcus aureus) Agents
+                option(value='Anti-Vascular Endothelial Growth Factor Drugs') Anti-Vascular Endothelial Growth Factor Drugs
                 option(value='Antiarrhythmics') Antiarrhythmics
+                option(value='Antibiotic Oral Suspensions') Antibiotic Oral Suspensions
                 option(value='Antibiotics') Antibiotics
+                option(value='Antibiotics (High Spectrum)') Antibiotics (High Spectrum)
+                option(value='Antibiotics (Systemic)') Antibiotics (Systemic)
                 option(value='Anticholinergics') Anticholinergics
+                option(value='Antidepressants') Antidepressants
+                option(value='Antidiabetics') Antidiabetics
+                option(value='Antiepileptics') Antiepileptics
+                option(value='Antifungal Azoles') Antifungal Azoles
+                option(value='Antifungals') Antifungals
+                option(value='Antifungals (Systemic)') Antifungals (Systemic)
                 option(value='Antihistamines') Antihistamines
                 option(value='Antihypertensives') Antihypertensives
                 option(value='Antileukotriene Agents') Antileukotriene Agents
                 option(value='Antimetabolites') Antimetabolites
+                option(value='Antimicrobial Agents') Antimicrobial Agents
+                option(value='Antimycotics') Antimycotics
+                option(value='Antineoplastic Drugs') Antineoplastic Drugs
+                option(value='Antineoplastics and Immunomodulators') Antineoplastics and Immunomodulators
+                option(value='Antiparasitics') Antiparasitics
+                option(value='Antiplatelet Agents') Antiplatelet Agents
                 option(value='Antipsychotics') Antipsychotics
+                option(value='Antipyretics') Antipyretics
+                option(value='Antispasmodics (Urinary)') Antispasmodics (Urinary)
+                option(value='Anxiolytics') Anxiolytics
+                option(value='Aromatase Inhibitors') Aromatase Inhibitors
+                option(value='Autologous Fibrin Tissue Adhesive') Autologous Fibrin Tissue Adhesive
+                option(value='Autologous Serum Eye Drops') Autologous Serum Eye Drops
                 option(value='Benzodiazepines') Benzodiazepines
+                option(value='Beta-Blockers') Beta-Blockers
+                option(value='Beta-Lactam Antibiotics') Beta-Lactam Antibiotics
                 option(value='Biologicals') Biologicals
                 option(value='Biosimilars') Biosimilars
+                option(value='Blood and Haematopoietic Derivatives') Blood and Haematopoietic Derivatives
                 option(value='Blood Products') Blood Products
+                option(value='BRAF Inhibitors') BRAF Inhibitors
+                option(value='Calcium Channel Blockers') Calcium Channel Blockers
+                option(value='Cardiovascular Drugs') Cardiovascular Drugs
                 option(value='Cephalosporins') Cephalosporins
+                option(value='CGRP Receptor Antagonists') CGRP Receptor Antagonists
                 option(value='Corticosteroids') Corticosteroids
+                option(value='Cyclin-Dependent Kinases 4/6 Inhibitors') Cyclin-Dependent Kinases 4/6 Inhibitors
+                option(value='Dermatological Drugs') Dermatological Drugs
                 option(value='Dietetics') Dietetics
+                option(value='Digestive System and Metabolism Drugs') Digestive System and Metabolism Drugs
+                option(value='Direct Acting Antivirals') Direct Acting Antivirals
+                option(value='Direct Oral Anticoagulants') Direct Oral Anticoagulants
+                option(value='Disease Modifying Drugs') Disease Modifying Drugs
+                option(value='Diuretics') Diuretics
+                option(value='Echinocandins') Echinocandins
+                option(value='Epidermal Growth Factor Receptor (EGFR) Inhibitors') Epidermal Growth Factor Receptor (EGFR) Inhibitors
                 option(value='Gastroprotectors') Gastroprotectors
+                option(value='Genitourinary Organ And Rectal Agents') Genitourinary Organ And Rectal Agents
+                option(value='Glucocorticoids') Glucocorticoids
+                option(value='Glycopeptides') Glycopeptides
+                option(value='Hormonal Drugs') Hormonal Drugs
+                option(value='Hypertensive Agents') Hypertensive Agents
+                option(value='Hypnotics') Hypnotics
+                option(value='Immune-Modulators') Immune-Modulators
+                option(value='Immune-Suppressors') Immune-Suppressors
+                option(value='Immune Checkpoint Inhibitors') Immune Checkpoint Inhibitors
                 option(value='Inhaled Corticosteroids') Inhaled Corticosteroids
+                option(value='Integrase Inhibitor') Integrase Inhibitor
                 option(value='Intravenous Immunoglobulins (IVIg)') Intravenous Immunoglobulins (IVIg)
+                option(value='Intravenous Immunoglobulins (IVIg) - Non-Specific') Intravenous Immunoglobulins (IVIg) - Non-Specific
+                option(value='Iodinated Contrast Products') Iodinated Contrast Products
+                option(value='Janus Kinase Inhibitors') Janus Kinase Inhibitors
+                option(value='Lipid Lowering Agents') Lipid Lowering Agents
+                option(value='Local Anaesthetics') Local Anaesthetics
                 option(value='Long-Acting β Adrenoceptor Agonists') Long-Acting β Adrenoceptor Agonists
+                option(value='Long Acting Injectable Antipsychotics') Long Acting Injectable Antipsychotics
+                option(value='Low Molecular Weight Heparins') Low Molecular Weight Heparins
+                option(value='Macrolides') Macrolides
+                option(value='MEK Inhibitors') MEK Inhibitors
                 option(value='Monoclonal Antibodies') Monoclonal Antibodies
+                option(value='Mood Stabilisers') Mood Stabilisers
+                option(value='Musculoskeletal System Drugs') Musculoskeletal System Drugs
+                option(value='Nervous System Drugs') Nervous System Drugs
+                option(value='Neuroleptics') Neuroleptics
+                option(value='Non-Nucleoside Reverse Transcriptase Inhibitors') Non-Nucleoside Reverse Transcriptase Inhibitors
                 option(value='Non-Steroidal Anti-Inflammatory Drugs') Non-Steroidal Anti-Inflammatory Drugs
                 option(value='Novel Oral Anticoagulants') Novel Oral Anticoagulants
+                option(value='Nucleoside Reverse Transcriptase Inhibitors') Nucleoside Reverse Transcriptase Inhibitors
                 option(value='Nutritional Agents') Nutritional Agents
-                option(value='Vitamin K Antagonists') Vitamin K Antagonists
+                option(value='Oncologic Drugs') Oncologic Drugs
+                option(value='Ophthalmological Medicines') Ophthalmological Medicines
+                option(value='Opioids') Opioids
+                option(value='Oral Anticancer Drugs') Oral Anticancer Drugs
+                option(value='Oral Anticoagulants') Oral Anticoagulants
+                option(value='PCSK9 Inhibitors') PCSK9 Inhibitors
+                option(value='Pegylated Interferons (PEG-IFN)') Pegylated Interferons (PEG-IFN)
+                option(value='Penicillins') Penicillins
+                option(value='Phosphate Binders') Phosphate Binders
+                option(value='Platinum Drugs') Platinum Drugs
+                option(value='Proprotein Convertase Subtilisin/Kexin Type 9 (PCSK9) Inhibitors') Proprotein Convertase Subtilisin/Kexin Type 9 (PCSK9) Inhibitors
+                option(value='Protease Inhibitors') Protease Inhibitors
+                option(value='Proton-Pump Inhibitors') Proton-Pump Inhibitors
                 option(value='Psychostimulants') Psychostimulants
+                option(value='Psychotropics') Psychotropics
+                option(value='Pyrazolones') Pyrazolones
+                option(value='Quinolones') Quinolones
+                option(value='Respiratory System Drugs') Respiratory System Drugs
+                option(value='Statins') Statins
+                option(value='Sulfonamides') Sulfonamides
                 option(value='Systemic Corticosteroids') Systemic Corticosteroids
-                option(value='Tumor Necrosis Factor Alpha (TNF-α) Inhibitors') Tumor Necrosis Factor Alpha (TNF-α) Inhibitors
+                option(value='Taxanes') Taxanes
+                option(value='Thiopurines') Thiopurines
+                option(value='Torsadogenic Drugs') Torsadogenic Drugs
+                option(value='Triptans') Triptans
+                option(value='Tumor Necrosis Factor (TNF) Inhibitors') Tumor Necrosis Factor (TNF) Inhibitors
                 option(value='Tyrosine Kinase Inhibitors') Tyrosine Kinase Inhibitors
                 option(value='Urological Drugs') Urological Drugs
+                option(value='Vasoconstrictors') Vasoconstrictors
+                option(value='Vitamin K Antagonists') Vitamin K Antagonists
+                option(value='Vitamin Supplements') Vitamin Supplements
+                option(value='Xanthine Oxidase Inhibitors') Xanthine Oxidase Inhibitors
               label(style="font-weight: bolder; color: royalblue; font-size: small;") Stated Drug Classification
+            .input-field.col.s10.l6.offset-s1
+              select(multiple='')#typeOfMedical
+                option(value='', disabled='') Any
+                option(value='Cardiac Implantable Electronic Device') Cardiac Implantable Electronic Device
+                option(value='Catheters') Catheters
+                option(value='Closed System Drug-Transfer Device (CSTD)') Closed System Drug-Transfer Device (CSTD)
+                option(value='Cyclic Olefin Polymer (COP) Syringe') Cyclic Olefin Polymer (COP) Syringe
+                option(value='Elastomeric Devices') Elastomeric Devices
+                option(value='Elastomeric Infusion Pumps') Elastomeric Infusion Pumps
+                option(value='Enteral Feeding Syringes') Enteral Feeding Syringes
+                option(value='Guedel Cannulas') Guedel Cannulas
+                option(value='Infusers') Infusers
+                option(value='Low Density Polyethylene (LDPE) Bags') Low Density Polyethylene (LDPE) Bags
+                option(value='Luer-Lock Syringes') Luer-Lock Syringes
+                option(value='Midlines') Midlines
+                option(value='Oral Liquid Vehicle Range') Oral Liquid Vehicle Range
+                option(value='Permanent Pacemaker') Permanent Pacemaker
+                option(value='Polyolefin Infusion Bags') Polyolefin Infusion Bags
+                option(value='Polypropylene Syringes') Polypropylene Syringes
+                option(value='Plaster Strips') Plaster Strips
+                option(value='Prefilled Syringes') Prefilled Syringes
+                option(value='Rectal Cannulas') Rectal Cannulas
+                option(value='Single Use Vials') Single Use Vials
+                option(value='Sterile Gloves') Sterile Gloves
+                option(value='Universal kits') Universal Kits
+                option(value='Vial Adaptors') Vial Adaptors
+                option(value='Y Fittings') Y Fittings
+              label(style="font-weight: bolder; color: royalblue; font-size: small;") Type of Medical Device / Equipment
+          form.row(action='#')
             .input-field.col.s10.l6.offset-s1
               select(multiple='')#studyDesign
                 option(value='', disabled='') Any
-                option(value='Meta-Analysis') Meta-Analysis
-                option(value='Systematic Review') Systematic Review
-                option(value='Randomized Controlled Trial') Randomized Controlled Trial
-                option(value='Cohort (Prospective Observational Study)') Cohort (Prospective Observational Study)
-                option(value='Case-Control (Retrospective) Study') Case-Control (Retrospective) Study
-                option(value='Cross-Sectional Study') Cross-Sectional Study
+                option(value='Ambispective Study') Ambispective Study
+                option(value='Analytical Study') Analytical Study
                 option(value='Case Reports / Series') Case Reports / Series
-                option(value='Quasi-Experimental Design') Quasi-Experimental Design
-                option(value='Test-Tube Lab Research') Test-Tube Lab Research
+                option(value='Cohort Study') Cohort Study
+                option(value='Comparative Study') Comparative Study
+                option(value='Cross-Sectional Study') Cross-Sectional Study
+                option(value='Descriptive Study') Descriptive Study
+                option(value='Interventional Study') Interventional Study
+                option(value='Laboratory Research') Laboratory Research
+                option(value='Literature Review') Literature Review
+                option(value='Longitudinal Study') Longitudinal Study
+                option(value='Meta-Analysis') Meta-Analysis
+                option(value='Observational Study') Observational Study
+                option(value='Observational Transversal Study') Observational Transversal Study
+                option(value='Point Prevalence Study') Point Prevalence Study
+                option(value='Prospective Study') Prospective Study
+                option(value='Prospective Cohort Study') Prospective Cohort Study
+                option(value='Prospective Longitudinal Study') Prospective Longitudinal Study
+                option(value='Prospective Observational Study') Prospective Observational Study
+                option(value='Quasi-Experimental Study') Quasi-Experimental Study
+                option(value='Randomized Controlled Trial') Randomized Controlled Trial
+                option(value='Retrospective Study') Retrospective Study
+                option(value='Retrospective Cohort Study') Retrospective Cohort Study
+                option(value='Retrospective Descriptive Study') Retrospective Descriptive Study
+                option(value='Retrospective Longitudinal Study') Retrospective Longitudinal Study
+                option(value='Retrospective Observational Study') Retrospective Observational Study
+                option(value='Scoping Review') Scoping Review
+                option(value='Simulation Study') Simulation Study
+                option(value='Systematic Review') Systematic Review
+                option(value='Transversal Study') Transversal Study
               label(style="font-weight: bolder; color: royalblue; font-size: small;") Design of The Study
-          form.row(action='#')
             .input-field.col.s10.l6.offset-s1
               select(multiple='')#setting
                 option(value='', disabled='') Any
                 option(value='Hospital') Hospital
                 option(value='Laboratory') Laboratory
-                option(value='Pharmacy') Community Pharmacy
+                option(value='Community Pharmacy') Community Pharmacy
               label(style="font-weight: bolder; color: royalblue; font-size: small;") Setting
+          form.row(action='#')
             .input-field.col.s10.l6.offset-s1
               select(multiple='')#ward
                 option(value='', disabled='') Any
+                option(value='Acute Geriatric Unit') Acute Geriatric Unit
+                option(value='Allergy') Allergy
+                option(value='Angiology') Angiology
+                option(value='Antiblastic Drugs Unit') Antiblastic Drugs Unit
                 option(value='Cardiology') Cardiology
+                option(value='Centralised Cytotoxic Preparation Unit') Centralised Cytotoxic Preparation Unit
+                option(value='Centralised Intravenous Additive Service') Centralised Intravenous Additive Service
                 option(value='Chemotherapy') Chemotherapy
+                option(value='Child Intensive Care') Child Intensive Care
+                option(value='Critical Care Unit') Critical Care Unit
+                option(value='Dermatology') Dermatology
+                option(value='Diabetes Outpatient Clinic') Diabetes Outpatient Clinic
+                option(value='Diabetology') Diabetology
+                option(value='Digestive Medicine') Digestive Medicine
+                option(value='Digestive Surgery') Digestive Surgery
+                option(value='Emergency Department') Emergency Department
+                option(value='Endocrinology') Endocrinology
                 option(value='Gastroenterology') Gastroenterology
+                option(value='Gastrointestinal Surgery') Gastrointestinal Surgery
                 option(value='General Surgery') General Surgery
+                option(value='Gynaecology') Gynaecology
                 option(value='Haematology') Haematology
+                option(value='Home Care Unit') Home Care Unit
+                option(value='Infectious Disease') Infectious Disease
+                option(value='Intensive Care') Intensive Care
                 option(value='Internal Medicine') Internal Medicine
+                option(value='Neonatal Intensive Care') Neonatal Intensive Care
+                option(value='Neurocritical Care Unit') Neurocritical Care Unit
                 option(value='Neurology') Neurology
+                option(value='Neuropsychology') Neuropsychology
+                option(value='Newborn Intensive Care') Newborn Intensive Care
+                option(value='Nuclear Medicine') Nuclear Medicine
+                option(value='Nutrition Unit') Nutrition Unit
                 option(value='Oncology') Oncology
+                option(value='Ophthalmology') Ophthalmology
+                option(value='Orthogeriatric Unit') Orthogeriatric Unit
+                option(value='Orthopaedic Surgery') Orthopaedic Surgery
+                option(value='Orthopaedics') Orthopaedics
+                option(value='Otorhinolaryngology') Otorhinolaryngology
                 option(value='Outpatient Clinic') Outpatient Clinic
+                option(value='Paediatric Haematology – Oncology') Paediatric Haematology – Oncology
+                option(value='Paediatric Intensive Care') Paediatric Intensive Care
+                option(value='Paediatrics') Paediatrics
+                option(value='Palliative Care') Palliative Care
+                option(value='Plastic Surgery') Plastic Surgery
                 option(value='Pneumology') Pneumology
+                option(value='Psychiatry') Psychiatry
                 option(value='Rheumatology') Rheumatology
+                option(value='Sterilisation Unit') Sterilisation Unit
+                option(value='Surgical Unit') Surgical Unit
+                option(value='Trauma Intensive Care') Trauma Intensive Care
                 option(value='Traumatology') Traumatology
+                option(value='Tropical Medicine and Infectious Disease') Tropical Medicine and Infectious Disease
+                option(value='Urology') Urology
                 option(value='Vascular Surgery') Vascular Surgery
-              label(style="font-weight: bolder; color: royalblue; font-size: small;") Ward
-          form.row(action='#')
+                option(value='Visceral Surgery') Visceral Surgery
+              label(style="font-weight: bolder; color: royalblue; font-size: small;") Department
             .input-field.col.s10.l6.offset-s1
               select(multiple='')#numPatients
                 option(value='', disabled='') Any
@@ -261,6 +1020,7 @@ html(lang='en')
                 option(value='501 - 1000') 501 - 1000
                 option(value='More than 1000') More than 1000
               label(style="font-weight: bolder; color: royalblue; font-size: small;") Number of Patients
+          form.row(action='#')
             .input-field.col.s10.l6.offset-s1
               select(multiple='')#numPrescriptions
                 option(value='', disabled='') Any
@@ -271,28 +1031,170 @@ html(lang='en')
                 option(value='501 - 1000') 501 - 1000
                 option(value='More than 1000') More than 1000
               label(style="font-weight: bolder; color: royalblue; font-size: small;") Number of Prescriptions
-          form.row(action='#')
             .input-field.col.s10.l6.offset-s1
               select(multiple='')#criteriaMethod
                 option(value='', disabled='') Any
                 option(value='ABC/Pareto Analysis') ABC/Pareto Analysis
+                option(value='Aggregation Number') Aggregation Number
+                option(value='Analysis of Covariance (ANCOVA)') Analysis of Covariance (ANCOVA)
+                option(value='Analysis of Variance (ANOVA)') Analysis of Variance (ANOVA)
+                option(value='Anticholinergic Burden Calculator') Anticholinergic Burden Calculator
+                option(value='Anticholinergic Risk Scale') Anticholinergic Risk Scale
+                option(value='Asthma Control Test') Asthma Control Test
+                option(value='Barcelona Smell Test') Barcelona Smell Test
+                option(value='Barthel Index') Barthel Index
+                option(value='Bayesian Population Pharmacokinetic Approach') Bayesian Population Pharmacokinetic Approach
+                option(value='Beers Criteria') Beers Criteria
+                option(value='Binary Logistic Regression Analysis') Binary Logistic Regression Analysis
+                option(value='Brief Psychiatric Rating Scale (BPRS)') Brief Psychiatric Rating Scale (BPRS)
+                option(value='Bristol Online Survey Tool') Bristol Online Survey Tool
                 option(value="Bucher's Method") Bucher's Method
+                option(value="Capillary Electrophoresis") Capillary Electrophoresis
+                option(value="Cation Exchange Chromatography") Cation Exchange Chromatography
+                option(value="CHA₂DS₂-VASc Score for Atrial Fibrillation Stroke Risk") CHA₂DS₂-VASc Score for Atrial Fibrillation Stroke Risk
+                option(value="Chi-Square (χ2) Test") Chi-Square (χ2) Test
+                option(value="Child–Pugh Score") Child–Pugh Score
+                option(value='Capillary Electrophoresis - Sodium Dodecyl Sulfate (CE-SDS) (non-reducing)') Capillary Electrophoresis - Sodium Dodecyl Sulfate (CE-SDS) (non-reducing)
+                option(value='Charlson Comorbidity Index') Charlson Comorbidity Index
                 option(value='Cochran Test') Cochran Test
+                option(value='Cockcroft–Gault Creatinine Clearance') Cockcroft–Gault Creatinine Clearance
+                option(value='Common Terminology Criteria for Adverse Events') Common Terminology Criteria for Adverse Events
+                option(value='Computer Assisted Web Interviewing (CAWI)') Computer Assisted Web Interviewing (CAWI)
+                option(value='Consolidated Framework for Implementation Research') Consolidated Framework for Implementation Research
                 option(value='Correlation Analysis') Correlation Analysis
-                option(value='Fast Reversed-Phase HPLC') Fast Reversed-Phase HPLC
-                option(value='Fisher’s Exact Test') Fisher’s Exact Test
+                option(value='Cost Minimisation Analysis (CMA)') Cost Minimisation Analysis (CMA)
+                option(value='Cox Proportional Hazards Regression Analysis') Cox Proportional Hazards Regression Analysis
+                option(value='Cumulative Illness Rating Scale (CIRS)') Cumulative Illness Rating Scale (CIRS)
+                option(value='Defined Daily Dose (DDD)') Defined Daily Dose (DDD)
+                option(value='Dermatology Life Quality Index') Dermatology Life Quality Index
+                option(value='Disease Activity Score-28 for Rheumatoid Arthritis with ESR (DAS28-ESR)') Disease Activity Score-28 for Rheumatoid Arthritis with ESR (DAS28-ESR)
+                option(value='Drug Burden Index Score') Drug Burden Index Score
+                option(value='Dynamic Light Scattering') Dynamic Light Scattering
+                option(value='Dynamic Modeling') Dynamic Modeling
+                option(value='E-Delphi Method') E-Delphi Method
+                option(value='Eadon Scoring Criteria') Eadon Scoring Criteria
+                option(value='Eastern Cooperative Oncology Group (ECOG) Performance Status') Eastern Cooperative Oncology Group (ECOG) Performance Status
+                option(value='Eczema Area and Severity Index') Eczema Area and Severity Index
+                option(value='ELISA Immunoassay') ELISA Immunoassay
+                option(value='Enzyme Immunoassay') Enzyme Immunoassay
+                option(value='EuroQol-5D') EuroQol-5D
+                option(value='Expanded Disability Status Scale') Expanded Disability Status Scale
+                option(value='Failure Mode, Effects and Criticality Analysis (FMECA)') Failure Mode, Effects and Criticality Analysis (FMECA)
+                option(value="Fisher’s Exact Test") Fisher’s Exact Test
+                option(value='First-Order Conditional Estimation with Interaction (FOCEI)') First-Order Conditional Estimation with Interaction (FOCEI)
+                option(value="Fleiss' Kappa") Fleiss' Kappa
+                option(value='Fluorescence Resonance Energy Transfer (FRET)') Fluorescence Resonance Energy Transfer (FRET)
+                option(value='Follicular Lymphoma International Prognostic Index (FLIPI)') Follicular Lymphoma International Prognostic Index (FLIPI)
+                option(value='Fragrance Identification') Fragrance Identification
+                option(value='Framework Analysis') Framework Analysis
+                option(value='Framingham Risk Score') Framingham Risk Score
+                option(value='Gel Electrophoresis') Gel Electrophoresis
+                option(value="Girerd's Questionnaire") Girerd's Questionnaire
+                option(value='Glasgow Coma Scale') Glasgow Coma Scale
+                option(value='Glasgow Prognostic Score') Glasgow Prognostic Score
+                option(value='Gleason Grading System') Gleason Grading System
+                option(value='Global Impairment Scale (GDS-FAST)') Global Impairment Scale (GDS-FAST)
+                option(value='Gravimetric Analysis') Gravimetric Analysis
+                option(value='Hammersmith Functional Motor Scale-Expanded (HFMSE)') Hammersmith Functional Motor Scale-Expanded (HFMSE)
+                option(value='Hammersmith Infant Neurological Examination (HINE)') Hammersmith Infant Neurological Examination (HINE)
+                option(value='Harris Hip Score') Harris Hip Score
+                option(value="Harvey-Bradshaw Index (HBI) for Crohn's Disease") Harvey-Bradshaw Index (HBI) for Crohn's Disease
+                option(value="HAS-BLED Score for Major Bleeding Risk") HAS-BLED Score for Major Bleeding Risk
                 option(value='Hazard Vulnerability Analysis') Hazard Vulnerability Analysis
-                option(value='HPLC-DAD') HPLC-DAD
+                option(value='High Performance Liquid Chromatography (HPLC)') High Performance Liquid Chromatography (HPLC)
+                option(value='High Performance Liquid Chromatography - Mass Spectrometry Detection (HPLC-MS)') High Performance Liquid Chromatography - Mass Spectrometry Detection (HPLC-MS)
+                option(value='High Performance Liquid Chromatography Reversed-Phase (RP-HPLC)') High Performance Liquid Chromatography Reversed-Phase (RP-HPLC)
+                option(value='High-Performance Liquid Chromatography - Ultraviolet (HPLC-UV)') High-Performance Liquid Chromatography - Ultraviolet (HPLC-UV)
+                option(value='High Performance Liquid Chromatography with Diode-Array Detection (HPLC-DAD)') High Performance Liquid Chromatography with Diode-Array Detection (HPLC-DAD)
+                option(value='HIVTSQ - HIV Treatment Satisfaction Questionnaire') HIVTSQ - HIV Treatment Satisfaction Questionnaire
+                option(value='Hospital Anxiety and Depression Scale (HADS)') Hospital Anxiety and Depression Scale (HADS)
+                option(value='Inductively Coupled Plasma Mass Spectrometry (ICP-MS)') Inductively Coupled Plasma Mass Spectrometry (ICP-MS)
+                option(value='International League Against Epilepsy Criteria') International League Against Epilepsy Criteria
+                option(value='Kanban Board') Kanban Board
                 option(value='Kaplan-Meier Method') Kaplan-Meier Method
+                option(value='Karnofsky Performance Status Scale') Karnofsky Performance Status Scale
+                option(value='Kellgren-Lawrence Classification System') Kellgren-Lawrence Classification System
+                option(value='Kinetic Chromogenic Method') Kinetic Chromogenic Method
+                option(value='Kompetitive Allele Specific PCR (KASP)') Kompetitive Allele Specific PCR (KASP)
+                option(value='Kruskal-Wallis H Test') Kruskal-Wallis H Test
+                option(value='Laser Diffraction Analysis') Laser Diffraction Analysis
+                option(value='Light Obscuration') Light Obscuration
+                option(value='Likert Scale') Likert Scale
+                option(value='Liquid Chromatography Mass Spectrometry (LC-MS)') Liquid Chromatography Mass Spectrometry (LC-MS)
+                option(value='Liquid Chromatography Tandem - Mass Spectrometry (LC–MS/MS)') Liquid Chromatography Tandem - Mass Spectrometry (LC–MS/MS)
+                option(value='Log Rank Test') Log Rank Test
+                option(value='Logistic Regression Analysis') Logistic Regression Analysis
                 option(value='Mann-Whitney U Test') Mann-Whitney U Test
-                option(value='MARS (Multivariate Adaptive Regression Splines)') MARS (Multivariate Adaptive Regression Splines)
+                option(value='McNemar Test') McNemar Test
+                option(value='Medication Possession Ratio') Medication Possession Ratio
+                option(value='Medication Regimen Complexity Index') Medication Regimen Complexity Index
+                option(value='Miller-Payne Criteria (MPC)') Miller-Payne Criteria (MPC)
+                option(value='Mini Nutritional Assessment – Short Form (MNA-SF)') Mini Nutritional Assessment – Short Form (MNA-SF)
+                option(value='Mobile Application Rating Scale (MARS)') Mobile Application Rating Scale (MARS)
+                option(value='Morisky Medication Adherence Scale') Morisky Medication Adherence Scale
+                option(value='Medication Appropriateness Index') Medication Appropriateness Index
+                option(value='Modified Rankin Scale') Modified Rankin Scale
+                option(value='Monte Carlo Simulation') Monte Carlo Simulation
+                option(value='Morisky – Green Questionnaire') Morisky – Green Questionnaire
+                option(value='Multiple Linear Regression Analysis') Multiple Linear Regression Analysis
+                option(value='Multivariate Analysis') Multivariate Analysis
+                option(value='Multivariate Logistic Regression Analysis') Multivariate Logistic Regression Analysis
+                option(value='Nanoparticle Tracking Analysis (NTA)') Nanoparticle Tracking Analysis (NTA)
+                option(value='Naranjo Algorithm (Adverse Drug Reaction Probability Scale)') Naranjo Algorithm (Adverse Drug Reaction Probability Scale)
+                option(value='National Coordinating Council for Medication Error Reporting and Prevention (NCC MERP) Index') National Coordinating Council for Medication Error Reporting and Prevention (NCC MERP) Index
+                option(value='National Institutes of Health Stroke Scale') National Institutes of Health Stroke Scale
+                option(value='New York Heart Association (NYHA) Classification') New York Heart Association (NYHA) Classification
+                option(value='Nonlinear Mixed Effects Modelling') Nonlinear Mixed Effects Modelling
+                option(value='Nuclear Magnetic Resonance') Nuclear Magnetic Resonance
+                option(value='Numeric Rating Scale (NRS)') Numeric Rating Scale (NRS)
                 option(value='Paired T-Test') Paired T-Test
+                option(value='Partial Least Squares Discriminant Analysis (PLS-DA)') Partial Least Squares Discriminant Analysis (PLS-DA)
+                option(value='Pearson Correlation Coefficient') Pearson Correlation Coefficient
+                option(value='Pediatric Index of Mortality (PIM) 2 Score') Pediatric Index of Mortality (PIM) 2 Score
+                option(value='Pfeiffer Test') Pfeiffer Test
+                option(value='Photographic Recognition') Photographic Recognition
+                option(value='PICO (Patient, Intervention, Comparison And Outcome) - Procedure') PICO (Patient, Intervention, Comparison And Outcome) - Procedure
+                option(value='Pill Count Method') Pill Count Method
+                option(value='Poisson Regression') Poisson Regression
+                option(value='Pneumonia Severity Index of Fine Score') Pneumonia Severity Index of Fine Score
+                option(value='Positive and Negative Syndrome Scale (PANSS)') Positive and Negative Syndrome Scale (PANSS)
+                option(value='PRECISE-DAPT Score') PRECISE-DAPT Score
+                option(value='PRISMA-7 Questionnaire') PRISMA-7 Questionnaire
+                option(value='Propensity Score Matching') Propensity Score Matching
                 option(value='Psoriasis Area and Severity Index (PASI)') Psoriasis Area and Severity Index (PASI)
                 option(value='Real-Time Polymerase Chain Reaction') Real-Time Polymerase Chain Reaction
+                option(value='Relative Standard Deviation (RSD)') Relative Standard Deviation (RSD)
+                option(value='Response Evaluation Criteria In Solid Tumours (RECIST)') Response Evaluation Criteria In Solid Tumours (RECIST)
+                option(value='Risk Management Assessment Matrix') Risk Management Assessment Matrix
+                option(value='Scoring Atopic Dermatitis (SCORAD) Index') Scoring Atopic Dermatitis (SCORAD) Index
                 option(value='Seldinger Technique') Seldinger Technique
+                option(value='Sensitivity Analysis') Sensitivity Analysis
                 option(value='Shakespeare Method') Shakespeare Method
+                option(value='Shapiro–Wilk Test') Shapiro–Wilk Test
+                option(value='Size-Exclusion Chromatography (SEC)') Size-Exclusion Chromatography (SEC)
+                option(value='Size Exclusion Chromatography - High Performance Liquid Chromatography (SEC-HPLC)') Size Exclusion Chromatography - High Performance Liquid Chromatography (SEC-HPLC)
+                option(value='Spectrophotometry') Spectrophotometry
+                option(value='STATA') STATA
+                option(value='Statistical Hypothesis Testing') Statistical Hypothesis Testing
+                option(value='STOPP/START Criteria') STOPP/START Criteria
+                option(value='Statistical Package for the Social Sciences (SPSS)') Statistical Package for the Social Sciences (SPSS)
                 option(value="Student's T-test") Student's T-test
+                option(value="Subvisible Particle Testing") Subvisible Particle Testing
+                option(value="Systematic Coronary Risk Evaluation") Systematic Coronary Risk Evaluation
+                option(value="Systematic Text Condensation") Systematic Text Condensation
+                option(value="The Children's Hospital of Philadelphia Infant Test of Neuromuscular Disorders (CHOP INTEND)") The Children's Hospital of Philadelphia Infant Test of Neuromuscular Disorders (CHOP INTEND)
+                option(value="The Mayo Score for Ulcerative Colitis") The Mayo Score for Ulcerative Colitis
+                option(value="Theoretical Domains Framework") Theoretical Domains Framework
+                option(value="Triple Quadrupole Mass Spectrometer (QqQ MS)") Triple Quadrupole Mass Spectrometer (QqQ MS)
+                option(value="Turbidimetry") Turbidimetry
+                option(value="Ultraviolet – Visible Spectrophotometry") Ultraviolet – Visible Spectrophotometry
+                option(value="Univariate Analysis") Univariate Analysis
+                option(value="Urticaria Activity Score (UAS)") Urticaria Activity Score (UAS)
+                option(value="Visual Analogue Scale") Visual Analogue Scale
+                option(value="Welch's T-Test") Welch's T-Test
+                option(value="Western Ontario and McMaster Universities Osteoarthritis Index (WOMAC)") Western Ontario and McMaster Universities Osteoarthritis Index (WOMAC)
               label(style="font-weight: bolder; color: royalblue; font-size: small;") Tools / Criterias / Methods
+          form.row 
             .input-field.col.s10.l6.offset-s1
               select(multiple='')#studyLength
                 option(value='', disabled='') Any
@@ -304,23 +1206,54 @@ html(lang='en')
                 option(value='5 years - 10 years') 5 years - 10 years
                 option(value='More than 10 years') More than 10 years
               label(style="font-weight: bolder; color: royalblue; font-size: small;") Study Length
-          form.row 
             .input-field.col.s10.l6.offset-s1
               select(multiple='')#country
                 option(value='', disabled='') Any
                 option(value='Argentina') Argentina
+                option(value='Australia') Australia
+                option(value='Austria') Austria
+                option(value='Belgium') Belgium
+                option(value='Benin') Benin
+                option(value='Brazil') Brazil
+                option(value='Czech Republic') Czech Republic
                 option(value='Denmark') Denmark
+                option(value='Germany') Germany
                 option(value='Greece') Greece
                 option(value='France') France
                 option(value='Ireland') Ireland
                 option(value='Italy') Italy
+                option(value='Iraq') Iraq
+                option(value='Israel') Israel
+                option(value='Japan') Japan
+                option(value='Latvia') Latvia
+                option(value='Malta') Malta
                 option(value='Morocco') Morocco
+                option(value='Netherlands') Netherlands
+                option(value='Norway') Norway
+                option(value='Poland') Poland
                 option(value='Portugal') Portugal
+                option(value='Qatar') Qatar
+                option(value='Romania') Romania
+                option(value='Saudi Arabia') Saudi Arabia
+                option(value='Singapore') Singapore
+                option(value='Slovenia') Slovenia
+                option(value='South Korea') South Korea
                 option(value='Spain') Spain
+                option(value='Sweden') Sweden
+                option(value='Switzerland') Switzerland
+                option(value='Taiwan') Taiwan
+                option(value='Thailand') Thailand
+                option(value='Tunisia') Tunisia
+                option(value='United Arab Emirates') United Arab Emirates
+                option(value='United Kingdom') United Kingdom
+                option(value='USA') USA
+                option(value='Zambia') Zambia
               label(style="font-weight: bolder; color: royalblue; font-size: small;") Country
+          form.row 
             .input-field.col.s10.l6.offset-s1
               select(multiple='')#year
                 option(value='', disabled='') Any
+                option(value='2019') 2019
                 option(value='2020') 2020
               label(style="font-weight: bolder; color: royalblue; font-size: small;") Year of Publication
           .row(style='margin-top: 1rem;')
@@ -367,7 +1300,7 @@ html(lang='en')
                       label.col.s12.l4(style='font-weight: bold; color: darkslateblue;')
                         input#compounding(type='checkbox')
                         span.lever
-                        | Compounding
+                        | Compounding / Production
                       label.col.s12.l4#lefty(style='font-weight: bold; color: darkslateblue;')
                         input#medicalDevices(type='checkbox')
                         span.lever#leverThree
@@ -378,7 +1311,7 @@ html(lang='en')
                       label.col.s12.l4#lefty(style='font-weight: bold; color: darkslateblue;')
                         input#personalized(type='checkbox')
                         span.lever#leverOne
-                        | Personalized Medicine
+                        | Personalized Medicine / Individual Therapy
                       label.col.s12.l4(style='font-weight: bold; color: darkslateblue;')
                         input#nutrition(type='checkbox')
                         span.lever
@@ -456,7 +1389,7 @@ html(lang='en')
                       label.col.s12.l4(style='font-weight: bold; color: darkslateblue;')
                         input#compliance(type='checkbox')
                         span.lever
-                        | Compliance with Clinical Guidelines
+                        | Compliance with Guidelines / Protocols
                       label.col.s12.l4#lefty(style='font-weight: bold; color: darkslateblue;')
                         input#prepareIV(type='checkbox')
                         span.lever
@@ -480,7 +1413,7 @@ html(lang='en')
                       label.col.s12.l4#lefty(style='font-weight: bold; color: darkslateblue;')
                         input#stability(type='checkbox')
                         span.lever#leverOne
-                        | Determination of Stability
+                        | Stability / Microbiological Analysis
                       label.col.s12.l4(style='font-weight: bold; color: darkslateblue;')
                         input#drugMonitoring(type='checkbox')
                         span.lever
@@ -489,6 +1422,11 @@ html(lang='en')
                         input#safetyProfile(type='checkbox')
                         span.lever#leverThree
                         | Safety / Tolerability Profile Assessment
+                    .row.switch
+                      label.col.s12.l4#lefty(style='font-weight: bold; color: darkslateblue;')
+                        input#habits(type='checkbox')
+                        span.lever#leverOne
+                        | Prescribing Habits Analysis
                     p#hrHead Communication
                     hr
                     .row.switch
@@ -525,9 +1463,9 @@ html(lang='en')
                         span.lever
                         | Stock / Supply / Distribution
                       label.col.s12.l4#lefty(style='font-weight: bold; color: darkslateblue;')
-                        input#autoDispensing(type='checkbox')
+                        input#automated(type='checkbox')
                         span.lever#leverThree
-                        | Automated Dispensing
+                        | Automated / Robotic Systems
                     .row.switch
                       label.col.s12.l4#lefty(style='font-weight: bold; color: darkslateblue;')
                         input#coldChain(type='checkbox')
@@ -547,7 +1485,7 @@ html(lang='en')
                       label.col.s12.l4(style='font-weight: bold; color: darkslateblue;')
                         input#mobileVR(type='checkbox')
                         span.lever
-                        | Mobile / VR Technologies
+                        | Web / Mobile / VR Technologies
                       label.col.s12.l4#lefty(style='font-weight: bold; color: darkslateblue;')
                         input#Printing3D(type='checkbox')
                         span.lever#leverThree
@@ -567,7 +1505,7 @@ html(lang='en')
                       label.col.s12.l4(style='font-weight: bold; color: darkslateblue;')
                         input#adverseEvents(type='checkbox')
                         span.lever
-                        | Adverse Drug Events
+                        | Adverse Drug Events / Allergies
                       label.col.s12.l4#lefty(style='font-weight: bold; color: darkslateblue;')
                         input#adherence(type='checkbox')
                         span.lever#leverThree
@@ -590,6 +1528,14 @@ html(lang='en')
                         input#falsified(type='checkbox')
                         span.lever#leverOne
                         | Falsified Medicines
+                      label.col.s12.l4(style='font-weight: bold; color: darkslateblue;')
+                        input#incompatibilities(type='checkbox')
+                        span.lever
+                        | Incompatibilities
+                      label.col.s12.l4#lefty(style='font-weight: bold; color: darkslateblue;')
+                        input#drugInteractions(type='checkbox')
+                        span.lever#leverThree
+                        | Drug Interactions
                     p#hrHead Organizational
                     hr
                     .row.switch
@@ -644,13 +1590,6 @@ html(lang='en')
             a#search.col.s2.waves-effect.waves-light.btn.offset-s4(style='border-radius: 12px; width: 25%')
               | Search
               i.material-icons.right search
-          .row(style='margin-top: 3rem;')
-            .chip.col.s12.center-align
-              b(style="font-weight: 900;") Multiple 
-              | selection means "
-              b(style="font-weight: 900;") both
-              | " (not "or"). E.g., selection of "Morphine" and "Fentanyl" makes it search the studies including both active substances
-              i.close.material-icons close
           #resultHeader.row(style='margin-top: 2rem; display: none;')
             #resultText.col.s12.p
             h3.col.s12#Resulty(style='margin-top: 1rem; font-weight: bold; color: firebrick;') Results
@@ -670,6 +1609,8 @@ html(lang='en')
             #email.col.s2.waves-effect.waves-light.btn.offset-s4(style='border-radius: 12px; width: 25%; display: none; background-color: royalblue;', onclick="window.open('email','_blank');")
                 | E-Mail Results
                 i.material-icons.right email
+          .row(style="margin-top: 4rem;")
+            p#issue.center-align(style="display: none; color: orangered; font-size: medium; font-weight: 500;") Did not get what your were looking for? Or any of the results is not as you've expected? Report any issue using this <a href='issue' target='_blank'> link</a>
         .col.s12.m4.l2(style="padding: 3rem;")
           script(type='text/javascript').
             var bannersnack_embed = {"hash":"bxhm4i3nd","width":300,"height":1050,"t":1592485287,"userId":41627626,"responsive":true,"type":"html5"};
@@ -684,6 +1625,9 @@ html(lang='en')
   script.
     // MATERIALIZE STUFF
     M.AutoInit();
+    $(document).ready(function(){
+      $('.modal').modal();
+    });
     document.addEventListener('DOMContentLoaded', function(){
       var options = {
         strings: ['PharmaSear^500.ch'],
@@ -716,6 +1660,21 @@ html(lang='en')
     }
     // COOKIE ENGINE ENDS
 
+    // READ COOKIE FOR THE MODAL
+    let modalBox = readCookie('modalBox');
+    if (modalBox == null) {
+      $(document).ready(function(){
+        $('.modal').modal();
+        $('.modal').modal('open');
+      });
+    } else {
+    }
+
+    // CREATE COOKIE FOR MODAL BOX 
+    $( "#modalAgree" ).click(function() {
+      createCookie('modalBox', modalBox, 7);
+    });
+    
     // READ COOKIE FOR NIGHT MODE
     let checkNight = readCookie('nightMode');
     if (checkNight == null) {
@@ -728,6 +1687,7 @@ html(lang='en')
       $("#sortSelect").css("background-color", "darkgray");
       $("#email").css("background-color", "darkslateblue");
       $("#search").css("background-color", "darkslateblue");
+      $("#issue").css("color", "white");
       $("#resultBody > nav").css("background-color", "darkslategray");
       $(".nav-wrapper").css("background", "");
       $(".nav-wrapper").css("background-color", "darkslateblue");
@@ -746,7 +1706,7 @@ html(lang='en')
     dataReq.send();
   script.
     // SET EMPTY FILTER ARRAY
-    let filterArr = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
+    let filterArr = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
     var searchObj = new Object();
     // MODIFY FILTER ARRAY ACCORDING TO SPAN.LEVERS' ACTION
     $( "#pediatrics" ).click(function() {
@@ -1022,7 +1982,7 @@ html(lang='en')
     filterArr[38] = false;
     }
     });
-    $( "#autoDispensing" ).click(function() {
+    $( "#automated" ).click(function() {
     if (filterArr[39] === false) {
     filterArr[39] = true;
     } else {
@@ -1204,11 +2164,30 @@ html(lang='en')
     filterArr[64] = false;
     }
     });
+    $( "#incompatibilities" ).click(function() {
+    if (filterArr[65] === false) {
+    filterArr[65] = true;
+    } else {
+    filterArr[65] = false;
+    }
+    });
+    $( "#habits" ).click(function() {
+    if (filterArr[66] === false) {
+    filterArr[66] = true;
+    } else {
+    filterArr[66] = false;
+    }
+    });
+    $( "#drugInteractions" ).click(function() {
+    if (filterArr[67] === false) {
+    filterArr[67] = true;
+    } else {
+    filterArr[67] = false;
+    }
+    });
 
     // WHEN YOU FIRE THE SEARCH
     $("#search").click(function() {
-    // HIDE THE SEARCH INFORMATIVE
-    $(".chip").hide();
     // ERASE THE PREV RESULT TEXT
     $('#resultList').text('');
     // GET THE TEXTs FROM LIST SELECTS
@@ -1228,14 +2207,16 @@ html(lang='en')
     let numPatients = instance_07.getSelectedValues();
     let instance_08 = M.FormSelect.getInstance($('#numPrescriptions'));
     let numPrescriptions = instance_08.getSelectedValues();
-    let instance_09 = M.FormSelect.getInstance($('#criteriaMethod'));
+    let instance_09 = M.FormSelect.getInstance($('#studyLength'));
     let studyLength = instance_09.getSelectedValues();
-    let instance_10 = M.FormSelect.getInstance($('#studyLength'));
+    let instance_10 = M.FormSelect.getInstance($('#criteriaMethod'));
     let criteriaMethod = instance_10.getSelectedValues();
     let instance_11 = M.FormSelect.getInstance($('#country'));
     let country = instance_11.getSelectedValues();
     let instance_12 = M.FormSelect.getInstance($('#year'));
     let year = instance_12.getSelectedValues();
+    let instance_13 = M.FormSelect.getInstance($('#typeOfMedical'));
+    let typeOfMedical = instance_13.getSelectedValues();
     // IF NOTHING WAS SELECTED, SET THE VALUE AS "EMPTY"
     if (actSubs === "") {
     actSubs = "empty"
@@ -1285,11 +2266,16 @@ html(lang='en')
     year = "empty"
     }
 
+    if (typeOfMedical === "") {
+    typeOfMedical = "empty"
+    }
+
     // RESET THE SEARCH OBJECT / ADD VALUES FROM THE LIST SELECTS FOR THE NEW SEARCH
     searchObj = {
       actSubs: actSubs,
       indication: indication,
       statedClass: statedClass,
+      typeOfMedical: typeOfMedical,
       studyDesign: studyDesign,
       setting: setting,
       ward: ward,
@@ -1338,7 +2324,7 @@ html(lang='en')
       interview: [],
       selection: [],
       stock: [],
-      autoDispensing: [],
+      automated: [],
       coldChain: [],
       softwareAided: [],
       mobileVR: [],
@@ -1363,7 +2349,10 @@ html(lang='en')
       compliance: [],
       orphan: [],
       delivery: [],
-      falsified: []
+      falsified: [],
+      incompatibilities: [],
+      habits: [],
+      drugInteractions: []
     };
     // IF VALUE WAS NOT SELECTED (EMPTY), DESTROY THEM
     if (actSubs === "empty") {
@@ -1402,277 +2391,321 @@ html(lang='en')
     if (year == "empty") {
     searchObj['year'] = [];
     }
+    if (year == "empty") {
+    searchObj['typeOfMedical'] = [];
+    }
     // LOAD THE DATA TO THE myData VARIABLE
     let myData = JSON.parse(dataReq.responseText);
     // ADD THE DATA IN THE FILTER TO THE SEARCH OBJECT
     if (filterArr[0] === true) {
-    searchObj.pediatrics = "pediatrics";
+    searchObj.pediatrics = ["pediatrics"];
     }
 
     if (filterArr[1] === true) {
-    searchObj.geriatrics = "geriatrics";
+    searchObj.geriatrics = ["geriatrics"];
     }
 
     if (filterArr[2] === true) {
-    searchObj.neonatology = "neonatology";
+    searchObj.neonatology = ["neonatology"];
     }
 
     if (filterArr[3] === true) {
-    searchObj.oncology = "oncology";
+    searchObj.oncology = ["oncology"];
     }
 
     if (filterArr[4] === true) {
-    searchObj.pharmacogenetics = "pharmacogenetics";
+    searchObj.pharmacogenetics = ["pharmacogenetics"];
     }
 
     if (filterArr[5] === true) {
-    searchObj.pharmacoeconomy = "pharmacoeconomy";
+    searchObj.pharmacoeconomy = ["pharmacoeconomy"];
     }
 
     if (filterArr[6] === true) {
-    searchObj.radiopharmaceuticals = "radiopharmaceuticals";
+    searchObj.radiopharmaceuticals = ["radiopharmaceuticals"];
     }
 
     if (filterArr[7] === true) {
-    searchObj.compounding = "compounding";
+    searchObj.compounding = ["compounding"];
     }
 
     if (filterArr[8] === true) {
-    searchObj.medicalDevices = "medicalDevices";
+    searchObj.medicalDevices = ["medicalDevices"];
     }
 
     if (filterArr[9] === true) {
-    searchObj.personalized = "personalized";
+    searchObj.personalized = ["personalized"];
     }
 
     if (filterArr[10] === true) {
-    searchObj.nutrition = "nutrition";
+    searchObj.nutrition = ["nutrition"];
     }
 
     if (filterArr[11] === true) {
-    searchObj.highRisk = "highRisk";
+    searchObj.highRisk = ["highRisk"];
     }
 
     if (filterArr[12] === true) {
-    searchObj.endOfLife = "endOfLife";
+    searchObj.endOfLife = ["endOfLife"];
     }
 
     if (filterArr[13] === true) {
-    searchObj.selfMedication = "selfMedication";
+    searchObj.selfMedication = ["selfMedication"];
     }
 
     if (filterArr[14] === true) {
-    searchObj.preopMedication = "preopMedication";
+    searchObj.preopMedication = ["preopMedication"];
     }
 
     if (filterArr[15] === true) {
-    searchObj.outpatient = "outpatient";
+    searchObj.outpatient = ["outpatient"];
     }
 
     if (filterArr[16] === true) {
-    searchObj.enzymeSubstrate = "enzymeSubstrate";
+    searchObj.enzymeSubstrate = ["enzymeSubstrate"];
     }
 
     if (filterArr[17] === true) {
-    searchObj.geneTherapy = "geneTherapy";
+    searchObj.geneTherapy = ["geneTherapy"];
     }
 
     if (filterArr[18] === true) {
-    searchObj.homeCare = "homeCare";
+    searchObj.homeCare = ["homeCare"];
     }
 
     if (filterArr[19] === true) {
-    searchObj.antibioticProphylaxis = "antibioticProphylaxis";
+    searchObj.antibioticProphylaxis = ["antibioticProphylaxis"];
     }
 
     if (filterArr[20] === true) {
-    searchObj.painManagement = "painManagement";
+    searchObj.painManagement = ["painManagement"];
     }
 
     if (filterArr[21] === true) {
-    searchObj.offLabel = "offLabel";
+    searchObj.offLabel = ["offLabel"];
     }
 
     if (filterArr[22] === true) {
-    searchObj.flatDoses = "flatDoses";
+    searchObj.flatDoses = ["flatDoses"];
     }
 
     if (filterArr[23] === true) {
-    searchObj.switching = "switching";
+    searchObj.switching = ["switching"];
     }
 
     if (filterArr[24] === true) {
-    searchObj.deprescribing = "deprescribing";
+    searchObj.deprescribing = ["deprescribing"];
     }
 
     if (filterArr[25] === true) {
-    searchObj.prepareIV = "prepareIV";
+    searchObj.prepareIV = ["prepareIV"];
     }
 
     if (filterArr[26] === true) {
-    searchObj.costAnalysis = "costAnalysis";
+    searchObj.costAnalysis = ["costAnalysis"];
     }
 
     if (filterArr[27] === true) {
-    searchObj.riskSafety = "riskSafety";
+    searchObj.riskSafety = ["riskSafety"];
     }
 
     if (filterArr[28] === true) {
-    searchObj.vigilance = "vigilance";
+    searchObj.vigilance = ["vigilance"];
     }
 
     if (filterArr[29] === true) {
-    searchObj.stability = "stability";
+    searchObj.stability = ["stability"];
     }
 
     if (filterArr[30] === true) {
-    searchObj.drugMonitoring = "drugMonitoring";
+    searchObj.drugMonitoring = ["drugMonitoring"];
     }
 
     if (filterArr[31] === true) {
-    searchObj.safetyProfile = "safetyProfile";
+    searchObj.safetyProfile = ["safetyProfile"];
     }
 
     if (filterArr[32] === true) {
-    searchObj.intervention = "intervention";
+    searchObj.intervention = ["intervention"];
     }
 
     if (filterArr[33] === true) {
-    searchObj.patientIntervention = "patientIntervention";
+    searchObj.patientIntervention = ["patientIntervention"];
     }
 
     if (filterArr[34] === true) {
-    searchObj.nursesReccomend = "nursesReccomend";
+    searchObj.nursesReccomend = ["nursesReccomend"];
     }
 
     if (filterArr[35] === true) {
-    searchObj.telepharmacy = "telepharmacy";
+    searchObj.telepharmacy = ["telepharmacy"];
     }
 
     if (filterArr[36] === true) {
-    searchObj.interview = "interview";
+    searchObj.interview = ["interview"];
     }
 
     if (filterArr[37] === true) {
-    searchObj.selection = "selection";
+    searchObj.selection = ["selection"];
     }
 
     if (filterArr[38] === true) {
-    searchObj.stock = "stock";
+    searchObj.stock = ["stock"];
     }
 
     if (filterArr[39] === true) {
-    searchObj.autoDispensing = "autoDispensing";
+    searchObj.automated = ["automated"];
     }
 
     if (filterArr[40] === true) {
-    searchObj.coldChain = "coldChain";
+    searchObj.coldChain = ["coldChain"];
     }
 
     if (filterArr[41] === true) {
-    searchObj.softwareAided = "softwareAided";
+    searchObj.softwareAided = ["softwareAided"];
     }
 
     if (filterArr[42] === true) {
-    searchObj.mobileVR = "mobileVR";
+    searchObj.mobileVR = ["mobileVR"];
     }
 
     if (filterArr[43] === true) {
-    searchObj.Printing3D = "Printing3D";
+    searchObj.Printing3D = ["Printing3D"];
     }
 
     if (filterArr[44] === true) {
-    searchObj.socialMedia = "socialMedia";
+    searchObj.socialMedia = ["socialMedia"];
     }
 
     if (filterArr[45] === true) {
-    searchObj.shortages = "shortages";
+    searchObj.shortages = ["shortages"];
     }
 
     if (filterArr[46] === true) {
-    searchObj.adverseEvents = "adverseEvents";
+    searchObj.adverseEvents = ["adverseEvents"];
     }
 
     if (filterArr[47] === true) {
-    searchObj.adherence = "adherence";
+    searchObj.adherence = ["adherence"];
     }
 
     if (filterArr[48] === true) {
-    searchObj.resistance = "resistance";
+    searchObj.resistance = ["resistance"];
     }
 
     if (filterArr[49] === true) {
-    searchObj.renal = "renal";
+    searchObj.renal = ["renal"];
     }
 
     if (filterArr[50] === true) {
-    searchObj.errors = "errors";
+    searchObj.errors = ["errors"];
     }
 
     if (filterArr[51] === true) {
-    searchObj.administrative = "administrative";
+    searchObj.administrative = ["administrative"];
     }
 
     if (filterArr[52] === true) {
-    searchObj.stewardship = "stewardship";
+    searchObj.stewardship = ["stewardship"];
     }
 
     if (filterArr[53] === true) {
-    searchObj.policiesAudits = "policiesAudits";
+    searchObj.policiesAudits = ["policiesAudits"];
     }
 
     if (filterArr[54] === true) {
-    searchObj.multidisciplinary = "multidisciplinary";
+    searchObj.multidisciplinary = ["multidisciplinary"];
     }
 
     if (filterArr[55] === true) {
-    searchObj.institutional = "institutional";
+    searchObj.institutional = ["institutional"];
     }
 
     if (filterArr[56] === true) {
-    searchObj.recalls = "recalls";
+    searchObj.recalls = ["recalls"];
     }
 
     if (filterArr[57] === true) {
-    searchObj.education = "education";
+    searchObj.education = ["education"];
     }
 
     if (filterArr[58] === true) {
-    searchObj.clinicalTrials = "clinicalTrials";
+    searchObj.clinicalTrials = ["clinicalTrials"];
     }
 
     if (filterArr[59] === true) {
-    searchObj.youngPharma = "youngPharma";
+    searchObj.youngPharma = ["youngPharma"];
     }
 
     if (filterArr[60] === true) {
-    searchObj.nextStep = "nextStep";
+    searchObj.nextStep = ["nextStep"];
     }
 
     if (filterArr[61] === true) {
-    searchObj.compliance = "compliance";
+    searchObj.compliance = ["compliance"];
     }
 
     if (filterArr[62] === true) {
-    searchObj.orphan = "orphan";
+    searchObj.orphan = ["orphan"];
     }
 
     if (filterArr[63] === true) {
-    searchObj.delivery = "delivery";
+    searchObj.delivery = ["delivery"];
     }
 
     if (filterArr[64] === true) {
-    searchObj.falsified = "falsified";
+    searchObj.falsified = ["falsified"];
     }
-    
-    // LET THE CODE DO THE MAGIC
+
+    if (filterArr[65] === true) {
+    searchObj.incompatibilities = ["incompatibilities"];
+    }
+
+    if (filterArr[66] === true) {
+    searchObj.habits = ["habits"];
+    }
+
+    if (filterArr[67] === true) {
+    searchObj.drugInteractions = ["drugInteractions"];
+    }
+
+    // THE OLD COLD WHICH DID THE MAGIC ONLY IF IT ALLOWED MULTISELECT ISSUE
+    /*
     const filterEngine = Object.values(searchObj).flat();
 
     let result = myData.filter(({filters}) => {
       const objFilters = Object.values(filters).flat();
       return filterEngine.every(val => objFilters.includes(val));
     });
+    */
+
+    // LET THE NEW CODE DO THE MAGIC WITH MULTI SELECTION-RESULTS
+    let result = myData.filter(({filters}) => {
+      let isOK = true, k;
+      for(k in searchObj){
+        isOK = isOK && (!searchObj[k].length || searchObj[k].some(val => filters[k].includes(val)));
+      }
+      return isOK;
+    })
     
+    // THIS CODE ALSO DOES THE MAGIC BUT IT WAS SENT TO BE AN UNDERDOG
+    /*
+    let result = myData.filter(({filters}) => {
+      // Check if every filter has a value that is present in searchObj
+      let isMatch = Object.entries(filters).every(([key, values]) => {
+        // Check if the filter is not empty
+        if(searchObj[key] && searchObj[key].length > 0) {
+        // Check current filter values against product filter values
+          return searchObj[key].some(value => values.includes(value));
+        }
+        
+        return true;
+      });
+
+      return isMatch;
+    })
+    */
+
     // IF THERE'S A RESULT
     if (result.length > 0) {
       let sortName = $('#sortSelect').find(":selected").text();
@@ -1745,10 +2778,12 @@ html(lang='en')
       $('#sortAndAll').hide();
       $('#resultBody').hide();
       $('#email').hide();
+      $('#issue').hide();
       $('#resultHeader').fadeIn(300);
       $('#sortAndAll').fadeIn(300);
       $('#resultBody').fadeIn(500);
       $('#email').fadeIn(500);
+      $('#issue').fadeIn(500);
     // IF THERE'S NO RESULT, HIDE THE NECESSARY PARTS
     } else {
       $('#Resulty').empty();
@@ -1756,12 +2791,13 @@ html(lang='en')
       $('#sortAndAll').hide();
       $('#resultBody').hide();
       $('#email').hide();
+      $('#issue').hide();
       $('#resultHeader').fadeIn(300);
     }
     // PREPARE THE LIST, APPEND TO RESULTLIST SECTION
     result.forEach(function(item) {
     var li = document.createElement("li");
-    var text = `<div class="collapsible-header"><form action="#" style="margin-top: 0.5rem;"><p><label><input type="checkbox" data-check="isChecked" class="filled-in" /><span></span></label></p></form><p><a> ${item.title}. </a> ${item.filters.journal}, ${item.filters.year}</p></div><div class="collapsible-body"><span>${item.authors}</span><br><br><span style="font-style: italic; font-size: small;">${item.institution}</span><br><br><div style="margin-top: 2rem;"><a href='${item.url}' target='_blank'><i class="material-icons" style="margin-left: 0.5rem; vertical-align: sub; color: darkred;">filter_none</i><span style="color: darkred;"> Open the Study</span></a><div class="error" style="float: right; margin-right: 2rem;"><a href='/report' target='_blank'><i class="material-icons" style="margin-left: 0.5rem; vertical-align: sub; color: indianred;">error</i><span style="color: indianred; font-size: small;"> Report an Error</span></a></div></div></div>`;
+    var text = `<div class="collapsible-header"><form action="#" style="margin-top: 0.5rem;"><p><label><input type="checkbox" data-check="isChecked" class="filled-in" /><span></span></label></p></form><p><a> ${item.title}. </a> ${item.filters.journal}, ${item.filters.year}</p></div><div class="collapsible-body"><span>${item.authors}</span><br><br><span style="font-size: small;">${item.institution}</span><br><br><div style="margin-top: 2rem;"><a href='${item.url}' target='_blank'><i class="material-icons" style="margin-left: 0.5rem; vertical-align: sub; color: darkred;">filter_none</i><span style="color: darkred;"> Open the Study</span></a><div class="error" style="float: right; margin-right: 2rem;"><a href='/report' target='_blank'><i class="material-icons" style="margin-left: 0.5rem; vertical-align: sub; color: indianred;">error</i><span style="color: indianred; font-size: small;"> Report an Error</span></a></div></div></div>`;
     li.innerHTML = text;
     document.getElementById("resultList").appendChild(li);
     // CREATE THE COLLAPSIBLE STYLE
@@ -1774,7 +2810,7 @@ html(lang='en')
     // PAGINATE START
     $('#resultList').paginate({
       perPage: 10,
-      useHashLocation: false,
+      useHashLocation: true,
     });
 
     // FIX FOR THE RE-PAGINATION WITHOUT REFRESHING THE PAGE, KILL / RE-PAGINATE
@@ -1857,14 +2893,15 @@ html(lang='en')
     });      
   script.
     // FOOTER SLIDING DATA
-    // FOOTER SLIDING DATA
     $( "body" ).one('mouseover', function() {
       setTimeout(function() { 
       let slideData = JSON.parse(dataReq.responseText);
       document.getElementById("slider").innerHTML = `${slideData.length} studies in our database are ready for you to perform your search now!`;
       }, 500);
     });
-    // CREATE MONO-SELECT DROPDOWNS FOR THE SELECTED LIST OF IDs
+    
+    // THIS WAS CREATED FOR MONO-SELECT DROPDOWNS THROUGH THE SELECTED LIST OF IDs
+    /*
     $( ".input-field span" ).click(function() {
       let foundID = $(this).parent().parent().parent();
       foundID = foundID[0].lastChild.id;
@@ -1873,6 +2910,7 @@ html(lang='en')
       selecty.trigger( "click" ); 
       }
     });
+    */
     
     // IF ANOTHER SELECT WAS CLICKED UNSELECT THE SELECT-ALL CHECKBOX
     $("body").on("change", "input[data-check='isChecked']", function () {
@@ -1893,6 +2931,7 @@ html(lang='en')
       $("#sortSelect").css("background-color", "darkgray");
       $("#email").css("background-color", "darkslateblue");
       $("#search").css("background-color", "darkslateblue");
+      $("#issue").css("color", "white");
       $("#resultBody > nav").css("background-color", "darkslategray");
       $(".nav-wrapper").css("background", "");
       $(".nav-wrapper").css("background-color", "darkslateblue");
@@ -1905,60 +2944,9 @@ html(lang='en')
       $("#sortSelect").css("background-color", "aliceblue");
       $("#email").css("background-color", "royalblue");
       $("#search").css("background-color", "royalblue");
+      $("#issue").css("color", "orangered");
       $("#resultBody > nav").css("background-color", "dodgerblue");
       $(".page-footer").css("background-color", "royalblue");
       $(".nav-wrapper").css("background-color", "royalblue");
     }
     });
-  
-    // TEST SECTION
-    const selectedFilters = {
-      color: ["Orange", "Red"],
-      type: ["Shirt", "Trousers"],
-      size: ["M"]
-    };
-
-    const items = [
-      {
-          name: "Item 1",
-          filters: {
-              color: ["Red", "Blue", "Black"],
-              type: ["Shirt", "Trousers"],
-              size: ["M"]
-          }
-      },
-      {
-          name: "Item 2",
-          filters: {
-              color: ["Orange", "Red"],
-              type: ["Shirt"],
-              size: ["M"]
-          }
-      },
-      {
-          name: "Item 3",
-          filters: {
-              color: ["Lilla"],
-              type: ["Pants"],
-              size: ["M"]
-          }
-      }
-    ];
-
-    const output = items.filter(({filters}) => {
-      // Check if every filter has a value that is present in selectedFilters
-      const isMatch = Object.entries(filters).every(([key, values]) => {
-        
-        // Check if the filter is not empty
-        if(selectedFilters[key].length > 0) {
-        // Check current filter values against product filter values
-          return selectedFilters[key].some(value => values.includes(value));
-        }
-        
-        return true;
-      });
-
-      return isMatch;
-    })
-
-    console.log(output);
