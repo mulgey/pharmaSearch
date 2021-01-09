@@ -87,7 +87,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -178,7 +179,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -269,7 +271,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -360,7 +363,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -451,7 +455,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -542,7 +547,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -633,7 +639,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -724,7 +731,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -815,7 +823,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -906,7 +915,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -997,7 +1007,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -1088,7 +1099,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -1179,7 +1191,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -1270,7 +1283,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -1281,7 +1295,7 @@
     "DOI": "http://dx.doi.org/10.1136/ejhpharm-2020-eahpconf.3",
     "filters": {
       "actSubs": [],
-      "indication": ["Demyelinating Neuropathies", "Myasthenia Gravis", "Myopathy", "Encephalitis", "Encephalomyelitis", "Morvan Syndrome", "Paraneoplastic Syndrome", "Dermatitis (Atopic)", "Paraneoplastic Dermatomyositis", "Scleroderma", "Antisynthetase Syndrome"],
+      "indication": ["Neuropathy (Demyelinating)", "Myasthenia Gravis", "Myopathy", "Encephalitis", "Encephalomyelitis", "Morvan Syndrome", "Paraneoplastic Syndrome", "Dermatitis (Atopic)", "Paraneoplastic Dermatomyositis", "Scleroderma", "Antisynthetase Syndrome"],
       "statedClass": ["Intravenous Immunoglobulins (IVIg)"],
       "typeOfMedical": [],
       "studyDesign": ["Retrospective Study", "Descriptive Study"],
@@ -1361,7 +1375,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -1452,7 +1467,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -1543,7 +1559,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -1634,7 +1651,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -1725,7 +1743,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -1816,7 +1835,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -1907,7 +1927,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -1998,7 +2019,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -2089,7 +2111,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -2180,7 +2203,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -2271,7 +2295,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -2362,7 +2387,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -2453,7 +2479,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -2544,7 +2571,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -2635,7 +2663,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -2726,7 +2755,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -2817,7 +2847,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -2908,7 +2939,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -2999,7 +3031,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -3090,7 +3123,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -3181,7 +3215,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -3272,7 +3307,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -3363,7 +3399,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -3454,7 +3491,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -3545,7 +3583,8 @@
       "falsified": ["falsified"],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -3636,7 +3675,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -3727,7 +3767,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -3818,7 +3859,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -3909,7 +3951,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -4000,7 +4043,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -4091,7 +4135,8 @@
       "falsified": ["falsified"],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -4182,7 +4227,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -4273,7 +4319,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -4364,7 +4411,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -4455,7 +4503,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -4546,7 +4595,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -4637,7 +4687,8 @@
       "falsified": [],
       "incompatibilities": ["incompatibilities"],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -4728,7 +4779,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -4819,7 +4871,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -4910,7 +4963,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -5001,7 +5055,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -5092,7 +5147,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -5183,7 +5239,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -5274,7 +5331,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -5365,7 +5423,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -5456,7 +5515,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -5547,7 +5607,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -5638,7 +5699,8 @@
       "falsified": [],
       "incompatibilities": ["incompatibilities"],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -5729,7 +5791,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -5820,7 +5883,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -5911,7 +5975,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -6002,7 +6067,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -6093,7 +6159,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -6184,7 +6251,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -6275,7 +6343,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -6366,7 +6435,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -6457,7 +6527,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -6548,7 +6619,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -6639,7 +6711,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -6730,7 +6803,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -6821,7 +6895,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -6912,7 +6987,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -7003,7 +7079,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -7094,7 +7171,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -7185,7 +7263,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -7276,7 +7355,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -7367,7 +7447,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -7458,7 +7539,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -7549,7 +7631,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -7640,7 +7723,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -7731,7 +7815,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -7822,7 +7907,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -7913,7 +7999,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -8004,7 +8091,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -8095,7 +8183,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -8186,7 +8275,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -8277,7 +8367,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -8368,7 +8459,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -8459,7 +8551,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -8550,7 +8643,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -8641,7 +8735,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -8732,7 +8827,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -8823,7 +8919,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -8914,7 +9011,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -9005,7 +9103,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -9096,7 +9195,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -9187,7 +9287,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -9278,7 +9379,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -9369,7 +9471,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -9460,7 +9563,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -9551,7 +9655,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -9642,7 +9747,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -9733,7 +9839,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -9824,7 +9931,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -9915,7 +10023,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -10006,7 +10115,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -10097,7 +10207,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -10188,7 +10299,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -10279,7 +10391,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -10370,7 +10483,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -10461,7 +10575,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -10552,7 +10667,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -10643,7 +10759,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -10734,7 +10851,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -10825,7 +10943,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -10916,7 +11035,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -11007,7 +11127,8 @@
       "falsified": [],
       "incompatibilities": ["incompatibilities"],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -11098,7 +11219,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -11189,7 +11311,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -11280,7 +11403,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -11371,7 +11495,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -11462,7 +11587,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -11553,7 +11679,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -11644,7 +11771,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -11735,7 +11863,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -11826,7 +11955,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -11917,7 +12047,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -12008,7 +12139,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -12099,7 +12231,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -12190,7 +12323,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -12281,7 +12415,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -12372,7 +12507,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -12463,7 +12599,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -12554,7 +12691,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -12645,7 +12783,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -12736,7 +12875,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -12827,7 +12967,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -12918,7 +13059,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -13009,7 +13151,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -13100,7 +13243,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -13191,7 +13335,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -13282,7 +13427,8 @@
       "falsified": [],
       "incompatibilities": ["incompatibilities"],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -13373,7 +13519,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -13464,7 +13611,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -13555,7 +13703,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -13646,7 +13795,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -13737,7 +13887,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -13828,7 +13979,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -13919,7 +14071,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -14010,7 +14163,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -14101,7 +14255,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -14192,7 +14347,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -14283,7 +14439,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -14374,7 +14531,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -14465,7 +14623,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -14556,7 +14715,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -14647,7 +14807,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -14738,7 +14899,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -14829,7 +14991,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -14920,7 +15083,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -15011,7 +15175,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -15102,7 +15267,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -15193,7 +15359,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -15284,7 +15451,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -15375,7 +15543,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -15466,7 +15635,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -15557,7 +15727,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -15648,7 +15819,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -15739,7 +15911,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -15830,7 +16003,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -15921,7 +16095,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -16012,7 +16187,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -16103,7 +16279,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -16194,7 +16371,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -16285,7 +16463,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -16376,7 +16555,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -16467,7 +16647,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -16558,7 +16739,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -16649,7 +16831,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -16740,7 +16923,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -16831,7 +17015,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -16922,7 +17107,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -17013,7 +17199,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -17104,7 +17291,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -17195,7 +17383,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -17286,7 +17475,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -17377,7 +17567,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -17468,7 +17659,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -17559,7 +17751,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -17650,7 +17843,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -17741,7 +17935,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -17832,7 +18027,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -17923,7 +18119,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -18014,7 +18211,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -18105,7 +18303,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -18196,7 +18395,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -18287,7 +18487,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -18378,7 +18579,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -18469,7 +18671,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -18560,7 +18763,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -18651,7 +18855,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -18742,7 +18947,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -18833,7 +19039,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -18924,7 +19131,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -19015,7 +19223,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -19106,7 +19315,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -19197,7 +19407,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -19288,7 +19499,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -19379,7 +19591,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -19470,7 +19683,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -19561,7 +19775,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -19652,7 +19867,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -19743,7 +19959,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -19834,7 +20051,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -19925,7 +20143,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -20016,7 +20235,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -20107,7 +20327,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -20198,7 +20419,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -20289,7 +20511,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -20380,7 +20603,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -20471,7 +20695,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -20562,7 +20787,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -20653,7 +20879,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -20744,7 +20971,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -20835,7 +21063,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -20926,7 +21155,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -21017,7 +21247,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -21108,7 +21339,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -21199,7 +21431,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -21290,7 +21523,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -21381,7 +21615,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -21472,7 +21707,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -21563,7 +21799,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -21654,7 +21891,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -21745,7 +21983,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -21836,7 +22075,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -21927,7 +22167,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -22018,7 +22259,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -22109,7 +22351,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -22200,7 +22443,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -22291,7 +22535,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -22382,7 +22627,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -22473,7 +22719,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -22564,7 +22811,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -22655,7 +22903,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -22746,7 +22995,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -22837,7 +23087,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -22928,7 +23179,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -23019,7 +23271,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -23110,7 +23363,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -23201,7 +23455,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -23292,7 +23547,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -23383,7 +23639,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -23474,7 +23731,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -23565,7 +23823,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -23656,7 +23915,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -23747,7 +24007,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -23838,7 +24099,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": ["drugInteractions"]
+      "drugInteractions": ["drugInteractions"],
+      "history": []
     }
   },
   {
@@ -23929,7 +24191,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -24020,7 +24283,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": ["drugInteractions"]
+      "drugInteractions": ["drugInteractions"],
+      "history": []
     }
   },
   {
@@ -24111,7 +24375,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -24202,7 +24467,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -24293,7 +24559,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -24384,7 +24651,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -24475,7 +24743,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -24566,7 +24835,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -24657,7 +24927,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -24748,7 +25019,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": ["drugInteractions"]
+      "drugInteractions": ["drugInteractions"],
+      "history": []
     }
   },
   {
@@ -24839,7 +25111,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -24930,7 +25203,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -25021,7 +25295,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -25112,7 +25387,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -25203,7 +25479,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -25294,7 +25571,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -25385,7 +25663,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -25476,7 +25755,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -25567,7 +25847,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -25658,7 +25939,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -25749,7 +26031,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -25840,7 +26123,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -25931,7 +26215,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -26022,7 +26307,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": ["drugInteractions"]
+      "drugInteractions": ["drugInteractions"],
+      "history": []
     }
   },
   {
@@ -26113,7 +26399,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -26204,7 +26491,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -26295,7 +26583,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -26386,7 +26675,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -26477,7 +26767,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -26568,7 +26859,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -26659,7 +26951,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -26750,7 +27043,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -26841,7 +27135,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -26932,7 +27227,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -27023,7 +27319,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -27114,7 +27411,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -27205,7 +27503,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -27296,7 +27595,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -27387,7 +27687,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -27478,7 +27779,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -27569,7 +27871,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": ["drugInteractions"]
+      "drugInteractions": ["drugInteractions"],
+      "history": []
     }
   },
   {
@@ -27660,7 +27963,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -27751,7 +28055,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -27842,7 +28147,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -27933,7 +28239,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -28024,7 +28331,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -28115,7 +28423,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -28206,7 +28515,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -28297,7 +28607,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -28388,7 +28699,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -28479,7 +28791,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -28570,7 +28883,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -28661,7 +28975,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -28752,7 +29067,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -28843,7 +29159,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -28934,7 +29251,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -29025,7 +29343,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -29116,7 +29435,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -29207,7 +29527,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -29298,7 +29619,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -29389,7 +29711,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -29480,7 +29803,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -29571,7 +29895,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -29662,7 +29987,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -29753,7 +30079,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -29844,7 +30171,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -29935,7 +30263,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -30026,7 +30355,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -30117,7 +30447,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -30208,7 +30539,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -30299,7 +30631,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -30390,7 +30723,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -30481,7 +30815,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": ["drugInteractions"]
+      "drugInteractions": ["drugInteractions"],
+      "history": []
     }
   },
   {
@@ -30572,7 +30907,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -30663,7 +30999,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -30754,7 +31091,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -30845,7 +31183,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -30936,7 +31275,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -31027,7 +31367,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": ["drugInteractions"]
+      "drugInteractions": ["drugInteractions"],
+      "history": []
     }
   },
   {
@@ -31118,7 +31459,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -31209,7 +31551,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -31300,7 +31643,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -31391,7 +31735,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -31482,7 +31827,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -31573,7 +31919,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -31664,7 +32011,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -31755,7 +32103,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -31846,7 +32195,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -31937,7 +32287,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -32028,7 +32379,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -32119,7 +32471,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -32210,7 +32563,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -32301,7 +32655,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -32392,7 +32747,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -32483,7 +32839,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -32574,7 +32931,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": ["drugInteractions"]
+      "drugInteractions": ["drugInteractions"],
+      "history": []
     }
   },
   {
@@ -32665,7 +33023,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -32756,7 +33115,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -32847,7 +33207,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -32938,7 +33299,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -33029,7 +33391,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -33120,7 +33483,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -33211,7 +33575,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -33302,7 +33667,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -33393,7 +33759,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -33484,7 +33851,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -33575,7 +33943,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -33666,7 +34035,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -33757,7 +34127,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -33848,7 +34219,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -33939,7 +34311,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -34030,7 +34403,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -34121,7 +34495,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -34212,7 +34587,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -34303,7 +34679,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -34394,7 +34771,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -34485,7 +34863,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": ["drugInteractions"]
+      "drugInteractions": ["drugInteractions"],
+      "history": []
     }
   },
   {
@@ -34576,7 +34955,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -34667,7 +35047,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -34758,7 +35139,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -34849,7 +35231,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -34940,7 +35323,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -35031,7 +35415,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -35122,7 +35507,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -35213,7 +35599,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -35304,7 +35691,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -35323,7 +35711,7 @@
       "ward": [],
       "numPatients": [],
       "numPrescriptions": [],
-      "criteriaMethod": ["E-Delphi Method", "Likert Scale"],
+      "criteriaMethod": ["Delphi Method", "Likert Scale"],
       "studyLength": [],
       "country": ["United Kingdom"],
       "year": ["2019"],
@@ -35395,7 +35783,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -35486,7 +35875,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -35577,7 +35967,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -35668,7 +36059,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -35759,7 +36151,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -35850,7 +36243,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": ["drugInteractions"]
+      "drugInteractions": ["drugInteractions"],
+      "history": []
     }
   },
   {
@@ -35941,7 +36335,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": ["drugInteractions"]
+      "drugInteractions": ["drugInteractions"],
+      "history": []
     }
   },
   {
@@ -36032,7 +36427,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -36123,7 +36519,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": ["drugInteractions"]
+      "drugInteractions": ["drugInteractions"],
+      "history": []
     }
   },
   {
@@ -36214,7 +36611,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -36305,7 +36703,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -36396,7 +36795,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -36487,7 +36887,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -36578,7 +36979,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -36669,7 +37071,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -36760,7 +37163,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -36851,7 +37255,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -36942,7 +37347,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -37033,7 +37439,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -37124,7 +37531,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -37215,7 +37623,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -37306,7 +37715,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -37397,7 +37807,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -37488,7 +37899,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -37579,7 +37991,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -37670,7 +38083,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -37761,7 +38175,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -37852,7 +38267,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -37943,7 +38359,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": ["drugInteractions"]
+      "drugInteractions": ["drugInteractions"],
+      "history": []
     }
   },
   {
@@ -38034,7 +38451,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -38125,7 +38543,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -38216,7 +38635,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -38307,7 +38727,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -38398,7 +38819,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -38489,7 +38911,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -38580,7 +39003,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -38671,7 +39095,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -38762,7 +39187,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -38853,7 +39279,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -38944,7 +39371,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": ["drugInteractions"]
+      "drugInteractions": ["drugInteractions"],
+      "history": []
     }
   },
   {
@@ -39035,7 +39463,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -39126,7 +39555,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -39217,7 +39647,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -39308,7 +39739,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -39399,7 +39831,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -39490,7 +39923,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -39581,7 +40015,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -39672,7 +40107,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -39763,7 +40199,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -39854,7 +40291,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -39945,7 +40383,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -40036,7 +40475,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -40127,7 +40567,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -40218,7 +40659,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -40309,7 +40751,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -40400,7 +40843,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -40491,7 +40935,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -40582,7 +41027,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -40673,7 +41119,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -40764,7 +41211,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -40855,7 +41303,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -40946,7 +41395,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -41037,7 +41487,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -41128,7 +41579,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -41219,7 +41671,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -41310,7 +41763,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": ["drugInteractions"]
+      "drugInteractions": ["drugInteractions"],
+      "history": []
     }
   },
   {
@@ -41401,7 +41855,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -41492,7 +41947,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -41583,7 +42039,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -41674,7 +42131,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -41765,7 +42223,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -41856,7 +42315,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": ["drugInteractions"]
+      "drugInteractions": ["drugInteractions"],
+      "history": []
     }
   },
   {
@@ -41947,7 +42407,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -42038,7 +42499,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -42129,7 +42591,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -42220,7 +42683,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -42311,7 +42775,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -42402,7 +42867,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -42493,7 +42959,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -42584,7 +43051,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": ["drugInteractions"]
+      "drugInteractions": ["drugInteractions"],
+      "history": []
     }
   },
   {
@@ -42675,7 +43143,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -42766,7 +43235,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -42857,7 +43327,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -42948,7 +43419,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -43039,7 +43511,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -43130,7 +43603,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -43221,7 +43695,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -43312,7 +43787,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -43403,7 +43879,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -43494,7 +43971,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -43585,7 +44063,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -43676,7 +44155,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -43767,7 +44247,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -43858,7 +44339,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -43949,7 +44431,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -44040,7 +44523,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -44131,7 +44615,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -44222,7 +44707,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -44313,7 +44799,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -44404,7 +44891,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -44495,7 +44983,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -44586,7 +45075,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -44677,7 +45167,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": ["drugInteractions"]
+      "drugInteractions": ["drugInteractions"],
+      "history": []
     }
   },
   {
@@ -44768,7 +45259,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -44859,7 +45351,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -44950,7 +45443,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -45041,7 +45535,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -45132,7 +45627,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -45223,7 +45719,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -45314,7 +45811,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -45405,7 +45903,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -45496,7 +45995,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -45587,7 +46087,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -45678,7 +46179,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -45769,7 +46271,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -45860,7 +46363,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -45951,7 +46455,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -46042,7 +46547,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -46133,7 +46639,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -46224,7 +46731,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -46315,7 +46823,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -46406,7 +46915,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -46497,7 +47007,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -46588,7 +47099,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -46679,7 +47191,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -46770,7 +47283,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -46861,7 +47375,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -46952,7 +47467,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -47043,7 +47559,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -47134,7 +47651,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -47225,7 +47743,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -47316,7 +47835,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -47407,7 +47927,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -47498,7 +48019,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -47589,7 +48111,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -47680,7 +48203,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": ["drugInteractions"]
+      "drugInteractions": ["drugInteractions"],
+      "history": []
     }
   },
   {
@@ -47771,7 +48295,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -47862,7 +48387,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -47953,7 +48479,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -48044,7 +48571,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -48135,7 +48663,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -48226,7 +48755,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -48317,7 +48847,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -48408,7 +48939,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -48499,7 +49031,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -48590,7 +49123,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -48681,7 +49215,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -48772,7 +49307,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -48863,7 +49399,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -48954,7 +49491,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -49045,7 +49583,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -49136,7 +49675,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -49227,7 +49767,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -49318,7 +49859,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": ["habits"],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -49409,7 +49951,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -49500,7 +50043,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -49591,7 +50135,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -49682,7 +50227,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": ["drugInteractions"]
+      "drugInteractions": ["drugInteractions"],
+      "history": []
     }
   },
   {
@@ -49773,7 +50319,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -49864,7 +50411,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -49955,7 +50503,8 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
     }
   },
   {
@@ -50046,7 +50595,468 @@
       "falsified": [],
       "incompatibilities": [],
       "habits": [],
-      "drugInteractions": []
+      "drugInteractions": [],
+      "history": []
+    }
+  },
+  {
+    "title": "Impact of a team of clinical pharmacists in a paediatric surgery unit: results after 6 months",
+    "url": "https://ejhp.bmj.com/content/26/Suppl_1/A189.1",
+    "authors": "AS Remoué Fanuel, C Louet, D Navas, JF Huon, J Mocquard, E Corbineau",
+    "institution": "CHU Nantes, Pharmacy, Nantes, France",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2019-eahpconf.407",
+    "filters": {
+      "actSubs": [],
+      "indication": [],
+      "statedClass": ["Nervous System Drugs", "Respiratory System Drugs", "Anti-Infective Drugs"],
+      "typeOfMedical": [],
+      "studyDesign": [],
+      "setting": ["Hospital"],
+      "ward": ["Paediatric Surgery"],
+      "numPatients": [],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": ["6 months - 1 year"],
+      "country": ["France"],
+      "year": ["2019"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": ["pediatrics"],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": [],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": ["intervention"],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": ["errors"],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": ["multidisciplinary"],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": [],
+      "history": []
+    }
+  },
+  {
+    "title": "Screening for painful diabetic neuropathy",
+    "url": "https://ejhp.bmj.com/content/26/Suppl_1/A166.1",
+    "authors": "R Bs, H Ghada, S Yasmine, K Mohamed Amine, D Mehdi, Y Mohamed Ali",
+    "institution": "Military Hospital Hmpit Tunis, Internal Pharmacy, Tunis, Tunisia. Faculty of Pharmacy, Department of Pharmacology, Monastir, Tunisia",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2019-eahpconf.356",
+    "filters": {
+      "actSubs": ["Metformin"],
+      "indication": ["Neuropathy (Peripheral)", "Diabetes Mellitus"],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Descriptive Study", "Analytical Study"],
+      "setting": ["Hospital"],
+      "ward": ["Endocrinology"],
+      "numPatients": ["51 - 100"],
+      "numPrescriptions": [],
+      "criteriaMethod": ["DN4 Assessment Tool"],
+      "studyLength": ["Less than 3 months"],
+      "country": ["Tunisia"],
+      "year": ["2019"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": [],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": ["patientIntervention"],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": [],
+      "history": []
+    }
+  },
+  {
+    "title": "Are patients and healthcare professionals willing to exchange the price of treatments to choose a biosimilar? experience based on the delphi method",
+    "url": "https://ejhp.bmj.com/content/26/Suppl_1/A194.2",
+    "authors": "C Gary, A Schiavon De Jodar, T Deljehier, F Xuereb, K Bouabdallah, A Pigneux, N Milpied, D Breilh",
+    "institution": "University Hospital of Bordeaux, Pharmacy and Haematology, Pessac, France. University Hospital of Bordeaux, Pharmacy, Pessac, France. University Hospital of Bordeaux, Haematology, Pessac, France",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2019-eahpconf.418",
+    "filters": {
+      "actSubs": [],
+      "indication": [],
+      "statedClass": ["Biosimilars"],
+      "typeOfMedical": [],
+      "studyDesign": ["Prospective Study"],
+      "setting": ["Hospital"],
+      "ward": ["Haematology"],
+      "numPatients": [],
+      "numPrescriptions": [],
+      "criteriaMethod": ["Delphi Method"],
+      "studyLength": [],
+      "country": ["France"],
+      "year": ["2019"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": [],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": ["costAnalysis"],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": [],
+      "patientIntervention": ["patientIntervention"],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": ["interview"],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": ["policiesAudits"],
+      "multidisciplinary": ["multidisciplinary"],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": ["nextStep"],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": [],
+      "history": []
+    }
+  },
+  {
+    "title": "Impact of pharmaceutical interventions in parenteral nutrition",
+    "url": "https://ejhp.bmj.com/content/26/Suppl_1/A165.2",
+    "authors": "M Brito, A Alcobia",
+    "institution": "Hospital Garcia de Orta, Pharmacy, Almada, Portugal",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2019-eahpconf.355",
+    "filters": {
+      "actSubs": [],
+      "indication": ["Refeeding Syndrome", "Catheter Associated Infections"],
+      "statedClass": [],
+      "typeOfMedical": [],
+      "studyDesign": ["Prospective Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["51 - 100"],
+      "numPrescriptions": ["101 - 500"],
+      "criteriaMethod": ["Harris Benedict Equation"],
+      "studyLength": ["6 months - 1 year"],
+      "country": ["Portugal"],
+      "year": ["2019"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": [],
+      "neonatology": [],
+      "oncology": [],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": ["nutrition"],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": ["costAnalysis"],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": ["intervention"],
+      "patientIntervention": [],
+      "nursesReccomend": ["nursesReccomend"],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": ["errors"],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": [],
+      "history": []
+    }
+  },
+  {
+    "title": "Impact of medication reconciliation in patients on admission to an expert centre for parkinson’s disease",
+    "url": "https://ejhp.bmj.com/content/26/Suppl_1/A149.2",
+    "authors": "V Nail, C Dubrou, M Dulac, JP Azulay, G Hache",
+    "institution": "University Hospitals of Marseille, Pharmacy, Marseille, France. University Hospitals of Marseille, Neurology, Marseille, France",
+    "DOI": "http://dx.doi.org/10.1136/ejhpharm-2019-eahpconf.321",
+    "filters": {
+      "actSubs": [],
+      "indication": ["Parkinson’s Disease"],
+      "statedClass": ["Nervous System Drugs"],
+      "typeOfMedical": [],
+      "studyDesign": ["Prospective Study"],
+      "setting": ["Hospital"],
+      "ward": [],
+      "numPatients": ["101 - 500"],
+      "numPrescriptions": [],
+      "criteriaMethod": [],
+      "studyLength": ["More than 1 year - 2 years"],
+      "country": ["France"],
+      "year": ["2019"],
+      "journal": ["European Journal of Hospital Pharmacy (EJHP)"],
+      "pediatrics": [],
+      "geriatrics": ["geriatrics"],
+      "neonatology": [],
+      "oncology": [],
+      "pharmacogenetics": [],
+      "pharmacoeconomy": [],
+      "radiopharmaceuticals": [],
+      "compounding": [],
+      "medicalDevices": [],
+      "personalized": [],
+      "nutrition": [],
+      "highRisk": [],
+      "endOfLife": [],
+      "selfMedication": [],
+      "preopMedication": [],
+      "outpatient": [],
+      "enzymeSubstrate": [],
+      "geneTherapy": [],
+      "homeCare": [],
+      "antibioticProphylaxis": [],
+      "painManagement": [],
+      "offLabel": [],
+      "flatDoses": [],
+      "switching": [],
+      "deprescribing": [],
+      "prepareIV": [],
+      "costAnalysis": [],
+      "riskSafety": [],
+      "vigilance": [],
+      "stability": [],
+      "drugMonitoring": [],
+      "safetyProfile": [],
+      "intervention": ["intervention"],
+      "patientIntervention": [],
+      "nursesReccomend": [],
+      "telepharmacy": [],
+      "interview": [],
+      "selection": [],
+      "stock": [],
+      "automated": [],
+      "coldChain": [],
+      "softwareAided": [],
+      "mobileVR": [],
+      "Printing3D": [],
+      "socialMedia": [],
+      "shortages": [],
+      "adverseEvents": [],
+      "adherence": [],
+      "resistance": [],
+      "renal": [],
+      "errors": [],
+      "administrative": [],
+      "stewardship": [],
+      "policiesAudits": [],
+      "multidisciplinary": [],
+      "institutional": [],
+      "recalls": [],
+      "education": [],
+      "clinicalTrials": [],
+      "youngPharma": [],
+      "nextStep": [],
+      "compliance": [],
+      "orphan": [],
+      "delivery": [],
+      "falsified": [],
+      "incompatibilities": [],
+      "habits": [],
+      "drugInteractions": [],
+      "history": ["history"]
     }
   }
 ]

@@ -548,7 +548,8 @@ html(lang='en')
                 option(value='Deficiency of the Interleukin-36 Receptor Antagonist') Deficiency of the Interleukin-36 Receptor Antagonist
                 option(value='Delusional Disorder') Delusional Disorder
                 option(value='Dementia') Dementia
-                option(value='Demyelinating Neuropathies') Demyelinating Neuropathies
+                option(value='Neuropathy (Demyelinating)') Neuropathy (Demyelinating)
+                option(value='Neuropathy (Peripheral)') Neuropathy (Peripheral)
                 option(value='Depression') Depression
                 option(value='Dermatitis') Dermatitis
                 option(value='Dermatitis (Atopic)') Dermatitis (Atopic)
@@ -714,6 +715,7 @@ html(lang='en')
                 option(value='Pulmonary Thromboembolism') Pulmonary Thromboembolism
                 option(value='Pure Red Cell Aplasia') Pure Red Cell Aplasia
                 option(value='Rectal Neoplasia') Rectal Neoplasia
+                option(value='Refeeding Syndrome') Refeeding Syndrome
                 option(value='Refractory Cancer') Refractory Cancer
                 option(value='Renal Cell Cancer') Renal Cell Cancer
                 option(value='Respiratory Disorders') Respiratory Disorders
@@ -1018,6 +1020,7 @@ html(lang='en')
                 option(value='Outpatient Clinic') Outpatient Clinic
                 option(value='Paediatric Haematology – Oncology') Paediatric Haematology – Oncology
                 option(value='Paediatric Intensive Care') Paediatric Intensive Care
+                option(value='Paediatric Surgery') Paediatric Surgery
                 option(value='Paediatrics') Paediatrics
                 option(value='Palliative Care') Palliative Care
                 option(value='Plastic Surgery') Plastic Surgery
@@ -1089,12 +1092,13 @@ html(lang='en')
                 option(value='Cox Proportional Hazards Regression Analysis') Cox Proportional Hazards Regression Analysis
                 option(value='Cumulative Illness Rating Scale (CIRS)') Cumulative Illness Rating Scale (CIRS)
                 option(value='Defined Daily Dose (DDD)') Defined Daily Dose (DDD)
+                option(value='Delphi Method') Delphi Method
                 option(value='Dermatology Life Quality Index') Dermatology Life Quality Index
                 option(value='Disease Activity Score-28 for Rheumatoid Arthritis with ESR (DAS28-ESR)') Disease Activity Score-28 for Rheumatoid Arthritis with ESR (DAS28-ESR)
+                option(value='DN4 Assessment Tool') DN4 Assessment Tool
                 option(value='Drug Burden Index Score') Drug Burden Index Score
                 option(value='Dynamic Light Scattering') Dynamic Light Scattering
                 option(value='Dynamic Modeling') Dynamic Modeling
-                option(value='E-Delphi Method') E-Delphi Method
                 option(value='Eadon Scoring Criteria') Eadon Scoring Criteria
                 option(value='Eastern Cooperative Oncology Group (ECOG) Performance Status') Eastern Cooperative Oncology Group (ECOG) Performance Status
                 option(value='Eczema Area and Severity Index') Eczema Area and Severity Index
@@ -1121,6 +1125,7 @@ html(lang='en')
                 option(value='Gravimetric Analysis') Gravimetric Analysis
                 option(value='Hammersmith Functional Motor Scale-Expanded (HFMSE)') Hammersmith Functional Motor Scale-Expanded (HFMSE)
                 option(value='Hammersmith Infant Neurological Examination (HINE)') Hammersmith Infant Neurological Examination (HINE)
+                option(value='Harris Benedict Equation') Harris Benedict Equation
                 option(value='Harris Hip Score') Harris Hip Score
                 option(value="Harvey-Bradshaw Index (HBI) for Crohn's Disease") Harvey-Bradshaw Index (HBI) for Crohn's Disease
                 option(value="HAS-BLED Score for Major Bleeding Risk") HAS-BLED Score for Major Bleeding Risk
@@ -1459,6 +1464,10 @@ html(lang='en')
                         input#habits(type='checkbox')
                         span.lever#leverOne
                         | Prescribing Habits Analysis
+                      label.col.s12.l4(style='font-weight: bold; color: darkslateblue;')
+                        input#history(type='checkbox')
+                        span.lever
+                        | Medication History / Identifying Discrepancies
                     p#hrHead Communication
                     hr
                     .row.switch
@@ -1739,7 +1748,7 @@ html(lang='en')
     dataReq.send();
   script.
     // SET EMPTY FILTER ARRAY
-    let filterArr = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
+    let filterArr = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
     var searchObj = new Object();
     // MODIFY FILTER ARRAY ACCORDING TO SPAN.LEVERS' ACTION
     $( "#pediatrics" ).click(function() {
@@ -2218,6 +2227,13 @@ html(lang='en')
     filterArr[67] = false;
     }
     });
+    $( "#history" ).click(function() {
+    if (filterArr[68] === false) {
+    filterArr[68] = true;
+    } else {
+    filterArr[68] = false;
+    }
+    });
 
     // WHEN YOU FIRE THE SEARCH
     $("#search").click(function() {
@@ -2385,7 +2401,8 @@ html(lang='en')
       falsified: [],
       incompatibilities: [],
       habits: [],
-      drugInteractions: []
+      drugInteractions: [],
+      history: []
     };
     // IF VALUE WAS NOT SELECTED (EMPTY), DESTROY THEM
     if (actSubs === "empty") {
@@ -2700,6 +2717,10 @@ html(lang='en')
 
     if (filterArr[67] === true) {
     searchObj.drugInteractions = ["drugInteractions"];
+    }
+
+    if (filterArr[68] === true) {
+    searchObj.history = ["history"];
     }
 
     // THE OLD COLD WHICH DID THE MAGIC ONLY IF IT ALLOWED MULTISELECT ISSUE
