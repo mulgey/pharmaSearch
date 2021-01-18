@@ -7,5 +7,6 @@
         "renaldose",
         "smtp",
         "özelliğini"
-    ]
+    ],
+    "json.maxItemsComputed": 5000
 }
