@@ -30,6 +30,10 @@
 30) Multidisiplinary was strict since the line 46.959
 31) Write an engine, loops every array and gives out a list to compare
 32) On-hover information for every parameter
+33) Should search for "habits" using "profile" keyword? Also, "Biosimilars" with "switch" may join either
+34) All "stewardship" .. also "multidisiplinary" ?
+35) Search back keyword "antiretrovirals" for the statedClass
+36) All "Biosimilars" are "Biologicals" ?
 
 For demonstration
 1) "Cost effectiveness analysis of meropenem dose optimisation in critical patients -- "administrative"
