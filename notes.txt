@@ -30,12 +30,25 @@
 30) Multidisiplinary was strict since the line 46.959
 31) Write an engine, loops every array and gives out a list to compare
 32) On-hover information for every parameter
-33) Should search for "habits" using "profile" keyword? Also, "Biosimilars" with "switch" may join either
+33) Should search for "habits" using "profile" and "medication reconciliation" keywords? Also, "Biosimilars" with "switch" may join either
 34) All "stewardship" .. also "multidisiplinary" ?
 35) Search back keyword "antiretrovirals" for the statedClass
 36) All "Biosimilars" are "Biologicals" ?
+37) Also added "postoperative" on line 56.399.. check back the keywords
+38) Check previous "Trastuzumab"s for "trastuzumab emtansin"s (Line 56.491)
+39) Check HER2 positive and "pharmacogenetics" relation (Line 56.491)
+40) Check double active substanced antibiotics to keyworded as double (e.g. "Amoxicillin / Clavulanic acid")
+41) Pagination can not deal with mega-loads (filter-free)
+42) "softwareAided" should be checked
+43) Check also "intern" keyword for "youngPharma" ?
+44) highRisk also highAlert, should check back
+45) Search back for "anaphylaxis" keyword for indication
+46) Search back for "Antidepressants (Tricyclic)" for statedClass
+47) Should check "geriatrics" via "endofLife" keywords. Very high potential to be together
+48) Medication "history" became "reconciliation" on line 68.819, should check back
+49) Search back for "participants" for the changed text of "Number of Patients / Participants"
 
-For demonstration
+For search demonstration
 1) "Cost effectiveness analysis of meropenem dose optimisation in critical patients -- "administrative"
 2) "Use of oseltamivir in the treatment of influenza A" -- "instutional" 2 hospitals - 251 patients
 3) "Switching to equivalent alternatives: antiretroviral optimisation strategy" - "costAnalysis" - says: optimisation but not "cost"
@@ -47,3 +60,6 @@ For demonstration
 9) "Preliminary design of hospital telepharmacy" -- there is no "telepharmacy"
 10) "Nutritional risk evaluation in institutionalised elderly patients in a public nursing home" -- there's "intervention" but not stated in the title
 11) "Prevalence of nutritional complications according to the requested hospitalisation service of total parenteral nutrition" -- oncology ward but it's about "nutrition"
+
+For examples demonstration
+1) "habits" for "AIDS"

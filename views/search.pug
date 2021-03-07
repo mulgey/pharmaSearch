@@ -215,11 +215,12 @@ html(lang='en')
           }
         }
         result = sort('title', result);
+        console.log(result);
 
         // PREPARE THE LIST, APPEND TO RESULTLIST SECTION
         result.forEach(function(item) {
         var li = document.createElement("li");
-        var text = `<h5 style="margin-top: 3rem;" class="name"><a style="color: midnightblue;" href="${item.url}" target="_blank">${item.title}</a></h4><p class="institution">${item.institution}</p><p class="country">${item.filters.country}</p><p class="year">${item.filters.year}</p><p style="margin-top: 2rem; border-bottom: 3px groove rgba(28,110,164,0.68);"></p>`;
+        var text = `<h5 style="margin-top: 3rem;"><a class="name" style="color: midnightblue;" href="${item.url}" target="_blank">${item.title}</a></h4><p class="institution">${item.institution}</p><p class="country">${item.filters.country}</p><p class="year">${item.filters.year}</p><p style="margin-top: 2rem; border-bottom: 3px groove rgba(28,110,164,0.68);"></p>`;
         li.innerHTML = text;
         document.getElementById("root").appendChild(li);
         $('#spinner').css("display", "none");
@@ -227,7 +228,7 @@ html(lang='en')
         // LISTJS
         let options = {
           valueNames: [ 'name', 'year', 'country' ],
-          page: 10,
+          page: 50,
           pagination: true
         };
         let listObj = new List('users', options);
