@@ -38,7 +38,11 @@
 38) Check previous "Trastuzumab"s for "trastuzumab emtansin"s (Line 56.491)
 39) Check HER2 positive and "pharmacogenetics" relation (Line 56.491)
 40) Check double active substanced antibiotics to keyworded as double (e.g. "Amoxicillin / Clavulanic acid")
+<<<<<<< HEAD
+41) Pagination can not deal with mega-loads (filter-free) also scrolling is an issue after clicking next pages ( ..2 .. 3)
+=======
 41) Pagination can not deal with mega-loads (filter-free)
+>>>>>>> 5d00820856a3a1d5a61a9263f35e5bef84d43c58
 42) "softwareAided" should be checked
 43) Check also "intern" keyword for "youngPharma" ?
 44) highRisk also highAlert, should check back
@@ -46,7 +50,19 @@
 46) Search back for "Antidepressants (Tricyclic)" for statedClass
 47) Should check "geriatrics" via "endofLife" keywords. Very high potential to be together
 48) Medication "history" became "reconciliation" on line 68.819, should check back
+<<<<<<< HEAD
+49) Search back for "participants" for the changed text of "Number of Patients / Participants" (+staff)
+50) Check back for "OTC" drugs to list under statedClass (line 71.671)
+51) If you give up on "renal" you should add it as an indication (Kidney Disease?)
+52) "homeCare" and "endOfLife" should be under the same category?
+52) Reconsider "Portal Hypertension" in indications
+53) "Efficacy" / "effectiveness" analysis =(
+54) All "General Surgery" to "Surgical Unit" ??
+55) Check back to add "Sustained Virologic Response (SVR)" -- Line:77.283
+57) Random "next study" offers?
+=======
 49) Search back for "participants" for the changed text of "Number of Patients / Participants"
+>>>>>>> 5d00820856a3a1d5a61a9263f35e5bef84d43c58
 
 For search demonstration
 1) "Cost effectiveness analysis of meropenem dose optimisation in critical patients -- "administrative"
@@ -63,3 +79,14 @@ For search demonstration
 
 For examples demonstration
 1) "habits" for "AIDS"
+<<<<<<< HEAD
+2) "biosimilars" for "Rituximab" maybe plus "costAnalysis"
+
+"advantages demonstration" for in-promotion
+1) A pharmacist started in Medical Devices Department and don't know what to do. "selection" or "costAnalysis"
+
+Personal Notes
+1) "The effect of geriatric stewardship on drug-related problems after discharge" -- Turkish pharmacist in Netherlands
+2) "Pharmacologic intervention by hospital pharmacist for leucopenia due to tazobactam/piperacillin in the postpartum period: a case report" can we?
+=======
+>>>>>>> 5d00820856a3a1d5a61a9263f35e5bef84d43c58
